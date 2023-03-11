@@ -1,0 +1,3662 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix n4ind: <neo4j://graph.individuals#> .
+
+n4ind:1 a n4sch:Entity;
+  n4sch:text "software";
+  n4sch:id "Q7397";
+  n4sch:STUDIED_BY n4ind:5, n4ind:489;
+  n4sch:DESIGNED_BY n4ind:693;
+  n4sch:HAS_PART n4ind:71, n4ind:10, n4ind:75, n4ind:254, n4ind:255, n4ind:494, n4ind:89;
+  n4sch:DIFFERENT_FROM n4ind:36, n4ind:3;
+  n4sch:PART_OF n4ind:2, n4ind:7, n4ind:252;
+  n4sch:USES n4ind:81 .
+
+n4ind:0 a n4sch:Entity;
+  n4sch:text "development";
+  n4sch:id "Q1074523";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:1;
+  n4sch:HAS_PART n4ind:18 .
+
+n4ind:18 a n4sch:Entity;
+  n4sch:id "Q857102";
+  n4sch:text "software design";
+  n4sch:PART_OF n4ind:0, n4ind:17 .
+
+n4ind:5 a n4sch:Entity;
+  n4sch:text "software engineering";
+  n4sch:id "Q80993";
+  n4sch:STUDIES n4ind:73, n4ind:252, n4ind:41, n4ind:1, n4ind:17;
+  n4sch:INSTANCE_OF n4ind:572;
+  n4sch:PART_OF n4ind:7;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:1;
+  n4sch:PRACTICED_BY n4ind:4 .
+
+n4ind:489 a n4sch:Entity;
+  n4sch:id "Q132453";
+  n4sch:text "developed" .
+
+n4ind:693 a n4sch:Entity;
+  n4sch:id "Q5";
+  n4sch:text "humans" .
+
+n4ind:71 a n4sch:Entity;
+  n4sch:id "Q80006";
+  n4sch:text "programming";
+  n4sch:USES n4ind:165, n4ind:73, n4ind:2, n4ind:104;
+  n4sch:PART_OF n4ind:1, n4ind:101;
+  n4sch:HAS_EFFECT n4ind:72;
+  n4sch:HAS_PART n4ind:521, n4ind:76, n4ind:74, n4ind:49 .
+
+n4ind:10 a n4sch:Entity;
+  n4sch:id "Q8366";
+  n4sch:text "algorithm";
+  n4sch:USES n4ind:30;
+  n4sch:STUDIES n4ind:9, n4ind:21;
+  n4sch:SUBCLASS_OF n4ind:622;
+  n4sch:PART_OF n4ind:2, n4ind:72, n4ind:77, n4ind:1, n4ind:43;
+  n4sch:DIFFERENT_FROM n4ind:77;
+  n4sch:HAS_PART n4ind:631, n4ind:9, n4ind:37 .
+
+n4ind:75 a n4sch:Entity;
+  n4sch:id "Q113089599";
+  n4sch:text "operational software";
+  n4sch:PART_OF n4ind:1 .
+
+n4ind:254 a n4sch:Entity;
+  n4sch:text "input";
+  n4sch:id "Q45342565" .
+
+n4ind:255 a n4sch:Entity;
+  n4sch:id "Q1150771";
+  n4sch:text "output" .
+
+n4ind:494 a n4sch:Entity;
+  n4sch:id "Q219320";
+  n4sch:text "input/output" .
+
+n4ind:89 a n4sch:Entity;
+  n4sch:text "procedure";
+  n4sch:id "Q190686";
+  n4sch:PART_OF n4ind:1, n4ind:98, n4ind:88 .
+
+n4ind:36 a n4sch:Entity;
+  n4sch:id "general engineering problem solving";
+  n4sch:text "general engineering problem solving";
+  n4sch:DIFFERENT_FROM n4ind:1 .
+
+n4ind:3 a n4sch:Entity;
+  n4sch:text "hardware";
+  n4sch:id "Q3966";
+  n4sch:HAS_PART n4ind:255, n4ind:254;
+  n4sch:USED_BY n4ind:334, n4ind:1 .
+
+n4ind:2 a n4sch:Entity;
+  n4sch:id "Q68";
+  n4sch:text "computer";
+  n4sch:USED_BY n4ind:125;
+  n4sch:STUDIED_BY n4ind:7, n4ind:333;
+  n4sch:USE n4ind:576, n4ind:258;
+  n4sch:HAS_PART n4ind:1, n4ind:10, n4ind:81, n4ind:263, n4ind:272, n4ind:261, n4ind:255,
+    n4ind:254, n4ind:307, n4ind:439, n4ind:164, n4ind:3, n4ind:165, n4ind:527;
+  n4sch:CONNECTS_WITH n4ind:372;
+  n4sch:PART_OF n4ind:264, n4ind:278, n4ind:421;
+  n4sch:USES n4ind:77, n4ind:254, n4ind:416, n4ind:577 .
+
+n4ind:7 a n4sch:Entity;
+  n4sch:id "Q21198";
+  n4sch:text "computer science";
+  n4sch:STUDIES n4ind:2;
+  n4sch:HAS_PART n4ind:5, n4ind:8 .
+
+n4ind:252 a n4sch:Entity;
+  n4sch:text "computer system";
+  n4sch:id "Q13407144" .
+
+n4ind:81 a n4sch:Entity;
+  n4sch:text "programs";
+  n4sch:id "Q85574465";
+  n4sch:USES n4ind:77;
+  n4sch:PART_OF n4ind:334, n4ind:2;
+  n4sch:HAS_PART n4ind:165, n4ind:90, n4ind:82;
+  n4sch:USED_BY n4ind:1 .
+
+n4ind:125 a n4sch:Entity;
+  n4sch:id "Q5482740";
+  n4sch:text "programmer";
+  n4sch:USES n4ind:2;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:539, n4ind:1;
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:77 .
+
+n4ind:333 a n4sch:Entity;
+  n4sch:id "electrical-mechanical system";
+  n4sch:text "electrical-mechanical system" .
+
+n4ind:576 a n4sch:Entity;
+  n4sch:text "solve a problem";
+  n4sch:id "solve a problem" .
+
+n4ind:258 a n4sch:Entity;
+  n4sch:id "Q1122491";
+  n4sch:text "computation" .
+
+n4ind:263 a n4sch:Entity;
+  n4sch:id "Q11650";
+  n4sch:text "electronic devices" .
+
+n4ind:272 a n4sch:Entity;
+  n4sch:id "Q111377128";
+  n4sch:text "circuits" .
+
+n4ind:261 a n4sch:Entity;
+  n4sch:text "memory";
+  n4sch:id "Q492" .
+
+n4ind:307 a n4sch:Entity;
+  n4sch:id "Q105700435";
+  n4sch:text "memory system" .
+
+n4ind:439 a n4sch:Entity;
+  n4sch:id "Q165233";
+  n4sch:text "network interface card" .
+
+n4ind:164 a n4sch:Entity;
+  n4sch:text "data";
+  n4sch:id "Q42848" .
+
+n4ind:165 a n4sch:Entity;
+  n4sch:text "representation";
+  n4sch:id "Q853614" .
+
+n4ind:527 a n4sch:Entity;
+  n4sch:id "read, written, and modified by humans";
+  n4sch:text "read, written, and modified by humans" .
+
+n4ind:372 a n4sch:Entity;
+  n4sch:id "Q1301371";
+  n4sch:text "network" .
+
+n4ind:264 a n4sch:Entity;
+  n4sch:id "Q259864";
+  n4sch:text "computer organization" .
+
+n4ind:278 a n4sch:Entity;
+  n4sch:id "Q115161681";
+  n4sch:text "digital system" .
+
+n4ind:421 a n4sch:Entity;
+  n4sch:text "distributed computing";
+  n4sch:id "Q180634" .
+
+n4ind:77 a n4sch:Entity;
+  n4sch:text "programming language";
+  n4sch:id "Q9143";
+  n4sch:SUBCLASS_OF n4ind:595;
+  n4sch:PART_OF n4ind:167;
+  n4sch:DIFFERENT_FROM n4ind:10;
+  n4sch:HAS_PART n4ind:325, n4ind:10;
+  n4sch:USE n4ind:526, n4ind:72, n4ind:71;
+  n4sch:USED_BY n4ind:125, n4ind:81, n4ind:2;
+  n4sch:PRACTICED_BY n4ind:125 .
+
+n4ind:416 a n4sch:Entity;
+  n4sch:id "Q39809";
+  n4sch:text "marketing" .
+
+n4ind:577 a n4sch:Entity;
+  n4sch:text "perspective";
+  n4sch:id "Q12558574" .
+
+n4ind:334 a n4sch:Entity;
+  n4sch:text "operating system";
+  n4sch:id "Q9135" .
+
+n4ind:694 a n4sch:Entity;
+  n4sch:text "software product";
+  n4sch:id "Q2111823" .
+
+n4ind:4 a n4sch:Entity;
+  n4sch:id "Q1709010";
+  n4sch:text "software engineer";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:694;
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:5, n4ind:16 .
+
+n4ind:16 a n4sch:Entity;
+  n4sch:id "computing foundations knowledge area";
+  n4sch:text "computing foundations knowledge area";
+  n4sch:PRACTICED_BY n4ind:4 .
+
+n4ind:73 a n4sch:Entity;
+  n4sch:text "source code";
+  n4sch:id "Q128751";
+  n4sch:FACET_OF n4ind:77;
+  n4sch:STUDIED_BY n4ind:5;
+  n4sch:USED_BY n4ind:314, n4ind:117, n4ind:71 .
+
+n4ind:41 a n4sch:Entity;
+  n4sch:id "Q196672";
+  n4sch:text "circuit";
+  n4sch:STUDIED_BY n4ind:5 .
+
+n4ind:17 a n4sch:Entity;
+  n4sch:text "software construction";
+  n4sch:id "Q3398377";
+  n4sch:HAS_PART n4ind:18;
+  n4sch:STUDIED_BY n4ind:5 .
+
+n4ind:572 a n4sch:Entity;
+  n4sch:text "discipline";
+  n4sch:id "Q11862829" .
+
+n4ind:6 a n4sch:Entity;
+  n4sch:id "Q7554195";
+  n4sch:text "software engineering 2004";
+  n4sch:POINT_IN_TIME n4ind:571 .
+
+n4ind:571 a n4sch:Entity;
+  n4sch:text "2004";
+  n4sch:id "Q2014" .
+
+n4ind:8 a n4sch:Entity;
+  n4sch:id "computing foundations";
+  n4sch:text "computing foundations";
+  n4sch:INSTANCE_OF n4ind:573;
+  n4sch:PART_OF n4ind:7;
+  n4sch:FACET_OF n4ind:7 .
+
+n4ind:573 a n4sch:Entity;
+  n4sch:text "knowledge area";
+  n4sch:id "knowledge area" .
+
+n4ind:9 a n4sch:Entity;
+  n4sch:STUDIES n4ind:164;
+  n4sch:text "data structure";
+  n4sch:id "Q175263";
+  n4sch:SUBCLASS_OF n4ind:613;
+  n4sch:PART_OF n4ind:72, n4ind:10;
+  n4sch:DIFFERENT_FROM n4ind:382;
+  n4sch:STUDIED_BY n4ind:10 .
+
+n4ind:613 a n4sch:Entity;
+  n4sch:text "computer representation";
+  n4sch:id "Q99194313" .
+
+n4ind:72 a n4sch:Entity;
+  n4sch:text "computer program";
+  n4sch:id "Q40056";
+  n4sch:USES n4ind:104, n4ind:164;
+  n4sch:HAS_CAUSE n4ind:165, n4ind:71;
+  n4sch:SUBCLASS_OF n4ind:1;
+  n4sch:PART_OF n4ind:336;
+  n4sch:HAS_EFFECT n4ind:165;
+  n4sch:HAS_PART n4ind:525, n4ind:102, n4ind:10, n4ind:104, n4ind:9;
+  n4sch:STUDIED_BY n4ind:130 .
+
+n4ind:382 a n4sch:Entity;
+  n4sch:id "Q8513";
+  n4sch:text "database" .
+
+n4ind:30 a n4sch:Entity;
+  n4sch:text "problem statement";
+  n4sch:id "Q4374193";
+  n4sch:PART_OF n4ind:342;
+  n4sch:FACET_OF n4ind:21;
+  n4sch:USED_BY n4ind:34 .
+
+n4ind:21 a n4sch:Entity;
+  n4sch:id "Q621184";
+  n4sch:text "problem";
+  n4sch:HAS_EFFECT n4ind:20;
+  n4sch:STUDIED_BY n4ind:220, n4ind:20, n4ind:10 .
+
+n4ind:622 a n4sch:Entity;
+  n4sch:text "computational procedure";
+  n4sch:id "Q34991317" .
+
+n4ind:43 a n4sch:Entity;
+  n4sch:text "program code";
+  n4sch:id "Q124590";
+  n4sch:HAS_PART n4ind:10 .
+
+n4ind:631 a n4sch:Entity;
+  n4sch:id "Q46833285";
+  n4sch:text "analysis strategies" .
+
+n4ind:37 a n4sch:Entity;
+  n4sch:text "machine instructions";
+  n4sch:id "machine instructions";
+  n4sch:PART_OF n4ind:10 .
+
+n4ind:11 a n4sch:Entity;
+  n4sch:id "Q600134";
+  n4sch:DIFFERENT_FROM n4ind:12;
+  n4sch:text "course" .
+
+n4ind:12 a n4sch:Entity;
+  n4sch:text "division of topics";
+  n4sch:id "division of topics";
+  n4sch:DIFFERENT_FROM n4ind:11 .
+
+n4ind:13 a n4sch:Entity;
+  n4sch:DIFFERENT_FROM n4ind:14;
+  n4sch:id "Q1430192";
+  n4sch:text "undergraduate" .
+
+n4ind:14 a n4sch:Entity;
+  n4sch:text "graduate";
+  n4sch:id "Q508719";
+  n4sch:DIFFERENT_FROM n4ind:13 .
+
+n4ind:15 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:7;
+  n4sch:id "course abstraction";
+  n4sch:text "course abstraction" .
+
+n4ind:19 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:574;
+  n4sch:id "Q1725664";
+  n4sch:text "terminology" .
+
+n4ind:574 a n4sch:Entity;
+  n4sch:id "Q151885";
+  n4sch:text "concepts" .
+
+n4ind:35 a n4sch:Entity;
+  n4sch:text "search strategy";
+  n4sch:id "Q37117680";
+  n4sch:HAS_EFFECT n4ind:20 .
+
+n4ind:20 a n4sch:Entity;
+  n4sch:text "problem solving";
+  n4sch:id "Q730920";
+  n4sch:HAS_CAUSE n4ind:35, n4ind:21;
+  n4sch:STUDIES n4ind:21;
+  n4sch:SUBCLASS_OF n4ind:21, n4ind:581;
+  n4sch:PART_OF n4ind:21, n4ind:584 .
+
+n4ind:581 a n4sch:Entity;
+  n4sch:text "technique";
+  n4sch:id "Q2695280" .
+
+n4ind:584 a n4sch:Entity;
+  n4sch:text "problem formulation";
+  n4sch:id "Q33833841" .
+
+n4ind:220 a n4sch:Entity;
+  n4sch:text "strategy";
+  n4sch:id "Q185451" .
+
+n4ind:22 a n4sch:Entity;
+  n4sch:id "Q36500248";
+  n4sch:text "tools";
+  n4sch:DIFFERENT_FROM n4ind:23;
+  n4sch:USE n4ind:609 .
+
+n4ind:23 a n4sch:Entity;
+  n4sch:text "processes";
+  n4sch:id "Q27726347";
+  n4sch:DIFFERENT_FROM n4ind:22 .
+
+n4ind:609 a n4sch:Entity;
+  n4sch:id "Q204374";
+  n4sch:text "help" .
+
+n4ind:24 a n4sch:Entity;
+  n4sch:id "Q3700279";
+  n4sch:text "disciplines";
+  n4sch:STUDIES n4ind:21 .
+
+n4ind:25 a n4sch:Entity;
+  n4sch:text "problem solving techniques";
+  n4sch:SUBCLASS_OF n4ind:575;
+  n4sch:id "Q46000269" .
+
+n4ind:575 a n4sch:Entity;
+  n4sch:text "methodology";
+  n4sch:id "Q185698" .
+
+n4ind:27 a n4sch:Entity;
+  n4sch:id "formulate a generic engineering problem";
+  n4sch:text "formulate a generic engineering problem";
+  n4sch:PART_OF n4ind:26 .
+
+n4ind:26 a n4sch:Entity;
+  n4sch:id "three-step process given below";
+  n4sch:HAS_PART n4ind:27, n4ind:29, n4ind:28;
+  n4sch:text "three-step process given below" .
+
+n4ind:29 a n4sch:Entity;
+  n4sch:id "design a solution search strategy";
+  n4sch:text "design a solution search strategy";
+  n4sch:PART_OF n4ind:26 .
+
+n4ind:28 a n4sch:Entity;
+  n4sch:text "analyze a generic engineering problem";
+  n4sch:id "analyze a generic engineering problem";
+  n4sch:PART_OF n4ind:26 .
+
+n4ind:342 a n4sch:Entity;
+  n4sch:text "task";
+  n4sch:id "Q3414877" .
+
+n4ind:34 a n4sch:Entity;
+  n4sch:id "Q56038879";
+  n4sch:text "search for a solution";
+  n4sch:USES n4ind:30;
+  n4sch:SUBCLASS_OF n4ind:20 .
+
+n4ind:31 a n4sch:Entity;
+  n4sch:id "Q65066292";
+  n4sch:FACET_OF n4ind:21;
+  n4sch:text "solutions" .
+
+n4ind:32 a n4sch:Entity;
+  n4sch:id "Q7376362";
+  n4sch:HAS_PART n4ind:33;
+  n4sch:text "source" .
+
+n4ind:33 a n4sch:Entity;
+  n4sch:id "Q2574811";
+  n4sch:text "cause";
+  n4sch:PART_OF n4ind:32 .
+
+n4ind:38 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:39;
+  n4sch:text "solving a problem using a computer";
+  n4sch:id "solving a problem using a computer" .
+
+n4ind:39 a n4sch:Entity;
+  n4sch:id "determine what to tell a computer to do";
+  n4sch:text "determine what to tell a computer to do";
+  n4sch:PART_OF n4ind:38 .
+
+n4ind:40 a n4sch:Entity;
+  n4sch:text "problem transformation";
+  n4sch:id "Q58761641";
+  n4sch:SUBCLASS_OF n4ind:578 .
+
+n4ind:578 a n4sch:Entity;
+  n4sch:text "problem solution";
+  n4sch:id "Q52370294" .
+
+n4ind:579 a n4sch:Entity;
+  n4sch:text "transformation of algorithms to program code";
+  n4sch:id "transformation of algorithms to program code" .
+
+n4ind:42 a n4sch:Entity;
+  n4sch:id "application of algorithms to a problem expressed in natural language";
+  n4sch:SUBCLASS_OF n4ind:579;
+  n4sch:text "application of algorithms to a problem expressed in natural language" .
+
+n4ind:580 a n4sch:Entity;
+  n4sch:text "decomposing";
+  n4sch:id "Q28532873" .
+
+n4ind:44 a n4sch:Entity;
+  n4sch:text "iterative";
+  n4sch:SUBCLASS_OF n4ind:580;
+  n4sch:id "Q2866772" .
+
+n4ind:45 a n4sch:Entity;
+  n4sch:id "observable phenomenon";
+  n4sch:SUBCLASS_OF n4ind:574;
+  n4sch:text "observable phenomenon" .
+
+n4ind:46 a n4sch:Entity;
+  n4sch:id "Q11023";
+  n4sch:text "engineering";
+  n4sch:STUDIES n4ind:47 .
+
+n4ind:47 a n4sch:Entity;
+  n4sch:text "levels of abstraction";
+  n4sch:id "Q43855220";
+  n4sch:STUDIED_BY n4ind:46 .
+
+n4ind:48 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:346;
+  n4sch:id "Q37102202";
+  n4sch:text "conceptual understanding" .
+
+n4ind:346 a n4sch:Entity;
+  n4sch:text "abstraction";
+  n4sch:id "Q162150" .
+
+n4ind:49 a n4sch:Entity;
+  n4sch:text "design";
+  n4sch:id "Q82604";
+  n4sch:PART_OF n4ind:71;
+  n4sch:HAS_PART n4ind:50 .
+
+n4ind:50 a n4sch:Entity;
+  n4sch:id "Q57650756";
+  n4sch:text "design solution";
+  n4sch:PART_OF n4ind:49 .
+
+n4ind:51 a n4sch:Entity;
+  n4sch:id "Q99194310";
+  n4sch:text "abstracting";
+  n4sch:STUDIES n4ind:52 .
+
+n4ind:52 a n4sch:Entity;
+  n4sch:id "Q339045";
+  n4sch:text "big picture";
+  n4sch:STUDIED_BY n4ind:51 .
+
+n4ind:582 a n4sch:Entity;
+  n4sch:text "interfaces";
+  n4sch:id "Q15709451" .
+
+n4ind:53 a n4sch:Entity;
+  n4sch:text "apis";
+  n4sch:id "Q102857";
+  n4sch:INSTANCE_OF n4ind:582 .
+
+n4ind:54 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:346;
+  n4sch:id "Q1305241";
+  n4sch:text "encapsulation" .
+
+n4ind:55 a n4sch:Entity;
+  n4sch:id "Q1047541";
+  n4sch:text "encapsulated";
+  n4sch:SUBCLASS_OF n4ind:346 .
+
+n4ind:56 a n4sch:Entity;
+  n4sch:id "Q15912075";
+  n4sch:text "information hiding";
+  n4sch:SUBCLASS_OF n4ind:54 .
+
+n4ind:583 a n4sch:Entity;
+  n4sch:id "Q223557";
+  n4sch:text "object" .
+
+n4ind:57 a n4sch:Entity;
+  n4sch:id "operations on an object";
+  n4sch:PART_OF n4ind:583;
+  n4sch:text "operations on an object" .
+
+n4ind:58 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:586, n4ind:585;
+  n4sch:id "Q188619";
+  n4sch:text "hierarchy";
+  n4sch:HAS_PART n4ind:59 .
+
+n4ind:586 a n4sch:Entity;
+  n4sch:text "task decomposition";
+  n4sch:id "Q50141510" .
+
+n4ind:585 a n4sch:Entity;
+  n4sch:id "Q77602536";
+  n4sch:text "abstractions" .
+
+n4ind:59 a n4sch:Entity;
+  n4sch:id "Q806617";
+  n4sch:text "layer";
+  n4sch:USES n4ind:467;
+  n4sch:PART_OF n4ind:58 .
+
+n4ind:467 a n4sch:Entity;
+  n4sch:text "protocol";
+  n4sch:id "Q131569" .
+
+n4ind:63 a n4sch:Entity;
+  n4sch:text "upmost layer";
+  n4sch:id "upmost layer";
+  n4sch:PART_OF n4ind:60 .
+
+n4ind:60 a n4sch:Entity;
+  n4sch:id "hierarchy of abstraction";
+  n4sch:text "hierarchy of abstraction";
+  n4sch:HAS_PART n4ind:63, n4ind:64, n4ind:61, n4ind:62 .
+
+n4ind:64 a n4sch:Entity;
+  n4sch:id "bottommost layer";
+  n4sch:text "bottommost layer";
+  n4sch:PART_OF n4ind:60 .
+
+n4ind:61 a n4sch:Entity;
+  n4sch:id "predecessor layer";
+  n4sch:text "predecessor layer";
+  n4sch:PART_OF n4ind:60 .
+
+n4ind:62 a n4sch:Entity;
+  n4sch:text "successor layer";
+  n4sch:id "successor layer";
+  n4sch:PART_OF n4ind:60 .
+
+n4ind:65 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:60;
+  n4sch:id "Q57428522";
+  n4sch:text "tree-like structure" .
+
+n4ind:66 a n4sch:Entity;
+  n4sch:text "loop";
+  n4sch:PART_OF n4ind:58;
+  n4sch:id "Q510662" .
+
+n4ind:67 a n4sch:Entity;
+  n4sch:id "hierarchical structure of tasks-subtasks";
+  n4sch:SUBCLASS_OF n4ind:587;
+  n4sch:text "hierarchical structure of tasks-subtasks" .
+
+n4ind:587 a n4sch:Entity;
+  n4sch:text "hierarchical";
+  n4sch:id "Q197536" .
+
+n4ind:68 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:588;
+  n4sch:id "alternate abstractions";
+  n4sch:text "alternate abstractions" .
+
+n4ind:588 a n4sch:Entity;
+  n4sch:text "perspectives";
+  n4sch:id "Q27708726" .
+
+n4ind:69 a n4sch:Entity;
+  n4sch:id "Q664166";
+  n4sch:SUBCLASS_OF n4ind:589;
+  n4sch:text "class diagram" .
+
+n4ind:589 a n4sch:Entity;
+  n4sch:id "Q1391624";
+  n4sch:text "sequence diagram" .
+
+n4ind:70 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:585;
+  n4sch:text "alternate";
+  n4sch:id "Q148742" .
+
+n4ind:104 a n4sch:Entity;
+  n4sch:id "Q1057179";
+  n4sch:text "instructions";
+  n4sch:PART_OF n4ind:72;
+  n4sch:USED_BY n4ind:117, n4ind:71 .
+
+n4ind:101 a n4sch:Entity;
+  n4sch:text "functional programming";
+  n4sch:id "Q193076";
+  n4sch:STUDIES n4ind:102;
+  n4sch:INSTANCE_OF n4ind:594;
+  n4sch:OPPOSITE_OF n4ind:103 .
+
+n4ind:521 a n4sch:Entity;
+  n4sch:text "comments";
+  n4sch:id "Q67416195" .
+
+n4ind:76 a n4sch:Entity;
+  n4sch:text "debugging";
+  n4sch:id "Q845566";
+  n4sch:SUBCLASS_OF n4ind:608;
+  n4sch:FACET_OF n4ind:72, n4ind:133, n4ind:526 .
+
+n4ind:74 a n4sch:Entity;
+  n4sch:id "Q37260";
+  n4sch:text "writing";
+  n4sch:PART_OF n4ind:71 .
+
+n4ind:336 a n4sch:Entity;
+  n4sch:id "Q64184577";
+  n4sch:text "applications" .
+
+n4ind:525 a n4sch:Entity;
+  n4sch:id "Q1792644";
+  n4sch:text "style" .
+
+n4ind:102 a n4sch:Entity;
+  n4sch:id "Q11348";
+  n4sch:text "mathematical function";
+  n4sch:PART_OF n4ind:72;
+  n4sch:HAS_PART n4ind:281;
+  n4sch:STUDIED_BY n4ind:101 .
+
+n4ind:130 a n4sch:Entity;
+  n4sch:id "Q531152";
+  n4sch:text "declarative programming";
+  n4sch:STUDIES n4ind:72;
+  n4sch:USE n4ind:540 .
+
+n4ind:314 a n4sch:Entity;
+  n4sch:id "Q47506";
+  n4sch:text "compiler" .
+
+n4ind:117 a n4sch:Entity;
+  n4sch:text "machine language";
+  n4sch:id "Q55813";
+  n4sch:USES n4ind:73, n4ind:104;
+  n4sch:FOLLOWS n4ind:318;
+  n4sch:DIFFERENT_FROM n4ind:116;
+  n4sch:USED_BY n4ind:119, n4ind:140 .
+
+n4ind:608 a n4sch:Entity;
+  n4sch:id "Q66741662";
+  n4sch:text "difficult" .
+
+n4ind:133 a n4sch:Entity;
+  n4sch:id "Q1390";
+  n4sch:text "bugs";
+  n4sch:HAS_CAUSE n4ind:134 .
+
+n4ind:526 a n4sch:Entity;
+  n4sch:text "coding";
+  n4sch:id "Q184759" .
+
+n4ind:595 a n4sch:Entity;
+  n4sch:id "Q2001982";
+  n4sch:text "notation" .
+
+n4ind:167 a n4sch:Entity;
+  n4sch:id "Q2429814";
+  n4sch:text "software system" .
+
+n4ind:325 a n4sch:Entity;
+  n4sch:text "grammar";
+  n4sch:id "Q8091" .
+
+n4ind:155 a n4sch:Entity;
+  n4sch:text "verifying";
+  n4sch:id "Q16127829" .
+
+n4ind:78 a n4sch:Entity;
+  n4sch:id "Q4115189";
+  n4sch:text "test";
+  n4sch:SUBCLASS_OF n4ind:155 .
+
+n4ind:79 a n4sch:Entity;
+  n4sch:text "maintain";
+  n4sch:SUBCLASS_OF n4ind:200;
+  n4sch:id "Q112683502" .
+
+n4ind:200 a n4sch:Entity;
+  n4sch:text "update";
+  n4sch:id "Q1076005" .
+
+n4ind:80 a n4sch:Entity;
+  n4sch:text "creative";
+  n4sch:id "Q667982";
+  n4sch:SUBCLASS_OF n4ind:71 .
+
+n4ind:90 a n4sch:Entity;
+  n4sch:id "Q7247166";
+  n4sch:text "procedures";
+  n4sch:PART_OF n4ind:81 .
+
+n4ind:82 a n4sch:Entity;
+  n4sch:text "requirements";
+  n4sch:id "Q190258";
+  n4sch:PART_OF n4ind:81 .
+
+n4ind:83 a n4sch:Entity;
+  n4sch:id "Q188267";
+  n4sch:text "programming paradigm";
+  n4sch:INSTANCE_OF n4ind:591;
+  n4sch:SUBCLASS_OF n4ind:590;
+  n4sch:FACET_OF n4ind:81 .
+
+n4ind:591 a n4sch:Entity;
+  n4sch:id "types of programming paradigms";
+  n4sch:text "types of programming paradigms" .
+
+n4ind:590 a n4sch:Entity;
+  n4sch:id "Q369577";
+  n4sch:text "standardization" .
+
+n4ind:84 a n4sch:Entity;
+  n4sch:id "Q312466";
+  n4sch:text "utility";
+  n4sch:SUBCLASS_OF n4ind:165 .
+
+n4ind:85 a n4sch:Entity;
+  n4sch:text "unstructured programming";
+  n4sch:SUBCLASS_OF n4ind:71;
+  n4sch:id "unstructured programming" .
+
+n4ind:86 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:71;
+  n4sch:id "Q7247152";
+  n4sch:text "procedural" .
+
+n4ind:87 a n4sch:Entity;
+  n4sch:id "Q22716";
+  n4sch:text "imperative";
+  n4sch:SUBCLASS_OF n4ind:71 .
+
+n4ind:88 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:89;
+  n4sch:text "control structure";
+  n4sch:id "Q27067613" .
+
+n4ind:98 a n4sch:Entity;
+  n4sch:id "Q1204997";
+  n4sch:text "business logic";
+  n4sch:HAS_PART n4ind:89 .
+
+n4ind:91 a n4sch:Entity;
+  n4sch:text "structured programming";
+  n4sch:PRACTICED_BY n4ind:92;
+  n4sch:id "Q223335" .
+
+n4ind:92 a n4sch:Entity;
+  n4sch:id "Q109795339";
+  n4sch:text "programmers";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:91, n4ind:536, n4ind:129 .
+
+n4ind:536 a n4sch:Entity;
+  n4sch:id "Q58087793";
+  n4sch:text "maintaining" .
+
+n4ind:129 a n4sch:Entity;
+  n4sch:text "implementation";
+  n4sch:id "Q245962";
+  n4sch:PRACTICED_BY n4ind:92 .
+
+n4ind:93 a n4sch:Entity;
+  n4sch:id "Q21161338";
+  n4sch:text "protocols";
+  n4sch:SUBCLASS_OF n4ind:592;
+  n4sch:PART_OF n4ind:2 .
+
+n4ind:592 a n4sch:Entity;
+  n4sch:id "Q99621493";
+  n4sch:text "rules of thumb" .
+
+n4ind:96 a n4sch:Entity;
+  n4sch:text "objects";
+  n4sch:id "Q488383";
+  n4sch:STUDIED_BY n4ind:94 .
+
+n4ind:94 a n4sch:Entity;
+  n4sch:text "object-oriented programming";
+  n4sch:id "Q79872";
+  n4sch:STUDIES n4ind:96;
+  n4sch:INSTANCE_OF n4ind:83;
+  n4sch:OPPOSITE_OF n4ind:95 .
+
+n4ind:95 a n4sch:Entity;
+  n4sch:id "Q1418502";
+  n4sch:text "procedural programming";
+  n4sch:OPPOSITE_OF n4ind:94 .
+
+n4ind:97 a n4sch:Entity;
+  n4sch:text "aspect-oriented programming";
+  n4sch:id "Q30267";
+  n4sch:INSTANCE_OF n4ind:83 .
+
+n4ind:99 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:94;
+  n4sch:id "object tangling and scattering";
+  n4sch:text "object tangling and scattering" .
+
+n4ind:593 a n4sch:Entity;
+  n4sch:id "Q90917692";
+  n4sch:text "functional concerns" .
+
+n4ind:100 a n4sch:Entity;
+  n4sch:id "Q2465506";
+  n4sch:FACET_OF n4ind:593;
+  n4sch:text "separation of concerns" .
+
+n4ind:594 a n4sch:Entity;
+  n4sch:text "paradigms";
+  n4sch:id "Q50806774" .
+
+n4ind:103 a n4sch:Entity;
+  n4sch:id "Q275596";
+  n4sch:text "imperative programming";
+  n4sch:OPPOSITE_OF n4ind:101 .
+
+n4ind:281 a n4sch:Entity;
+  n4sch:id "Q8078";
+  n4sch:text "logic" .
+
+n4ind:105 a n4sch:Entity;
+  n4sch:DIFFERENT_FROM n4ind:106;
+  n4sch:text "importance";
+  n4sch:id "Q1422583" .
+
+n4ind:106 a n4sch:Entity;
+  n4sch:id "Q1357284";
+  n4sch:text "popularity";
+  n4sch:DIFFERENT_FROM n4ind:105 .
+
+n4ind:107 a n4sch:Entity;
+  n4sch:text "specification document";
+  n4sch:id "specification document";
+  n4sch:AUTHOR n4ind:596 .
+
+n4ind:596 a n4sch:Entity;
+  n4sch:id "Q43229";
+  n4sch:text "organization" .
+
+n4ind:108 a n4sch:Entity;
+  n4sch:id "Q85547147";
+  n4sch:text "iso/iec 9899";
+  n4sch:INSTANCE_OF n4ind:597 .
+
+n4ind:597 a n4sch:Entity;
+  n4sch:text "iso standard";
+  n4sch:id "Q15087423" .
+
+n4ind:109 a n4sch:Entity;
+  n4sch:text "syntax";
+  n4sch:PART_OF n4ind:77, n4ind:110;
+  n4sch:id "Q37437" .
+
+n4ind:110 a n4sch:Entity;
+  n4sch:id "Q39645";
+  n4sch:text "semantics";
+  n4sch:PART_OF n4ind:77;
+  n4sch:HAS_PART n4ind:109 .
+
+n4ind:111 a n4sch:Entity;
+  n4sch:text "constants";
+  n4sch:SUBCLASS_OF n4ind:112, n4ind:598;
+  n4sch:id "Q5163903" .
+
+n4ind:112 a n4sch:Entity;
+  n4sch:id "Q23929619";
+  n4sch:text "variables";
+  n4sch:SUBCLASS_OF n4ind:598 .
+
+n4ind:598 a n4sch:Entity;
+  n4sch:id "Q31136576";
+  n4sch:text "data types" .
+
+n4ind:113 a n4sch:Entity;
+  n4sch:text "literals";
+  n4sch:SUBCLASS_OF n4ind:598;
+  n4sch:id "Q7363315" .
+
+n4ind:114 a n4sch:Entity;
+  n4sch:text "low-level languages";
+  n4sch:id "low-level languages";
+  n4sch:SUBCLASS_OF n4ind:77 .
+
+n4ind:115 a n4sch:Entity;
+  n4sch:id "Q60049714";
+  n4sch:text "high-level languages";
+  n4sch:SUBCLASS_OF n4ind:77 .
+
+n4ind:116 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:117;
+  n4sch:text "assembly language";
+  n4sch:id "Q165436";
+  n4sch:DIFFERENT_FROM n4ind:117 .
+
+n4ind:318 a n4sch:Entity;
+  n4sch:id "high level language code";
+  n4sch:text "high level language code" .
+
+n4ind:119 a n4sch:Entity;
+  n4sch:text "instruction set architecture";
+  n4sch:id "Q272683";
+  n4sch:USES n4ind:117;
+  n4sch:PART_OF n4ind:2;
+  n4sch:DIFFERENT_FROM n4ind:120;
+  n4sch:HAS_PART n4ind:271;
+  n4sch:USED_BY n4ind:120 .
+
+n4ind:140 a n4sch:Entity;
+  n4sch:text "compilation";
+  n4sch:id "Q1614239";
+  n4sch:USES n4ind:117;
+  n4sch:SUBCLASS_OF n4ind:342;
+  n4sch:FACET_OF n4ind:117;
+  n4sch:USED_BY n4ind:314;
+  n4sch:PRACTICED_BY n4ind:314 .
+
+n4ind:118 a n4sch:Entity;
+  n4sch:id "Q6470767";
+  n4sch:text "assembler";
+  n4sch:USES n4ind:116 .
+
+n4ind:120 a n4sch:Entity;
+  n4sch:text "high-level programming language";
+  n4sch:id "Q211496";
+  n4sch:USES n4ind:119;
+  n4sch:SUBCLASS_OF n4ind:1;
+  n4sch:DIFFERENT_FROM n4ind:119;
+  n4sch:OPPOSITE_OF n4ind:121 .
+
+n4ind:271 a n4sch:Entity;
+  n4sch:text "memory architecture";
+  n4sch:id "Q15544750" .
+
+n4ind:121 a n4sch:Entity;
+  n4sch:id "Q558937";
+  n4sch:text "low-level programming language";
+  n4sch:OPPOSITE_OF n4ind:120 .
+
+n4ind:122 a n4sch:Entity;
+  n4sch:text "symbolic naming";
+  n4sch:FACET_OF n4ind:77;
+  n4sch:id "symbolic naming" .
+
+n4ind:123 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:120, n4ind:126;
+  n4sch:id "Q623";
+  n4sch:text "c" .
+
+n4ind:126 a n4sch:Entity;
+  n4sch:text "imperative programming language";
+  n4sch:id "Q21562092";
+  n4sch:SUBCLASS_OF n4ind:77;
+  n4sch:OPPOSITE_OF n4ind:127 .
+
+n4ind:124 a n4sch:Entity;
+  n4sch:id "Q251";
+  n4sch:INSTANCE_OF n4ind:120, n4ind:126;
+  n4sch:text "java" .
+
+n4ind:539 a n4sch:Entity;
+  n4sch:text "software software";
+  n4sch:id "software software" .
+
+n4ind:127 a n4sch:Entity;
+  n4sch:text "declarative programming language";
+  n4sch:id "Q1144882";
+  n4sch:SUBCLASS_OF n4ind:77;
+  n4sch:OPPOSITE_OF n4ind:126 .
+
+n4ind:128 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:115;
+  n4sch:text "declarative language";
+  n4sch:id "Q33727714" .
+
+n4ind:540 a n4sch:Entity;
+  n4sch:text "software development";
+  n4sch:id "Q638608" .
+
+n4ind:131 a n4sch:Entity;
+  n4sch:id "Q132874";
+  n4sch:text "lisp";
+  n4sch:INSTANCE_OF n4ind:127 .
+
+n4ind:132 a n4sch:Entity;
+  n4sch:text "prolog";
+  n4sch:id "Q163468";
+  n4sch:INSTANCE_OF n4ind:127 .
+
+n4ind:134 a n4sch:Entity;
+  n4sch:text "faults";
+  n4sch:id "Q17376347";
+  n4sch:HAS_EFFECT n4ind:133 .
+
+n4ind:135 a n4sch:Entity;
+  n4sch:text "syntactic error";
+  n4sch:id "syntactic error";
+  n4sch:SUBCLASS_OF n4ind:599 .
+
+n4ind:599 a n4sch:Entity;
+  n4sch:text "bugs or errors";
+  n4sch:id "bugs or errors" .
+
+n4ind:600 a n4sch:Entity;
+  n4sch:id "Q47089";
+  n4sch:text "fault" .
+
+n4ind:136 a n4sch:Entity;
+  n4sch:text "logical error";
+  n4sch:SUBCLASS_OF n4ind:600, n4ind:599;
+  n4sch:id "Q36106746" .
+
+n4ind:137 a n4sch:Entity;
+  n4sch:text "data error";
+  n4sch:SUBCLASS_OF n4ind:599;
+  n4sch:id "Q64097330" .
+
+n4ind:138 a n4sch:Entity;
+  n4sch:id "syntax errors";
+  n4sch:text "syntax errors";
+  n4sch:SUBCLASS_OF n4ind:142 .
+
+n4ind:142 a n4sch:Entity;
+  n4sch:id "Q29485";
+  n4sch:text "wrong";
+  n4sch:HAS_CAUSE n4ind:160 .
+
+n4ind:139 a n4sch:Entity;
+  n4sch:USE n4ind:601;
+  n4sch:id "parse-able";
+  n4sch:text "parse-able" .
+
+n4ind:601 a n4sch:Entity;
+  n4sch:text "interpreted";
+  n4sch:id "Q1993334" .
+
+n4ind:141 a n4sch:Entity;
+  n4sch:text "legal";
+  n4sch:OPPOSITE_OF n4ind:142;
+  n4sch:id "Q2210557" .
+
+n4ind:160 a n4sch:Entity;
+  n4sch:text "changed";
+  n4sch:id "Q5071900";
+  n4sch:HAS_EFFECT n4ind:142 .
+
+n4ind:142 n4sch:OPPOSITE_OF n4ind:141 .
+
+n4ind:143 a n4sch:Entity;
+  n4sch:id "Q7901839";
+  n4sch:FACET_OF n4ind:30;
+  n4sch:text "user expectations" .
+
+n4ind:144 a n4sch:Entity;
+  n4sch:text "static checkers";
+  n4sch:id "static checkers";
+  n4sch:FACET_OF n4ind:602 .
+
+n4ind:602 a n4sch:Entity;
+  n4sch:id "Q3732599";
+  n4sch:text "errors" .
+
+n4ind:145 a n4sch:Entity;
+  n4sch:text "machine checkable";
+  n4sch:FACET_OF n4ind:142;
+  n4sch:id "machine checkable" .
+
+n4ind:603 a n4sch:Entity;
+  n4sch:id "Q84572019";
+  n4sch:text "input error" .
+
+n4ind:146 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:603;
+  n4sch:id "Q91549548";
+  n4sch:text "data errors" .
+
+n4ind:147 a n4sch:Entity;
+  n4sch:text "static";
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:id "Q1940914";
+  n4sch:SUBCLASS_OF n4ind:76 .
+
+n4ind:148 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:76;
+  n4sch:text "dynamic";
+  n4sch:id "Q1268978" .
+
+n4ind:149 a n4sch:Entity;
+  n4sch:text "postmortem";
+  n4sch:SUBCLASS_OF n4ind:76;
+  n4sch:id "Q1673259" .
+
+n4ind:150 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:161, n4ind:604;
+  n4sch:id "Q322229";
+  n4sch:text "tracing" .
+
+n4ind:161 a n4sch:Entity;
+  n4sch:id "Q5318964";
+  n4sch:text "dynamic debugging";
+  n4sch:SUBCLASS_OF n4ind:610 .
+
+n4ind:604 a n4sch:Entity;
+  n4sch:text "testing";
+  n4sch:id "Q1003030" .
+
+n4ind:605 a n4sch:Entity;
+  n4sch:text "process";
+  n4sch:id "Q10843872" .
+
+n4ind:151 a n4sch:Entity;
+  n4sch:text "terminated";
+  n4sch:SUBCLASS_OF n4ind:605;
+  n4sch:id "Q76649944" .
+
+n4ind:152 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:606;
+  n4sch:text "program development";
+  n4sch:id "Q67201705" .
+
+n4ind:606 a n4sch:Entity;
+  n4sch:id "Q1945023";
+  n4sch:text "stages" .
+
+n4ind:153 a n4sch:Entity;
+  n4sch:text "trace";
+  n4sch:id "Q321102";
+  n4sch:FACET_OF n4ind:72 .
+
+n4ind:607 a n4sch:Entity;
+  n4sch:text "instruction";
+  n4sch:id "Q352842" .
+
+n4ind:154 a n4sch:Entity;
+  n4sch:id "single-stepping";
+  n4sch:USES n4ind:607;
+  n4sch:text "single-stepping" .
+
+n4ind:155 n4sch:FACET_OF n4ind:72 .
+
+n4ind:156 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:607;
+  n4sch:id "stop executing";
+  n4sch:text "stop executing" .
+
+n4ind:157 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:165;
+  n4sch:text "execution behavior";
+  n4sch:id "Q59045490" .
+
+n4ind:158 a n4sch:Entity;
+  n4sch:text "register";
+  n4sch:DIFFERENT_FROM n4ind:159;
+  n4sch:id "Q19386377" .
+
+n4ind:159 a n4sch:Entity;
+  n4sch:id "memory location";
+  n4sch:text "memory location";
+  n4sch:DIFFERENT_FROM n4ind:158 .
+
+n4ind:610 a n4sch:Entity;
+  n4sch:id "Q193231";
+  n4sch:text "debugger" .
+
+n4ind:162 a n4sch:Entity;
+  n4sch:text "free";
+  n4sch:OPPOSITE_OF n4ind:611;
+  n4sch:id "Q1543615" .
+
+n4ind:611 a n4sch:Entity;
+  n4sch:id "Q854995";
+  n4sch:text "commercial" .
+
+n4ind:163 a n4sch:Entity;
+  n4sch:USE n4ind:612;
+  n4sch:id "unix lint program";
+  n4sch:text "unix lint program" .
+
+n4ind:612 a n4sch:Entity;
+  n4sch:text "lint";
+  n4sch:id "Q725268" .
+
+n4ind:164 n4sch:PART_OF n4ind:2, n4ind:382, n4ind:72;
+  n4sch:STUDIED_BY n4ind:9;
+  n4sch:USED_BY n4ind:72 .
+
+n4ind:165 n4sch:SUBCLASS_OF n4ind:9;
+  n4sch:PART_OF n4ind:2, n4ind:81;
+  n4sch:HAS_EFFECT n4ind:72;
+  n4sch:USED_BY n4ind:71 .
+
+n4ind:166 a n4sch:Entity;
+  n4sch:id "types of data structures";
+  n4sch:text "types of data structures";
+  n4sch:SUBCLASS_OF n4ind:9 .
+
+n4ind:167 n4sch:HAS_PART n4ind:77 .
+
+n4ind:168 a n4sch:Entity;
+  n4sch:id "Q3884033";
+  n4sch:text "operations";
+  n4sch:PART_OF n4ind:585 .
+
+n4ind:169 a n4sch:Entity;
+  n4sch:text "stacks";
+  n4sch:SUBCLASS_OF n4ind:9, n4ind:616;
+  n4sch:id "Q37243052" .
+
+n4ind:616 a n4sch:Entity;
+  n4sch:id "Q13406463";
+  n4sch:text "lists" .
+
+n4ind:170 a n4sch:Entity;
+  n4sch:text "queues";
+  n4sch:SUBCLASS_OF n4ind:9;
+  n4sch:id "Q56774050" .
+
+n4ind:171 a n4sch:Entity;
+  n4sch:id "Q180987";
+  n4sch:SUBCLASS_OF n4ind:9;
+  n4sch:text "heap" .
+
+n4ind:614 a n4sch:Entity;
+  n4sch:id "Q54042662";
+  n4sch:text "conceptual unity" .
+
+n4ind:172 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:614;
+  n4sch:id "Q82799";
+  n4sch:text "name" .
+
+n4ind:173 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:614;
+  n4sch:text "address";
+  n4sch:id "Q861911" .
+
+n4ind:174 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:9;
+  n4sch:id "Q735603";
+  n4sch:text "linear" .
+
+n4ind:175 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:9;
+  n4sch:text "nonlinear";
+  n4sch:id "Q2755024" .
+
+n4ind:176 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:text "heterogeneous";
+  n4sch:id "Q1152372" .
+
+n4ind:177 a n4sch:Entity;
+  n4sch:id "Q23611288";
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:text "persistent" .
+
+n4ind:178 a n4sch:Entity;
+  n4sch:text "transient";
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:id "Q47001369" .
+
+n4ind:179 a n4sch:Entity;
+  n4sch:text "recursive";
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:id "Q179976" .
+
+n4ind:180 a n4sch:Entity;
+  n4sch:id "Q1194697";
+  n4sch:text "passive";
+  n4sch:INSTANCE_OF n4ind:588 .
+
+n4ind:181 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:text "active";
+  n4sch:id "Q1317831" .
+
+n4ind:182 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:588;
+  n4sch:text "stateless";
+  n4sch:id "Q223050" .
+
+n4ind:183 a n4sch:Entity;
+  n4sch:text "classify";
+  n4sch:FACET_OF n4ind:9;
+  n4sch:id "Q64210831" .
+
+n4ind:615 a n4sch:Entity;
+  n4sch:id "Q413";
+  n4sch:text "physical" .
+
+n4ind:184 a n4sch:Entity;
+  n4sch:text "logical ordering";
+  n4sch:id "logical ordering";
+  n4sch:PART_OF n4ind:615 .
+
+n4ind:186 a n4sch:Entity;
+  n4sch:id "Q115470359";
+  n4sch:text "data item";
+  n4sch:PART_OF n4ind:185 .
+
+n4ind:185 a n4sch:Entity;
+  n4sch:text "linear structure";
+  n4sch:HAS_PART n4ind:186;
+  n4sch:id "Q16705689" .
+
+n4ind:187 a n4sch:Entity;
+  n4sch:id "Q106577963";
+  n4sch:FOLLOWED_BY n4ind:188;
+  n4sch:text "predecessor" .
+
+n4ind:188 a n4sch:Entity;
+  n4sch:text "successor";
+  n4sch:id "Q3504856";
+  n4sch:FOLLOWS n4ind:187 .
+
+n4ind:189 a n4sch:Entity;
+  n4sch:id "Q68086349";
+  n4sch:text "predecessors";
+  n4sch:FOLLOWED_BY n4ind:190 .
+
+n4ind:190 a n4sch:Entity;
+  n4sch:text "successors";
+  n4sch:id "Q55634158";
+  n4sch:FOLLOWS n4ind:189 .
+
+n4ind:617 a n4sch:Entity;
+  n4sch:text "tree";
+  n4sch:id "Q10884" .
+
+n4ind:191 a n4sch:Entity;
+  n4sch:text "binary tree";
+  n4sch:SUBCLASS_OF n4ind:617;
+  n4sch:id "Q380172" .
+
+n4ind:192 a n4sch:Entity;
+  n4sch:text "balance tree";
+  n4sch:id "Q37604562";
+  n4sch:SUBCLASS_OF n4ind:617 .
+
+n4ind:193 a n4sch:Entity;
+  n4sch:text "b-tree";
+  n4sch:id "Q677051";
+  n4sch:SUBCLASS_OF n4ind:617 .
+
+n4ind:194 a n4sch:Entity;
+  n4sch:id "Q72598275";
+  n4sch:text "compound structure";
+  n4sch:SUBCLASS_OF n4ind:9 .
+
+n4ind:195 a n4sch:Entity;
+  n4sch:id "compound data structure";
+  n4sch:text "compound data structure";
+  n4sch:SUBCLASS_OF n4ind:9 .
+
+n4ind:196 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:618;
+  n4sch:id "Q20200544";
+  n4sch:text "partitions" .
+
+n4ind:618 a n4sch:Entity;
+  n4sch:id "Q141488";
+  n4sch:text "graphs" .
+
+n4ind:197 a n4sch:Entity;
+  n4sch:text "ordering";
+  n4sch:id "Q2303697";
+  n4sch:PART_OF n4ind:9 .
+
+n4ind:198 a n4sch:Entity;
+  n4sch:text "create";
+  n4sch:id "Q4953270";
+  n4sch:INSTANCE_OF n4ind:619;
+  n4sch:SUBCLASS_OF n4ind:620 .
+
+n4ind:619 a n4sch:Entity;
+  n4sch:text "basic operations";
+  n4sch:id "Q33647609" .
+
+n4ind:620 a n4sch:Entity;
+  n4sch:id "Q918751";
+  n4sch:text "data entry" .
+
+n4ind:199 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:619;
+  n4sch:text "read";
+  n4sch:id "Q16881915";
+  n4sch:SUBCLASS_OF n4ind:620 .
+
+n4ind:200 n4sch:INSTANCE_OF n4ind:619;
+  n4sch:SUBCLASS_OF n4ind:620 .
+
+n4ind:201 a n4sch:Entity;
+  n4sch:text "delete";
+  n4sch:id "Q1339493";
+  n4sch:INSTANCE_OF n4ind:619 .
+
+n4ind:202 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:203;
+  n4sch:id "Q811979";
+  n4sch:text "structure" .
+
+n4ind:203 a n4sch:Entity;
+  n4sch:text "some";
+  n4sch:id "Q23635";
+  n4sch:PART_OF n4ind:202 .
+
+n4ind:204 a n4sch:Entity;
+  n4sch:text "rebalance";
+  n4sch:id "Q107510738";
+  n4sch:SUBCLASS_OF n4ind:9 .
+
+n4ind:205 a n4sch:Entity;
+  n4sch:text "efficiency";
+  n4sch:id "Q1034411";
+  n4sch:SUBCLASS_OF n4ind:625;
+  n4sch:FACET_OF n4ind:168 .
+
+n4ind:625 a n4sch:Entity;
+  n4sch:text "performance";
+  n4sch:id "Q35140" .
+
+n4ind:206 a n4sch:Entity;
+  n4sch:text "operation efficiency";
+  n4sch:SUBCLASS_OF n4ind:621;
+  n4sch:id "Q45277765" .
+
+n4ind:621 a n4sch:Entity;
+  n4sch:text "significant";
+  n4sch:id "Q4993710" .
+
+n4ind:207 a n4sch:Entity;
+  n4sch:id "Q508291";
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:text "simple" .
+
+n4ind:208 a n4sch:Entity;
+  n4sch:text "complex";
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:id "Q1497375" .
+
+n4ind:209 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:623;
+  n4sch:text "different definitions";
+  n4sch:id "Q36305487" .
+
+n4ind:623 a n4sch:Entity;
+  n4sch:text "favored by different people";
+  n4sch:id "favored by different people" .
+
+n4ind:210 a n4sch:Entity;
+  n4sch:text "finite";
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:id "Q220184" .
+
+n4ind:211 a n4sch:Entity;
+  n4sch:id "Q403605";
+  n4sch:text "robustness";
+  n4sch:SUBCLASS_OF n4ind:1, n4ind:692, n4ind:624 .
+
+n4ind:692 a n4sch:Entity;
+  n4sch:id "human-user factors";
+  n4sch:text "human-user factors" .
+
+n4ind:624 a n4sch:Entity;
+  n4sch:id "Q1389965";
+  n4sch:text "maintainability" .
+
+n4ind:626 a n4sch:Entity;
+  n4sch:id "Q97985090";
+  n4sch:text "feasible" .
+
+n4ind:212 a n4sch:Entity;
+  n4sch:OPPOSITE_OF n4ind:626;
+  n4sch:id "Q2029180";
+  n4sch:text "impractical" .
+
+n4ind:627 a n4sch:Entity;
+  n4sch:text "asymptotic";
+  n4sch:id "Q100712239" .
+
+n4ind:213 a n4sch:Entity;
+  n4sch:id "machine-independent analysis";
+  n4sch:text "machine-independent analysis";
+  n4sch:SUBCLASS_OF n4ind:627 .
+
+n4ind:214 a n4sch:Entity;
+  n4sch:text "types of analysis";
+  n4sch:id "types of analysis";
+  n4sch:SUBCLASS_OF n4ind:628 .
+
+n4ind:628 a n4sch:Entity;
+  n4sch:id "Q7754";
+  n4sch:text "analysis" .
+
+n4ind:629 a n4sch:Entity;
+  n4sch:text "three types of analysis";
+  n4sch:id "three types of analysis" .
+
+n4ind:215 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:629;
+  n4sch:text "average-case analysis";
+  n4sch:id "Q112869759" .
+
+n4ind:216 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:id "Q3611576";
+  n4sch:text "optimal algorithm" .
+
+n4ind:217 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:id "Q187686";
+  n4sch:text "brute force" .
+
+n4ind:218 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:text "divide and conquer";
+  n4sch:id "Q671298";
+  n4sch:DIFFERENT_FROM n4ind:224 .
+
+n4ind:224 a n4sch:Entity;
+  n4sch:text "divide and conquer strategy";
+  n4sch:id "Q98826925";
+  n4sch:DIFFERENT_FROM n4ind:218 .
+
+n4ind:219 a n4sch:Entity;
+  n4sch:id "Q33530105";
+  n4sch:SUBCLASS_OF n4ind:10;
+  n4sch:text "greedy selection" .
+
+n4ind:220 n4sch:STUDIES n4ind:21 .
+
+n4ind:221 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:223, n4ind:222;
+  n4sch:id "Q114514519";
+  n4sch:text "big problem" .
+
+n4ind:223 a n4sch:Entity;
+  n4sch:id "combing the solutions to smaller, homogeneous problems";
+  n4sch:text "combing the solutions to smaller, homogeneous problems";
+  n4sch:PART_OF n4ind:221 .
+
+n4ind:222 a n4sch:Entity;
+  n4sch:id "smaller, homogeneous problems";
+  n4sch:text "smaller, homogeneous problems";
+  n4sch:PART_OF n4ind:221;
+  n4sch:HAS_PART n4ind:223 .
+
+n4ind:225 a n4sch:Entity;
+  n4sch:id "Q169534";
+  n4sch:SUBCLASS_OF n4ind:630;
+  n4sch:text "division";
+  n4sch:PART_OF n4ind:298 .
+
+n4ind:630 a n4sch:Entity;
+  n4sch:id "sub-problems";
+  n4sch:text "sub-problems" .
+
+n4ind:298 a n4sch:Entity;
+  n4sch:id "Q192903";
+  n4sch:text "arithmetic and logic unit";
+  n4sch:HAS_PART n4ind:300, n4ind:301, n4ind:281, n4ind:225, n4ind:299, n4ind:297 .
+
+n4ind:226 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:205;
+  n4sch:id "redundant subproblems";
+  n4sch:text "redundant subproblems" .
+
+n4ind:228 a n4sch:Entity;
+  n4sch:id "Q1";
+  n4sch:text "system";
+  n4sch:HAS_PART n4ind:227 .
+
+n4ind:227 a n4sch:Entity;
+  n4sch:PART_OF n4ind:228;
+  n4sch:id "interrelated components";
+  n4sch:text "interrelated components" .
+
+n4ind:234 a n4sch:Entity;
+  n4sch:id "Q7682878";
+  n4sch:text "components";
+  n4sch:PART_OF n4ind:228 .
+
+n4ind:229 a n4sch:Entity;
+  n4sch:text "ink pen";
+  n4sch:SUBCLASS_OF n4ind:234;
+  n4sch:id "Q6034503" .
+
+n4ind:230 a n4sch:Entity;
+  n4sch:text "socio-technical system";
+  n4sch:SUBCLASS_OF n4ind:632;
+  n4sch:id "Q106392313" .
+
+n4ind:632 a n4sch:Entity;
+  n4sch:id "technical computer-based system";
+  n4sch:text "technical computer-based system" .
+
+n4ind:633 a n4sch:Entity;
+  n4sch:id "manned space vehicle";
+  n4sch:text "manned space vehicle" .
+
+n4ind:231 a n4sch:Entity;
+  n4sch:PART_OF n4ind:633;
+  n4sch:id "chips embedded inside a human";
+  n4sch:text "chips embedded inside a human" .
+
+n4ind:233 a n4sch:Entity;
+  n4sch:id "Q45085932";
+  n4sch:text "parts";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:232 .
+
+n4ind:232 a n4sch:Entity;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:233;
+  n4sch:id "Q911493";
+  n4sch:text "sum" .
+
+n4ind:235 a n4sch:Entity;
+  n4sch:text "properties";
+  n4sch:id "Q106356012";
+  n4sch:PART_OF n4ind:228 .
+
+n4ind:236 a n4sch:Entity;
+  n4sch:text "functional";
+  n4sch:SUBCLASS_OF n4ind:235;
+  n4sch:id "Q579600" .
+
+n4ind:237 a n4sch:Entity;
+  n4sch:id "Q54976355";
+  n4sch:text "nonfunctional";
+  n4sch:SUBCLASS_OF n4ind:235 .
+
+n4ind:238 a n4sch:Entity;
+  n4sch:id "Q112883432";
+  n4sch:PART_OF n4ind:228;
+  n4sch:text "functional properties" .
+
+n4ind:239 a n4sch:Entity;
+  n4sch:PART_OF n4ind:634;
+  n4sch:id "Q319224";
+  n4sch:text "cargo" .
+
+n4ind:634 a n4sch:Entity;
+  n4sch:id "Q11436";
+  n4sch:text "aircraft" .
+
+n4ind:635 a n4sch:Entity;
+  n4sch:text "operational environment";
+  n4sch:id "operational environment" .
+
+n4ind:240 a n4sch:Entity;
+  n4sch:text "nonfunctional properties";
+  n4sch:FACET_OF n4ind:635;
+  n4sch:id "nonfunctional properties" .
+
+n4ind:241 a n4sch:Entity;
+  n4sch:id "Q1319773";
+  n4sch:text "consistency";
+  n4sch:SUBCLASS_OF n4ind:240 .
+
+n4ind:242 a n4sch:Entity;
+  n4sch:text "capacity";
+  n4sch:SUBCLASS_OF n4ind:240;
+  n4sch:id "Q1347367" .
+
+n4ind:243 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:240;
+  n4sch:text "weight";
+  n4sch:id "Q11423" .
+
+n4ind:244 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:240;
+  n4sch:id "Q2526135";
+  n4sch:text "security" .
+
+n4ind:245 a n4sch:Entity;
+  n4sch:id "Q569612";
+  n4sch:text "technical";
+  n4sch:HAS_PART n4ind:636 .
+
+n4ind:636 a n4sch:Entity;
+  n4sch:text "systems engineering";
+  n4sch:id "Q682496" .
+
+n4ind:246 a n4sch:Entity;
+  n4sch:text "managerial";
+  n4sch:id "Q2990807";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:636 .
+
+n4ind:247 a n4sch:Entity;
+  n4sch:PART_OF n4ind:636;
+  n4sch:text "system design";
+  n4sch:id "Q11307190" .
+
+n4ind:248 a n4sch:Entity;
+  n4sch:PART_OF n4ind:636;
+  n4sch:text "sub-system development";
+  n4sch:id "sub-system development" .
+
+n4ind:249 a n4sch:Entity;
+  n4sch:PART_OF n4ind:636;
+  n4sch:id "Q1665453";
+  n4sch:text "system integration" .
+
+n4ind:250 a n4sch:Entity;
+  n4sch:PART_OF n4ind:636;
+  n4sch:id "Q1199682";
+  n4sch:text "system testing" .
+
+n4ind:251 a n4sch:Entity;
+  n4sch:id "sub-system interface";
+  n4sch:PART_OF n4ind:247;
+  n4sch:text "sub-system interface" .
+
+n4ind:260 a n4sch:Entity;
+  n4sch:id "Q189088";
+  n4sch:text "von neumann model";
+  n4sch:HAS_PART n4ind:262, n4ind:261 .
+
+n4ind:252 n4sch:BASED_ON n4ind:260;
+  n4sch:HAS_PART n4ind:1;
+  n4sch:STUDIED_BY n4ind:5 .
+
+n4ind:253 a n4sch:Entity;
+  n4sch:text "electronic components";
+  n4sch:id "Q5570655";
+  n4sch:HAS_PART n4ind:637 .
+
+n4ind:637 a n4sch:Entity;
+  n4sch:text "mechanical";
+  n4sch:id "Q101333" .
+
+n4ind:254 n4sch:SUBCLASS_OF n4ind:3;
+  n4sch:PART_OF n4ind:2, n4ind:1;
+  n4sch:HAS_EFFECT n4ind:255;
+  n4sch:DIFFERENT_FROM n4ind:255;
+  n4sch:OPPOSITE_OF n4ind:255;
+  n4sch:USED_BY n4ind:2 .
+
+n4ind:255 n4sch:HAS_CAUSE n4ind:254;
+  n4sch:PART_OF n4ind:697, n4ind:2, n4ind:1;
+  n4sch:DIFFERENT_FROM n4ind:254;
+  n4sch:OPPOSITE_OF n4ind:254 .
+
+n4ind:697 a n4sch:Entity;
+  n4sch:id "Q5290";
+  n4sch:text "display" .
+
+n4ind:256 a n4sch:Entity;
+  n4sch:id "Q52042072";
+  n4sch:text "universal equivalence";
+  n4sch:INSTANCE_OF n4ind:638 .
+
+n4ind:638 a n4sch:Entity;
+  n4sch:id "Q30295815";
+  n4sch:text "functionality" .
+
+n4ind:257 a n4sch:Entity;
+  n4sch:STUDIES n4ind:258;
+  n4sch:id "Q7251";
+  n4sch:text "turing" .
+
+n4ind:258 n4sch:USES n4ind:2;
+  n4sch:STUDIED_BY n4ind:257 .
+
+n4ind:259 a n4sch:Entity;
+  n4sch:text "supercomputer";
+  n4sch:id "Q121117";
+  n4sch:SUBCLASS_OF n4ind:2 .
+
+n4ind:262 a n4sch:Entity;
+  n4sch:id "Q676838";
+  n4sch:text "control unit";
+  n4sch:PART_OF n4ind:260, n4ind:2 .
+
+n4ind:405 a n4sch:Entity;
+  n4sch:text "storage";
+  n4sch:id "Q66221" .
+
+n4ind:261 n4sch:SUBCLASS_OF n4ind:405;
+  n4sch:PART_OF n4ind:2, n4ind:260;
+  n4sch:HAS_PART n4ind:302, n4ind:284 .
+
+n4ind:302 a n4sch:Entity;
+  n4sch:id "Q73822253";
+  n4sch:text "storage unit";
+  n4sch:PART_OF n4ind:261 .
+
+n4ind:284 a n4sch:Entity;
+  n4sch:text "adders";
+  n4sch:id "Q157452";
+  n4sch:PART_OF n4ind:261 .
+
+n4ind:263 n4sch:PART_OF n4ind:2 .
+
+n4ind:264 n4sch:FACET_OF n4ind:2;
+  n4sch:HAS_PART n4ind:2 .
+
+n4ind:639 a n4sch:Entity;
+  n4sch:text "devices";
+  n4sch:id "Q50810859" .
+
+n4ind:265 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:639;
+  n4sch:id "Q6501221";
+  n4sch:text "controls" .
+
+n4ind:266 a n4sch:Entity;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:267;
+  n4sch:text "abstractly speaking";
+  n4sch:id "abstractly speaking" .
+
+n4ind:267 a n4sch:Entity;
+  n4sch:id "organization of a computer";
+  n4sch:text "organization of a computer";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:266 .
+
+n4ind:640 a n4sch:Entity;
+  n4sch:text "semiconductor";
+  n4sch:id "Q11456" .
+
+n4ind:268 a n4sch:Entity;
+  n4sch:id "Q54211245";
+  n4sch:SUBCLASS_OF n4ind:640;
+  n4sch:text "gallium arsenide transistor" .
+
+n4ind:269 a n4sch:Entity;
+  n4sch:id "level above";
+  n4sch:text "level above";
+  n4sch:FOLLOWED_BY n4ind:270 .
+
+n4ind:270 a n4sch:Entity;
+  n4sch:text "level below";
+  n4sch:id "level below";
+  n4sch:FOLLOWS n4ind:269 .
+
+n4ind:271 n4sch:PART_OF n4ind:119 .
+
+n4ind:272 n4sch:PART_OF n4ind:2 .
+
+n4ind:273 a n4sch:Entity;
+  n4sch:OPPOSITE_OF n4ind:274;
+  n4sch:id "Q199";
+  n4sch:text "1" .
+
+n4ind:274 a n4sch:Entity;
+  n4sch:id "Q204";
+  n4sch:text "zero";
+  n4sch:OPPOSITE_OF n4ind:273 .
+
+n4ind:641 a n4sch:Entity;
+  n4sch:id "data stored";
+  n4sch:text "data stored" .
+
+n4ind:275 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:641;
+  n4sch:text "polarity";
+  n4sch:id "Q3745428" .
+
+n4ind:276 a n4sch:Entity;
+  n4sch:text "zeros";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:277;
+  n4sch:id "Q14597458";
+  n4sch:FOLLOWED_BY n4ind:277;
+  n4sch:OPPOSITE_OF n4ind:277 .
+
+n4ind:277 a n4sch:Entity;
+  n4sch:id "Q949676";
+  n4sch:text "ones";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:276;
+  n4sch:FOLLOWS n4ind:276;
+  n4sch:OPPOSITE_OF n4ind:276 .
+
+n4ind:278 n4sch:HAS_PART n4ind:2 .
+
+n4ind:279 a n4sch:Entity;
+  n4sch:id "Q81365";
+  n4sch:HAS_PART n4ind:280;
+  n4sch:text "decimal" .
+
+n4ind:280 a n4sch:Entity;
+  n4sch:id "Q23488";
+  n4sch:text "6";
+  n4sch:PART_OF n4ind:279 .
+
+n4ind:282 a n4sch:Entity;
+  n4sch:text "control";
+  n4sch:id "Q11175";
+  n4sch:STUDIED_BY n4ind:281 .
+
+n4ind:281 n4sch:STUDIES n4ind:282;
+  n4sch:PART n4ind:298 .
+
+n4ind:283 a n4sch:Entity;
+  n4sch:id "Q47071272";
+  n4sch:text "proper function";
+  n4sch:PART_OF n4ind:1, n4ind:2 .
+
+n4ind:642 a n4sch:Entity;
+  n4sch:text "electrical signal";
+  n4sch:id "Q65036927" .
+
+n4ind:285 a n4sch:Entity;
+  n4sch:id "Q105616936";
+  n4sch:text "zeros and ones";
+  n4sch:SUBCLASS_OF n4ind:642 .
+
+n4ind:287 a n4sch:Entity;
+  n4sch:id "Q864135";
+  n4sch:text "binary code";
+  n4sch:USED_BY n4ind:286 .
+
+n4ind:286 a n4sch:Entity;
+  n4sch:text "binary system";
+  n4sch:USES n4ind:287;
+  n4sch:id "Q978297" .
+
+n4ind:288 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:526;
+  n4sch:text "subschemes";
+  n4sch:id "subschemes" .
+
+n4ind:643 a n4sch:Entity;
+  n4sch:id "Q12503";
+  n4sch:text "integer" .
+
+n4ind:289 a n4sch:Entity;
+  n4sch:text "unsigned";
+  n4sch:id "Q24839051";
+  n4sch:SUBCLASS_OF n4ind:643 .
+
+n4ind:290 a n4sch:Entity;
+  n4sch:text "one’s complement";
+  n4sch:id "Q1361630";
+  n4sch:SUBCLASS_OF n4ind:643 .
+
+n4ind:291 a n4sch:Entity;
+  n4sch:text "two’s complement";
+  n4sch:id "Q232577";
+  n4sch:SUBCLASS_OF n4ind:643 .
+
+n4ind:293 a n4sch:Entity;
+  n4sch:text "ebcdic";
+  n4sch:id "Q627945";
+  n4sch:USED_BY n4ind:292 .
+
+n4ind:292 a n4sch:Entity;
+  n4sch:id "Q37156";
+  n4sch:USES n4ind:293;
+  n4sch:text "ibm" .
+
+n4ind:294 a n4sch:Entity;
+  n4sch:id "Q200";
+  n4sch:text "2";
+  n4sch:SUBCLASS_OF n4ind:644 .
+
+n4ind:644 a n4sch:Entity;
+  n4sch:text "floating point number";
+  n4sch:id "Q117879" .
+
+n4ind:295 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:644;
+  n4sch:id "Q201";
+  n4sch:text "3" .
+
+n4ind:296 a n4sch:Entity;
+  n4sch:USES n4ind:645;
+  n4sch:id "Q39223345";
+  n4sch:text "logical operation" .
+
+n4ind:645 a n4sch:Entity;
+  n4sch:id "Q12479";
+  n4sch:text "arithmetic" .
+
+n4ind:297 a n4sch:Entity;
+  n4sch:id "Q70727110";
+  n4sch:text "registers";
+  n4sch:PART_OF n4ind:298 .
+
+n4ind:300 a n4sch:Entity;
+  n4sch:text "subtraction";
+  n4sch:id "Q40754";
+  n4sch:PART_OF n4ind:298 .
+
+n4ind:301 a n4sch:Entity;
+  n4sch:id "Q40276";
+  n4sch:text "multiplication";
+  n4sch:PART_OF n4ind:298 .
+
+n4ind:299 a n4sch:Entity;
+  n4sch:text "addition";
+  n4sch:id "Q32043";
+  n4sch:PART_OF n4ind:298 .
+
+n4ind:304 a n4sch:Entity;
+  n4sch:id "Q164099";
+  n4sch:text "cache";
+  n4sch:PART_OF n4ind:261, n4ind:303 .
+
+n4ind:303 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:304;
+  n4sch:id "Q1589327";
+  n4sch:text "memory hierarchy" .
+
+n4ind:305 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:405;
+  n4sch:id "Q56931785";
+  n4sch:text "memory array" .
+
+n4ind:306 a n4sch:Entity;
+  n4sch:text "memory chips";
+  n4sch:PART_OF n4ind:307;
+  n4sch:id "memory chips" .
+
+n4ind:307 n4sch:PART_OF n4ind:2;
+  n4sch:HAS_PART n4ind:306 .
+
+n4ind:309 a n4sch:Entity;
+  n4sch:id "Q83310";
+  n4sch:text "mouse";
+  n4sch:DIFFERENT_FROM n4ind:308 .
+
+n4ind:308 a n4sch:Entity;
+  n4sch:id "Q250";
+  n4sch:text "keyboard";
+  n4sch:DIFFERENT_FROM n4ind:309 .
+
+n4ind:311 a n4sch:Entity;
+  n4sch:text "reliabilities";
+  n4sch:id "Q37167614";
+  n4sch:DIFFERENT_FROM n4ind:310 .
+
+n4ind:310 a n4sch:Entity;
+  n4sch:id "Q194158";
+  n4sch:text "data rate";
+  n4sch:DIFFERENT_FROM n4ind:311 .
+
+n4ind:646 a n4sch:Entity;
+  n4sch:id "Q52948";
+  n4sch:text "interaction" .
+
+n4ind:312 a n4sch:Entity;
+  n4sch:text "interaction between computers and humans";
+  n4sch:SUBCLASS_OF n4ind:646;
+  n4sch:id "interaction between computers and humans" .
+
+n4ind:313 a n4sch:Entity;
+  n4sch:id "Q17082777";
+  n4sch:PART_OF n4ind:491;
+  n4sch:text "memory operation" .
+
+n4ind:491 a n4sch:Entity;
+  n4sch:text "input and output";
+  n4sch:id "Q105599763" .
+
+n4ind:652 a n4sch:Entity;
+  n4sch:id "pass over the code";
+  n4sch:text "pass over the code" .
+
+n4ind:314 n4sch:USES n4ind:652, n4ind:73;
+  n4sch:SUBCLASS_OF n4ind:1;
+  n4sch:PART_OF n4ind:119;
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:140;
+  n4sch:OPPOSITE_OF n4ind:315 .
+
+n4ind:315 a n4sch:Entity;
+  n4sch:id "Q11085831";
+  n4sch:text "interpreter";
+  n4sch:USES n4ind:73;
+  n4sch:SUBCLASS_OF n4ind:1;
+  n4sch:DIFFERENT_FROM n4ind:319;
+  n4sch:OPPOSITE_OF n4ind:314 .
+
+n4ind:319 a n4sch:Entity;
+  n4sch:id "Q288510";
+  n4sch:text "run-time";
+  n4sch:DIFFERENT_FROM n4ind:315 .
+
+n4ind:316 a n4sch:Entity;
+  n4sch:id "Q210439";
+  n4sch:SUBCLASS_OF n4ind:647;
+  n4sch:text "interpretation";
+  n4sch:FACET_OF n4ind:117 .
+
+n4ind:647 a n4sch:Entity;
+  n4sch:id "Q7553";
+  n4sch:text "translation" .
+
+n4ind:317 a n4sch:Entity;
+  n4sch:id "executable image";
+  n4sch:text "executable image";
+  n4sch:FACET_OF n4ind:117 .
+
+n4ind:318 n4sch:FOLLOWED_BY n4ind:117 .
+
+n4ind:320 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:648;
+  n4sch:text "lexical analysis";
+  n4sch:id "Q835922";
+  n4sch:PART_OF n4ind:314 .
+
+n4ind:648 a n4sch:Entity;
+  n4sch:id "Q107741583";
+  n4sch:text "preprocessing" .
+
+n4ind:321 a n4sch:Entity;
+  n4sch:id "incorrect compiler behavior";
+  n4sch:SUBCLASS_OF n4ind:649;
+  n4sch:text "incorrect compiler behavior" .
+
+n4ind:649 a n4sch:Entity;
+  n4sch:text "program faults";
+  n4sch:id "program faults" .
+
+n4ind:322 a n4sch:Entity;
+  n4sch:id "compiler implementer";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:1;
+  n4sch:text "compiler implementer" .
+
+n4ind:323 a n4sch:Entity;
+  n4sch:text "parsing";
+  n4sch:SUBCLASS_OF n4ind:320, n4ind:323;
+  n4sch:id "Q194152" .
+
+n4ind:650 a n4sch:Entity;
+  n4sch:id "Q234460";
+  n4sch:text "text" .
+
+n4ind:324 a n4sch:Entity;
+  n4sch:id "Q95074";
+  n4sch:text "character";
+  n4sch:PART_OF n4ind:650 .
+
+n4ind:325 n4sch:PART_OF n4ind:77 .
+
+n4ind:326 a n4sch:Entity;
+  n4sch:id "Q627921";
+  n4sch:FACET_OF n4ind:320;
+  n4sch:text "parse tree" .
+
+n4ind:327 a n4sch:Entity;
+  n4sch:id "Q7449042";
+  n4sch:SUBCLASS_OF n4ind:651;
+  n4sch:text "semantic analysis";
+  n4sch:HAS_PART n4ind:329 .
+
+n4ind:651 a n4sch:Entity;
+  n4sch:id "semantic check";
+  n4sch:text "semantic check" .
+
+n4ind:329 a n4sch:Entity;
+  n4sch:id "Q1061077";
+  n4sch:text "code generation";
+  n4sch:PART_OF n4ind:327 .
+
+n4ind:328 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:602;
+  n4sch:id "Q41216897";
+  n4sch:text "rejected" .
+
+n4ind:330 a n4sch:Entity;
+  n4sch:text "intermediate code";
+  n4sch:id "intermediate code";
+  n4sch:SUBCLASS_OF n4ind:117 .
+
+n4ind:331 a n4sch:Entity;
+  n4sch:id "optimization phase";
+  n4sch:FACET_OF n4ind:314;
+  n4sch:text "optimization phase" .
+
+n4ind:332 a n4sch:Entity;
+  n4sch:id "Q4201895";
+  n4sch:text "managed";
+  n4sch:FACET_OF n4ind:228 .
+
+n4ind:333 n4sch:STUDIES n4ind:2 .
+
+n4ind:334 n4sch:USES n4ind:3;
+  n4sch:SUBCLASS_OF n4ind:653, n4ind:1;
+  n4sch:PART_OF n4ind:359;
+  n4sch:HAS_PART n4ind:353, n4ind:351, n4ind:81, n4ind:352, n4ind:339 .
+
+n4ind:653 a n4sch:Entity;
+  n4sch:id "Q41583";
+  n4sch:text "manager" .
+
+n4ind:359 a n4sch:Entity;
+  n4sch:text "computer era";
+  n4sch:id "Q18713578" .
+
+n4ind:353 a n4sch:Entity;
+  n4sch:id "Q649250";
+  n4sch:text "rom" .
+
+n4ind:351 a n4sch:Entity;
+  n4sch:text "central processing unit";
+  n4sch:id "Q5300" .
+
+n4ind:352 a n4sch:Entity;
+  n4sch:id "Q5295";
+  n4sch:text "ram" .
+
+n4ind:339 a n4sch:Entity;
+  n4sch:text "users";
+  n4sch:id "Q278368";
+  n4sch:PART_OF n4ind:334 .
+
+n4ind:335 a n4sch:Entity;
+  n4sch:id "Q104851";
+  n4sch:text "firmware";
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:336 n4sch:HAS_PART n4ind:72 .
+
+n4ind:337 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:338;
+  n4sch:text "virtual machine";
+  n4sch:id "Q192726";
+  n4sch:PLATFORM n4ind:660 .
+
+n4ind:338 a n4sch:Entity;
+  n4sch:text "virtual memory";
+  n4sch:id "Q189401";
+  n4sch:SUBCLASS_OF n4ind:354;
+  n4sch:PART_OF n4ind:337;
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:660 a n4sch:Entity;
+  n4sch:id "Q177234";
+  n4sch:text "mainframe" .
+
+n4ind:354 a n4sch:Entity;
+  n4sch:id "Q1354775";
+  n4sch:text "memory space" .
+
+n4ind:340 a n4sch:Entity;
+  n4sch:text "tasks of an operating system";
+  n4sch:FACET_OF n4ind:334;
+  n4sch:id "tasks of an operating system" .
+
+n4ind:341 a n4sch:Entity;
+  n4sch:USES n4ind:344;
+  n4sch:id "disk management";
+  n4sch:text "disk management";
+  n4sch:PART_OF n4ind:654 .
+
+n4ind:344 a n4sch:Entity;
+  n4sch:id "Q174989";
+  n4sch:text "file system";
+  n4sch:PART_OF n4ind:334;
+  n4sch:USED_BY n4ind:341 .
+
+n4ind:654 a n4sch:Entity;
+  n4sch:text "memory management";
+  n4sch:id "Q2308807" .
+
+n4ind:342 n4sch:FACET_OF n4ind:334 .
+
+n4ind:343 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:346;
+  n4sch:id "process/thread model";
+  n4sch:text "process/thread model" .
+
+n4ind:345 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:655;
+  n4sch:id "Q114915279";
+  n4sch:text "security and protection" .
+
+n4ind:655 a n4sch:Entity;
+  n4sch:id "protection of computer resources";
+  n4sch:text "protection of computer resources" .
+
+n4ind:346 n4sch:FACET_OF n4ind:334 .
+
+n4ind:347 a n4sch:Entity;
+  n4sch:id "Q29045153";
+  n4sch:text "process/thread";
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:348 n4sch:id "protection domain";
+  a n4sch:Entity;
+  n4sch:text "protection domain";
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:656 a n4sch:Entity;
+  n4sch:id "Q59053482";
+  n4sch:text "physical reality" .
+
+n4ind:349 a n4sch:Entity;
+  n4sch:OPPOSITE_OF n4ind:656;
+  n4sch:text "conceptual abstraction";
+  n4sch:id "conceptual abstraction" .
+
+n4ind:350 a n4sch:Entity;
+  n4sch:text "thread model";
+  n4sch:FACET_OF n4ind:334;
+  n4sch:id "thread model" .
+
+n4ind:351 n4sch:PART_OF n4ind:334 .
+
+n4ind:352 n4sch:PART_OF n4ind:334 .
+
+n4ind:353 n4sch:PART_OF n4ind:334 .
+
+n4ind:354 n4sch:SUBCLASS_OF n4ind:657 .
+
+n4ind:657 a n4sch:Entity;
+  n4sch:text "unlimited";
+  n4sch:id "Q20038597" .
+
+n4ind:355 a n4sch:Entity;
+  n4sch:text "physical memory size";
+  n4sch:FACET_OF n4ind:658;
+  n4sch:id "physical memory size" .
+
+n4ind:658 a n4sch:Entity;
+  n4sch:text "physical memory";
+  n4sch:id "Q114672708" .
+
+n4ind:357 a n4sch:Entity;
+  n4sch:text "transparent";
+  n4sch:id "Q487623";
+  n4sch:OPPOSITE_OF n4ind:356 .
+
+n4ind:356 a n4sch:Entity;
+  n4sch:text "virtual";
+  n4sch:OPPOSITE_OF n4ind:357;
+  n4sch:id "Q54919" .
+
+n4ind:358 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:334;
+  n4sch:text "functionality implementation";
+  n4sch:id "functionality implementation" .
+
+n4ind:359 n4sch:HAS_PART n4ind:334 .
+
+n4ind:360 a n4sch:Entity;
+  n4sch:id "Q5157286";
+  n4sch:text "complexity";
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:361 a n4sch:Entity;
+  n4sch:id "Q1517761";
+  n4sch:FACET_OF n4ind:334;
+  n4sch:text "historical perspective" .
+
+n4ind:362 a n4sch:Entity;
+  n4sch:text "batches";
+  n4sch:id "Q73821561";
+  n4sch:USE n4ind:659 .
+
+n4ind:659 a n4sch:Entity;
+  n4sch:id "Q819511";
+  n4sch:text "batch" .
+
+n4ind:364 a n4sch:Entity;
+  n4sch:text "umes";
+  n4sch:id "Q49089";
+  n4sch:OWNED_BY n4ind:363 .
+
+n4ind:363 a n4sch:Entity;
+  n4sch:text "university of michigan";
+  n4sch:id "Q230492";
+  n4sch:OWNER_OF n4ind:364 .
+
+n4ind:365 a n4sch:Entity;
+  n4sch:text "multitask";
+  n4sch:id "Q6934509";
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:366 a n4sch:Entity;
+  n4sch:id "Q14656";
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:text "unix" .
+
+n4ind:367 a n4sch:Entity;
+  n4sch:text "linux";
+  n4sch:id "Q388";
+  n4sch:INSTANCE_OF n4ind:334 .
+
+n4ind:368 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:id "Q3235";
+  n4sch:text "nt" .
+
+n4ind:369 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:334;
+  n4sch:id "Q2271896";
+  n4sch:text "scheduling" .
+
+n4ind:370 a n4sch:Entity;
+  n4sch:id "Q757165";
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:text "vxworks" .
+
+n4ind:371 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:text "dart";
+  n4sch:id "Q406009" .
+
+n4ind:672 a n4sch:Entity;
+  n4sch:text "computing paradigm";
+  n4sch:id "computing paradigm" .
+
+n4ind:372 n4sch:INSTANCE_OF n4ind:672;
+  n4sch:SUBCLASS_OF n4ind:202, n4ind:683;
+  n4sch:PART_OF n4ind:465;
+  n4sch:CONNECTS_WITH n4ind:2;
+  n4sch:FACET_OF n4ind:334 .
+
+n4ind:683 a n4sch:Entity;
+  n4sch:id "Q116213324";
+  n4sch:text "interconnected" .
+
+n4ind:465 a n4sch:Entity;
+  n4sch:text "distributed system";
+  n4sch:id "Q3962217";
+  n4sch:HAS_PART n4ind:372 .
+
+n4ind:373 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:text "windows ce";
+  n4sch:id "Q488244" .
+
+n4ind:374 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:text "topper";
+  n4sch:id "Q110304" .
+
+n4ind:375 a n4sch:Entity;
+  n4sch:id "Q4654008";
+  n4sch:text "as/400";
+  n4sch:PLATFORM n4ind:660 .
+
+n4ind:376 a n4sch:Entity;
+  n4sch:PLATFORM n4ind:660;
+  n4sch:id "Q1054350";
+  n4sch:text "mvs" .
+
+n4ind:377 a n4sch:Entity;
+  n4sch:text "servers";
+  n4sch:FACET_OF n4ind:334;
+  n4sch:id "Q111585118" .
+
+n4ind:378 a n4sch:Entity;
+  n4sch:text "windows";
+  n4sch:id "Q1406";
+  n4sch:INSTANCE_OF n4ind:334 .
+
+n4ind:379 a n4sch:Entity;
+  n4sch:id "Q479882";
+  n4sch:text "vms";
+  n4sch:INSTANCE_OF n4ind:334 .
+
+n4ind:380 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:334;
+  n4sch:text "netware";
+  n4sch:id "Q691990" .
+
+n4ind:381 a n4sch:Entity;
+  n4sch:text "mac";
+  n4sch:INSTANCE_OF n4ind:334;
+  n4sch:id "Q75687" .
+
+n4ind:665 a n4sch:Entity;
+  n4sch:text "operation";
+  n4sch:id "Q600236" .
+
+n4ind:382 n4sch:SUBCLASS_OF n4ind:665, n4ind:9;
+  n4sch:DIFFERENT_FROM n4ind:9;
+  n4sch:HAS_PART n4ind:385, n4ind:164 .
+
+n4ind:385 a n4sch:Entity;
+  n4sch:id "Q95953498";
+  n4sch:text "entities";
+  n4sch:SUBCLASS_OF n4ind:661;
+  n4sch:PART_OF n4ind:382 .
+
+n4ind:383 a n4sch:Entity;
+  n4sch:text "logical relations";
+  n4sch:id "Q25098667";
+  n4sch:PART_OF n4ind:382 .
+
+n4ind:384 a n4sch:Entity;
+  n4sch:text "concurrency";
+  n4sch:PART_OF n4ind:468;
+  n4sch:id "Q5159092";
+  n4sch:HAS_EFFECT n4ind:625;
+  n4sch:STUDIED_BY n4ind:463 .
+
+n4ind:468 a n4sch:Entity;
+  n4sch:text "concurrent computing";
+  n4sch:id "Q128392";
+  n4sch:HAS_PART n4ind:384 .
+
+n4ind:463 a n4sch:Entity;
+  n4sch:id "Q232661";
+  n4sch:text "parallel computing";
+  n4sch:STUDIES n4ind:384;
+  n4sch:INSTANCE_OF n4ind:672;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:421;
+  n4sch:SUBCLASS_OF n4ind:469;
+  n4sch:OPPOSITE_OF n4ind:469, n4ind:421 .
+
+n4ind:661 a n4sch:Entity;
+  n4sch:id "Q4610556";
+  n4sch:text "model" .
+
+n4ind:386 a n4sch:Entity;
+  n4sch:id "Q50013139";
+  n4sch:text "abstract concept";
+  n4sch:OPPOSITE_OF n4ind:662 .
+
+n4ind:662 a n4sch:Entity;
+  n4sch:text "real-world object";
+  n4sch:id "Q85796231" .
+
+n4ind:387 a n4sch:Entity;
+  n4sch:id "Q181790";
+  n4sch:HAS_PART n4ind:172;
+  n4sch:text "composite" .
+
+n4ind:389 a n4sch:Entity;
+  n4sch:text "database structure";
+  n4sch:id "Q84832666";
+  n4sch:HAS_PART n4ind:388 .
+
+n4ind:388 a n4sch:Entity;
+  n4sch:id "Q1043076";
+  n4sch:text "schema";
+  n4sch:PART_OF n4ind:389;
+  n4sch:FACET_OF n4ind:382 .
+
+n4ind:390 a n4sch:Entity;
+  n4sch:text "salary rate";
+  n4sch:PART_OF n4ind:663;
+  n4sch:id "salary rate" .
+
+n4ind:663 a n4sch:Entity;
+  n4sch:text "payroll system";
+  n4sch:id "Q104899506" .
+
+n4ind:391 a n4sch:Entity;
+  n4sch:text "database model";
+  n4sch:id "Q267136";
+  n4sch:PART_OF n4ind:382;
+  n4sch:FACET_OF n4ind:382;
+  n4sch:USED_BY n4ind:396 .
+
+n4ind:396 a n4sch:Entity;
+  n4sch:text "relational database management system";
+  n4sch:id "Q3932296";
+  n4sch:USES n4ind:391 .
+
+n4ind:392 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:391, n4ind:395;
+  n4sch:id "Q192588";
+  n4sch:text "relational" .
+
+n4ind:395 a n4sch:Entity;
+  n4sch:text "object model";
+  n4sch:id "Q1116105";
+  n4sch:SUBCLASS_OF n4ind:391 .
+
+n4ind:393 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:394;
+  n4sch:id "Q176165";
+  n4sch:text "database management system" .
+
+n4ind:394 a n4sch:Entity;
+  n4sch:text "database management functions";
+  n4sch:id "database management functions";
+  n4sch:PART_OF n4ind:393 .
+
+n4ind:664 a n4sch:Entity;
+  n4sch:id "specialized programming language";
+  n4sch:text "specialized programming language" .
+
+n4ind:397 a n4sch:Entity;
+  n4sch:id "Q845739";
+  n4sch:text "database query language";
+  n4sch:SUBCLASS_OF n4ind:664;
+  n4sch:PART_OF n4ind:391 .
+
+n4ind:398 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:397;
+  n4sch:id "Q47607";
+  n4sch:text "structured query language";
+  n4sch:HAS_PART n4ind:402, n4ind:400, n4ind:401 .
+
+n4ind:402 a n4sch:Entity;
+  n4sch:text "data control language";
+  n4sch:id "Q604737";
+  n4sch:PART_OF n4ind:398 .
+
+n4ind:400 a n4sch:Entity;
+  n4sch:text "data definition language";
+  n4sch:id "Q1431648";
+  n4sch:PART_OF n4ind:398 .
+
+n4ind:401 a n4sch:Entity;
+  n4sch:id "Q58673";
+  n4sch:text "data manipulation language";
+  n4sch:PART_OF n4ind:398 .
+
+n4ind:399 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:397;
+  n4sch:id "Q2011708";
+  n4sch:text "object query language" .
+
+n4ind:403 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:666;
+  n4sch:id "Q238137";
+  n4sch:text "4th generation language" .
+
+n4ind:666 a n4sch:Entity;
+  n4sch:text "generate program code";
+  n4sch:id "generate program code" .
+
+n4ind:404 a n4sch:Entity;
+  n4sch:id "Q111900525";
+  n4sch:SUBCLASS_OF n4ind:666;
+  n4sch:text "application generator" .
+
+n4ind:405 n4sch:PART_OF n4ind:596 .
+
+n4ind:406 a n4sch:Entity;
+  n4sch:STUDIES n4ind:408, n4ind:407;
+  n4sch:text "relational model";
+  n4sch:id "Q755662" .
+
+n4ind:408 a n4sch:Entity;
+  n4sch:id "Q23905861";
+  n4sch:text "relations";
+  n4sch:STUDIED_BY n4ind:406 .
+
+n4ind:407 a n4sch:Entity;
+  n4sch:text "tables";
+  n4sch:id "Q2642425";
+  n4sch:FACET_OF n4ind:406 .
+
+n4ind:409 a n4sch:Entity;
+  n4sch:id "Q5293";
+  n4sch:USE n4ind:405;
+  n4sch:text "disk" .
+
+n4ind:410 a n4sch:Entity;
+  n4sch:id "Q82753";
+  n4sch:text "file";
+  n4sch:USE n4ind:667 .
+
+n4ind:667 a n4sch:Entity;
+  n4sch:text "management";
+  n4sch:id "Q2920921" .
+
+n4ind:411 a n4sch:Entity;
+  n4sch:id "Q856215";
+  n4sch:SUBCLASS_OF n4ind:668;
+  n4sch:text "indexed" .
+
+n4ind:668 a n4sch:Entity;
+  n4sch:id "Q48656482";
+  n4sch:text "file structure" .
+
+n4ind:412 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:668;
+  n4sch:id "Q183427";
+  n4sch:text "hash file" .
+
+n4ind:413 a n4sch:Entity;
+  n4sch:id "Q73506477";
+  n4sch:text "querying";
+  n4sch:FACET_OF n4ind:382 .
+
+n4ind:414 a n4sch:Entity;
+  n4sch:PART_OF n4ind:382;
+  n4sch:text "records";
+  n4sch:id "Q22961568" .
+
+n4ind:415 a n4sch:Entity;
+  n4sch:text "pattern discovery";
+  n4sch:SUBCLASS_OF n4ind:669;
+  n4sch:id "Q30284329" .
+
+n4ind:669 a n4sch:Entity;
+  n4sch:id "Q2003932";
+  n4sch:text "statistical analysis" .
+
+n4ind:670 a n4sch:Entity;
+  n4sch:id "Q4830453";
+  n4sch:text "business" .
+
+n4ind:416 n4sch:PART_OF n4ind:670 .
+
+n4ind:671 a n4sch:Entity;
+  n4sch:text "data mining";
+  n4sch:id "Q172491" .
+
+n4ind:417 a n4sch:Entity;
+  n4sch:id "class description";
+  n4sch:text "class description";
+  n4sch:SUBCLASS_OF n4ind:671 .
+
+n4ind:418 a n4sch:Entity;
+  n4sch:id "Q622825";
+  n4sch:text "cluster analysis";
+  n4sch:SUBCLASS_OF n4ind:671 .
+
+n4ind:419 a n4sch:Entity;
+  n4sch:text "association analysis";
+  n4sch:id "Q113922006";
+  n4sch:SUBCLASS_OF n4ind:671 .
+
+n4ind:420 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:671;
+  n4sch:text "outlier analysis";
+  n4sch:id "Q30278379" .
+
+n4ind:421 n4sch:INSTANCE_OF n4ind:672, n4ind:673;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:463;
+  n4sch:SUBCLASS_OF n4ind:463;
+  n4sch:HAS_PART n4ind:2;
+  n4sch:OPPOSITE_OF n4ind:685, n4ind:463 .
+
+n4ind:673 a n4sch:Entity;
+  n4sch:text "computing paradigms";
+  n4sch:id "computing paradigms" .
+
+n4ind:685 a n4sch:Entity;
+  n4sch:text "parallel";
+  n4sch:id "Q146591" .
+
+n4ind:422 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:673;
+  n4sch:id "Q249999";
+  n4sch:text "grid computing" .
+
+n4ind:423 a n4sch:Entity;
+  n4sch:id "Q110099151";
+  n4sch:text "internet computing";
+  n4sch:INSTANCE_OF n4ind:673 .
+
+n4ind:424 a n4sch:Entity;
+  n4sch:id "Q483639";
+  n4sch:text "cloud computing";
+  n4sch:INSTANCE_OF n4ind:673 .
+
+n4ind:425 a n4sch:Entity;
+  n4sch:id "Q36549132";
+  n4sch:text "wireless technologies";
+  n4sch:SUBCLASS_OF n4ind:372 .
+
+n4ind:674 a n4sch:Entity;
+  n4sch:id "Q10336440";
+  n4sch:text "networking" .
+
+n4ind:426 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:674;
+  n4sch:id "Q188488";
+  n4sch:text "scale" .
+
+n4ind:675 a n4sch:Entity;
+  n4sch:id "Q2581333";
+  n4sch:text "pcs" .
+
+n4ind:427 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:675;
+  n4sch:id "Q132744";
+  n4sch:text "fax" .
+
+n4ind:428 a n4sch:Entity;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:2;
+  n4sch:text "computer laboratory";
+  n4sch:id "Q7895212" .
+
+n4ind:429 a n4sch:Entity;
+  n4sch:text "wide area network";
+  n4sch:id "Q11384";
+  n4sch:SUBCLASS_OF n4ind:372;
+  n4sch:PART_OF n4ind:432 .
+
+n4ind:432 a n4sch:Entity;
+  n4sch:text "internet";
+  n4sch:id "Q75";
+  n4sch:INSTANCE_OF n4ind:676 .
+
+n4ind:430 a n4sch:Entity;
+  n4sch:text "city";
+  n4sch:PART_OF n4ind:431;
+  n4sch:id "Q515" .
+
+n4ind:431 a n4sch:Entity;
+  n4sch:text "metropolitan area";
+  n4sch:id "Q1907114";
+  n4sch:HAS_PART n4ind:430 .
+
+n4ind:676 a n4sch:Entity;
+  n4sch:text "global network";
+  n4sch:id "Q5570871" .
+
+n4ind:433 a n4sch:Entity;
+  n4sch:text "control network";
+  n4sch:SUBCLASS_OF n4ind:677;
+  n4sch:id "Q4175911" .
+
+n4ind:677 a n4sch:Entity;
+  n4sch:id "Q15758936";
+  n4sch:text "networks" .
+
+n4ind:434 a n4sch:Entity;
+  n4sch:id "Q1420404";
+  n4sch:SUBCLASS_OF n4ind:677;
+  n4sch:text "storage network" .
+
+n4ind:435 a n4sch:Entity;
+  n4sch:text "virtual private network";
+  n4sch:id "Q170963";
+  n4sch:SUBCLASS_OF n4ind:244, n4ind:677 .
+
+n4ind:436 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:677;
+  n4sch:id "Q11375";
+  n4sch:text "wireless network" .
+
+n4ind:437 a n4sch:Entity;
+  n4sch:id "point-to-point network";
+  n4sch:text "point-to-point network";
+  n4sch:SUBCLASS_OF n4ind:677 .
+
+n4ind:438 a n4sch:Entity;
+  n4sch:text "internet of things";
+  n4sch:id "Q251212";
+  n4sch:SUBCLASS_OF n4ind:677 .
+
+n4ind:439 n4sch:SUBCLASS_OF n4ind:2;
+  n4sch:PART_OF n4ind:2 .
+
+n4ind:440 a n4sch:Entity;
+  n4sch:id "Q12280";
+  n4sch:text "bridges";
+  n4sch:SUBCLASS_OF n4ind:2 .
+
+n4ind:441 a n4sch:Entity;
+  n4sch:id "Q100518757";
+  n4sch:SUBCLASS_OF n4ind:2;
+  n4sch:text "hubs" .
+
+n4ind:442 a n4sch:Entity;
+  n4sch:text "switches";
+  n4sch:SUBCLASS_OF n4ind:2;
+  n4sch:id "Q7659110" .
+
+n4ind:443 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:2;
+  n4sch:id "Q5318";
+  n4sch:text "routers" .
+
+n4ind:444 a n4sch:Entity;
+  n4sch:text "unpacking";
+  n4sch:id "Q105063670";
+  n4sch:SUBCLASS_OF n4ind:678 .
+
+n4ind:678 a n4sch:Entity;
+  n4sch:text "packaging";
+  n4sch:id "Q107380531" .
+
+n4ind:445 a n4sch:Entity;
+  n4sch:text "seven-layer open systems interconnect";
+  n4sch:SUBCLASS_OF n4ind:674;
+  n4sch:id "seven-layer open systems interconnect" .
+
+n4ind:446 a n4sch:Entity;
+  n4sch:id "Q1278631";
+  n4sch:text "layers";
+  n4sch:FACET_OF n4ind:679 .
+
+n4ind:679 a n4sch:Entity;
+  n4sch:text "network protocol";
+  n4sch:id "Q15836568" .
+
+n4ind:448 a n4sch:Entity;
+  n4sch:id "Q216292";
+  n4sch:text "session layer";
+  n4sch:DIFFERENT_FROM n4ind:447 .
+
+n4ind:447 a n4sch:Entity;
+  n4sch:text "presentation layer";
+  n4sch:DIFFERENT_FROM n4ind:448;
+  n4sch:id "Q215121" .
+
+n4ind:449 a n4sch:Entity;
+  n4sch:text "transport layer";
+  n4sch:FOLLOWS n4ind:450;
+  n4sch:id "Q209372" .
+
+n4ind:450 a n4sch:Entity;
+  n4sch:text "network layer";
+  n4sch:id "Q208074";
+  n4sch:FOLLOWED_BY n4ind:449 .
+
+n4ind:680 a n4sch:Entity;
+  n4sch:id "physical layer protocol";
+  n4sch:text "physical layer protocol" .
+
+n4ind:451 a n4sch:Entity;
+  n4sch:id "Q79984";
+  n4sch:text "ethernet";
+  n4sch:SUBCLASS_OF n4ind:680 .
+
+n4ind:452 a n4sch:Entity;
+  n4sch:text "fast ethernet";
+  n4sch:id "Q546389";
+  n4sch:SUBCLASS_OF n4ind:451 .
+
+n4ind:453 a n4sch:Entity;
+  n4sch:id "Q1069084";
+  n4sch:text "gigabit ethernet";
+  n4sch:SUBCLASS_OF n4ind:451 .
+
+n4ind:454 a n4sch:Entity;
+  n4sch:text "wireless ethernet";
+  n4sch:SUBCLASS_OF n4ind:451;
+  n4sch:id "Q29643" .
+
+n4ind:455 a n4sch:Entity;
+  n4sch:text "frame-relay";
+  n4sch:id "Q242506";
+  n4sch:PART_OF n4ind:681 .
+
+n4ind:681 a n4sch:Entity;
+  n4sch:text "data link layer";
+  n4sch:id "Q194134" .
+
+n4ind:456 a n4sch:Entity;
+  n4sch:text "small computer system interface";
+  n4sch:PART_OF n4ind:682;
+  n4sch:id "Q220868" .
+
+n4ind:682 a n4sch:Entity;
+  n4sch:text "application layer";
+  n4sch:id "Q189768" .
+
+n4ind:457 a n4sch:Entity;
+  n4sch:id "Q11371";
+  n4sch:text "internet service provider";
+  n4sch:INDUSTRY n4ind:432;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:432 .
+
+n4ind:458 a n4sch:Entity;
+  n4sch:text "wireless networking";
+  n4sch:SUBCLASS_OF n4ind:674;
+  n4sch:id "Q46485811" .
+
+n4ind:459 a n4sch:Entity;
+  n4sch:text "wireless";
+  n4sch:SUBCLASS_OF n4ind:674;
+  n4sch:id "Q249" .
+
+n4ind:460 a n4sch:Entity;
+  n4sch:text "paradigm of the internet";
+  n4sch:FACET_OF n4ind:432;
+  n4sch:id "paradigm of the internet" .
+
+n4ind:461 a n4sch:Entity;
+  n4sch:text "network administrator";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:462;
+  n4sch:id "Q680296" .
+
+n4ind:462 a n4sch:Entity;
+  n4sch:text "network traffic";
+  n4sch:id "Q2516350";
+  n4sch:PRACTICED_BY n4ind:461 .
+
+n4ind:469 a n4sch:Entity;
+  n4sch:id "Q107380965";
+  n4sch:text "distributed";
+  n4sch:SUBCLASS_OF n4ind:463;
+  n4sch:OPPOSITE_OF n4ind:463 .
+
+n4ind:464 a n4sch:Entity;
+  n4sch:text "functional unit";
+  n4sch:id "Q108737732";
+  n4sch:USE n4ind:463 .
+
+n4ind:466 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:1;
+  n4sch:id "Q623513";
+  n4sch:text "transactional" .
+
+n4ind:467 n4sch:SUBCLASS_OF n4ind:684 .
+
+n4ind:684 a n4sch:Entity;
+  n4sch:id "Q113462908";
+  n4sch:text "mechanisms" .
+
+n4ind:470 a n4sch:Entity;
+  n4sch:text "multicore computing";
+  n4sch:id "multicore computing";
+  n4sch:SUBCLASS_OF n4ind:463 .
+
+n4ind:471 a n4sch:Entity;
+  n4sch:text "different computing models";
+  n4sch:id "different computing models";
+  n4sch:FACET_OF n4ind:486 .
+
+n4ind:486 a n4sch:Entity;
+  n4sch:text "coordination";
+  n4sch:id "Q2463100";
+  n4sch:FACET_OF n4ind:421 .
+
+n4ind:472 a n4sch:Entity;
+  n4sch:text "shared memory model";
+  n4sch:id "shared memory model";
+  n4sch:INSTANCE_OF n4ind:686 .
+
+n4ind:686 a n4sch:Entity;
+  n4sch:text "message-passing model";
+  n4sch:id "message-passing model" .
+
+n4ind:473 a n4sch:Entity;
+  n4sch:id "Q764810";
+  n4sch:text "shared memory";
+  n4sch:HAS_PART n4ind:474 .
+
+n4ind:474 a n4sch:Entity;
+  n4sch:id "Q29615097";
+  n4sch:text "central memory";
+  n4sch:PART_OF n4ind:473;
+  n4sch:HAS_PART n4ind:476 .
+
+n4ind:476 a n4sch:Entity;
+  n4sch:text "caches";
+  n4sch:id "Q59094575";
+  n4sch:PART_OF n4ind:474 .
+
+n4ind:475 a n4sch:Entity;
+  n4sch:id "Q1408065";
+  n4sch:INSTANCE_OF n4ind:467;
+  n4sch:text "mesi protocol" .
+
+n4ind:477 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:687;
+  n4sch:text "different access models";
+  n4sch:id "different access models" .
+
+n4ind:687 a n4sch:Entity;
+  n4sch:text "access model";
+  n4sch:id "Q116426620" .
+
+n4ind:478 a n4sch:Entity;
+  n4sch:id "Q1859284";
+  n4sch:INSTANCE_OF n4ind:661;
+  n4sch:text "message-passing" .
+
+n4ind:479 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:480, n4ind:688;
+  n4sch:text "n-tier";
+  n4sch:id "Q1052721" .
+
+n4ind:480 a n4sch:Entity;
+  n4sch:id "Q146813";
+  n4sch:text "client-server model";
+  n4sch:HAS_PART n4ind:482, n4ind:481 .
+
+n4ind:688 a n4sch:Entity;
+  n4sch:text "browser-server";
+  n4sch:id "browser-server" .
+
+n4ind:482 a n4sch:Entity;
+  n4sch:id "Q528166";
+  n4sch:text "client";
+  n4sch:PART_OF n4ind:480;
+  n4sch:OPPOSITE_OF n4ind:481 .
+
+n4ind:481 a n4sch:Entity;
+  n4sch:id "Q157195";
+  n4sch:text "server";
+  n4sch:PART_OF n4ind:480;
+  n4sch:OPPOSITE_OF n4ind:482 .
+
+n4ind:484 a n4sch:Entity;
+  n4sch:text "tier";
+  n4sch:id "Q63386916";
+  n4sch:PART_OF n4ind:483 .
+
+n4ind:483 a n4sch:Entity;
+  n4sch:id "n-tier model";
+  n4sch:HAS_PARTS_OF_THE_CLASS n4ind:484;
+  n4sch:text "n-tier model" .
+
+n4ind:485 a n4sch:Entity;
+  n4sch:text "middleware";
+  n4sch:id "Q146768";
+  n4sch:INSTANCE_OF n4ind:689 .
+
+n4ind:689 a n4sch:Entity;
+  n4sch:id "Q504491";
+  n4sch:text "tiers" .
+
+n4ind:487 a n4sch:Entity;
+  n4sch:text "cores";
+  n4sch:PART_OF n4ind:2;
+  n4sch:id "Q112158551" .
+
+n4ind:488 a n4sch:Entity;
+  n4sch:text "consensus";
+  n4sch:id "Q188577";
+  n4sch:FACET_OF n4ind:690 .
+
+n4ind:690 a n4sch:Entity;
+  n4sch:text "memory coherency";
+  n4sch:id "memory coherency" .
+
+n4ind:489 n4sch:STUDIES n4ind:1 .
+
+n4ind:490 a n4sch:Entity;
+  n4sch:text "iso 9241";
+  n4sch:id "Q699076";
+  n4sch:MAIN_SUBJECT n4ind:691 .
+
+n4ind:691 a n4sch:Entity;
+  n4sch:text "human-machine interaction";
+  n4sch:id "Q93150505" .
+
+n4ind:491 n4sch:SUBCLASS_OF n4ind:582 .
+
+n4ind:492 a n4sch:Entity;
+  n4sch:id "Q21502404";
+  n4sch:USE n4ind:255;
+  n4sch:text "format";
+  n4sch:USED_BY n4ind:695 .
+
+n4ind:695 a n4sch:Entity;
+  n4sch:id "Q1125955";
+  n4sch:text "input data" .
+
+n4ind:696 a n4sch:Entity;
+  n4sch:text "errors arising from incorrect or malicious data entry";
+  n4sch:id "errors arising from incorrect or malicious data entry" .
+
+n4ind:493 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:696;
+  n4sch:id "malicious data entry";
+  n4sch:text "malicious data entry" .
+
+n4ind:494 n4sch:PART_OF n4ind:1 .
+
+n4ind:495 a n4sch:Entity;
+  n4sch:text "faults and fails";
+  n4sch:FACET_OF n4ind:1;
+  n4sch:id "faults and fails" .
+
+n4ind:496 a n4sch:Entity;
+  n4sch:id "Q2322432";
+  n4sch:text "notified";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:497 a n4sch:Entity;
+  n4sch:text "termination";
+  n4sch:id "Q12769393";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:498 a n4sch:Entity;
+  n4sch:text "user friendly";
+  n4sch:id "Q216378";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:499 a n4sch:Entity;
+  n4sch:text "clear";
+  n4sch:SUBCLASS_OF n4ind:504;
+  n4sch:id "Q1396399" .
+
+n4ind:504 a n4sch:Entity;
+  n4sch:text "error message";
+  n4sch:id "Q1332193";
+  n4sch:SUBCLASS_OF n4ind:699;
+  n4sch:FACET_OF n4ind:698 .
+
+n4ind:500 a n4sch:Entity;
+  n4sch:text "to the point";
+  n4sch:id "Q21203443";
+  n4sch:SUBCLASS_OF n4ind:504 .
+
+n4ind:501 a n4sch:Entity;
+  n4sch:id "Q85867928";
+  n4sch:text "timely";
+  n4sch:SUBCLASS_OF n4ind:504 .
+
+n4ind:502 a n4sch:Entity;
+  n4sch:id "explain what is happening";
+  n4sch:text "explain what is happening";
+  n4sch:SUBCLASS_OF n4ind:503 .
+
+n4ind:503 a n4sch:Entity;
+  n4sch:text "error messages";
+  n4sch:id "Q52000208";
+  n4sch:FACET_OF n4ind:142 .
+
+n4ind:699 a n4sch:Entity;
+  n4sch:text "information";
+  n4sch:id "Q11028" .
+
+n4ind:698 a n4sch:Entity;
+  n4sch:text "error condition";
+  n4sch:id "error condition" .
+
+n4ind:505 a n4sch:Entity;
+  n4sch:text "plain language";
+  n4sch:SUBCLASS_OF n4ind:504;
+  n4sch:id "Q1814648" .
+
+n4ind:507 a n4sch:Entity;
+  n4sch:id "Q4959264";
+  n4sch:text "break in";
+  n4sch:HAS_CAUSE n4ind:506 .
+
+n4ind:506 a n4sch:Entity;
+  n4sch:text "security access errors";
+  n4sch:HAS_EFFECT n4ind:507;
+  n4sch:id "security access errors" .
+
+n4ind:508 a n4sch:Entity;
+  n4sch:id "software robustness";
+  n4sch:FACET_OF n4ind:1;
+  n4sch:text "software robustness" .
+
+n4ind:509 a n4sch:Entity;
+  n4sch:id "Q9687";
+  n4sch:FACET_OF n4ind:1;
+  n4sch:text "crash" .
+
+n4ind:510 a n4sch:Entity;
+  n4sch:text "recover from errors";
+  n4sch:FACET_OF n4ind:508;
+  n4sch:id "recover from errors" .
+
+n4ind:511 a n4sch:Entity;
+  n4sch:id "catastrophic error";
+  n4sch:text "catastrophic error";
+  n4sch:SUBCLASS_OF n4ind:602 .
+
+n4ind:512 a n4sch:Entity;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:513;
+  n4sch:id "Q114846207";
+  n4sch:text "robustness of software" .
+
+n4ind:513 a n4sch:Entity;
+  n4sch:text "software more robust";
+  n4sch:id "software more robust";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:512 .
+
+n4ind:514 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:211;
+  n4sch:id "Q779608";
+  n4sch:text "exception" .
+
+n4ind:700 a n4sch:Entity;
+  n4sch:id "Q1750812";
+  n4sch:text "human factors" .
+
+n4ind:515 a n4sch:Entity;
+  n4sch:id "developer human factors";
+  n4sch:SUBCLASS_OF n4ind:700;
+  n4sch:text "developer human factors" .
+
+n4ind:516 a n4sch:Entity;
+  n4sch:text "maintained by humans";
+  n4sch:id "maintained by humans";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:1 .
+
+n4ind:517 a n4sch:Entity;
+  n4sch:id "correcting those wrongs";
+  n4sch:text "correcting those wrongs";
+  n4sch:FACET_OF n4ind:693 .
+
+n4ind:518 a n4sch:Entity;
+  n4sch:text "readability";
+  n4sch:FACET_OF n4ind:199;
+  n4sch:id "Q1820650" .
+
+n4ind:519 a n4sch:Entity;
+  n4sch:OPPOSITE_OF n4ind:520;
+  n4sch:id "Q37167044";
+  n4sch:text "macro level" .
+
+n4ind:520 a n4sch:Entity;
+  n4sch:id "Q76632980";
+  n4sch:text "micro level";
+  n4sch:OPPOSITE_OF n4ind:519 .
+
+n4ind:521 n4sch:PART_OF n4ind:202, n4ind:71 .
+
+n4ind:701 a n4sch:Entity;
+  n4sch:id "understand and modify";
+  n4sch:text "understand and modify" .
+
+n4ind:522 a n4sch:Entity;
+  n4sch:text "well-structured program";
+  n4sch:id "well-structured program";
+  n4sch:USE n4ind:701 .
+
+n4ind:523 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:72;
+  n4sch:text "poorly structured";
+  n4sch:id "poorly structured" .
+
+n4ind:524 a n4sch:Entity;
+  n4sch:id "Q1154141";
+  n4sch:text "indentation";
+  n4sch:SUBCLASS_OF n4ind:702 .
+
+n4ind:702 a n4sch:Entity;
+  n4sch:text "white space";
+  n4sch:id "Q1544004" .
+
+n4ind:525 n4sch:PART_OF n4ind:72 .
+
+n4ind:526 n4sch:SUBCLASS_OF n4ind:71 .
+
+n4ind:527 n4sch:PART_OF n4ind:2 .
+
+n4ind:528 a n4sch:Entity;
+  n4sch:text "marker of the code";
+  n4sch:id "marker of the code";
+  n4sch:SUBCLASS_OF n4ind:703 .
+
+n4ind:703 a n4sch:Entity;
+  n4sch:text "explanation of the code";
+  n4sch:id "explanation of the code" .
+
+n4ind:529 a n4sch:Entity;
+  n4sch:PART_OF n4ind:530;
+  n4sch:text "intent of the code";
+  n4sch:id "intent of the code" .
+
+n4ind:530 a n4sch:Entity;
+  n4sch:id "justify why the code looks the way the code does";
+  n4sch:text "justify why the code looks the way the code does";
+  n4sch:HAS_PART n4ind:529 .
+
+n4ind:531 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:704;
+  n4sch:text "bad ones";
+  n4sch:id "bad ones" .
+
+n4ind:704 a n4sch:Entity;
+  n4sch:id "Q1183447";
+  n4sch:text "repeat" .
+
+n4ind:532 a n4sch:Entity;
+  n4sch:text "self-documenting code";
+  n4sch:id "Q7448073";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:534;
+  n4sch:SUBCLASS_OF n4ind:521 .
+
+n4ind:534 a n4sch:Entity;
+  n4sch:id "Q5327502";
+  n4sch:text "easier said than done";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:532 .
+
+n4ind:533 a n4sch:Entity;
+  n4sch:text "clear and precise manner";
+  n4sch:SUBCLASS_OF n4ind:165;
+  n4sch:id "clear and precise manner" .
+
+n4ind:535 a n4sch:Entity;
+  n4sch:text "self-explanatory";
+  n4sch:id "Q16961666";
+  n4sch:FACET_OF n4ind:72 .
+
+n4ind:536 n4sch:PRACTICED_BY n4ind:92 .
+
+n4ind:537 a n4sch:Entity;
+  n4sch:text "comment";
+  n4sch:SUBCLASS_OF n4ind:705;
+  n4sch:id "Q1141067" .
+
+n4ind:705 a n4sch:Entity;
+  n4sch:id "Q28923038";
+  n4sch:text "statements" .
+
+n4ind:706 a n4sch:Entity;
+  n4sch:text "statement";
+  n4sch:id "Q2684591" .
+
+n4ind:538 a n4sch:Entity;
+  n4sch:text "needs comments";
+  n4sch:SUBCLASS_OF n4ind:706;
+  n4sch:id "needs comments" .
+
+n4ind:539 n4sch:DEVELOPER n4ind:125 .
+
+n4ind:540 n4sch:PART_OF n4ind:543;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:1 .
+
+n4ind:543 a n4sch:Entity;
+  n4sch:id "Q513359";
+  n4sch:text "lifecycle";
+  n4sch:HAS_PART n4ind:540 .
+
+n4ind:707 a n4sch:Entity;
+  n4sch:id "secure software maintenance";
+  n4sch:text "secure software maintenance" .
+
+n4ind:541 a n4sch:Entity;
+  n4sch:id "Q113442183";
+  n4sch:HAS_PART n4ind:707;
+  n4sch:text "secure software development" .
+
+n4ind:542 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:708;
+  n4sch:id "design security into software";
+  n4sch:text "design security into software" .
+
+n4ind:708 a n4sch:Entity;
+  n4sch:text "software security";
+  n4sch:id "Q114860022" .
+
+n4ind:544 a n4sch:Entity;
+  n4sch:id "software design security";
+  n4sch:text "software design security";
+  n4sch:SUBCLASS_OF n4ind:1 .
+
+n4ind:709 a n4sch:Entity;
+  n4sch:text "security faults";
+  n4sch:id "security faults" .
+
+n4ind:545 a n4sch:Entity;
+  n4sch:text "loopholes";
+  n4sch:id "Q38954877";
+  n4sch:SUBCLASS_OF n4ind:709 .
+
+n4ind:546 a n4sch:Entity;
+  n4sch:id "software requirements security";
+  n4sch:text "software requirements security";
+  n4sch:FACET_OF n4ind:710 .
+
+n4ind:710 a n4sch:Entity;
+  n4sch:id "Q4462275";
+  n4sch:text "software requirements" .
+
+n4ind:711 a n4sch:Entity;
+  n4sch:id "Q104493";
+  n4sch:text "risks" .
+
+n4ind:547 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:711;
+  n4sch:id "Q37522873";
+  n4sch:text "threats" .
+
+n4ind:548 a n4sch:Entity;
+  n4sch:text "software module";
+  n4sch:PART_OF n4ind:1;
+  n4sch:id "Q70383937" .
+
+n4ind:549 a n4sch:Entity;
+  n4sch:text "modules";
+  n4sch:id "Q2271846";
+  n4sch:PART_OF n4ind:1, n4ind:605 .
+
+n4ind:712 a n4sch:Entity;
+  n4sch:id "enforcement strategies";
+  n4sch:text "enforcement strategies" .
+
+n4ind:550 a n4sch:Entity;
+  n4sch:id "policy enforcement mechanisms";
+  n4sch:text "policy enforcement mechanisms";
+  n4sch:SUBCLASS_OF n4ind:712 .
+
+n4ind:551 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:1, n4ind:244;
+  n4sch:text "software construction security";
+  n4sch:id "software construction security" .
+
+n4ind:553 a n4sch:Entity;
+  n4sch:text "distinction";
+  n4sch:id "Q5282965";
+  n4sch:DIFFERENT_FROM n4ind:552 .
+
+n4ind:552 a n4sch:Entity;
+  n4sch:DIFFERENT_FROM n4ind:553;
+  n4sch:id "Q215675";
+  n4sch:text "entangle" .
+
+n4ind:554 a n4sch:Entity;
+  n4sch:id "Q55707349";
+  n4sch:text "secure";
+  n4sch:SUBCLASS_OF n4ind:526 .
+
+n4ind:555 a n4sch:Entity;
+  n4sch:text "coding of security into software";
+  n4sch:FACET_OF n4ind:551;
+  n4sch:id "coding of security into software" .
+
+n4ind:556 a n4sch:Entity;
+  n4sch:text "section";
+  n4sch:id "Q3181348";
+  n4sch:PART_OF n4ind:557 .
+
+n4ind:557 a n4sch:Entity;
+  n4sch:id "Q18615464";
+  n4sch:text "tasks";
+  n4sch:HAS_PART n4ind:556 .
+
+n4ind:558 a n4sch:Entity;
+  n4sch:text "validated";
+  n4sch:SUBCLASS_OF n4ind:713;
+  n4sch:id "Q20748093" .
+
+n4ind:713 a n4sch:Entity;
+  n4sch:text "assumptions";
+  n4sch:id "Q73552339" .
+
+n4ind:559 a n4sch:Entity;
+  n4sch:PART_OF n4ind:72;
+  n4sch:id "objects in memory";
+  n4sch:text "objects in memory" .
+
+n4ind:560 a n4sch:Entity;
+  n4sch:id "error status";
+  n4sch:FACET_OF n4ind:102;
+  n4sch:text "error status" .
+
+n4ind:561 a n4sch:Entity;
+  n4sch:HAS_EFFECT n4ind:562;
+  n4sch:id "cause of the error";
+  n4sch:text "cause of the error" .
+
+n4ind:562 a n4sch:Entity;
+  n4sch:text "effects";
+  n4sch:id "Q926230";
+  n4sch:HAS_CAUSE n4ind:561 .
+
+n4ind:564 a n4sch:Entity;
+  n4sch:id "Q7702783";
+  n4sch:text "terminate";
+  n4sch:FOLLOWS n4ind:563 .
+
+n4ind:563 a n4sch:Entity;
+  n4sch:FOLLOWED_BY n4ind:564;
+  n4sch:id "Q108414596";
+  n4sch:text "restore" .
+
+n4ind:565 a n4sch:Entity;
+  n4sch:text "software testing security";
+  n4sch:id "software testing security";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:566 a n4sch:Entity;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:1;
+  n4sch:text "development process";
+  n4sch:id "Q59340052" .
+
+n4ind:567 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:714;
+  n4sch:text "spiral model";
+  n4sch:id "Q1460738" .
+
+n4ind:714 a n4sch:Entity;
+  n4sch:text "software lifecycle";
+  n4sch:id "Q2297593" .
+
+n4ind:568 a n4sch:Entity;
+  n4sch:text "reliability of software";
+  n4sch:id "reliability of software";
+  n4sch:FACET_OF n4ind:708 .
+
+n4ind:569 a n4sch:Entity;
+  n4sch:id "guidelines do exist";
+  n4sch:text "guidelines do exist";
+  n4sch:USE n4ind:541 .
+
+n4ind:570 a n4sch:Entity;
+  n4sch:text "software construction security standard";
+  n4sch:FACET_OF n4ind:708;
+  n4sch:id "software construction security standard" .

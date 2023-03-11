@@ -1,0 +1,1676 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix n4ind: <neo4j://graph.individuals#> .
+
+n4ind:0 a n4sch:Entity;
+  n4sch:id "Q691114";
+  n4sch:text "overloaded";
+  n4sch:SUBCLASS_OF n4ind:307;
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:307 a n4sch:Entity;
+  n4sch:text "anomalies";
+  n4sch:id "Q59195365" .
+
+n4ind:1 a n4sch:Entity;
+  n4sch:text "software quality";
+  n4sch:id "Q1412670";
+  n4sch:SUBCLASS_OF n4ind:32;
+  n4sch:FACET_OF n4ind:35, n4ind:16;
+  n4sch:DIFFERENT_FROM n4ind:9;
+  n4sch:STUDIED_BY n4ind:14;
+  n4sch:PRACTICED_BY n4ind:15 .
+
+n4ind:32 a n4sch:Entity;
+  n4sch:id "Q1207505";
+  n4sch:text "quality";
+  n4sch:FACET_OF n4ind:16 .
+
+n4ind:35 a n4sch:Entity;
+  n4sch:id "Q2111823";
+  n4sch:text "software product";
+  n4sch:FOLLOWS n4ind:173;
+  n4sch:STUDIED_BY n4ind:12;
+  n4sch:PRACTICED_BY n4ind:2 .
+
+n4ind:16 a n4sch:Entity;
+  n4sch:text "software";
+  n4sch:id "Q7397";
+  n4sch:PART_OF n4ind:45, n4ind:59;
+  n4sch:DIFFERENT_FROM n4ind:219;
+  n4sch:HAS_PART n4ind:71, n4ind:207;
+  n4sch:USE n4ind:293, n4ind:288;
+  n4sch:PRACTICED_BY n4ind:15 .
+
+n4ind:9 a n4sch:Entity;
+  n4sch:text "software quality requirements";
+  n4sch:id "Q60432668";
+  n4sch:SUBCLASS_OF n4ind:68;
+  n4sch:DIFFERENT_FROM n4ind:1 .
+
+n4ind:14 a n4sch:Entity;
+  n4sch:text "appraising";
+  n4sch:id "Q20491296";
+  n4sch:STUDIES n4ind:1 .
+
+n4ind:15 a n4sch:Entity;
+  n4sch:id "Q1709010";
+  n4sch:text "software engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:16, n4ind:1, n4ind:32, n4ind:212, n4ind:27 .
+
+n4ind:2 a n4sch:Entity;
+  n4sch:PART_OF n4ind:3;
+  n4sch:id "Q36180";
+  n4sch:text "authors" .
+
+n4ind:3 a n4sch:Entity;
+  n4sch:id "Q43229";
+  n4sch:text "organizations";
+  n4sch:HAS_PART n4ind:2 .
+
+n4ind:313 a n4sch:Entity;
+  n4sch:id "interface specifications";
+  n4sch:text "interface specifications" .
+
+n4ind:4 a n4sch:Entity;
+  n4sch:text "requirements";
+  n4sch:SUBCLASS_OF n4ind:313, n4ind:252, n4ind:16, n4ind:68;
+  n4sch:id "Q1761598";
+  n4sch:PART_OF n4ind:294, n4ind:71;
+  n4sch:FACET_OF n4ind:16, n4ind:103, n4ind:249, n4ind:32;
+  n4sch:USED_BY n4ind:217 .
+
+n4ind:252 a n4sch:Entity;
+  n4sch:id "stated and implied needs";
+  n4sch:text "stated and implied needs" .
+
+n4ind:68 a n4sch:Entity;
+  n4sch:id "Q16388";
+  n4sch:text "functional requirements";
+  n4sch:HAS_PART n4ind:69 .
+
+n4ind:294 a n4sch:Entity;
+  n4sch:id "Q1437778";
+  n4sch:text "project plan" .
+
+n4ind:71 a n4sch:Entity;
+  n4sch:text "code";
+  n4sch:id "Q853614";
+  n4sch:SUBCLASS_OF n4ind:278;
+  n4sch:PART_OF n4ind:278, n4ind:16;
+  n4sch:HAS_PART n4ind:4 .
+
+n4ind:103 a n4sch:Entity;
+  n4sch:text "activity";
+  n4sch:id "Q192581";
+  n4sch:HAS_PART n4ind:102 .
+
+n4ind:249 a n4sch:Entity;
+  n4sch:text "stakeholder value";
+  n4sch:id "Q58309137" .
+
+n4ind:217 a n4sch:Entity;
+  n4sch:text "test";
+  n4sch:id "Q4115189" .
+
+n4ind:5 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:1;
+  n4sch:text "watts humphrey";
+  n4sch:id "Q92848" .
+
+n4ind:6 a n4sch:Entity;
+  n4sch:text "market-driven quality";
+  n4sch:DISCOVERER_OR_INVENTOR n4ind:246;
+  n4sch:id "Q6770673" .
+
+n4ind:246 a n4sch:Entity;
+  n4sch:id "Q37156";
+  n4sch:text "ibm" .
+
+n4ind:247 a n4sch:Entity;
+  n4sch:text "premise";
+  n4sch:id "Q321703" .
+
+n4ind:7 a n4sch:Entity;
+  n4sch:text "conformance to requirements";
+  n4sch:id "conformance to requirements";
+  n4sch:INSTANCE_OF n4ind:247 .
+
+n4ind:8 a n4sch:Entity;
+  n4sch:text "dependability";
+  n4sch:HAS_CAUSE n4ind:171;
+  n4sch:id "Q70781625";
+  n4sch:SUBCLASS_OF n4ind:8 .
+
+n4ind:171 a n4sch:Entity;
+  n4sch:id "Q19977811";
+  n4sch:text "system failure" .
+
+n4ind:10 a n4sch:Entity;
+  n4sch:id "Q132364";
+  n4sch:SUBCLASS_OF n4ind:16;
+  n4sch:text "communication protocol" .
+
+n4ind:11 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:1;
+  n4sch:text "conformance to all requirements";
+  n4sch:id "conformance to all requirements" .
+
+n4ind:12 a n4sch:Entity;
+  n4sch:STUDIES n4ind:94, n4ind:35, n4ind:39, n4ind:16, n4ind:1;
+  n4sch:id "Q80993";
+  n4sch:text "software engineering";
+  n4sch:HAS_PART n4ind:74;
+  n4sch:PRACTICED_BY n4ind:20 .
+
+n4ind:94 a n4sch:Entity;
+  n4sch:text "software development";
+  n4sch:id "Q638608";
+  n4sch:STUDIED_BY n4ind:12 .
+
+n4ind:39 a n4sch:Entity;
+  n4sch:text "software products";
+  n4sch:id "Q77586931";
+  n4sch:STUDIED_BY n4ind:12 .
+
+n4ind:74 a n4sch:Entity;
+  n4sch:text "software quality management";
+  n4sch:id "Q7554352";
+  n4sch:SUBCLASS_OF n4ind:145;
+  n4sch:PART_OF n4ind:36, n4ind:12, n4ind:81;
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:20 a n4sch:Entity;
+  n4sch:id "Q81096";
+  n4sch:text "engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:12 .
+
+n4ind:248 a n4sch:Entity;
+  n4sch:text "engineered products";
+  n4sch:id "engineered products" .
+
+n4ind:13 a n4sch:Entity;
+  n4sch:text "fitness for use";
+  n4sch:SUBCLASS_OF n4ind:248;
+  n4sch:id "Q114727690" .
+
+n4ind:212 a n4sch:Entity;
+  n4sch:text "static technique";
+  n4sch:id "static technique" .
+
+n4ind:27 a n4sch:Entity;
+  n4sch:text "defects";
+  n4sch:id "Q45316438";
+  n4sch:PART_OF n4ind:99;
+  n4sch:FACET_OF n4ind:32, n4ind:120, n4ind:16;
+  n4sch:STUDIED_BY n4ind:77, n4ind:74, n4ind:301, n4ind:12, n4ind:28;
+  n4sch:PRACTICED_BY n4ind:15 .
+
+n4ind:45 a n4sch:Entity;
+  n4sch:text "system";
+  n4sch:id "Q1";
+  n4sch:HAS_PART n4ind:194, n4ind:16, n4ind:44 .
+
+n4ind:59 a n4sch:Entity;
+  n4sch:text "systems";
+  n4sch:id "Q50808462";
+  n4sch:HAS_PART n4ind:16 .
+
+n4ind:219 a n4sch:Entity;
+  n4sch:text "software works";
+  n4sch:id "software works" .
+
+n4ind:207 a n4sch:Entity;
+  n4sch:text "work-products";
+  n4sch:id "work-products" .
+
+n4ind:293 a n4sch:Entity;
+  n4sch:text "evaluate";
+  n4sch:id "Q114521648" .
+
+n4ind:288 a n4sch:Entity;
+  n4sch:id "detect and identify";
+  n4sch:text "detect and identify" .
+
+n4ind:17 a n4sch:Entity;
+  n4sch:id "Q4462275";
+  n4sch:text "software requirements";
+  n4sch:FACET_OF n4ind:16 .
+
+n4ind:18 a n4sch:Entity;
+  n4sch:text "engineering";
+  n4sch:STUDIES n4ind:19;
+  n4sch:id "Q11023";
+  n4sch:HAS_PART n4ind:115 .
+
+n4ind:19 a n4sch:Entity;
+  n4sch:id "Q2424752";
+  n4sch:text "product";
+  n4sch:HAS_CAUSE n4ind:38;
+  n4sch:HAS_PART n4ind:155;
+  n4sch:STUDIED_BY n4ind:156, n4ind:18 .
+
+n4ind:115 a n4sch:Entity;
+  n4sch:text "technical review";
+  n4sch:id "Q96334216";
+  n4sch:SUBCLASS_OF n4ind:286;
+  n4sch:PART_OF n4ind:18 .
+
+n4ind:38 a n4sch:Entity;
+  n4sch:id "Q10843872";
+  n4sch:text "process";
+  n4sch:HAS_EFFECT n4ind:19;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:35 .
+
+n4ind:155 a n4sch:Entity;
+  n4sch:text "section";
+  n4sch:id "Q3181348";
+  n4sch:PART_OF n4ind:19 .
+
+n4ind:156 a n4sch:Entity;
+  n4sch:text "analytical technique";
+  n4sch:id "Q4751159";
+  n4sch:STUDIES n4ind:19 .
+
+n4ind:21 a n4sch:Entity;
+  n4sch:id "Q2264133";
+  n4sch:text "code of ethics";
+  n4sch:FACET_OF n4ind:250 .
+
+n4ind:250 a n4sch:Entity;
+  n4sch:text "professional practice";
+  n4sch:id "Q67150677" .
+
+n4ind:22 a n4sch:Entity;
+  n4sch:text "tradeoffs";
+  n4sch:id "Q106149205";
+  n4sch:SUBCLASS_OF n4ind:251 .
+
+n4ind:251 a n4sch:Entity;
+  n4sch:id "Q42724194";
+  n4sch:text "quality characteristics" .
+
+n4ind:23 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:1;
+  n4sch:id "cost of software quality";
+  n4sch:text "cost of software quality" .
+
+n4ind:24 a n4sch:Entity;
+  n4sch:id "development and maintenance processes";
+  n4sch:text "development and maintenance processes";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:25 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:253;
+  n4sch:text "internal failure";
+  n4sch:id "internal failure" .
+
+n4ind:253 a n4sch:Entity;
+  n4sch:text "external failure";
+  n4sch:id "Q81280052" .
+
+n4ind:26 a n4sch:Entity;
+  n4sch:text "audits";
+  n4sch:SUBCLASS_OF n4ind:70;
+  n4sch:id "Q81714085";
+  n4sch:FACET_OF n4ind:92, n4ind:91, n4ind:254 .
+
+n4ind:70 a n4sch:Entity;
+  n4sch:text "inspections";
+  n4sch:id "Q28517813";
+  n4sch:PART_OF n4ind:268;
+  n4sch:DIFFERENT_FROM n4ind:161;
+  n4sch:HAS_PART n4ind:238 .
+
+n4ind:92 a n4sch:Entity;
+  n4sch:id "process assurance";
+  n4sch:text "process assurance";
+  n4sch:SUBCLASS_OF n4ind:76, n4ind:282 .
+
+n4ind:91 a n4sch:Entity;
+  n4sch:id "product assurance";
+  n4sch:text "product assurance";
+  n4sch:SUBCLASS_OF n4ind:76 .
+
+n4ind:254 a n4sch:Entity;
+  n4sch:id "Q7268779";
+  n4sch:text "quality infrastructure" .
+
+n4ind:99 a n4sch:Entity;
+  n4sch:id "Q513359";
+  n4sch:text "life cycle";
+  n4sch:PART_OF n4ind:279;
+  n4sch:HAS_PART n4ind:27, n4ind:100 .
+
+n4ind:120 a n4sch:Entity;
+  n4sch:text "project";
+  n4sch:id "Q170584";
+  n4sch:HAS_PART n4ind:121 .
+
+n4ind:77 a n4sch:Entity;
+  n4sch:id "Q7554350";
+  n4sch:text "software quality control";
+  n4sch:STUDIES n4ind:78, n4ind:27;
+  n4sch:PART_OF n4ind:74 .
+
+n4ind:301 a n4sch:Entity;
+  n4sch:id "Q59068419";
+  n4sch:text "software quality evaluation" .
+
+n4ind:28 a n4sch:Entity;
+  n4sch:text "testing";
+  n4sch:id "Q1003030";
+  n4sch:USES n4ind:109;
+  n4sch:STUDIES n4ind:27;
+  n4sch:PART_OF n4ind:210, n4ind:94;
+  n4sch:HAS_EFFECT n4ind:226;
+  n4sch:FACET_OF n4ind:1;
+  n4sch:DIFFERENT_FROM n4ind:76 .
+
+n4ind:109 a n4sch:Entity;
+  n4sch:text "validation";
+  n4sch:id "Q212108";
+  n4sch:SUBCLASS_OF n4ind:28, n4ind:215 .
+
+n4ind:210 a n4sch:Entity;
+  n4sch:id "Q1074523";
+  n4sch:text "development" .
+
+n4ind:226 a n4sch:Entity;
+  n4sch:text "failure";
+  n4sch:id "Q1121708" .
+
+n4ind:76 a n4sch:Entity;
+  n4sch:id "Q613918";
+  n4sch:text "software quality assurance";
+  n4sch:SUBCLASS_OF n4ind:91, n4ind:92;
+  n4sch:PART_OF n4ind:74;
+  n4sch:FACET_OF n4ind:272, n4ind:16;
+  n4sch:DIFFERENT_FROM n4ind:28;
+  n4sch:HAS_PART n4ind:91, n4ind:92 .
+
+n4ind:29 a n4sch:Entity;
+  n4sch:id "Q36546120";
+  n4sch:text "software problems";
+  n4sch:FACET_OF n4ind:16 .
+
+n4ind:30 a n4sch:Entity;
+  n4sch:id "cost of software quality methods";
+  n4sch:text "cost of software quality methods";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:31 a n4sch:Entity;
+  n4sch:text "hierarchical levels";
+  n4sch:id "Q50745440";
+  n4sch:PART_OF n4ind:255 .
+
+n4ind:255 a n4sch:Entity;
+  n4sch:id "Q8269924";
+  n4sch:text "taxonomy" .
+
+n4ind:33 a n4sch:Entity;
+  n4sch:id "Q114566600";
+  n4sch:text "product quality";
+  n4sch:SUBCLASS_OF n4ind:32;
+  n4sch:DIFFERENT_FROM n4ind:37 .
+
+n4ind:37 a n4sch:Entity;
+  n4sch:id "Q44923866";
+  n4sch:text "process quality";
+  n4sch:DIFFERENT_FROM n4ind:33 .
+
+n4ind:34 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:1;
+  n4sch:text "standards";
+  n4sch:id "Q591990";
+  n4sch:DIFFERENT_FROM n4ind:187, n4ind:124 .
+
+n4ind:187 a n4sch:Entity;
+  n4sch:id "Q11042";
+  n4sch:text "culture" .
+
+n4ind:124 a n4sch:Entity;
+  n4sch:text "specifications";
+  n4sch:id "Q20819677";
+  n4sch:DIFFERENT_FROM n4ind:34 .
+
+n4ind:173 a n4sch:Entity;
+  n4sch:id "intermediate deliverables";
+  n4sch:text "intermediate deliverables" .
+
+n4ind:227 a n4sch:Entity;
+  n4sch:text "software engineering process";
+  n4sch:id "Q7554199" .
+
+n4ind:36 a n4sch:Entity;
+  n4sch:PART_OF n4ind:227;
+  n4sch:id "Q113416657";
+  n4sch:text "software engineering management";
+  n4sch:FACET_OF n4ind:256;
+  n4sch:HAS_PART n4ind:74, n4ind:235 .
+
+n4ind:256 a n4sch:Entity;
+  n4sch:text "software organization";
+  n4sch:id "Q113424170" .
+
+n4ind:235 a n4sch:Entity;
+  n4sch:text "software engineering process knowledge areas";
+  n4sch:id "software engineering process knowledge areas" .
+
+n4ind:40 a n4sch:Entity;
+  n4sch:text "quality requirements";
+  n4sch:SUBCLASS_OF n4ind:68;
+  n4sch:id "Q37851141" .
+
+n4ind:209 a n4sch:Entity;
+  n4sch:id "Q2526135";
+  n4sch:text "security" .
+
+n4ind:41 a n4sch:Entity;
+  n4sch:id "Q10566551";
+  n4sch:text "safety";
+  n4sch:FACET_OF n4ind:209 .
+
+n4ind:42 a n4sch:Entity;
+  n4sch:OPPOSITE_OF n4ind:43;
+  n4sch:id "Q113185630";
+  n4sch:text "development costs" .
+
+n4ind:43 a n4sch:Entity;
+  n4sch:id "Q6593860";
+  n4sch:text "benefits";
+  n4sch:OPPOSITE_OF n4ind:42 .
+
+n4ind:44 a n4sch:Entity;
+  n4sch:text "system/subsystem";
+  n4sch:PART_OF n4ind:45;
+  n4sch:id "system/subsystem" .
+
+n4ind:194 a n4sch:Entity;
+  n4sch:id "system component";
+  n4sch:text "system component" .
+
+n4ind:46 a n4sch:Entity;
+  n4sch:id "Q2904257";
+  n4sch:text "software life cycle";
+  n4sch:FACET_OF n4ind:39 .
+
+n4ind:47 a n4sch:Entity;
+  n4sch:text "deming";
+  n4sch:id "Q988813";
+  n4sch:HAS_PART n4ind:50, n4ind:49, n4ind:48, n4ind:51 .
+
+n4ind:50 a n4sch:Entity;
+  n4sch:id "Q376444";
+  n4sch:text "kaizen";
+  n4sch:PART_OF n4ind:47 .
+
+n4ind:49 a n4sch:Entity;
+  n4sch:id "evolutionary delivery";
+  n4sch:text "evolutionary delivery";
+  n4sch:PART_OF n4ind:47 .
+
+n4ind:48 a n4sch:Entity;
+  n4sch:text "plan-do-check-act";
+  n4sch:id "Q1318104";
+  n4sch:PART_OF n4ind:47 .
+
+n4ind:51 a n4sch:Entity;
+  n4sch:text "quality function deployment";
+  n4sch:id "Q763591";
+  n4sch:PART_OF n4ind:47 .
+
+n4ind:52 a n4sch:Entity;
+  n4sch:id "Q840396";
+  n4sch:text "ideal";
+  n4sch:FACET_OF n4ind:12 .
+
+n4ind:257 a n4sch:Entity;
+  n4sch:id "Q757012";
+  n4sch:text "quality management" .
+
+n4ind:53 a n4sch:Entity;
+  n4sch:text "swe-bok guide";
+  n4sch:MAIN_SUBJECT n4ind:257;
+  n4sch:id "swe-bok guide" .
+
+n4ind:54 a n4sch:Entity;
+  n4sch:text "product evaluation";
+  n4sch:id "Q73831102";
+  n4sch:SUBCLASS_OF n4ind:38 .
+
+n4ind:258 a n4sch:Entity;
+  n4sch:text "actions";
+  n4sch:id "Q113649142" .
+
+n4ind:55 a n4sch:Entity;
+  n4sch:text "improvement program";
+  n4sch:id "Q73503160";
+  n4sch:SUBCLASS_OF n4ind:258 .
+
+n4ind:56 a n4sch:Entity;
+  n4sch:text "goal";
+  n4sch:id "Q4503831";
+  n4sch:FACET_OF n4ind:259 .
+
+n4ind:259 a n4sch:Entity;
+  n4sch:text "management support";
+  n4sch:id "Q66156269" .
+
+n4ind:260 a n4sch:Entity;
+  n4sch:text "communication";
+  n4sch:id "Q11024" .
+
+n4ind:57 a n4sch:Entity;
+  n4sch:id "Q10346136";
+  n4sch:text "sponsorship";
+  n4sch:SUBCLASS_OF n4ind:260 .
+
+n4ind:58 a n4sch:Entity;
+  n4sch:id "Q1996307";
+  n4sch:SUBCLASS_OF n4ind:171;
+  n4sch:text "safety-critical system" .
+
+n4ind:177 a n4sch:Entity;
+  n4sch:id "Q166142";
+  n4sch:text "application" .
+
+n4ind:60 a n4sch:Entity;
+  n4sch:text "safety-critical software";
+  n4sch:SUBCLASS_OF n4ind:177, n4ind:261;
+  n4sch:id "Q40648540";
+  n4sch:USE n4ind:262 .
+
+n4ind:261 a n4sch:Entity;
+  n4sch:id "Q64184577";
+  n4sch:text "applications" .
+
+n4ind:262 a n4sch:Entity;
+  n4sch:text "mass transit";
+  n4sch:id "Q178512" .
+
+n4ind:263 a n4sch:Entity;
+  n4sch:text "industry standard";
+  n4sch:id "Q2680559" .
+
+n4ind:61 a n4sch:Entity;
+  n4sch:id "Q5205827";
+  n4sch:text "do-178c";
+  n4sch:INSTANCE_OF n4ind:263 .
+
+n4ind:62 a n4sch:Entity;
+  n4sch:id "Q111925214";
+  n4sch:text "software reliability";
+  n4sch:FACET_OF n4ind:16 .
+
+n4ind:264 a n4sch:Entity;
+  n4sch:id "-critical software";
+  n4sch:text "-critical software" .
+
+n4ind:63 a n4sch:Entity;
+  n4sch:text "direct";
+  n4sch:SUBCLASS_OF n4ind:264;
+  n4sch:id "Q1187369" .
+
+n4ind:64 a n4sch:Entity;
+  n4sch:id "Q15304518";
+  n4sch:SUBCLASS_OF n4ind:264;
+  n4sch:text "indirect" .
+
+n4ind:65 a n4sch:Entity;
+  n4sch:id "flight control computer";
+  n4sch:text "flight control computer";
+  n4sch:PART_OF n4ind:265 .
+
+n4ind:265 a n4sch:Entity;
+  n4sch:id "Q11436";
+  n4sch:text "aircraft" .
+
+n4ind:66 a n4sch:Entity;
+  n4sch:id "software test environment";
+  n4sch:text "software test environment";
+  n4sch:SUBCLASS_OF n4ind:266;
+  n4sch:PART_OF n4ind:12 .
+
+n4ind:266 a n4sch:Entity;
+  n4sch:id "Q10366493";
+  n4sch:text "software engineering environment" .
+
+n4ind:67 a n4sch:Entity;
+  n4sch:text "detection and removal";
+  n4sch:SUBCLASS_OF n4ind:267;
+  n4sch:id "Q33815482" .
+
+n4ind:267 a n4sch:Entity;
+  n4sch:id "Q210978";
+  n4sch:text "avoidance" .
+
+n4ind:69 a n4sch:Entity;
+  n4sch:id "software performance requirements";
+  n4sch:text "software performance requirements";
+  n4sch:PART_OF n4ind:68 .
+
+n4ind:268 a n4sch:Entity;
+  n4sch:id "Q46665400";
+  n4sch:text "quality assurance and control" .
+
+n4ind:161 a n4sch:Entity;
+  n4sch:id "Q15915142";
+  n4sch:text "walkthrough";
+  n4sch:DIFFERENT_FROM n4ind:70 .
+
+n4ind:238 a n4sch:Entity;
+  n4sch:id "Q44284141";
+  n4sch:text "reviews" .
+
+n4ind:278 a n4sch:Entity;
+  n4sch:id "Q9344";
+  n4sch:text "documents" .
+
+n4ind:270 a n4sch:Entity;
+  n4sch:text "artifact";
+  n4sch:id "Q220659" .
+
+n4ind:72 a n4sch:Entity;
+  n4sch:id "Q84146510";
+  n4sch:text "assurance case";
+  n4sch:SUBCLASS_OF n4ind:270;
+  n4sch:FACET_OF n4ind:269 .
+
+n4ind:269 a n4sch:Entity;
+  n4sch:id "Q56235186";
+  n4sch:text "software risk" .
+
+n4ind:271 a n4sch:Entity;
+  n4sch:id "Q890084";
+  n4sch:text "body of evidence" .
+
+n4ind:73 a n4sch:Entity;
+  n4sch:id "Q176763";
+  n4sch:text "evidence";
+  n4sch:PART_OF n4ind:271 .
+
+n4ind:145 a n4sch:Entity;
+  n4sch:text "management";
+  n4sch:id "Q2920921";
+  n4sch:SUBCLASS_OF n4ind:302;
+  n4sch:FACET_OF n4ind:162, n4ind:3;
+  n4sch:HAS_PART n4ind:167 .
+
+n4ind:81 a n4sch:Entity;
+  n4sch:id "Q880371";
+  n4sch:text "software industry";
+  n4sch:HAS_PART n4ind:74, n4ind:82 .
+
+n4ind:75 a n4sch:Entity;
+  n4sch:id "software quality planning";
+  n4sch:text "software quality planning";
+  n4sch:PART_OF n4ind:74;
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:272 a n4sch:Entity;
+  n4sch:text "software process";
+  n4sch:id "Q1196809" .
+
+n4ind:78 a n4sch:Entity;
+  n4sch:text "project artifacts";
+  n4sch:id "project artifacts";
+  n4sch:STUDIED_BY n4ind:77 .
+
+n4ind:80 a n4sch:Entity;
+  n4sch:text "final products";
+  n4sch:id "Q40679841";
+  n4sch:FOLLOWS n4ind:79 .
+
+n4ind:79 a n4sch:Entity;
+  n4sch:FOLLOWED_BY n4ind:80;
+  n4sch:text "intermediate products";
+  n4sch:id "Q74242208" .
+
+n4ind:82 a n4sch:Entity;
+  n4sch:text "software quality improvement";
+  n4sch:id "software quality improvement";
+  n4sch:PART_OF n4ind:81 .
+
+n4ind:273 a n4sch:Entity;
+  n4sch:text "projects";
+  n4sch:id "Q93241073" .
+
+n4ind:83 a n4sch:Entity;
+  n4sch:id "Q59393599";
+  n4sch:SUBCLASS_OF n4ind:273;
+  n4sch:text "software process improvement";
+  n4sch:FACET_OF n4ind:326 .
+
+n4ind:326 a n4sch:Entity;
+  n4sch:id "Q2292472";
+  n4sch:text "recurrence" .
+
+n4ind:274 a n4sch:Entity;
+  n4sch:text "software management";
+  n4sch:id "Q105700574" .
+
+n4ind:84 a n4sch:Entity;
+  n4sch:text "configuration management";
+  n4sch:id "Q1153495";
+  n4sch:PART_OF n4ind:274 .
+
+n4ind:166 a n4sch:Entity;
+  n4sch:id "Q181487";
+  n4sch:text "audit" .
+
+n4ind:85 a n4sch:Entity;
+  n4sch:text "reports";
+  n4sch:id "Q10870555";
+  n4sch:HAS_CAUSE n4ind:166;
+  n4sch:PART_OF n4ind:145 .
+
+n4ind:86 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:275;
+  n4sch:id "Q189447";
+  n4sch:text "risk management";
+  n4sch:HAS_PART n4ind:123 .
+
+n4ind:275 a n4sch:Entity;
+  n4sch:id "Q17042796";
+  n4sch:text "quality software" .
+
+n4ind:123 a n4sch:Entity;
+  n4sch:text "risk assessment";
+  n4sch:id "Q1058438";
+  n4sch:PART_OF n4ind:86 .
+
+n4ind:87 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:276;
+  n4sch:text "risk analysis";
+  n4sch:id "Q11679892" .
+
+n4ind:276 a n4sch:Entity;
+  n4sch:text "management techniques";
+  n4sch:id "Q72223982" .
+
+n4ind:88 a n4sch:Entity;
+  n4sch:id "Q206330";
+  n4sch:text "objectivity";
+  n4sch:FACET_OF n4ind:76 .
+
+n4ind:90 a n4sch:Entity;
+  n4sch:text "managerial";
+  n4sch:id "Q2990807";
+  n4sch:DIFFERENT_FROM n4ind:89 .
+
+n4ind:89 a n4sch:Entity;
+  n4sch:id "Q569612";
+  n4sch:text "technical";
+  n4sch:DIFFERENT_FROM n4ind:90 .
+
+n4ind:282 a n4sch:Entity;
+  n4sch:id "Q836575";
+  n4sch:text "quality assurance" .
+
+n4ind:93 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:16, n4ind:277;
+  n4sch:text "software quality plan";
+  n4sch:id "software quality plan" .
+
+n4ind:277 a n4sch:Entity;
+  n4sch:id "Q43330953";
+  n4sch:text "quality targets" .
+
+n4ind:95 a n4sch:Entity;
+  n4sch:id "Q1667967";
+  n4sch:SUBCLASS_OF n4ind:93;
+  n4sch:text "software configuration management plan" .
+
+n4ind:96 a n4sch:Entity;
+  n4sch:id "Q92986448";
+  n4sch:SUBCLASS_OF n4ind:278;
+  n4sch:text "conventions" .
+
+n4ind:97 a n4sch:Entity;
+  n4sch:USE n4ind:76;
+  n4sch:text "statistical techniques";
+  n4sch:id "Q59584020" .
+
+n4ind:98 a n4sch:Entity;
+  n4sch:text "acceptance criteria";
+  n4sch:id "Q84209843";
+  n4sch:FACET_OF n4ind:1 .
+
+n4ind:279 a n4sch:Entity;
+  n4sch:id "development organization";
+  n4sch:text "development organization" .
+
+n4ind:100 a n4sch:Entity;
+  n4sch:id "Q542929";
+  n4sch:text "products";
+  n4sch:PART_OF n4ind:99 .
+
+n4ind:101 a n4sch:Entity;
+  n4sch:text "testable";
+  n4sch:SUBCLASS_OF n4ind:280;
+  n4sch:id "Q108737882" .
+
+n4ind:280 a n4sch:Entity;
+  n4sch:text "objective assessment";
+  n4sch:id "Q64648150" .
+
+n4ind:102 a n4sch:Entity;
+  n4sch:id "output products";
+  n4sch:text "output products";
+  n4sch:PART_OF n4ind:103 .
+
+n4ind:104 a n4sch:Entity;
+  n4sch:id "Q4986666";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:19;
+  n4sch:text "built" .
+
+n4ind:106 a n4sch:Entity;
+  n4sch:id "Q36340665";
+  n4sch:text "validation process";
+  n4sch:FOLLOWS n4ind:105 .
+
+n4ind:105 a n4sch:Entity;
+  n4sch:FOLLOWED_BY n4ind:106;
+  n4sch:text "verification process";
+  n4sch:id "verification process" .
+
+n4ind:108 a n4sch:Entity;
+  n4sch:text "responsibility";
+  n4sch:id "Q1274115";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:107 .
+
+n4ind:107 a n4sch:Entity;
+  n4sch:text "role";
+  n4sch:id "Q214339";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:108 .
+
+n4ind:215 a n4sch:Entity;
+  n4sch:text "verification";
+  n4sch:id "Q953429" .
+
+n4ind:110 a n4sch:Entity;
+  n4sch:id "Q56350853";
+  n4sch:text "purposes";
+  n4sch:DIFFERENT_FROM n4ind:111 .
+
+n4ind:111 a n4sch:Entity;
+  n4sch:id "purposes's purposes";
+  n4sch:text "purposes's purposes";
+  n4sch:DIFFERENT_FROM n4ind:110 .
+
+n4ind:112 a n4sch:Entity;
+  n4sch:text "artifacts";
+  n4sch:id "Q2720909";
+  n4sch:FACET_OF n4ind:12 .
+
+n4ind:113 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:281;
+  n4sch:id "different types of reviews and audits";
+  n4sch:text "different types of reviews and audits" .
+
+n4ind:281 a n4sch:Entity;
+  n4sch:text "reviews and audits";
+  n4sch:id "reviews and audits" .
+
+n4ind:114 a n4sch:Entity;
+  n4sch:PART_OF n4ind:283;
+  n4sch:text "project management";
+  n4sch:id "Q179012" .
+
+n4ind:283 a n4sch:Entity;
+  n4sch:id "Q730573";
+  n4sch:text "organizational" .
+
+n4ind:286 a n4sch:Entity;
+  n4sch:text "procedure";
+  n4sch:id "Q190686" .
+
+n4ind:116 a n4sch:Entity;
+  n4sch:text "plan";
+  n4sch:id "Q4006";
+  n4sch:FACET_OF n4ind:120 .
+
+n4ind:117 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:70;
+  n4sch:id "walkthroughs";
+  n4sch:text "walkthroughs" .
+
+n4ind:284 a n4sch:Entity;
+  n4sch:id "Q1371819";
+  n4sch:text "plans" .
+
+n4ind:118 a n4sch:Entity;
+  n4sch:PART_OF n4ind:284;
+  n4sch:id "Q97093151";
+  n4sch:text "schedules" .
+
+n4ind:119 a n4sch:Entity;
+  n4sch:id "Q1043452";
+  n4sch:SUBCLASS_OF n4ind:120;
+  n4sch:text "maintenance";
+  n4sch:PART_OF n4ind:94, n4ind:210 .
+
+n4ind:121 a n4sch:Entity;
+  n4sch:id "Q472160";
+  n4sch:text "scope";
+  n4sch:PART_OF n4ind:120 .
+
+n4ind:122 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:296;
+  n4sch:id "Q1130839";
+  n4sch:text "corrective action";
+  n4sch:PART_OF n4ind:146 .
+
+n4ind:296 a n4sch:Entity;
+  n4sch:text "action";
+  n4sch:id "Q188473" .
+
+n4ind:146 a n4sch:Entity;
+  n4sch:id "Q27711940";
+  n4sch:text "management review";
+  n4sch:DIFFERENT_FROM n4ind:129 .
+
+n4ind:125 a n4sch:Entity;
+  n4sch:id "Q59345592";
+  n4sch:text "technical status";
+  n4sch:FACET_OF n4ind:120 .
+
+n4ind:126 a n4sch:Entity;
+  n4sch:PART_OF n4ind:12;
+  n4sch:text "software design";
+  n4sch:id "Q857102" .
+
+n4ind:127 a n4sch:Entity;
+  n4sch:text "roles";
+  n4sch:DIFFERENT_FROM n4ind:213, n4ind:128;
+  n4sch:id "Q30015853" .
+
+n4ind:213 a n4sch:Entity;
+  n4sch:id "Q3736042";
+  n4sch:text "experiences" .
+
+n4ind:128 a n4sch:Entity;
+  n4sch:id "Q61788060";
+  n4sch:text "activities";
+  n4sch:DIFFERENT_FROM n4ind:127 .
+
+n4ind:129 a n4sch:Entity;
+  n4sch:DIFFERENT_FROM n4ind:146, n4ind:130;
+  n4sch:id "Q215028";
+  n4sch:text "pair review" .
+
+n4ind:130 a n4sch:Entity;
+  n4sch:text "desk check";
+  n4sch:id "Q78753509";
+  n4sch:DIFFERENT_FROM n4ind:129 .
+
+n4ind:131 a n4sch:Entity;
+  n4sch:text "review leader";
+  n4sch:SUBCLASS_OF n4ind:285;
+  n4sch:id "review leader" .
+
+n4ind:285 a n4sch:Entity;
+  n4sch:text "decision maker";
+  n4sch:id "Q114250619" .
+
+n4ind:132 a n4sch:Entity;
+  n4sch:id "Q265158";
+  n4sch:text "review";
+  n4sch:DIFFERENT_FROM n4ind:133 .
+
+n4ind:133 a n4sch:Entity;
+  n4sch:text "meeting";
+  n4sch:id "Q2761147";
+  n4sch:DIFFERENT_FROM n4ind:162, n4ind:132 .
+
+n4ind:162 a n4sch:Entity;
+  n4sch:id "Q1137655";
+  n4sch:text "inspection";
+  n4sch:DIFFERENT_FROM n4ind:133 .
+
+n4ind:134 a n4sch:Entity;
+  n4sch:USED_BY n4ind:135;
+  n4sch:id "review methods";
+  n4sch:text "review methods" .
+
+n4ind:135 a n4sch:Entity;
+  n4sch:id "Q20481199";
+  n4sch:text "coordinator";
+  n4sch:USES n4ind:134 .
+
+n4ind:136 a n4sch:Entity;
+  n4sch:text "cooperative";
+  n4sch:id "Q4539";
+  n4sch:SUBCLASS_OF n4ind:133 .
+
+n4ind:137 a n4sch:Entity;
+  n4sch:id "Q23726476";
+  n4sch:FACET_OF n4ind:120;
+  n4sch:text "project management plan" .
+
+n4ind:138 a n4sch:Entity;
+  n4sch:id "Q898314";
+  n4sch:text "coding standard";
+  n4sch:FACET_OF n4ind:142 .
+
+n4ind:142 a n4sch:Entity;
+  n4sch:text "source code";
+  n4sch:id "Q128751";
+  n4sch:PART_OF n4ind:289 .
+
+n4ind:139 a n4sch:Entity;
+  n4sch:id "Q15143";
+  n4sch:text "uml";
+  n4sch:INSTANCE_OF n4ind:287 .
+
+n4ind:287 a n4sch:Entity;
+  n4sch:text "design model";
+  n4sch:id "Q97611631" .
+
+n4ind:140 a n4sch:Entity;
+  n4sch:text "rules";
+  n4sch:id "Q1151067";
+  n4sch:PART_OF n4ind:115 .
+
+n4ind:141 a n4sch:Entity;
+  n4sch:id "Q15401930";
+  n4sch:MANUFACTURER n4ind:3;
+  n4sch:text "work-product" .
+
+n4ind:289 a n4sch:Entity;
+  n4sch:text "workproduct";
+  n4sch:id "workproduct" .
+
+n4ind:143 a n4sch:Entity;
+  n4sch:text "word";
+  n4sch:DIFFERENT_FROM n4ind:144;
+  n4sch:id "Q8171" .
+
+n4ind:144 a n4sch:Entity;
+  n4sch:text "figure";
+  n4sch:id "Q207961";
+  n4sch:DIFFERENT_FROM n4ind:143 .
+
+n4ind:302 a n4sch:Entity;
+  n4sch:text "stakeholders";
+  n4sch:id "Q108798676" .
+
+n4ind:167 a n4sch:Entity;
+  n4sch:text "planning";
+  n4sch:id "Q309100" .
+
+n4ind:147 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:133;
+  n4sch:text "moderator";
+  n4sch:id "Q466714";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:162, n4ind:148 .
+
+n4ind:148 a n4sch:Entity;
+  n4sch:id "inspection meeting";
+  n4sch:text "inspection meeting";
+  n4sch:PRACTICED_BY n4ind:147 .
+
+n4ind:149 a n4sch:Entity;
+  n4sch:DIFFERENT_FROM n4ind:150;
+  n4sch:id "Q7458208";
+  n4sch:text "intermediate" .
+
+n4ind:150 a n4sch:Entity;
+  n4sch:id "Q1340858";
+  n4sch:text "final product";
+  n4sch:DIFFERENT_FROM n4ind:149 .
+
+n4ind:290 a n4sch:Entity;
+  n4sch:id "Q1553123";
+  n4sch:text "reader" .
+
+n4ind:151 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:290;
+  n4sch:text "recorder";
+  n4sch:id "Q187851" .
+
+n4ind:152 a n4sch:Entity;
+  n4sch:id "Q35064350";
+  n4sch:text "domain expertise";
+  n4sch:SUBCLASS_OF n4ind:291 .
+
+n4ind:291 a n4sch:Entity;
+  n4sch:id "Q644238";
+  n4sch:text "expertise" .
+
+n4ind:153 a n4sch:Entity;
+  n4sch:id "software design method expertise";
+  n4sch:SUBCLASS_OF n4ind:291;
+  n4sch:text "software design method expertise" .
+
+n4ind:154 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:291;
+  n4sch:text "programming language expertise";
+  n4sch:id "programming language expertise" .
+
+n4ind:157 a n4sch:Entity;
+  n4sch:id "inspection recorder";
+  n4sch:text "inspection recorder";
+  n4sch:HAS_EFFECT n4ind:158 .
+
+n4ind:158 a n4sch:Entity;
+  n4sch:text "anomalies found";
+  n4sch:id "Q83315741";
+  n4sch:HAS_CAUSE n4ind:157 .
+
+n4ind:159 a n4sch:Entity;
+  n4sch:id "Q105723266";
+  n4sch:SUBCLASS_OF n4ind:140;
+  n4sch:text "criteria" .
+
+n4ind:160 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:292;
+  n4sch:id "reinspect";
+  n4sch:text "reinspect" .
+
+n4ind:292 a n4sch:Entity;
+  n4sch:id "inspection exit decision";
+  n4sch:text "inspection exit decision" .
+
+n4ind:163 a n4sch:Entity;
+  n4sch:PARTICIPANT n4ind:2;
+  n4sch:id "Q183635";
+  n4sch:text "feedback" .
+
+n4ind:164 a n4sch:Entity;
+  n4sch:id "Q7554259";
+  n4sch:text "software audit";
+  n4sch:FACET_OF n4ind:16 .
+
+n4ind:295 a n4sch:Entity;
+  n4sch:id "Q10949665" .
+
+n4ind:165 n4sch:id "Q6508395";
+  a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:295;
+  n4sch:text "lead auditor" .
+
+n4ind:295 n4sch:text "auditor" .
+
+n4ind:166 n4sch:HAS_EFFECT n4ind:85 .
+
+n4ind:167 n4sch:PART_OF n4ind:145 .
+
+n4ind:169 a n4sch:Entity;
+  n4sch:text "mission-critical";
+  n4sch:id "Q968946";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:170, n4ind:168 .
+
+n4ind:168 a n4sch:Entity;
+  n4sch:id "Q60099885";
+  n4sch:text "safety-critical";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:169 .
+
+n4ind:170 a n4sch:Entity;
+  n4sch:id "Q114941547";
+  n4sch:text "security-critical";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:169 .
+
+n4ind:171 n4sch:HAS_EFFECT n4ind:8 .
+
+n4ind:172 a n4sch:Entity;
+  n4sch:id "Q50845805";
+  n4sch:text "unsafe";
+  n4sch:SUBCLASS_OF n4ind:297 .
+
+n4ind:297 a n4sch:Entity;
+  n4sch:text "unreliable";
+  n4sch:id "Q22979588" .
+
+n4ind:173 n4sch:FOLLOWED_BY n4ind:35 .
+
+n4ind:174 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:309, n4ind:16;
+  n4sch:text "fault";
+  n4sch:id "Q47089";
+  n4sch:HAS_EFFECT n4ind:226 .
+
+n4ind:309 a n4sch:Entity;
+  n4sch:id "Q1138598";
+  n4sch:text "defect" .
+
+n4ind:175 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:86;
+  n4sch:text "defining integrity levels";
+  n4sch:id "defining integrity levels" .
+
+n4ind:176 a n4sch:Entity;
+  n4sch:id "Q11826103";
+  n4sch:text "security level";
+  n4sch:FACET_OF n4ind:298 .
+
+n4ind:298 a n4sch:Entity;
+  n4sch:id "Q104493";
+  n4sch:text "risk" .
+
+n4ind:178 a n4sch:Entity;
+  n4sch:id "Q1724915";
+  n4sch:text "use";
+  n4sch:HAS_PART n4ind:177 .
+
+n4ind:177 n4sch:PART_OF n4ind:178 .
+
+n4ind:179 a n4sch:Entity;
+  n4sch:id "Q184759";
+  n4sch:PART_OF n4ind:16;
+  n4sch:text "coding";
+  n4sch:FACET_OF n4ind:142 .
+
+n4ind:180 a n4sch:Entity;
+  n4sch:id "Q5482740";
+  n4sch:text "developer";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:19;
+  n4sch:HAS_PART n4ind:299 .
+
+n4ind:299 a n4sch:Entity;
+  n4sch:id "Q58245288";
+  n4sch:text "acquirer" .
+
+n4ind:181 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:300;
+  n4sch:id "software integrity level scheme";
+  n4sch:text "software integrity level scheme" .
+
+n4ind:300 a n4sch:Entity;
+  n4sch:text "software integrity levels";
+  n4sch:id "software integrity levels" .
+
+n4ind:182 a n4sch:Entity;
+  n4sch:STUDIED_BY n4ind:301;
+  n4sch:text "faults";
+  n4sch:id "Q17376347" .
+
+n4ind:183 a n4sch:Entity;
+  n4sch:id "many taxonomies";
+  n4sch:IS_A_LIST_OF n4ind:303;
+  n4sch:text "many taxonomies" .
+
+n4ind:303 a n4sch:Entity;
+  n4sch:text "taxonomies";
+  n4sch:id "Q80406165" .
+
+n4ind:304 a n4sch:Entity;
+  n4sch:text "languages";
+  n4sch:id "Q34770" .
+
+n4ind:184 a n4sch:Entity;
+  n4sch:id "Q116024808";
+  n4sch:text "design methods";
+  n4sch:PART_OF n4ind:304 .
+
+n4ind:185 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:305;
+  n4sch:id "Q5962346";
+  n4sch:text "classification" .
+
+n4ind:305 a n4sch:Entity;
+  n4sch:text "information";
+  n4sch:id "Q11028" .
+
+n4ind:186 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:306;
+  n4sch:text "trends";
+  n4sch:id "Q787045" .
+
+n4ind:306 a n4sch:Entity;
+  n4sch:id "Q130740";
+  n4sch:text "problems" .
+
+n4ind:187 n4sch:DIFFERENT_FROM n4ind:34 .
+
+n4ind:308 a n4sch:Entity;
+  n4sch:text "result";
+  n4sch:id "Q2995644" .
+
+n4ind:188 a n4sch:Entity;
+  n4sch:text "incorrect result";
+  n4sch:id "incorrect result";
+  n4sch:SUBCLASS_OF n4ind:308 .
+
+n4ind:189 a n4sch:Entity;
+  n4sch:id "Q14833626";
+  n4sch:SUBCLASS_OF n4ind:191;
+  n4sch:text "slip" .
+
+n4ind:191 a n4sch:Entity;
+  n4sch:id "Q29485";
+  n4sch:text "error";
+  n4sch:HAS_EFFECT n4ind:309 .
+
+n4ind:190 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:191;
+  n4sch:text "human error";
+  n4sch:id "Q5937752" .
+
+n4ind:192 a n4sch:Entity;
+  n4sch:id "Q40056";
+  n4sch:PART_OF n4ind:38;
+  n4sch:text "computer program" .
+
+n4ind:310 a n4sch:Entity;
+  n4sch:id "Q38419899";
+  n4sch:text "formal name" .
+
+n4ind:193 a n4sch:Entity;
+  n4sch:text "bug";
+  n4sch:INSTANCE_OF n4ind:310;
+  n4sch:id "Q1390" .
+
+n4ind:194 n4sch:PART_OF n4ind:45 .
+
+n4ind:195 a n4sch:Entity;
+  n4sch:id "Q60123134";
+  n4sch:FACET_OF n4ind:1;
+  n4sch:text "defect density" .
+
+n4ind:196 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:1;
+  n4sch:id "fault density";
+  n4sch:text "fault density" .
+
+n4ind:197 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:1;
+  n4sch:text "failure intensity";
+  n4sch:id "failure intensity" .
+
+n4ind:198 a n4sch:Entity;
+  n4sch:text "software testing";
+  n4sch:STUDIES n4ind:29;
+  n4sch:id "Q188522";
+  n4sch:INSTANCE_OF n4ind:317;
+  n4sch:FACET_OF n4ind:311, n4ind:16 .
+
+n4ind:317 a n4sch:Entity;
+  n4sch:text "knowledge area";
+  n4sch:id "knowledge area" .
+
+n4ind:311 a n4sch:Entity;
+  n4sch:id "software in service";
+  n4sch:text "software in service" .
+
+n4ind:200 a n4sch:Entity;
+  n4sch:text "root cause";
+  n4sch:id "Q48741221";
+  n4sch:STUDIED_BY n4ind:199 .
+
+n4ind:199 a n4sch:Entity;
+  n4sch:id "Q1401207";
+  n4sch:text "root cause analysis";
+  n4sch:STUDIES n4ind:200;
+  n4sch:SUBCLASS_OF n4ind:312 .
+
+n4ind:312 a n4sch:Entity;
+  n4sch:text "eliminate the causes";
+  n4sch:id "eliminate the causes" .
+
+n4ind:202 a n4sch:Entity;
+  n4sch:text "defect information";
+  n4sch:id "defect information";
+  n4sch:HAS_CAUSE n4ind:201 .
+
+n4ind:201 a n4sch:Entity;
+  n4sch:id "Q46437383";
+  n4sch:text "automated tools";
+  n4sch:HAS_EFFECT n4ind:202 .
+
+n4ind:329 a n4sch:Entity;
+  n4sch:id "Q7754";
+  n4sch:text "analysis" .
+
+n4ind:203 a n4sch:Entity;
+  n4sch:id "Q1940914";
+  n4sch:text "static";
+  n4sch:SUBCLASS_OF n4ind:329, n4ind:77 .
+
+n4ind:204 a n4sch:Entity;
+  n4sch:id "Q1268978";
+  n4sch:text "dynamic";
+  n4sch:SUBCLASS_OF n4ind:329, n4ind:77 .
+
+n4ind:316 a n4sch:Entity;
+  n4sch:id "Q5140046";
+  n4sch:text "code reading" .
+
+n4ind:205 a n4sch:Entity;
+  n4sch:id "Q38389385";
+  n4sch:SUBCLASS_OF n4ind:316;
+  n4sch:text "dynamic techniques";
+  n4sch:OPPOSITE_OF n4ind:206 .
+
+n4ind:206 a n4sch:Entity;
+  n4sch:text "static techniques";
+  n4sch:id "static techniques";
+  n4sch:OPPOSITE_OF n4ind:205 .
+
+n4ind:207 n4sch:PART_OF n4ind:16 .
+
+n4ind:208 a n4sch:Entity;
+  n4sch:text "source code control flow";
+  n4sch:id "source code control flow";
+  n4sch:SUBCLASS_OF n4ind:314 .
+
+n4ind:314 a n4sch:Entity;
+  n4sch:text "static analysis";
+  n4sch:id "Q1329550" .
+
+n4ind:209 n4sch:HAS_PART n4ind:41 .
+
+n4ind:210 n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:16 .
+
+n4ind:315 a n4sch:Entity;
+  n4sch:text "testing techniques";
+  n4sch:id "Q105944376" .
+
+n4ind:211 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:315;
+  n4sch:id "Q45045";
+  n4sch:text "simulation" .
+
+n4ind:212 n4sch:PRACTICED_BY n4ind:15 .
+
+n4ind:213 n4sch:DIFFERENT_FROM n4ind:127 .
+
+n4ind:214 a n4sch:Entity;
+  n4sch:text "conformance test";
+  n4sch:id "Q4072285";
+  n4sch:SUBCLASS_OF n4ind:318 .
+
+n4ind:318 a n4sch:Entity;
+  n4sch:id "Q2919644";
+  n4sch:text "verification and validation" .
+
+n4ind:215 n4sch:SUBCLASS_OF n4ind:28 .
+
+n4ind:216 a n4sch:Entity;
+  n4sch:id "Q357813";
+  n4sch:SUBCLASS_OF n4ind:319;
+  n4sch:text "accredited" .
+
+n4ind:319 a n4sch:Entity;
+  n4sch:text "body of authority";
+  n4sch:id "body of authority" .
+
+n4ind:217 n4sch:USES n4ind:4;
+  n4sch:PART_OF n4ind:322 .
+
+n4ind:322 a n4sch:Entity;
+  n4sch:id "Q12483";
+  n4sch:text "statistics" .
+
+n4ind:218 a n4sch:Entity;
+  n4sch:id "software quality measurement";
+  n4sch:FACET_OF n4ind:320;
+  n4sch:text "software quality measurement" .
+
+n4ind:320 a n4sch:Entity;
+  n4sch:id "Q1331926";
+  n4sch:text "decision-making" .
+
+n4ind:219 n4sch:DIFFERENT_FROM n4ind:16 .
+
+n4ind:220 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:74;
+  n4sch:id "cost of software quality management processes";
+  n4sch:text "cost of software quality management processes" .
+
+n4ind:221 a n4sch:Entity;
+  n4sch:text "generic models of cost";
+  n4sch:FACET_OF n4ind:309;
+  n4sch:id "generic models of cost" .
+
+n4ind:222 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:223;
+  n4sch:id "Q8366";
+  n4sch:text "mathematical" .
+
+n4ind:223 a n4sch:Entity;
+  n4sch:text "graphical";
+  n4sch:id "Q782543";
+  n4sch:PART_OF n4ind:222 .
+
+n4ind:321 a n4sch:Entity;
+  n4sch:text "statistical test";
+  n4sch:id "Q210832" .
+
+n4ind:224 a n4sch:Entity;
+  n4sch:id "Q7838279";
+  n4sch:SUBCLASS_OF n4ind:321;
+  n4sch:text "trend analysis" .
+
+n4ind:323 a n4sch:Entity;
+  n4sch:text "visualization";
+  n4sch:id "Q451553" .
+
+n4ind:225 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:323, n4ind:334;
+  n4sch:text "graphs";
+  n4sch:id "Q141488" .
+
+n4ind:334 a n4sch:Entity;
+  n4sch:text "visual displays";
+  n4sch:id "Q40199612" .
+
+n4ind:226 n4sch:HAS_CAUSE n4ind:28 .
+
+n4ind:227 n4sch:HAS_PART n4ind:36 .
+
+n4ind:324 a n4sch:Entity;
+  n4sch:id "Q12453";
+  n4sch:text "measurement" .
+
+n4ind:228 a n4sch:Entity;
+  n4sch:id "Q42573062";
+  n4sch:text "testing measurement";
+  n4sch:SUBCLASS_OF n4ind:324 .
+
+n4ind:229 a n4sch:Entity;
+  n4sch:STUDIES n4ind:325;
+  n4sch:text "statistical methods";
+  n4sch:id "Q7604374" .
+
+n4ind:325 a n4sch:Entity;
+  n4sch:text "measuring defect occurrences";
+  n4sch:id "measuring defect occurrences" .
+
+n4ind:327 a n4sch:Entity;
+  n4sch:text "well detection";
+  n4sch:id "well detection" .
+
+n4ind:230 a n4sch:Entity;
+  n4sch:text "containment";
+  n4sch:SUBCLASS_OF n4ind:327;
+  n4sch:id "Q6665312" .
+
+n4ind:328 a n4sch:Entity;
+  n4sch:id "Q33986818";
+  n4sch:text "defect profile" .
+
+n4ind:231 a n4sch:Entity;
+  n4sch:id "Q5289798";
+  n4sch:text "application domain";
+  n4sch:SUBCLASS_OF n4ind:328 .
+
+n4ind:232 a n4sch:Entity;
+  n4sch:id "application quality management";
+  n4sch:text "application quality management";
+  n4sch:SUBCLASS_OF n4ind:16 .
+
+n4ind:233 a n4sch:Entity;
+  n4sch:text "benchmark";
+  n4sch:USES n4ind:234;
+  n4sch:id "Q1161707" .
+
+n4ind:234 a n4sch:Entity;
+  n4sch:text "defect count";
+  n4sch:id "defect count";
+  n4sch:USED_BY n4ind:233 .
+
+n4ind:235 n4sch:PART_OF n4ind:36 .
+
+n4ind:330 a n4sch:Entity;
+  n4sch:id "Q194152";
+  n4sch:text "syntactical" .
+
+n4ind:236 a n4sch:Entity;
+  n4sch:text "semantic analysis";
+  n4sch:SUBCLASS_OF n4ind:330;
+  n4sch:id "Q7449042" .
+
+n4ind:331 a n4sch:Entity;
+  n4sch:text "control";
+  n4sch:id "Q11175" .
+
+n4ind:237 a n4sch:Entity;
+  n4sch:id "Q4480274";
+  n4sch:SUBCLASS_OF n4ind:331;
+  n4sch:text "automate" .
+
+n4ind:238 n4sch:PART_OF n4ind:70 .
+
+n4ind:239 a n4sch:Entity;
+  n4sch:id "safety hazard analysis";
+  n4sch:text "safety hazard analysis";
+  n4sch:SUBCLASS_OF n4ind:16 .
+
+n4ind:240 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:332;
+  n4sch:id "Q1389268";
+  n4sch:text "failure mode and effects analysis" .
+
+n4ind:332 a n4sch:Entity;
+  n4sch:text "hazard analysis";
+  n4sch:id "Q3614972" .
+
+n4ind:241 a n4sch:Entity;
+  n4sch:text "workflow";
+  n4sch:SUBCLASS_OF n4ind:333;
+  n4sch:id "Q627335" .
+
+n4ind:333 a n4sch:Entity;
+  n4sch:text "problem resolution";
+  n4sch:id "Q66223402" .
+
+n4ind:242 a n4sch:Entity;
+  n4sch:id "Q28923";
+  n4sch:SUBCLASS_OF n4ind:334;
+  n4sch:text "charts" .
+
+n4ind:243 a n4sch:Entity;
+  n4sch:id "Q2642425";
+  n4sch:SUBCLASS_OF n4ind:334;
+  n4sch:text "tables" .
+
+n4ind:245 a n4sch:Entity;
+  n4sch:text "data set";
+  n4sch:id "Q1172284";
+  n4sch:STUDIED_BY n4ind:244 .
+
+n4ind:244 a n4sch:Entity;
+  n4sch:STUDIES n4ind:245;
+  n4sch:text "functionality analysis";
+  n4sch:id "Q115103011" .

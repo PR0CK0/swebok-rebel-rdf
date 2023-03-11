@@ -1,0 +1,1156 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix n4ind: <neo4j://graph.individuals#> .
+
+n4ind:0 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:10;
+  n4sch:id "software engineering models and methods";
+  n4sch:text "software engineering models and methods" .
+
+n4ind:10 a n4sch:Entity;
+  n4sch:text "software engineering";
+  n4sch:id "Q80993";
+  n4sch:HAS_PART n4ind:177;
+  n4sch:STUDIES n4ind:11;
+  n4sch:PART_OF n4ind:115, n4ind:116;
+  n4sch:PRACTICED_BY n4ind:19 .
+
+n4ind:1 a n4sch:Entity;
+  n4sch:id "Q730920";
+  n4sch:STUDIED_BY n4ind:2;
+  n4sch:text "problem solving" .
+
+n4ind:2 a n4sch:Entity;
+  n4sch:id "Q7754";
+  n4sch:text "analysis";
+  n4sch:STUDIES n4ind:15, n4ind:1;
+  n4sch:PART_OF n4ind:124 .
+
+n4ind:15 a n4sch:Entity;
+  n4sch:text "modeling";
+  n4sch:id "Q1116876";
+  n4sch:USES n4ind:55, n4ind:25;
+  n4sch:PART_OF n4ind:19;
+  n4sch:STUDIED_BY n4ind:2 .
+
+n4ind:124 a n4sch:Entity;
+  n4sch:text "object-oriented";
+  n4sch:id "Q79872";
+  n4sch:HAS_PART n4ind:2, n4ind:4 .
+
+n4ind:3 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:11;
+  n4sch:id "Q317623";
+  n4sch:text "specification" .
+
+n4ind:11 a n4sch:Entity;
+  n4sch:text "software";
+  n4sch:id "Q7397";
+  n4sch:HAS_PART n4ind:121, n4ind:79, n4ind:87;
+  n4sch:STUDIED_BY n4ind:19, n4ind:10;
+  n4sch:PRACTICED_BY n4ind:19 .
+
+n4ind:4 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:108, n4ind:148, n4ind:43, n4ind:42;
+  n4sch:id "Q82604";
+  n4sch:text "design";
+  n4sch:SUBCLASS_OF n4ind:11;
+  n4sch:PART_OF n4ind:93, n4ind:124 .
+
+n4ind:108 a n4sch:Entity;
+  n4sch:id "Q853614";
+  n4sch:text "code";
+  n4sch:PART_OF n4ind:148, n4ind:4, n4ind:93 .
+
+n4ind:148 a n4sch:Entity;
+  n4sch:text "software environment";
+  n4sch:id "Q15946127";
+  n4sch:PART_OF n4ind:108, n4ind:4 .
+
+n4ind:43 a n4sch:Entity;
+  n4sch:id "Q245962";
+  n4sch:text "implementation";
+  n4sch:PART_OF n4ind:4 .
+
+n4ind:42 a n4sch:Entity;
+  n4sch:id "Q1761598";
+  n4sch:text "requirements";
+  n4sch:PART_OF n4ind:54, n4ind:93, n4ind:4 .
+
+n4ind:93 a n4sch:Entity;
+  n4sch:text "software model";
+  n4sch:id "Q62041180";
+  n4sch:HAS_PART n4ind:42, n4ind:4, n4ind:108;
+  n4sch:USED_BY n4ind:19 .
+
+n4ind:5 a n4sch:Entity;
+  n4sch:id "Q3875186";
+  n4sch:text "construction";
+  n4sch:SUBCLASS_OF n4ind:11 .
+
+n4ind:6 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:11;
+  n4sch:id "Q4115189";
+  n4sch:text "test" .
+
+n4ind:7 a n4sch:Entity;
+  n4sch:text "verification";
+  n4sch:id "Q953429";
+  n4sch:SUBCLASS_OF n4ind:11 .
+
+n4ind:8 a n4sch:Entity;
+  n4sch:id "software life cycle phase";
+  n4sch:PART_OF n4ind:9;
+  n4sch:text "software life cycle phase" .
+
+n4ind:9 a n4sch:Entity;
+  n4sch:text "software life cycle";
+  n4sch:id "Q2904257";
+  n4sch:HAS_PART n4ind:8 .
+
+n4ind:177 a n4sch:Entity;
+  n4sch:text "software engineering method";
+  n4sch:id "Q7389723";
+  n4sch:PART_OF n4ind:10 .
+
+n4ind:115 a n4sch:Entity;
+  n4sch:id "Q638608";
+  n4sch:text "software development";
+  n4sch:HAS_PART n4ind:10;
+  n4sch:PRACTICED_BY n4ind:19 .
+
+n4ind:116 a n4sch:Entity;
+  n4sch:id "Q880371";
+  n4sch:text "software industry";
+  n4sch:HAS_PART n4ind:10 .
+
+n4ind:19 a n4sch:Entity;
+  n4sch:text "software engineer";
+  n4sch:id "Q1709010";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:10, n4ind:11, n4ind:163, n4ind:114, n4ind:115,
+    n4ind:158;
+  n4sch:STUDIES n4ind:11, n4ind:147 .
+
+n4ind:121 a n4sch:Entity;
+  n4sch:text "specifications";
+  n4sch:id "Q20819677";
+  n4sch:PART_OF n4ind:11 .
+
+n4ind:79 a n4sch:Entity;
+  n4sch:text "functions";
+  n4sch:id "Q190686";
+  n4sch:PART_OF n4ind:54, n4ind:11 .
+
+n4ind:87 a n4sch:Entity;
+  n4sch:text "component parts";
+  n4sch:id "Q5156698";
+  n4sch:PART_OF n4ind:11 .
+
+n4ind:12 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:66;
+  n4sch:id "Q2695280";
+  n4sch:text "methods";
+  n4sch:PART_OF n4ind:10;
+  n4sch:DIFFERENT_FROM n4ind:66 .
+
+n4ind:66 a n4sch:Entity;
+  n4sch:id "Q11348";
+  n4sch:text "function";
+  n4sch:DIFFERENT_FROM n4ind:12 .
+
+n4ind:13 a n4sch:Entity;
+  n4sch:text "pragmatics";
+  n4sch:HAS_PART n4ind:134;
+  n4sch:id "Q181839";
+  n4sch:DIFFERENT_FROM n4ind:56 .
+
+n4ind:134 a n4sch:Entity;
+  n4sch:text "syntax";
+  n4sch:id "Q37437";
+  n4sch:SUBCLASS_OF n4ind:22 .
+
+n4ind:56 a n4sch:Entity;
+  n4sch:text "semantic";
+  n4sch:id "Q39645";
+  n4sch:PART_OF n4ind:101;
+  n4sch:DIFFERENT_FROM n4ind:13 .
+
+n4ind:14 a n4sch:Entity;
+  n4sch:id "submodels";
+  n4sch:text "submodels";
+  n4sch:SUBCLASS_OF n4ind:197, n4ind:54, n4ind:191, n4ind:25 .
+
+n4ind:197 a n4sch:Entity;
+  n4sch:text "aggregation";
+  n4sch:id "Q2071902" .
+
+n4ind:54 a n4sch:Entity;
+  n4sch:text "model";
+  n4sch:id "Q4610556";
+  n4sch:SUBCLASS_OF n4ind:30 .
+
+n4ind:191 a n4sch:Entity;
+  n4sch:id "Q5508775";
+  n4sch:text "function model" .
+
+n4ind:25 a n4sch:Entity;
+  n4sch:text "models";
+  n4sch:id "Q3234845";
+  n4sch:HAS_PART n4ind:26;
+  n4sch:USE n4ind:15 .
+
+n4ind:55 a n4sch:Entity;
+  n4sch:id "Q107381878";
+  n4sch:text "constructs";
+  n4sch:USED_BY n4ind:15 .
+
+n4ind:16 a n4sch:Entity;
+  n4sch:id "Q106331620";
+  n4sch:text "software engineering methods";
+  n4sch:FACET_OF n4ind:10 .
+
+n4ind:17 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:18;
+  n4sch:text "heuristic methods";
+  n4sch:id "Q36522616" .
+
+n4ind:18 a n4sch:Entity;
+  n4sch:text "formal methods";
+  n4sch:id "Q1049183";
+  n4sch:HAS_PART n4ind:17 .
+
+n4ind:163 a n4sch:Entity;
+  n4sch:id "Q1391080";
+  n4sch:text "business application";
+  n4sch:PRACTICED_BY n4ind:19 .
+
+n4ind:114 a n4sch:Entity;
+  n4sch:id "Q1061656";
+  n4sch:text "interaction design";
+  n4sch:PRACTICED_BY n4ind:19 .
+
+n4ind:158 a n4sch:Entity;
+  n4sch:id "project stakeholders";
+  n4sch:text "project stakeholders";
+  n4sch:PRACTICED_BY n4ind:19 .
+
+n4ind:147 a n4sch:Entity;
+  n4sch:id "software behavior";
+  n4sch:text "software behavior";
+  n4sch:STUDIED_BY n4ind:19 .
+
+n4ind:178 a n4sch:Entity;
+  n4sch:text "parties";
+  n4sch:id "Q7278" .
+
+n4ind:20 a n4sch:Entity;
+  n4sch:id "Q852998";
+  n4sch:SUBCLASS_OF n4ind:178;
+  n4sch:text "stakeholder" .
+
+n4ind:21 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:50;
+  n4sch:text "modeling language";
+  n4sch:id "Q1941921";
+  n4sch:USE n4ind:93, n4ind:15;
+  n4sch:DIFFERENT_FROM n4ind:22 .
+
+n4ind:50 a n4sch:Entity;
+  n4sch:text "notation element";
+  n4sch:id "notation element";
+  n4sch:PART_OF n4ind:21 .
+
+n4ind:22 a n4sch:Entity;
+  n4sch:id "Q2001982";
+  n4sch:text "notation";
+  n4sch:DIFFERENT_FROM n4ind:21 .
+
+n4ind:23 a n4sch:Entity;
+  n4sch:text "feature";
+  n4sch:id "Q1207505";
+  n4sch:PART_OF n4ind:11 .
+
+n4ind:24 a n4sch:Entity;
+  n4sch:id "Q30087399";
+  n4sch:text "features";
+  n4sch:PART_OF n4ind:11 .
+
+n4ind:26 a n4sch:Entity;
+  n4sch:text "views";
+  n4sch:id "Q19687629";
+  n4sch:SUBCLASS_OF n4ind:181;
+  n4sch:PART_OF n4ind:25;
+  n4sch:FACET_OF n4ind:11 .
+
+n4ind:181 a n4sch:Entity;
+  n4sch:text "perspectives";
+  n4sch:id "Q27708726" .
+
+n4ind:179 a n4sch:Entity;
+  n4sch:text "dimensionality";
+  n4sch:id "Q4440864" .
+
+n4ind:27 a n4sch:Entity;
+  n4sch:text "perspective-driven";
+  n4sch:SUBCLASS_OF n4ind:179;
+  n4sch:id "perspective-driven" .
+
+n4ind:28 a n4sch:Entity;
+  n4sch:PART_OF n4ind:22;
+  n4sch:id "Q859161";
+  n4sch:text "vocabulary" .
+
+n4ind:29 a n4sch:Entity;
+  n4sch:text "reporting";
+  n4sch:SUBCLASS_OF n4ind:180;
+  n4sch:id "Q11030" .
+
+n4ind:180 a n4sch:Entity;
+  n4sch:text "communication";
+  n4sch:id "Q11024" .
+
+n4ind:30 a n4sch:Entity;
+  n4sch:text "abstraction";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:31;
+  n4sch:id "Q162150";
+  n4sch:SUBCLASS_OF n4ind:202 .
+
+n4ind:31 a n4sch:Entity;
+  n4sch:text "simplification";
+  n4sch:id "Q9289849";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:30 .
+
+n4ind:202 a n4sch:Entity;
+  n4sch:id "Q109767841";
+  n4sch:text "conceptualize" .
+
+n4ind:32 a n4sch:Entity;
+  n4sch:id "Q11653";
+  n4sch:text "component";
+  n4sch:PART_OF n4ind:11, n4ind:91 .
+
+n4ind:91 a n4sch:Entity;
+  n4sch:id "Q223557";
+  n4sch:text "object";
+  n4sch:HAS_PART n4ind:32, n4ind:90 .
+
+n4ind:33 a n4sch:Entity;
+  n4sch:id "Q813912";
+  n4sch:SUBCLASS_OF n4ind:54;
+  n4sch:text "context" .
+
+n4ind:34 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:54;
+  n4sch:id "reused model";
+  n4sch:text "reused model" .
+
+n4ind:182 a n4sch:Entity;
+  n4sch:id "Q97467327";
+  n4sch:text "tooling" .
+
+n4ind:35 a n4sch:Entity;
+  n4sch:id "modeling notation";
+  n4sch:SUBCLASS_OF n4ind:182;
+  n4sch:text "modeling notation" .
+
+n4ind:36 a n4sch:Entity;
+  n4sch:id "Q105749746";
+  n4sch:text "completeness";
+  n4sch:SUBCLASS_OF n4ind:93, n4ind:183 .
+
+n4ind:183 a n4sch:Entity;
+  n4sch:id "Q106356012";
+  n4sch:text "properties" .
+
+n4ind:37 a n4sch:Entity;
+  n4sch:text "verified";
+  n4sch:id "Q96358549";
+  n4sch:SUBCLASS_OF n4ind:207;
+  n4sch:FACET_OF n4ind:42 .
+
+n4ind:207 a n4sch:Entity;
+  n4sch:text "implemented";
+  n4sch:id "Q105682592" .
+
+n4ind:38 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:42;
+  n4sch:id "Q15745527";
+  n4sch:text "constraints";
+  n4sch:PART_OF n4ind:54 .
+
+n4ind:39 a n4sch:Entity;
+  n4sch:text "defects";
+  n4sch:FACET_OF n4ind:42;
+  n4sch:id "Q45316438" .
+
+n4ind:40 a n4sch:Entity;
+  n4sch:text "behaviors";
+  n4sch:FACET_OF n4ind:11;
+  n4sch:id "Q105859122" .
+
+n4ind:41 a n4sch:Entity;
+  n4sch:text "simulation";
+  n4sch:USE n4ind:189;
+  n4sch:id "Q45045";
+  n4sch:SUBCLASS_OF n4ind:11 .
+
+n4ind:189 a n4sch:Entity;
+  n4sch:id "Q265158";
+  n4sch:text "review" .
+
+n4ind:44 a n4sch:Entity;
+  n4sch:id "Q56061";
+  n4sch:text "entity";
+  n4sch:SUBCLASS_OF n4ind:184 .
+
+n4ind:184 a n4sch:Entity;
+  n4sch:text "expression element";
+  n4sch:id "Q115001301" .
+
+n4ind:185 a n4sch:Entity;
+  n4sch:text "artifacts";
+  n4sch:id "Q2720909" .
+
+n4ind:45 a n4sch:Entity;
+  n4sch:id "abstract artifacts";
+  n4sch:text "abstract artifacts";
+  n4sch:SUBCLASS_OF n4ind:185 .
+
+n4ind:46 a n4sch:Entity;
+  n4sch:id "Q23905861";
+  n4sch:FACET_OF n4ind:186;
+  n4sch:text "relations";
+  n4sch:STUDIED_BY n4ind:110 .
+
+n4ind:186 a n4sch:Entity;
+  n4sch:id "model entities";
+  n4sch:text "model entities" .
+
+n4ind:110 a n4sch:Entity;
+  n4sch:id "Q57827957";
+  n4sch:text "interaction analysis";
+  n4sch:STUDIES n4ind:46 .
+
+n4ind:47 a n4sch:Entity;
+  n4sch:text "graphical modeling language";
+  n4sch:HAS_PART n4ind:58;
+  n4sch:id "graphical modeling language";
+  n4sch:SUBCLASS_OF n4ind:21 .
+
+n4ind:58 a n4sch:Entity;
+  n4sch:id "Q111640237";
+  n4sch:text "metamodel";
+  n4sch:SUBCLASS_OF n4ind:192;
+  n4sch:PART_OF n4ind:47 .
+
+n4ind:48 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:187;
+  n4sch:id "Q207961";
+  n4sch:text "shape" .
+
+n4ind:187 a n4sch:Entity;
+  n4sch:text "textual attributes";
+  n4sch:id "textual attributes" .
+
+n4ind:188 a n4sch:Entity;
+  n4sch:text "language";
+  n4sch:id "Q315" .
+
+n4ind:49 a n4sch:Entity;
+  n4sch:text "syntactic structure";
+  n4sch:id "Q1198080";
+  n4sch:PART_OF n4ind:188 .
+
+n4ind:51 a n4sch:Entity;
+  n4sch:id "Q1319773";
+  n4sch:text "consistency";
+  n4sch:SUBCLASS_OF n4ind:93, n4ind:36 .
+
+n4ind:52 a n4sch:Entity;
+  n4sch:PART_OF n4ind:56;
+  n4sch:text "syntactic rigor";
+  n4sch:id "syntactic rigor" .
+
+n4ind:53 a n4sch:Entity;
+  n4sch:text "models can be surprisingly deceptive";
+  n4sch:SUBCLASS_OF n4ind:190;
+  n4sch:id "models can be surprisingly deceptive" .
+
+n4ind:190 a n4sch:Entity;
+  n4sch:id "Q17075959";
+  n4sch:text "deceptive" .
+
+n4ind:101 a n4sch:Entity;
+  n4sch:id "Q60301668";
+  n4sch:text "syntactic";
+  n4sch:HAS_PART n4ind:56 .
+
+n4ind:57 a n4sch:Entity;
+  n4sch:id "notation grammar";
+  n4sch:SUBCLASS_OF n4ind:134;
+  n4sch:text "notation grammar" .
+
+n4ind:192 a n4sch:Entity;
+  n4sch:id "Q1143367";
+  n4sch:text "graphical model" .
+
+n4ind:59 a n4sch:Entity;
+  n4sch:CONNECTS_WITH n4ind:193;
+  n4sch:text "naur";
+  n4sch:id "Q6964758" .
+
+n4ind:193 a n4sch:Entity;
+  n4sch:id "Q2153126";
+  n4sch:text "backus" .
+
+n4ind:60 a n4sch:Entity;
+  n4sch:STUDIES n4ind:194;
+  n4sch:id "";
+  n4sch:text "" .
+
+n4ind:194 a n4sch:Entity;
+  n4sch:text "meaning";
+  n4sch:id "Q183046" .
+
+n4ind:195 a n4sch:Entity;
+  n4sch:text "diagram";
+  n4sch:id "Q959962" .
+
+n4ind:61 a n4sch:Entity;
+  n4sch:id "Q1760719";
+  n4sch:text "object diagram";
+  n4sch:SUBCLASS_OF n4ind:195 .
+
+n4ind:62 a n4sch:Entity;
+  n4sch:text "activity diagram";
+  n4sch:id "Q423262";
+  n4sch:SUBCLASS_OF n4ind:195 .
+
+n4ind:63 a n4sch:Entity;
+  n4sch:id "Q7075";
+  n4sch:text "library";
+  n4sch:HAS_PART n4ind:54 .
+
+n4ind:64 a n4sch:Entity;
+  n4sch:id "Q3732599";
+  n4sch:text "errors";
+  n4sch:FACET_OF n4ind:11 .
+
+n4ind:65 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:196;
+  n4sch:text "postconditions";
+  n4sch:id "Q360690" .
+
+n4ind:196 a n4sch:Entity;
+  n4sch:id "Q1413450";
+  n4sch:text "preconditions" .
+
+n4ind:198 a n4sch:Entity;
+  n4sch:text "description";
+  n4sch:id "Q1200750" .
+
+n4ind:67 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:198;
+  n4sch:id "Q105698583";
+  n4sch:text "diagrams" .
+
+n4ind:68 a n4sch:Entity;
+  n4sch:text "methods modeling language";
+  n4sch:id "methods modeling language";
+  n4sch:SUBCLASS_OF n4ind:21 .
+
+n4ind:69 a n4sch:Entity;
+  n4sch:id "modeling diagrams";
+  n4sch:PART_OF n4ind:21;
+  n4sch:text "modeling diagrams" .
+
+n4ind:199 a n4sch:Entity;
+  n4sch:text "model types";
+  n4sch:id "model types" .
+
+n4ind:70 a n4sch:Entity;
+  n4sch:text "information model";
+  n4sch:id "Q1662581";
+  n4sch:INSTANCE_OF n4ind:199 .
+
+n4ind:71 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:199;
+  n4sch:id "Q3318160";
+  n4sch:text "behavioral model" .
+
+n4ind:72 a n4sch:Entity;
+  n4sch:INSTANCE_OF n4ind:199;
+  n4sch:text "structure model";
+  n4sch:id "Q25256886" .
+
+n4ind:200 a n4sch:Entity;
+  n4sch:text "information";
+  n4sch:id "Q11028" .
+
+n4ind:73 a n4sch:Entity;
+  n4sch:id "Q42848";
+  n4sch:SUBCLASS_OF n4ind:200;
+  n4sch:text "data" .
+
+n4ind:74 a n4sch:Entity;
+  n4sch:text "abstract representation";
+  n4sch:id "Q56860416";
+  n4sch:STUDIES n4ind:75 .
+
+n4ind:75 a n4sch:Entity;
+  n4sch:text "data entities";
+  n4sch:id "data entities";
+  n4sch:STUDIED_BY n4ind:74 .
+
+n4ind:201 a n4sch:Entity;
+  n4sch:id "Q539750";
+  n4sch:text "formalism" .
+
+n4ind:76 a n4sch:Entity;
+  n4sch:id "conceptual information model";
+  n4sch:SUBCLASS_OF n4ind:201;
+  n4sch:text "conceptual information model" .
+
+n4ind:77 a n4sch:Entity;
+  n4sch:text "logical";
+  n4sch:id "Q66498486";
+  n4sch:SUBCLASS_OF n4ind:203 .
+
+n4ind:203 a n4sch:Entity;
+  n4sch:text "data model";
+  n4sch:id "Q1172480" .
+
+n4ind:78 a n4sch:Entity;
+  n4sch:id "Q413";
+  n4sch:SUBCLASS_OF n4ind:203;
+  n4sch:text "physical" .
+
+n4ind:80 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:218, n4ind:54, n4ind:71;
+  n4sch:id "Q176452";
+  n4sch:text "state machine" .
+
+n4ind:218 a n4sch:Entity;
+  n4sch:id "Q787116";
+  n4sch:text "automaton" .
+
+n4ind:81 a n4sch:Entity;
+  n4sch:text "control-flow model";
+  n4sch:SUBCLASS_OF n4ind:71;
+  n4sch:id "control-flow model" .
+
+n4ind:82 a n4sch:Entity;
+  n4sch:id "Q51462158";
+  n4sch:SUBCLASS_OF n4ind:71;
+  n4sch:text "data-flow model" .
+
+n4ind:83 a n4sch:Entity;
+  n4sch:text "unguarded";
+  n4sch:id "Q7884531";
+  n4sch:OPPOSITE_OF n4ind:204 .
+
+n4ind:204 a n4sch:Entity;
+  n4sch:id "Q1762894";
+  n4sch:text "guarded" .
+
+n4ind:84 a n4sch:Entity;
+  n4sch:id "Q190878";
+  n4sch:OPPOSITE_OF n4ind:85;
+  n4sch:text "activated" .
+
+n4ind:85 a n4sch:Entity;
+  n4sch:text "deactivated";
+  n4sch:id "Q56631052";
+  n4sch:OPPOSITE_OF n4ind:84 .
+
+n4ind:86 a n4sch:Entity;
+  n4sch:text "data sink";
+  n4sch:id "Q7524520";
+  n4sch:SUBCLASS_OF n4ind:205 .
+
+n4ind:205 a n4sch:Entity;
+  n4sch:text "data store";
+  n4sch:id "Q80428" .
+
+n4ind:88 a n4sch:Entity;
+  n4sch:id "problem perspective";
+  n4sch:text "problem perspective";
+  n4sch:FACET_OF n4ind:11 .
+
+n4ind:89 a n4sch:Entity;
+  n4sch:id "Q339062";
+  n4sch:text "decomposition";
+  n4sch:STUDIED_BY n4ind:72 .
+
+n4ind:90 a n4sch:Entity;
+  n4sch:text "class";
+  n4sch:PART_OF n4ind:91;
+  n4sch:id "Q37517" .
+
+n4ind:206 a n4sch:Entity;
+  n4sch:id "analysis of constructed models";
+  n4sch:text "analysis of constructed models" .
+
+n4ind:92 a n4sch:Entity;
+  n4sch:id "constructed model";
+  n4sch:STUDIED_BY n4ind:206;
+  n4sch:text "constructed model" .
+
+n4ind:94 a n4sch:Entity;
+  n4sch:PART_OF n4ind:11;
+  n4sch:text "code implementation";
+  n4sch:id "code implementation" .
+
+n4ind:208 a n4sch:Entity;
+  n4sch:id "Q28656162";
+  n4sch:text "modeling tool" .
+
+n4ind:95 a n4sch:Entity;
+  n4sch:id "Q1762403";
+  n4sch:SUBCLASS_OF n4ind:208;
+  n4sch:text "structural analysis" .
+
+n4ind:96 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:189;
+  n4sch:text "inspection";
+  n4sch:id "Q1137655" .
+
+n4ind:97 a n4sch:Entity;
+  n4sch:text "assertions";
+  n4sch:PART_OF n4ind:54;
+  n4sch:id "Q40162327" .
+
+n4ind:209 a n4sch:Entity;
+  n4sch:text "warning";
+  n4sch:id "Q23817739" .
+
+n4ind:98 a n4sch:Entity;
+  n4sch:id "Q29485";
+  n4sch:text "error";
+  n4sch:HAS_EFFECT n4ind:209 .
+
+n4ind:99 a n4sch:Entity;
+  n4sch:id "syntactic correctness";
+  n4sch:OPPOSITE_OF n4ind:100;
+  n4sch:text "syntactic correctness" .
+
+n4ind:100 a n4sch:Entity;
+  n4sch:text "semantic correctness";
+  n4sch:id "semantic correctness";
+  n4sch:OPPOSITE_OF n4ind:99 .
+
+n4ind:102 a n4sch:Entity;
+  n4sch:text "plan";
+  n4sch:id "Q4006";
+  n4sch:SUBCLASS_OF n4ind:210;
+  n4sch:PART_OF n4ind:233 .
+
+n4ind:210 a n4sch:Entity;
+  n4sch:text "planning document";
+  n4sch:id "Q66254707" .
+
+n4ind:233 a n4sch:Entity;
+  n4sch:id "Q4201895";
+  n4sch:text "managed" .
+
+n4ind:211 a n4sch:Entity;
+  n4sch:id "Q1434127";
+  n4sch:text "related" .
+
+n4ind:103 a n4sch:Entity;
+  n4sch:text "dependency relationship";
+  n4sch:id "Q59789611";
+  n4sch:SUBCLASS_OF n4ind:211 .
+
+n4ind:104 a n4sch:Entity;
+  n4sch:text "maintained";
+  n4sch:PART_OF n4ind:212;
+  n4sch:id "Q3047224" .
+
+n4ind:212 a n4sch:Entity;
+  n4sch:text "developed";
+  n4sch:id "Q132453" .
+
+n4ind:213 a n4sch:Entity;
+  n4sch:text "management of software work products";
+  n4sch:id "management of software work products" .
+
+n4ind:105 a n4sch:Entity;
+  n4sch:id "software process quality";
+  n4sch:FACET_OF n4ind:213;
+  n4sch:text "software process quality" .
+
+n4ind:106 a n4sch:Entity;
+  n4sch:id "Q57267515";
+  n4sch:STUDIES n4ind:107;
+  n4sch:text "change analysis" .
+
+n4ind:107 a n4sch:Entity;
+  n4sch:id "Q1150070";
+  n4sch:text "change";
+  n4sch:STUDIED_BY n4ind:106 .
+
+n4ind:109 a n4sch:Entity;
+  n4sch:text "test entities";
+  n4sch:PART_OF n4ind:93;
+  n4sch:id "test entities" .
+
+n4ind:111 a n4sch:Entity;
+  n4sch:text "software layer";
+  n4sch:id "Q60196565";
+  n4sch:PART_OF n4ind:93 .
+
+n4ind:112 a n4sch:Entity;
+  n4sch:id "computer software application";
+  n4sch:text "computer software application";
+  n4sch:HAS_PART n4ind:113 .
+
+n4ind:113 a n4sch:Entity;
+  n4sch:id "user interface software";
+  n4sch:text "user interface software";
+  n4sch:PART_OF n4ind:112 .
+
+n4ind:117 a n4sch:Entity;
+  n4sch:id "structured analysis and design methods";
+  n4sch:text "structured analysis and design methods";
+  n4sch:PART_OF n4ind:118 .
+
+n4ind:118 a n4sch:Entity;
+  n4sch:id "object-oriented analysis and design methods";
+  n4sch:text "object-oriented analysis and design methods";
+  n4sch:HAS_PART n4ind:117 .
+
+n4ind:119 a n4sch:Entity;
+  n4sch:id "Q579600";
+  n4sch:text "functional";
+  n4sch:SUBCLASS_OF n4ind:93 .
+
+n4ind:120 a n4sch:Entity;
+  n4sch:text "behavioral";
+  n4sch:SUBCLASS_OF n4ind:93;
+  n4sch:id "Q846566" .
+
+n4ind:122 a n4sch:Entity;
+  n4sch:PART_OF n4ind:203;
+  n4sch:text "relationships";
+  n4sch:id "Q223642" .
+
+n4ind:123 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:163;
+  n4sch:text "database";
+  n4sch:id "Q8513" .
+
+n4ind:125 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:93;
+  n4sch:id "-oriented analysis";
+  n4sch:text "-oriented analysis" .
+
+n4ind:126 a n4sch:Entity;
+  n4sch:id "Q107380531";
+  n4sch:SUBCLASS_OF n4ind:11;
+  n4sch:text "packaging" .
+
+n4ind:127 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:93;
+  n4sch:text "correctness";
+  n4sch:id "Q360812" .
+
+n4ind:166 a n4sch:Entity;
+  n4sch:text "automated";
+  n4sch:id "Q24410992";
+  n4sch:OPPOSITE_OF n4ind:167 .
+
+n4ind:128 a n4sch:Entity;
+  n4sch:id "Q1727367";
+  n4sch:text "semi-automated";
+  n4sch:SUBCLASS_OF n4ind:166 .
+
+n4ind:129 a n4sch:Entity;
+  n4sch:id "Q25852983";
+  n4sch:STUDIES n4ind:130;
+  n4sch:text "formal analysis" .
+
+n4ind:130 a n4sch:Entity;
+  n4sch:id "Q4462275";
+  n4sch:text "software requirements";
+  n4sch:STUDIED_BY n4ind:129 .
+
+n4ind:131 a n4sch:Entity;
+  n4sch:USES n4ind:132;
+  n4sch:id "Q173326";
+  n4sch:text "formal verification" .
+
+n4ind:132 a n4sch:Entity;
+  n4sch:text "logical inference";
+  n4sch:id "Q57159872";
+  n4sch:USED_BY n4ind:131 .
+
+n4ind:133 a n4sch:Entity;
+  n4sch:text "specification language";
+  n4sch:USE n4ind:3;
+  n4sch:id "Q1209840";
+  n4sch:SUBCLASS_OF n4ind:215, n4ind:214 .
+
+n4ind:215 a n4sch:Entity;
+  n4sch:id "Q5105331";
+  n4sch:text "chosen" .
+
+n4ind:214 a n4sch:Entity;
+  n4sch:text "computer language";
+  n4sch:id "Q9143" .
+
+n4ind:136 a n4sch:Entity;
+  n4sch:text "refinement";
+  n4sch:id "Q682483";
+  n4sch:PART_OF n4ind:135 .
+
+n4ind:135 a n4sch:Entity;
+  n4sch:id "Q40056";
+  n4sch:HAS_PART n4ind:136, n4ind:137;
+  n4sch:text "program" .
+
+n4ind:137 a n4sch:Entity;
+  n4sch:text "derivation";
+  n4sch:id "Q728001";
+  n4sch:PART_OF n4ind:135 .
+
+n4ind:138 a n4sch:Entity;
+  n4sch:text "lower level";
+  n4sch:SUBCLASS_OF n4ind:3;
+  n4sch:id "Q15270853" .
+
+n4ind:139 a n4sch:Entity;
+  n4sch:text "executable";
+  n4sch:id "Q778586";
+  n4sch:SUBCLASS_OF n4ind:223, n4ind:135, n4ind:11 .
+
+n4ind:223 a n4sch:Entity;
+  n4sch:text "prototype";
+  n4sch:id "Q207977" .
+
+n4ind:140 a n4sch:Entity;
+  n4sch:id "Q38427091";
+  n4sch:text "semantic properties";
+  n4sch:SUBCLASS_OF n4ind:3 .
+
+n4ind:141 a n4sch:Entity;
+  n4sch:id "operationsexact";
+  n4sch:text "operationsexact";
+  n4sch:INSTANCE_OF n4ind:216 .
+
+n4ind:216 a n4sch:Entity;
+  n4sch:text "runtime formal";
+  n4sch:id "runtime formal" .
+
+n4ind:142 a n4sch:Entity;
+  n4sch:text "reachability analysis";
+  n4sch:SUBCLASS_OF n4ind:7;
+  n4sch:id "Q60790438" .
+
+n4ind:143 a n4sch:Entity;
+  n4sch:text "interleaving";
+  n4sch:id "Q1666173";
+  n4sch:SUBCLASS_OF n4ind:2 .
+
+n4ind:144 a n4sch:Entity;
+  n4sch:FOLLOWED_BY n4ind:217;
+  n4sch:id "Q1190554";
+  n4sch:text "event" .
+
+n4ind:217 a n4sch:Entity;
+  n4sch:text "message";
+  n4sch:id "Q133492" .
+
+n4ind:145 a n4sch:Entity;
+  n4sch:id "Q8078";
+  n4sch:text "logic";
+  n4sch:HAS_PART n4ind:146 .
+
+n4ind:146 a n4sch:Entity;
+  n4sch:id "Q1166618";
+  n4sch:text "mathematical logic";
+  n4sch:PART_OF n4ind:145 .
+
+n4ind:149 a n4sch:Entity;
+  n4sch:text "user interface";
+  n4sch:PART_OF n4ind:219;
+  n4sch:id "Q47146" .
+
+n4ind:219 a n4sch:Entity;
+  n4sch:id "Q166142";
+  n4sch:text "software application" .
+
+n4ind:150 a n4sch:Entity;
+  n4sch:PART_OF n4ind:220;
+  n4sch:text "refactoring";
+  n4sch:id "Q116877" .
+
+n4ind:220 a n4sch:Entity;
+  n4sch:text "development";
+  n4sch:id "Q1074523" .
+
+n4ind:151 a n4sch:Entity;
+  n4sch:id "prototyping styles";
+  n4sch:text "prototyping styles";
+  n4sch:FACET_OF n4ind:152 .
+
+n4ind:152 a n4sch:Entity;
+  n4sch:id "Q107285214";
+  n4sch:text "prototyping";
+  n4sch:INSTANCE_OF n4ind:221;
+  n4sch:PART_OF n4ind:224 .
+
+n4ind:221 a n4sch:Entity;
+  n4sch:id "Q1792644";
+  n4sch:text "style" .
+
+n4ind:224 a n4sch:Entity;
+  n4sch:text "project";
+  n4sch:id "Q170584" .
+
+n4ind:222 a n4sch:Entity;
+  n4sch:id "Q52664805";
+  n4sch:text "approaches" .
+
+n4ind:153 a n4sch:Entity;
+  n4sch:id "Q2113827";
+  n4sch:text "prototypes";
+  n4sch:SUBCLASS_OF n4ind:222 .
+
+n4ind:154 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:152;
+  n4sch:id "Q513359";
+  n4sch:text "life cycle" .
+
+n4ind:155 a n4sch:Entity;
+  n4sch:text "prototype activity";
+  n4sch:SUBCLASS_OF n4ind:152;
+  n4sch:id "prototype activity" .
+
+n4ind:156 a n4sch:Entity;
+  n4sch:id "Q4508598";
+  n4sch:SUBCLASS_OF n4ind:149;
+  n4sch:text "human-machine" .
+
+n4ind:157 a n4sch:Entity;
+  n4sch:id "Q23700891";
+  n4sch:SUBCLASS_OF n4ind:152;
+  n4sch:text "evaluation techniques" .
+
+n4ind:159 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:115;
+  n4sch:text "plansoftware";
+  n4sch:id "plansoftware" .
+
+n4ind:160 a n4sch:Entity;
+  n4sch:text "iterative development";
+  n4sch:id "Q37606861";
+  n4sch:SUBCLASS_OF n4ind:225 .
+
+n4ind:225 a n4sch:Entity;
+  n4sch:text "development cycle";
+  n4sch:id "Q58237405" .
+
+n4ind:161 a n4sch:Entity;
+  n4sch:id "Q460387";
+  n4sch:INSTANCE_OF n4ind:226;
+  n4sch:text "scrum";
+  n4sch:SUBCLASS_OF n4ind:232 .
+
+n4ind:226 a n4sch:Entity;
+  n4sch:text "extreme programming";
+  n4sch:id "Q209711" .
+
+n4ind:232 a n4sch:Entity;
+  n4sch:id "Q2761147";
+  n4sch:text "meeting" .
+
+n4ind:162 a n4sch:Entity;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:219;
+  n4sch:id "Q559486";
+  n4sch:text "application development";
+  n4sch:SUBCLASS_OF n4ind:227 .
+
+n4ind:227 a n4sch:Entity;
+  n4sch:text "rapid software development";
+  n4sch:id "rapid software development" .
+
+n4ind:164 a n4sch:Entity;
+  n4sch:USE n4ind:228;
+  n4sch:text "tests";
+  n4sch:id "Q18615098" .
+
+n4ind:228 a n4sch:Entity;
+  n4sch:text "continuous code refactoring and integration";
+  n4sch:id "continuous code refactoring and integration" .
+
+n4ind:165 a n4sch:Entity;
+  n4sch:id "Q2527012";
+  n4sch:text "tested";
+  n4sch:SUBCLASS_OF n4ind:212 .
+
+n4ind:167 a n4sch:Entity;
+  n4sch:id "Q6752328";
+  n4sch:text "manual test";
+  n4sch:OPPOSITE_OF n4ind:166 .
+
+n4ind:229 a n4sch:Entity;
+  n4sch:text "project management";
+  n4sch:id "Q179012" .
+
+n4ind:168 a n4sch:Entity;
+  n4sch:text "agile";
+  n4sch:SUBCLASS_OF n4ind:229;
+  n4sch:id "Q30232";
+  n4sch:DIFFERENT_FROM n4ind:176 .
+
+n4ind:176 a n4sch:Entity;
+  n4sch:text "plan-based methods";
+  n4sch:id "plan-based methods";
+  n4sch:DIFFERENT_FROM n4ind:168 .
+
+n4ind:169 a n4sch:Entity;
+  n4sch:text "sprint";
+  n4sch:id "Q301965";
+  n4sch:SUBCLASS_OF n4ind:230 .
+
+n4ind:230 a n4sch:Entity;
+  n4sch:id "project increment";
+  n4sch:text "project increment" .
+
+n4ind:170 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:231;
+  n4sch:id "Q66151549";
+  n4sch:text "item list" .
+
+n4ind:231 a n4sch:Entity;
+  n4sch:id "Q4839692";
+  n4sch:text "backlog" .
+
+n4ind:171 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:11;
+  n4sch:text "working version";
+  n4sch:id "working version" .
+
+n4ind:172 a n4sch:Entity;
+  n4sch:id "Q2866772";
+  n4sch:text "iterative";
+  n4sch:SUBCLASS_OF n4ind:115 .
+
+n4ind:173 a n4sch:Entity;
+  n4sch:text "incremental software development";
+  n4sch:id "incremental software development";
+  n4sch:SUBCLASS_OF n4ind:226 .
+
+n4ind:174 a n4sch:Entity;
+  n4sch:id "Q1399336";
+  n4sch:SUBCLASS_OF n4ind:234;
+  n4sch:text "feature-driven development" .
+
+n4ind:234 a n4sch:Entity;
+  n4sch:id "architectural approach to the software";
+  n4sch:text "architectural approach to the software" .
+
+n4ind:175 a n4sch:Entity;
+  n4sch:id "Q106246565";
+  n4sch:text "agile methods";
+  n4sch:SUBCLASS_OF n4ind:10 .

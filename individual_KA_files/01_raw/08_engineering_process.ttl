@@ -1,0 +1,1303 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix n4ind: <neo4j://graph.individuals#> .
+
+n4ind:0 a n4sch:Entity;
+  n4sch:HAS_EFFECT n4ind:1;
+  n4sch:id "Q94697788";
+  n4sch:text "inputs" .
+
+n4ind:1 a n4sch:Entity;
+  n4sch:id "Q54919667";
+  n4sch:text "outputs";
+  n4sch:HAS_CAUSE n4ind:0 .
+
+n4ind:4 a n4sch:Entity;
+  n4sch:text "electrical energy";
+  n4sch:id "Q206799";
+  n4sch:USED_BY n4ind:2 .
+
+n4ind:2 a n4sch:Entity;
+  n4sch:text "hydroelectric dam";
+  n4sch:id "Q56697283";
+  n4sch:USES n4ind:4, n4ind:3 .
+
+n4ind:3 a n4sch:Entity;
+  n4sch:text "potential energy";
+  n4sch:id "Q155640";
+  n4sch:USED_BY n4ind:2 .
+
+n4ind:5 a n4sch:Entity;
+  n4sch:id "Q1709010";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:53;
+  n4sch:text "software engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:6 .
+
+n4ind:53 a n4sch:Entity;
+  n4sch:text "software";
+  n4sch:id "Q7397";
+  n4sch:HAS_PART n4ind:118, n4ind:8;
+  n4sch:SUBCLASS_OF n4ind:257;
+  n4sch:PART_OF n4ind:98 .
+
+n4ind:6 a n4sch:Entity;
+  n4sch:text "software engineering";
+  n4sch:id "Q80993";
+  n4sch:HAS_PART n4ind:112;
+  n4sch:STUDIES n4ind:8, n4ind:45;
+  n4sch:PRACTICED_BY n4ind:11, n4ind:5 .
+
+n4ind:112 a n4sch:Entity;
+  n4sch:text "software inspection";
+  n4sch:id "Q929972";
+  n4sch:STUDIES n4ind:114, n4ind:113;
+  n4sch:SUBCLASS_OF n4ind:152 .
+
+n4ind:8 a n4sch:Entity;
+  n4sch:text "software process";
+  n4sch:id "Q1196809";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:181;
+  n4sch:HAS_PART n4ind:86;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:7;
+  n4sch:SUBCLASS_OF n4ind:70, n4ind:118;
+  n4sch:PART_OF n4ind:45, n4ind:143, n4ind:229, n4ind:58, n4ind:208, n4ind:53;
+  n4sch:FACET_OF n4ind:53;
+  n4sch:DIFFERENT_FROM n4ind:9;
+  n4sch:STUDIED_BY n4ind:16, n4ind:6 .
+
+n4ind:45 a n4sch:Entity;
+  n4sch:text "software life cycle";
+  n4sch:id "Q2904257";
+  n4sch:HAS_PART n4ind:8, n4ind:57;
+  n4sch:SUBCLASS_OF n4ind:57, n4ind:8, n4ind:60;
+  n4sch:PART_OF n4ind:57;
+  n4sch:FACET_OF n4ind:90, n4ind:58;
+  n4sch:STUDIED_BY n4ind:6 .
+
+n4ind:11 a n4sch:Entity;
+  n4sch:text "software engineering management";
+  n4sch:id "Q113416657";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:6;
+  n4sch:STUDIES n4ind:12 .
+
+n4ind:7 a n4sch:Entity;
+  n4sch:id "Q7554199";
+  n4sch:text "software engineering process";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:8 .
+
+n4ind:181 a n4sch:Entity;
+  n4sch:id "Q15401930";
+  n4sch:text "work product";
+  n4sch:SUBCLASS_OF n4ind:118 .
+
+n4ind:86 a n4sch:Entity;
+  n4sch:text "activities";
+  n4sch:id "Q61788060";
+  n4sch:PART_OF n4ind:8 .
+
+n4ind:70 a n4sch:Entity;
+  n4sch:id "Q27726347";
+  n4sch:text "processes";
+  n4sch:HAS_PART n4ind:69;
+  n4sch:PART_OF n4ind:200 .
+
+n4ind:118 a n4sch:Entity;
+  n4sch:text "process";
+  n4sch:id "Q10843872";
+  n4sch:HAS_PART n4ind:143;
+  n4sch:USE n4ind:180;
+  n4sch:PART_OF n4ind:53;
+  n4sch:STUDIED_BY n4ind:6 .
+
+n4ind:143 a n4sch:Entity;
+  n4sch:id "Q192581";
+  n4sch:text "activity";
+  n4sch:HAS_PART n4ind:144, n4ind:8;
+  n4sch:PART_OF n4ind:118, n4ind:53;
+  n4sch:STUDIED_BY n4ind:6 .
+
+n4ind:229 a n4sch:Entity;
+  n4sch:text "continuous representation";
+  n4sch:id "Q25615866" .
+
+n4ind:58 a n4sch:Entity;
+  n4sch:id "Q638608";
+  n4sch:text "software development";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED n4ind:90;
+  n4sch:PART_OF n4ind:66 .
+
+n4ind:208 a n4sch:Entity;
+  n4sch:text "project";
+  n4sch:id "Q170584" .
+
+n4ind:9 a n4sch:Entity;
+  n4sch:id "Q115386094";
+  n4sch:text "execution process";
+  n4sch:DIFFERENT_FROM n4ind:8 .
+
+n4ind:16 a n4sch:Entity;
+  n4sch:text "software process management";
+  n4sch:id "software process management";
+  n4sch:STUDIES n4ind:8;
+  n4sch:FACET_OF n4ind:8 .
+
+n4ind:10 a n4sch:Entity;
+  n4sch:id "Q1207505";
+  n4sch:SUBCLASS_OF n4ind:203;
+  n4sch:text "quality";
+  n4sch:FACET_OF n4ind:53 .
+
+n4ind:203 a n4sch:Entity;
+  n4sch:id "Q1595462";
+  n4sch:text "assurance" .
+
+n4ind:12 a n4sch:Entity;
+  n4sch:id "Q63437139";
+  n4sch:text "software project";
+  n4sch:STUDIED_BY n4ind:11 .
+
+n4ind:13 a n4sch:Entity;
+  n4sch:PART_OF n4ind:58;
+  n4sch:text "modification";
+  n4sch:id "Q1087043" .
+
+n4ind:15 a n4sch:Entity;
+  n4sch:id "Q1421054";
+  n4sch:text "foundations";
+  n4sch:PART_OF n4ind:14 .
+
+n4ind:14 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:15;
+  n4sch:id "Q11023";
+  n4sch:text "engineering" .
+
+n4ind:17 a n4sch:Entity;
+  n4sch:text "tasks";
+  n4sch:SUBCLASS_OF n4ind:86;
+  n4sch:id "Q18615464" .
+
+n4ind:18 a n4sch:Entity;
+  n4sch:text "entry and exit criteria";
+  n4sch:id "entry and exit criteria";
+  n4sch:FACET_OF n4ind:8 .
+
+n4ind:19 a n4sch:Entity;
+  n4sch:text "triggering event";
+  n4sch:id "Q40948958";
+  n4sch:HAS_EFFECT n4ind:204 .
+
+n4ind:204 a n4sch:Entity;
+  n4sch:id "Q45342565";
+  n4sch:text "process input" .
+
+n4ind:20 a n4sch:Entity;
+  n4sch:id "output work product";
+  n4sch:text "output work product";
+  n4sch:SUBCLASS_OF n4ind:181 .
+
+n4ind:122 a n4sch:Entity;
+  n4sch:text "measuring";
+  n4sch:id "Q2041172";
+  n4sch:PART_OF n4ind:21 .
+
+n4ind:21 a n4sch:Entity;
+  n4sch:id "Q29041407";
+  n4sch:text "subprocesses";
+  n4sch:HAS_PART n4ind:122, n4ind:124, n4ind:123;
+  n4sch:SUBCLASS_OF n4ind:8 .
+
+n4ind:124 a n4sch:Entity;
+  n4sch:id "Q1150070";
+  n4sch:text "changing";
+  n4sch:PART_OF n4ind:21 .
+
+n4ind:123 a n4sch:Entity;
+  n4sch:text "analyzing";
+  n4sch:id "Q28131831";
+  n4sch:PART_OF n4ind:21 .
+
+n4ind:22 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:58;
+  n4sch:text "software requirements validation";
+  n4sch:id "software requirements validation" .
+
+n4ind:65 a n4sch:Entity;
+  n4sch:id "Q4462275";
+  n4sch:text "software requirements";
+  n4sch:FACET_OF n4ind:58;
+  n4sch:DIFFERENT_FROM n4ind:83;
+  n4sch:STUDIED_BY n4ind:64;
+  n4sch:USED_BY n4ind:82 .
+
+n4ind:23 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:65;
+  n4sch:id "inputs for requirements validation";
+  n4sch:text "inputs for requirements validation" .
+
+n4ind:24 a n4sch:Entity;
+  n4sch:PART_OF n4ind:205;
+  n4sch:id "Q111641696";
+  n4sch:text "model validation" .
+
+n4ind:205 a n4sch:Entity;
+  n4sch:id "requirements review";
+  n4sch:text "requirements review" .
+
+n4ind:25 a n4sch:Entity;
+  n4sch:text "work assignment";
+  n4sch:id "Q66169954";
+  n4sch:SUBCLASS_OF n4ind:17 .
+
+n4ind:148 a n4sch:Entity;
+  n4sch:id "Q111929429";
+  n4sch:text "software defects";
+  n4sch:STUDIED_BY n4ind:152, n4ind:26 .
+
+n4ind:26 a n4sch:Entity;
+  n4sch:text "software testing";
+  n4sch:id "Q188522";
+  n4sch:STUDIES n4ind:148, n4ind:147;
+  n4sch:SUBCLASS_OF n4ind:152;
+  n4sch:PART_OF n4ind:8, n4ind:206, n4ind:212 .
+
+n4ind:147 a n4sch:Entity;
+  n4sch:text "defects";
+  n4sch:id "Q45316438";
+  n4sch:FACET_OF n4ind:53;
+  n4sch:STUDIED_BY n4ind:26 .
+
+n4ind:152 a n4sch:Entity;
+  n4sch:id "Q1003030";
+  n4sch:text "testing";
+  n4sch:STUDIES n4ind:148;
+  n4sch:PART_OF n4ind:258 .
+
+n4ind:206 a n4sch:Entity;
+  n4sch:id "Q857102";
+  n4sch:text "software design" .
+
+n4ind:212 a n4sch:Entity;
+  n4sch:text "software construction";
+  n4sch:id "Q3398377" .
+
+n4ind:27 a n4sch:Entity;
+  n4sch:id "Q569612";
+  n4sch:HAS_PART n4ind:28;
+  n4sch:text "technical" .
+
+n4ind:28 a n4sch:Entity;
+  n4sch:id "administrative activities";
+  n4sch:text "administrative activities";
+  n4sch:PART_OF n4ind:27 .
+
+n4ind:207 a n4sch:Entity;
+  n4sch:id "Q747385";
+  n4sch:text "data-flow diagram" .
+
+n4ind:29 a n4sch:Entity;
+  n4sch:text "bpmn";
+  n4sch:id "Q1017605";
+  n4sch:INSTANCE_OF n4ind:207;
+  n4sch:USE n4ind:207 .
+
+n4ind:30 a n4sch:Entity;
+  n4sch:id "Q2522551";
+  n4sch:text "idef0";
+  n4sch:INSTANCE_OF n4ind:207 .
+
+n4ind:31 a n4sch:Entity;
+  n4sch:id "Q724168";
+  n4sch:INSTANCE_OF n4ind:207;
+  n4sch:text "petri net" .
+
+n4ind:32 a n4sch:Entity;
+  n4sch:id "uml activity diagram";
+  n4sch:text "uml activity diagram";
+  n4sch:INSTANCE_OF n4ind:207 .
+
+n4ind:33 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:48;
+  n4sch:text "checklist";
+  n4sch:id "Q922625" .
+
+n4ind:48 a n4sch:Entity;
+  n4sch:id "Q7247166";
+  n4sch:text "procedures";
+  n4sch:PART_OF n4ind:47 .
+
+n4ind:34 a n4sch:Entity;
+  n4sch:id "best software process";
+  n4sch:SUBCLASS_OF n4ind:8;
+  n4sch:text "best software process" .
+
+n4ind:35 a n4sch:Entity;
+  n4sch:id "ideal process";
+  n4sch:text "ideal process";
+  n4sch:SUBCLASS_OF n4ind:118 .
+
+n4ind:37 a n4sch:Entity;
+  n4sch:id "Q1296024";
+  n4sch:text "effectiveness";
+  n4sch:DIFFERENT_FROM n4ind:36 .
+
+n4ind:36 a n4sch:Entity;
+  n4sch:DIFFERENT_FROM n4ind:37;
+  n4sch:id "Q1034411";
+  n4sch:text "efficiency";
+  n4sch:OPPOSITE_OF n4ind:231 .
+
+n4ind:231 a n4sch:Entity;
+  n4sch:id "effective software process";
+  n4sch:text "effective software process" .
+
+n4ind:39 a n4sch:Entity;
+  n4sch:text "organizational change";
+  n4sch:id "Q67498911";
+  n4sch:SUBCLASS_OF n4ind:209 .
+
+n4ind:38 a n4sch:Entity;
+  n4sch:id "Q38389501";
+  n4sch:SUBCLASS_OF n4ind:39;
+  n4sch:text "infrastructure change" .
+
+n4ind:209 a n4sch:Entity;
+  n4sch:id "Q66293998";
+  n4sch:text "process change" .
+
+n4ind:40 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:118;
+  n4sch:text "ripple effect";
+  n4sch:id "Q107450464" .
+
+n4ind:41 a n4sch:Entity;
+  n4sch:PART_OF n4ind:98;
+  n4sch:text "infrastructure";
+  n4sch:id "Q121359" .
+
+n4ind:98 a n4sch:Entity;
+  n4sch:text "organizations";
+  n4sch:id "Q43229";
+  n4sch:HAS_PART n4ind:52 .
+
+n4ind:42 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:70;
+  n4sch:text "deployed";
+  n4sch:id "Q106212175" .
+
+n4ind:210 a n4sch:Entity;
+  n4sch:id "Q1063";
+  n4sch:text "evolution" .
+
+n4ind:43 a n4sch:Entity;
+  n4sch:text "process evolution";
+  n4sch:SUBCLASS_OF n4ind:210;
+  n4sch:id "Q61039888" .
+
+n4ind:211 a n4sch:Entity;
+  n4sch:text "business model";
+  n4sch:id "Q815823" .
+
+n4ind:44 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:211;
+  n4sch:text "organizational culture";
+  n4sch:id "Q730573" .
+
+n4ind:57 a n4sch:Entity;
+  n4sch:id "software product life cycle";
+  n4sch:text "software product life cycle";
+  n4sch:HAS_PART n4ind:45;
+  n4sch:SUBCLASS_OF n4ind:60;
+  n4sch:PART_OF n4ind:45 .
+
+n4ind:60 a n4sch:Entity;
+  n4sch:id "software life cycle model";
+  n4sch:text "software life cycle model";
+  n4sch:SUBCLASS_OF n4ind:62 .
+
+n4ind:90 a n4sch:Entity;
+  n4sch:id "Q2111823";
+  n4sch:text "software product";
+  n4sch:HAS_PART n4ind:45 .
+
+n4ind:61 a n4sch:Entity;
+  n4sch:text "software processes";
+  n4sch:id "Q110569879";
+  n4sch:PART_OF n4ind:62 .
+
+n4ind:46 a n4sch:Entity;
+  n4sch:text "software life cycle models";
+  n4sch:FACET_OF n4ind:61;
+  n4sch:id "software life cycle models" .
+
+n4ind:47 a n4sch:Entity;
+  n4sch:id "Q47011897";
+  n4sch:HAS_PART n4ind:48;
+  n4sch:text "policies";
+  n4sch:SUBCLASS_OF n4ind:218 .
+
+n4ind:218 a n4sch:Entity;
+  n4sch:id "Q591990";
+  n4sch:text "standards" .
+
+n4ind:49 a n4sch:Entity;
+  n4sch:id "software process infrastructure";
+  n4sch:FACET_OF n4ind:8, n4ind:53;
+  n4sch:text "software process infrastructure" .
+
+n4ind:50 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:98;
+  n4sch:text "process infrastructure";
+  n4sch:id "process infrastructure" .
+
+n4ind:51 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:53;
+  n4sch:text "process infrastructures";
+  n4sch:id "process infrastructures" .
+
+n4ind:233 a n4sch:Entity;
+  n4sch:id "Q6881511";
+  n4sch:text "enterprise" .
+
+n4ind:52 a n4sch:Entity;
+  n4sch:id "Q679206";
+  n4sch:text "organizational unit";
+  n4sch:PART_OF n4ind:233, n4ind:98;
+  n4sch:FACET_OF n4ind:61 .
+
+n4ind:257 a n4sch:Entity;
+  n4sch:id "Q9081";
+  n4sch:text "knowledge" .
+
+n4ind:54 a n4sch:Entity;
+  n4sch:id "Q114566600";
+  n4sch:text "product quality";
+  n4sch:FACET_OF n4ind:53 .
+
+n4ind:55 a n4sch:Entity;
+  n4sch:text "software process adaptation";
+  n4sch:id "software process adaptation";
+  n4sch:FACET_OF n4ind:8 .
+
+n4ind:56 a n4sch:Entity;
+  n4sch:id "Q2297847";
+  n4sch:text "deliverable";
+  n4sch:SUBCLASS_OF n4ind:90 .
+
+n4ind:66 a n4sch:Entity;
+  n4sch:text "life cycle";
+  n4sch:id "Q513359";
+  n4sch:HAS_PART n4ind:58 .
+
+n4ind:59 a n4sch:Entity;
+  n4sch:id "Q41438038";
+  n4sch:FACET_OF n4ind:8;
+  n4sch:text "temporal ordering" .
+
+n4ind:62 a n4sch:Entity;
+  n4sch:text "life cycle model";
+  n4sch:id "Q43334046";
+  n4sch:HAS_PART n4ind:61 .
+
+n4ind:63 a n4sch:Entity;
+  n4sch:id "interface specifications";
+  n4sch:text "interface specifications";
+  n4sch:FACET_OF n4ind:213 .
+
+n4ind:213 a n4sch:Entity;
+  n4sch:id "Q15709451";
+  n4sch:text "interfaces" .
+
+n4ind:64 a n4sch:Entity;
+  n4sch:id "software requirements analysis";
+  n4sch:text "software requirements analysis";
+  n4sch:STUDIES n4ind:65 .
+
+n4ind:83 a n4sch:Entity;
+  n4sch:id "product scope";
+  n4sch:text "product scope";
+  n4sch:DIFFERENT_FROM n4ind:65 .
+
+n4ind:82 a n4sch:Entity;
+  n4sch:id "deliverable software";
+  n4sch:text "deliverable software";
+  n4sch:USES n4ind:65 .
+
+n4ind:67 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:8;
+  n4sch:text "quality assurance";
+  n4sch:id "Q836575" .
+
+n4ind:68 a n4sch:Entity;
+  n4sch:id "Q5289815";
+  n4sch:PART_OF n4ind:90;
+  n4sch:text "domain engineering" .
+
+n4ind:69 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:70;
+  n4sch:text "processes in addition to those listed above";
+  n4sch:id "processes in addition to those listed above" .
+
+n4ind:200 a n4sch:Entity;
+  n4sch:text "teams";
+  n4sch:id "Q28406404" .
+
+n4ind:71 a n4sch:Entity;
+  n4sch:id "Q179012";
+  n4sch:PART_OF n4ind:214;
+  n4sch:text "project management" .
+
+n4ind:214 a n4sch:Entity;
+  n4sch:id "Q14431238";
+  n4sch:text "resource management" .
+
+n4ind:72 a n4sch:Entity;
+  n4sch:text "process activities";
+  n4sch:id "process activities";
+  n4sch:FACET_OF n4ind:8 .
+
+n4ind:73 a n4sch:Entity;
+  n4sch:id "Q3339222";
+  n4sch:text "linear models";
+  n4sch:SUBCLASS_OF n4ind:65, n4ind:45 .
+
+n4ind:74 a n4sch:Entity;
+  n4sch:id "Q110626317";
+  n4sch:SUBCLASS_OF n4ind:45;
+  n4sch:text "iterative models" .
+
+n4ind:75 a n4sch:Entity;
+  n4sch:id "agile models";
+  n4sch:SUBCLASS_OF n4ind:45;
+  n4sch:text "agile models" .
+
+n4ind:76 a n4sch:Entity;
+  n4sch:text "iterative";
+  n4sch:id "Q2866772";
+  n4sch:SUBCLASS_OF n4ind:8;
+  n4sch:DIFFERENT_FROM n4ind:77 .
+
+n4ind:77 a n4sch:Entity;
+  n4sch:id "Q30232";
+  n4sch:text "agile";
+  n4sch:SUBCLASS_OF n4ind:58;
+  n4sch:DIFFERENT_FROM n4ind:76 .
+
+n4ind:79 a n4sch:Entity;
+  n4sch:id "Q309100";
+  n4sch:text "planning";
+  n4sch:HAS_PART n4ind:78 .
+
+n4ind:78 a n4sch:Entity;
+  n4sch:text "project initiation";
+  n4sch:id "Q2695047";
+  n4sch:PART_OF n4ind:79 .
+
+n4ind:80 a n4sch:Entity;
+  n4sch:text "requirements";
+  n4sch:id "Q1761598";
+  n4sch:FACET_OF n4ind:53 .
+
+n4ind:173 a n4sch:Entity;
+  n4sch:id "Q255104";
+  n4sch:text "change request";
+  n4sch:SUBCLASS_OF n4ind:243 .
+
+n4ind:81 a n4sch:Entity;
+  n4sch:text "change control board";
+  n4sch:id "Q5071834";
+  n4sch:USE n4ind:173 .
+
+n4ind:84 a n4sch:Entity;
+  n4sch:text "design phase";
+  n4sch:PART_OF n4ind:62;
+  n4sch:id "Q30655148" .
+
+n4ind:215 a n4sch:Entity;
+  n4sch:text "corporate culture";
+  n4sch:id "Q107509130" .
+
+n4ind:85 a n4sch:Entity;
+  n4sch:PART_OF n4ind:215;
+  n4sch:text "industry practices";
+  n4sch:id "Q43936758" .
+
+n4ind:88 a n4sch:Entity;
+  n4sch:text "product life cycle";
+  n4sch:id "Q1967338";
+  n4sch:HAS_PART n4ind:87 .
+
+n4ind:87 a n4sch:Entity;
+  n4sch:text "development";
+  n4sch:PART_OF n4ind:88;
+  n4sch:id "Q1074523" .
+
+n4ind:89 a n4sch:Entity;
+  n4sch:text "configuration management";
+  n4sch:SUBCLASS_OF n4ind:53;
+  n4sch:id "Q1153495" .
+
+n4ind:91 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:216;
+  n4sch:id "Q5289798";
+  n4sch:text "application domain" .
+
+n4ind:216 a n4sch:Entity;
+  n4sch:id "Q6958747";
+  n4sch:text "work" .
+
+n4ind:92 a n4sch:Entity;
+  n4sch:USE n4ind:93;
+  n4sch:text "software process assessment methods";
+  n4sch:id "software process assessment methods" .
+
+n4ind:93 a n4sch:Entity;
+  n4sch:id "software process assessment";
+  n4sch:text "software process assessment";
+  n4sch:SUBCLASS_OF n4ind:107;
+  n4sch:FACET_OF n4ind:8 .
+
+n4ind:107 a n4sch:Entity;
+  n4sch:id "Q1379672";
+  n4sch:text "assessment";
+  n4sch:HAS_PART n4ind:93;
+  n4sch:PRACTICED_BY n4ind:106 .
+
+n4ind:94 a n4sch:Entity;
+  n4sch:id "Q26365445";
+  n4sch:text "capability evaluation";
+  n4sch:DIFFERENT_FROM n4ind:95 .
+
+n4ind:95 a n4sch:Entity;
+  n4sch:text "process assessment";
+  n4sch:id "Q67103140";
+  n4sch:DIFFERENT_FROM n4ind:102, n4ind:94 .
+
+n4ind:102 a n4sch:Entity;
+  n4sch:text "process audit";
+  n4sch:id "Q43324594";
+  n4sch:DIFFERENT_FROM n4ind:95 .
+
+n4ind:96 a n4sch:Entity;
+  n4sch:text "supplier";
+  n4sch:id "Q1762621";
+  n4sch:OPPOSITE_OF n4ind:97 .
+
+n4ind:97 a n4sch:Entity;
+  n4sch:id "Q58245288";
+  n4sch:text "acquirer";
+  n4sch:OPPOSITE_OF n4ind:96 .
+
+n4ind:99 a n4sch:Entity;
+  n4sch:text "risk management";
+  n4sch:STUDIES n4ind:217;
+  n4sch:id "Q189447" .
+
+n4ind:217 a n4sch:Entity;
+  n4sch:id "Q1475848";
+  n4sch:text "risk factors" .
+
+n4ind:100 a n4sch:Entity;
+  n4sch:USE n4ind:95;
+  n4sch:id "Q23700891";
+  n4sch:text "assessment method" .
+
+n4ind:101 a n4sch:Entity;
+  n4sch:text "benchmarking";
+  n4sch:id "Q816754";
+  n4sch:FACET_OF n4ind:98 .
+
+n4ind:103 a n4sch:Entity;
+  n4sch:id "Q1347367";
+  n4sch:text "capability";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:104;
+  n4sch:FACET_OF n4ind:53 .
+
+n4ind:104 a n4sch:Entity;
+  n4sch:text "maturity";
+  n4sch:id "Q3543263";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:103;
+  n4sch:FACET_OF n4ind:53 .
+
+n4ind:105 a n4sch:Entity;
+  n4sch:text "maintenance activity";
+  n4sch:id "maintenance activity";
+  n4sch:SUBCLASS_OF n4ind:219 .
+
+n4ind:219 a n4sch:Entity;
+  n4sch:text "operations";
+  n4sch:id "Q3884033" .
+
+n4ind:106 a n4sch:Entity;
+  n4sch:text "assessor";
+  n4sch:id "Q335757";
+  n4sch:FIELD_OF_THIS_OCCUPATION n4ind:107 .
+
+n4ind:108 a n4sch:Entity;
+  n4sch:id "software process assessment model";
+  n4sch:text "software process assessment model";
+  n4sch:FACET_OF n4ind:8 .
+
+n4ind:109 a n4sch:Entity;
+  n4sch:text "software project management";
+  n4sch:id "Q947779";
+  n4sch:PART_OF n4ind:220 .
+
+n4ind:220 a n4sch:Entity;
+  n4sch:id "Q682496";
+  n4sch:text "systems engineering" .
+
+n4ind:110 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:222, n4ind:111;
+  n4sch:id "Q47455943";
+  n4sch:text "qualitative";
+  n4sch:OPPOSITE_OF n4ind:111 .
+
+n4ind:222 a n4sch:Entity;
+  n4sch:text "judgment";
+  n4sch:id "Q3769186" .
+
+n4ind:111 a n4sch:Entity;
+  n4sch:text "quantitative";
+  n4sch:id "Q1263258";
+  n4sch:SUBCLASS_OF n4ind:170;
+  n4sch:OPPOSITE_OF n4ind:110 .
+
+n4ind:170 a n4sch:Entity;
+  n4sch:id "Q12453";
+  n4sch:text "measurement";
+  n4sch:SUBCLASS_OF n4ind:53 .
+
+n4ind:114 a n4sch:Entity;
+  n4sch:id "find and fix the defects";
+  n4sch:text "find and fix the defects";
+  n4sch:STUDIED_BY n4ind:112 .
+
+n4ind:113 a n4sch:Entity;
+  n4sch:id "Q66848368";
+  n4sch:text "defects found";
+  n4sch:STUDIED_BY n4ind:112 .
+
+n4ind:115 a n4sch:Entity;
+  n4sch:text "reporting";
+  n4sch:SUBCLASS_OF n4ind:221;
+  n4sch:id "Q11030" .
+
+n4ind:221 a n4sch:Entity;
+  n4sch:id "Q7754";
+  n4sch:text "analysis" .
+
+n4ind:116 a n4sch:Entity;
+  n4sch:text "process maturity rating";
+  n4sch:SUBCLASS_OF n4ind:93;
+  n4sch:id "process maturity rating" .
+
+n4ind:223 a n4sch:Entity;
+  n4sch:id "Q176763";
+  n4sch:text "evidence" .
+
+n4ind:117 a n4sch:Entity;
+  n4sch:text "data";
+  n4sch:id "Q42848";
+  n4sch:SUBCLASS_OF n4ind:223 .
+
+n4ind:180 a n4sch:Entity;
+  n4sch:id "Q7247282";
+  n4sch:text "process improvement";
+  n4sch:SUBCLASS_OF n4ind:247 .
+
+n4ind:120 a n4sch:Entity;
+  n4sch:id "Q107457825";
+  n4sch:text "continuous improvement";
+  n4sch:HAS_PART n4ind:119 .
+
+n4ind:119 a n4sch:Entity;
+  n4sch:text "iterative cycle";
+  n4sch:PART_OF n4ind:120;
+  n4sch:id "Q55601908" .
+
+n4ind:121 a n4sch:Entity;
+  n4sch:id "software process improvement cycle";
+  n4sch:SUBCLASS_OF n4ind:21;
+  n4sch:text "software process improvement cycle" .
+
+n4ind:125 a n4sch:Entity;
+  n4sch:PART_OF n4ind:224;
+  n4sch:id "Q216033";
+  n4sch:text "training" .
+
+n4ind:224 a n4sch:Entity;
+  n4sch:text "change management";
+  n4sch:id "Q116348" .
+
+n4ind:126 a n4sch:Entity;
+  n4sch:text "defect prevention";
+  n4sch:id "Q91377465";
+  n4sch:SUBCLASS_OF n4ind:53 .
+
+n4ind:127 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:8;
+  n4sch:text "software process capability";
+  n4sch:id "software process capability" .
+
+n4ind:225 a n4sch:Entity;
+  n4sch:id "continuous rating system";
+  n4sch:text "continuous rating system" .
+
+n4ind:128 a n4sch:Entity;
+  n4sch:OPPOSITE_OF n4ind:225;
+  n4sch:id "Q25379";
+  n4sch:text "staged" .
+
+n4ind:129 a n4sch:Entity;
+  n4sch:text "continuous";
+  n4sch:DIFFERENT_FROM n4ind:130;
+  n4sch:id "Q2195" .
+
+n4ind:130 a n4sch:Entity;
+  n4sch:text "staged process levels";
+  n4sch:id "staged process levels";
+  n4sch:DIFFERENT_FROM n4ind:129 .
+
+n4ind:132 a n4sch:Entity;
+  n4sch:id "Q36065052";
+  n4sch:text "staged model";
+  n4sch:OPPOSITE_OF n4ind:131 .
+
+n4ind:131 a n4sch:Entity;
+  n4sch:text "continuous model";
+  n4sch:id "Q5165491";
+  n4sch:OPPOSITE_OF n4ind:132 .
+
+n4ind:133 a n4sch:Entity;
+  n4sch:id "incompletely performed";
+  n4sch:text "incompletely performed";
+  n4sch:SUBCLASS_OF n4ind:8 .
+
+n4ind:226 a n4sch:Entity;
+  n4sch:id "Q208165";
+  n4sch:text "collection" .
+
+n4ind:134 a n4sch:Entity;
+  n4sch:id "Q1648445";
+  n4sch:SUBCLASS_OF n4ind:226;
+  n4sch:text "performance data" .
+
+n4ind:135 a n4sch:Entity;
+  n4sch:text "statistical analysis";
+  n4sch:USES n4ind:227;
+  n4sch:id "Q2003932" .
+
+n4ind:227 a n4sch:Entity;
+  n4sch:id "Q49097173";
+  n4sch:text "quantitative measures" .
+
+n4ind:136 a n4sch:Entity;
+  n4sch:text "maturity level 5";
+  n4sch:FACET_OF n4ind:228;
+  n4sch:id "maturity level 5" .
+
+n4ind:228 a n4sch:Entity;
+  n4sch:id "continuous process improvements";
+  n4sch:text "continuous process improvements" .
+
+n4ind:137 a n4sch:Entity;
+  n4sch:text "staged representation";
+  n4sch:FACET_OF n4ind:8;
+  n4sch:id "staged representation" .
+
+n4ind:139 a n4sch:Entity;
+  n4sch:text "higher level";
+  n4sch:id "Q16843666";
+  n4sch:FOLLOWS n4ind:138 .
+
+n4ind:138 a n4sch:Entity;
+  n4sch:FOLLOWED_BY n4ind:139;
+  n4sch:text "maturity level";
+  n4sch:id "Q115616331" .
+
+n4ind:230 a n4sch:Entity;
+  n4sch:id "software process and product measurement";
+  n4sch:text "software process and product measurement" .
+
+n4ind:140 a n4sch:Entity;
+  n4sch:text "software measurement software measurement";
+  n4sch:id "software measurement software measurement";
+  n4sch:FACET_OF n4ind:230 .
+
+n4ind:142 a n4sch:Entity;
+  n4sch:id "Q34638937";
+  n4sch:text "current process";
+  n4sch:PART_OF n4ind:141 .
+
+n4ind:141 a n4sch:Entity;
+  n4sch:id "Q107973988";
+  n4sch:HAS_PART n4ind:142;
+  n4sch:text "current situation" .
+
+n4ind:144 a n4sch:Entity;
+  n4sch:text "task";
+  n4sch:id "Q759676";
+  n4sch:PART_OF n4ind:53, n4ind:143;
+  n4sch:STUDIED_BY n4ind:6 .
+
+n4ind:145 a n4sch:Entity;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:146;
+  n4sch:text "euros";
+  n4sch:id "Q4916" .
+
+n4ind:146 a n4sch:Entity;
+  n4sch:id "Q4917";
+  n4sch:text "dollar";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:145 .
+
+n4ind:149 a n4sch:Entity;
+  n4sch:id "Q92667700";
+  n4sch:SUBCLASS_OF n4ind:122;
+  n4sch:text "product attributes" .
+
+n4ind:150 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:152;
+  n4sch:id "upstream inspection";
+  n4sch:text "upstream inspection" .
+
+n4ind:151 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:80;
+  n4sch:id "design documentation";
+  n4sch:text "design documentation" .
+
+n4ind:258 a n4sch:Entity;
+  n4sch:id "Q530038";
+  n4sch:text "requirements management" .
+
+n4ind:232 a n4sch:Entity;
+  n4sch:id "software personnel";
+  n4sch:text "software personnel" .
+
+n4ind:153 a n4sch:Entity;
+  n4sch:text "customer representative";
+  n4sch:id "Q5196472";
+  n4sch:SUBCLASS_OF n4ind:232 .
+
+n4ind:154 a n4sch:Entity;
+  n4sch:FACET_OF n4ind:216;
+  n4sch:id "Q813912";
+  n4sch:text "context" .
+
+n4ind:156 a n4sch:Entity;
+  n4sch:id "Q4158466";
+  n4sch:text "testers";
+  n4sch:DIFFERENT_FROM n4ind:155 .
+
+n4ind:155 a n4sch:Entity;
+  n4sch:id "Q5482740";
+  n4sch:DIFFERENT_FROM n4ind:156;
+  n4sch:text "developer" .
+
+n4ind:157 a n4sch:Entity;
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:158;
+  n4sch:text "reliability";
+  n4sch:id "Q70781625" .
+
+n4ind:158 a n4sch:Entity;
+  n4sch:text "validity";
+  n4sch:id "Q545349";
+  n4sch:SAID_TO_BE_THE_SAME_AS n4ind:157 .
+
+n4ind:234 a n4sch:Entity;
+  n4sch:id "Q179289";
+  n4sch:text "cause and effect" .
+
+n4ind:159 a n4sch:Entity;
+  n4sch:id "Q186290";
+  n4sch:FACET_OF n4ind:234;
+  n4sch:text "correlation" .
+
+n4ind:160 a n4sch:Entity;
+  n4sch:id "Q7554325";
+  n4sch:text "software measurement";
+  n4sch:PART_OF n4ind:6 .
+
+n4ind:161 a n4sch:Entity;
+  n4sch:text "modeling";
+  n4sch:id "Q1116876";
+  n4sch:SUBCLASS_OF n4ind:221 .
+
+n4ind:235 a n4sch:Entity;
+  n4sch:id "Q2454265";
+  n4sch:text "collected" .
+
+n4ind:162 a n4sch:Entity;
+  n4sch:id "Q3133368";
+  n4sch:SUBCLASS_OF n4ind:235;
+  n4sch:text "repository" .
+
+n4ind:163 a n4sch:Entity;
+  n4sch:text "software information model";
+  n4sch:id "software information model";
+  n4sch:USE n4ind:237;
+  n4sch:PART_OF n4ind:236 .
+
+n4ind:237 a n4sch:Entity;
+  n4sch:id "Q613918";
+  n4sch:text "software quality assurance" .
+
+n4ind:236 a n4sch:Entity;
+  n4sch:text "software projects";
+  n4sch:id "Q7554222" .
+
+n4ind:238 a n4sch:Entity;
+  n4sch:id "Q4610556";
+  n4sch:text "model" .
+
+n4ind:164 a n4sch:Entity;
+  n4sch:text "software information model building";
+  n4sch:FACET_OF n4ind:238;
+  n4sch:id "software information model building" .
+
+n4ind:165 a n4sch:Entity;
+  n4sch:id "Q5157286";
+  n4sch:text "complexity";
+  n4sch:FACET_OF n4ind:90 .
+
+n4ind:239 a n4sch:Entity;
+  n4sch:id "Q51888584";
+  n4sch:text "regression equation" .
+
+n4ind:166 a n4sch:Entity;
+  n4sch:id "Q2755024";
+  n4sch:SUBCLASS_OF n4ind:239;
+  n4sch:text "nonlinear regression" .
+
+n4ind:240 a n4sch:Entity;
+  n4sch:id "Q2995644";
+  n4sch:text "outcome" .
+
+n4ind:167 a n4sch:Entity;
+  n4sch:id "Q7111916";
+  n4sch:text "outcomes";
+  n4sch:SUBCLASS_OF n4ind:240 .
+
+n4ind:241 a n4sch:Entity;
+  n4sch:text "data set";
+  n4sch:id "Q1172284" .
+
+n4ind:168 a n4sch:Entity;
+  n4sch:PART_OF n4ind:241;
+  n4sch:text "parameters";
+  n4sch:id "Q7135216" .
+
+n4ind:169 a n4sch:Entity;
+  n4sch:id "Q64188918";
+  n4sch:text "continuous evaluation";
+  n4sch:SUBCLASS_OF n4ind:107 .
+
+n4ind:171 a n4sch:Entity;
+  n4sch:text "information model";
+  n4sch:id "Q1662581";
+  n4sch:SUBCLASS_OF n4ind:53 .
+
+n4ind:172 a n4sch:Entity;
+  n4sch:id "goals/questions/metrics";
+  n4sch:text "goals/questions/metrics";
+  n4sch:INSTANCE_OF n4ind:242 .
+
+n4ind:242 a n4sch:Entity;
+  n4sch:text "method";
+  n4sch:id "Q2695280" .
+
+n4ind:243 a n4sch:Entity;
+  n4sch:text "processing time";
+  n4sch:id "Q34398219" .
+
+n4ind:174 a n4sch:Entity;
+  n4sch:id "baseline change";
+  n4sch:SUBCLASS_OF n4ind:244;
+  n4sch:text "baseline change" .
+
+n4ind:244 a n4sch:Entity;
+  n4sch:text "request processing";
+  n4sch:id "request processing" .
+
+n4ind:175 a n4sch:Entity;
+  n4sch:text "1-1-1";
+  n4sch:INSTANCE_OF n4ind:245;
+  n4sch:id "Q2036496" .
+
+n4ind:245 a n4sch:Entity;
+  n4sch:text "metric";
+  n4sch:id "Q232405" .
+
+n4ind:246 a n4sch:Entity;
+  n4sch:id "Q159375";
+  n4sch:text "standard deviation" .
+
+n4ind:176 a n4sch:Entity;
+  n4sch:id "Q1061257";
+  n4sch:INSTANCE_OF n4ind:246;
+  n4sch:text "1-1-2" .
+
+n4ind:177 a n4sch:Entity;
+  n4sch:id "Q2036539";
+  n4sch:INSTANCE_OF n4ind:245;
+  n4sch:text "1-2-1" .
+
+n4ind:178 a n4sch:Entity;
+  n4sch:id "Q7297186";
+  n4sch:INSTANCE_OF n4ind:246;
+  n4sch:text "1-2-2" .
+
+n4ind:179 a n4sch:Entity;
+  n4sch:id "software process measurement";
+  n4sch:SUBCLASS_OF n4ind:184;
+  n4sch:text "software process measurement" .
+
+n4ind:184 a n4sch:Entity;
+  n4sch:text "process data";
+  n4sch:id "Q605108";
+  n4sch:FACET_OF n4ind:61 .
+
+n4ind:247 a n4sch:Entity;
+  n4sch:id "Q3240892";
+  n4sch:text "measure" .
+
+n4ind:182 a n4sch:Entity;
+  n4sch:id "Q8366";
+  n4sch:HAS_PART n4ind:183;
+  n4sch:text "mathematical" .
+
+n4ind:183 a n4sch:Entity;
+  n4sch:text "statistical";
+  n4sch:id "Q2539";
+  n4sch:PART_OF n4ind:182 .
+
+n4ind:189 a n4sch:Entity;
+  n4sch:text "control chart";
+  n4sch:id "Q1369242";
+  n4sch:USE n4ind:251 .
+
+n4ind:185 a n4sch:Entity;
+  n4sch:id "Q67958714";
+  n4sch:text "cause-and-effect diagram";
+  n4sch:SUBCLASS_OF n4ind:189 .
+
+n4ind:248 a n4sch:Entity;
+  n4sch:id "Q59584020";
+  n4sch:text "statistical techniques" .
+
+n4ind:186 a n4sch:Entity;
+  n4sch:id "Q3331475";
+  n4sch:SUBCLASS_OF n4ind:248;
+  n4sch:text "multivariate analysis" .
+
+n4ind:187 a n4sch:Entity;
+  n4sch:id "Q20820015";
+  n4sch:USE n4ind:249;
+  n4sch:text "simulation model" .
+
+n4ind:249 a n4sch:Entity;
+  n4sch:text "software process improvement";
+  n4sch:id "Q59393599" .
+
+n4ind:250 a n4sch:Entity;
+  n4sch:id "Q105103405";
+  n4sch:text "quantitative data" .
+
+n4ind:188 a n4sch:Entity;
+  n4sch:id "Q1401207";
+  n4sch:text "root cause analysis";
+  n4sch:SUBCLASS_OF n4ind:250 .
+
+n4ind:251 a n4sch:Entity;
+  n4sch:text "statistical process control";
+  n4sch:id "Q1356717" .
+
+n4ind:190 n4sch:text "questionnaires";
+  n4sch:id "Q59935894" .
+
+n4ind:252 n4sch:text "interviews" .
+
+n4ind:190 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:252 .
+
+n4ind:252 a n4sch:Entity;
+  n4sch:id "Q6045018" .
+
+n4ind:253 a n4sch:Entity;
+  n4sch:id "Q188577";
+  n4sch:text "consensus" .
+
+n4ind:191 a n4sch:Entity;
+  n4sch:id "Q841602";
+  n4sch:text "delphi technique";
+  n4sch:USE n4ind:253 .
+
+n4ind:192 a n4sch:Entity;
+  n4sch:id "Q114538209";
+  n4sch:SUBCLASS_OF n4ind:254;
+  n4sch:text "simulations" .
+
+n4ind:254 a n4sch:Entity;
+  n4sch:id "Q1064621";
+  n4sch:text "analyses" .
+
+n4ind:193 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:255;
+  n4sch:id "Q183197";
+  n4sch:text "spreadsheet" .
+
+n4ind:255 a n4sch:Entity;
+  n4sch:text "general-purpose business tools";
+  n4sch:id "general-purpose business tools" .
+
+n4ind:194 a n4sch:Entity;
+  n4sch:HAS_PART n4ind:195;
+  n4sch:text "integrated processes";
+  n4sch:id "Q41234001" .
+
+n4ind:195 a n4sch:Entity;
+  n4sch:text "well-defined processes";
+  n4sch:id "well-defined processes";
+  n4sch:PART_OF n4ind:194 .
+
+n4ind:256 a n4sch:Entity;
+  n4sch:id "Q788790";
+  n4sch:text "documentation" .
+
+n4ind:196 a n4sch:Entity;
+  n4sch:text "test case";
+  n4sch:id "Q1568346";
+  n4sch:SUBCLASS_OF n4ind:256 .
+
+n4ind:197 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:257;
+  n4sch:id "Q36500248";
+  n4sch:text "tools" .
+
+n4ind:198 a n4sch:Entity;
+  n4sch:text "software configuration management knowledge area";
+  n4sch:id "software configuration management knowledge area";
+  n4sch:STUDIES n4ind:199 .
+
+n4ind:199 a n4sch:Entity;
+  n4sch:text "software configuration management";
+  n4sch:id "Q613566";
+  n4sch:STUDIED_BY n4ind:198 .
+
+n4ind:200 n4sch:HAS_PART n4ind:70 .
+
+n4ind:201 a n4sch:Entity;
+  n4sch:SUBCLASS_OF n4ind:259;
+  n4sch:text "cloud computing";
+  n4sch:id "Q483639" .
+
+n4ind:259 a n4sch:Entity;
+  n4sch:text "infrastructures";
+  n4sch:id "Q50817466" .
+
+n4ind:202 a n4sch:Entity;
+  n4sch:text "project control panel";
+  n4sch:SUBCLASS_OF n4ind:260;
+  n4sch:id "project control panel" .
+
+n4ind:260 a n4sch:Entity;
+  n4sch:id "Q1417134";
+  n4sch:text "dashboard" .
