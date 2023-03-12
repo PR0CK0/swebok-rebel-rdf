@@ -1,0 +1,1220 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix test: <http://test.test#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+test:Q1074173 a owl:Class;
+  rdfs:label "question-answer";
+  rdfs:subClassOf <http://test.test#user%20interaction%20styles> .
+
+test:Q4462275 a owl:Class;
+  rdfs:label "software requirements";
+  n4sch:FACET_OF test:Q7397;
+  n4sch:STUDIED_BY test:Q80993 .
+
+n4sch:FACET_OF a owl:ObjectProperty .
+
+n4sch:STUDIED_BY a owl:ObjectProperty .
+
+test:Q15709451 a owl:Class;
+  rdfs:label "interfaces";
+  rdfs:subClassOf test:Q7682878;
+  n4sch:PART_OF test:Q7397, test:Q1 .
+
+n4sch:PART_OF a owl:ObjectProperty .
+
+test:Q211364 a owl:Class;
+  rdfs:label "principle" .
+
+test:Q2271846 a owl:Class;
+  rdfs:label "modules";
+  n4sch:PART_OF test:Q40056, test:Q85574465 .
+
+test:Q33331986 a owl:Class;
+  rdfs:label "terminologies" .
+
+test:Q1329550 a owl:Class;
+  rdfs:label "static analysis";
+  rdfs:subClassOf test:Q114259514 .
+
+<http://test.test#interface(s)> a owl:Class;
+  rdfs:label "interface(s)";
+  rdfs:subClassOf test:Q111640771 .
+
+test:Q80993 a owl:Class;
+  rdfs:label "software engineering";
+  n4sch:PRACTICED_BY test:Q113416657;
+  n4sch:STUDIES test:Q4462275 .
+
+n4sch:PRACTICED_BY a owl:ObjectProperty .
+
+n4sch:STUDIES a owl:ObjectProperty .
+
+test:Q27009063 a owl:Class;
+  rdfs:label "functionalities";
+  n4sch:DIFFERENT_FROM test:Q19096746 .
+
+n4sch:DIFFERENT_FROM a owl:ObjectProperty .
+
+test:Q19096746 a owl:Class;
+  rdfs:label "responsibilities";
+  n4sch:DIFFERENT_FROM test:Q27009063 .
+
+test:Q27726347 a owl:Class;
+  rdfs:label "processes" .
+
+<http://test.test#key,%20crosscutting%20issues> a owl:Class;
+  rdfs:label "key, crosscutting issues" .
+
+test:Q1920566 a owl:Class;
+  rdfs:label "response";
+  n4sch:HAS_CAUSE test:Q7397 .
+
+n4sch:HAS_CAUSE a owl:ObjectProperty .
+
+test:Q84859046 a owl:Class;
+  rdfs:label "modularization";
+  rdfs:subClassOf test:Q339062 .
+
+test:Q944517 a owl:Class;
+  rdfs:label "coupling";
+  n4sch:FACET_OF test:Q2465506 .
+
+test:Q49207429 a owl:Class;
+  rdfs:label "color deficiency";
+  rdfs:subClassOf test:Q133696 .
+
+test:Q18615364 a owl:Class;
+  rdfs:label "manuals";
+  n4sch:HAS_PART <http://test.test#help%20files> .
+
+n4sch:HAS_PART a owl:ObjectProperty .
+
+test:Q70781625 a owl:Class;
+  rdfs:label "reliability";
+  n4sch:FACET_OF test:Q7397 .
+
+test:Q846636 a owl:Class;
+  rdfs:label "software architecture";
+  n4sch:FACET_OF test:Q7397;
+  n4sch:HAS_PART test:Q19687629;
+  n4sch:STUDIES <http://test.test#software%20structures%20and%20architectures> .
+
+test:Q117850 a owl:Class;
+  rdfs:label "doctrine";
+  rdfs:subClassOf test:Q211364 .
+
+test:Q83310 a owl:Class;
+  rdfs:label "mouse";
+  rdfs:subClassOf test:Q184824 .
+
+test:Q2904257 a owl:Class;
+  rdfs:label "software development process";
+  n4sch:HAS_PART test:Q857102, <http://test.test#software%20design%20artifacts> .
+
+<http://test.test#abstraction%20by%20specification> a owl:Class;
+  rdfs:label "abstraction by specification" .
+
+test:Q245962 a owl:Class;
+  rdfs:label "implementation";
+  n4sch:FACET_OF test:Q23808 .
+
+test:Q11042 a owl:Class;
+  rdfs:label "cultures";
+  n4sch:FACET_OF test:Q3141064 .
+
+test:Q108515977 a owl:Class;
+  rdfs:label "commands";
+  rdfs:subClassOf test:Q18921192 .
+
+<http://test.test#software%20design%20review> a owl:Class;
+  rdfs:label "software design review";
+  n4sch:FACET_OF test:Q169489 .
+
+test:Q34243302 a owl:Class;
+  rdfs:label "concurrent activities";
+  rdfs:subClassOf test:Q128392 .
+
+test:Q29485 a owl:Class;
+  rdfs:label "error";
+  n4sch:HAS_EFFECT test:Q183225 .
+
+n4sch:HAS_EFFECT a owl:ObjectProperty .
+
+test:Q1389965 a owl:Class;
+  rdfs:label "maintainability";
+  n4sch:FACET_OF test:Q857102, test:Q2111823 .
+
+test:Q11344 a owl:Class;
+  rdfs:label "element" .
+
+test:Q3962217 a owl:Class;
+  rdfs:label "distributed systems" .
+
+test:Q5264352 a owl:Class;
+  rdfs:label "design knowledge";
+  n4sch:FACET_OF test:Q857102 .
+
+test:Q362356 a owl:Class;
+  rdfs:label "architecture description language";
+  n4sch:USE test:Q846636 .
+
+n4sch:USE a owl:ObjectProperty .
+
+test:Q811701 a owl:Class;
+  rdfs:label "product line";
+  n4sch:FACET_OF test:Q857102 .
+
+test:Q424361 a owl:Class;
+  rdfs:label "reactive" .
+
+test:Q18534 a owl:Class;
+  rdfs:label "metaphors" .
+
+test:Q130543 a owl:Class;
+  rdfs:label "localization";
+  rdfs:subClassOf test:Q3141064 .
+
+test:Q857102 a owl:Class;
+  rdfs:label "software design";
+  rdfs:subClassOf test:Q12894677, test:Q82604;
+  n4sch:PART_OF test:Q2904257, test:Q385378;
+  n4sch:HAS_PART test:Q135707;
+  n4sch:USES test:Q2001982;
+  n4sch:PRACTICED_BY test:Q1709010;
+  n4sch:INSTANCE_OF <http://test.test#knowledge%20area>;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q7397 .
+
+n4sch:USES a owl:ObjectProperty .
+
+n4sch:INSTANCE_OF a owl:ObjectProperty .
+
+n4sch:PRODUCT_OR_MATERIAL_PRODUCED a owl:ObjectProperty .
+
+test:Q172891 a owl:Class;
+  rdfs:label "elements" .
+
+test:Q385378 a owl:Class;
+  rdfs:label "construction";
+  n4sch:HAS_PART test:Q857102 .
+
+<http://test.test#area%20of%20interest> a owl:Class;
+  rdfs:label "area of interest" .
+
+test:Q60520451 a owl:Class;
+  rdfs:label "separation of interface" .
+
+test:Q1709010 a owl:Class;
+  rdfs:label "software engineer";
+  n4sch:PART_OF test:Q28406404;
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q857102, test:Q7397, test:Q62045152 .
+
+n4sch:FIELD_OF_THIS_OCCUPATION a owl:ObjectProperty .
+
+test:Q422321 a owl:Class;
+  rdfs:label "blueprint";
+  rdfs:subClassOf test:Q4610556 .
+
+test:Q19687629 a owl:Class;
+  rdfs:label "views";
+  n4sch:PART_OF test:Q846636;
+  n4sch:DIFFERENT_FROM test:Q14212253 .
+
+test:Q7397 a owl:Class;
+  rdfs:label "software";
+  n4sch:HAS_PART test:Q15709451, test:Q23808;
+  n4sch:DIFFERENT_FROM test:Q5289798;
+  n4sch:STUDIED_BY test:Q739122;
+  n4sch:USED_BY test:Q22855, test:Q278368;
+  n4sch:PRACTICED_BY test:Q1709010;
+  n4sch:HAS_EFFECT test:Q1920566 .
+
+n4sch:USED_BY a owl:ObjectProperty .
+
+test:Q106149205 a owl:Class;
+  rdfs:label "tradeoffs";
+  rdfs:subClassOf test:Q69702733;
+  n4sch:FACET_OF test:Q83043389 .
+
+test:Q1003030 a owl:Class;
+  rdfs:label "validation";
+  rdfs:subClassOf test:Q953429 .
+
+test:Q36992151 a owl:Class;
+  rdfs:label "data representation" .
+
+test:Q828287 a owl:Class;
+  rdfs:label "iso/iec/ieee";
+  n4sch:INSTANCE_OF test:Q2904257 .
+
+test:Q5754546 a owl:Class;
+  rdfs:label "high-level design";
+  rdfs:subClassOf test:Q857102 .
+
+test:Q224055 a owl:Class;
+  rdfs:label "data abstraction";
+  rdfs:subClassOf <http://test.test#abstraction%20by%20specification> .
+
+<http://test.test#software%20detailed%20design> a owl:Class;
+  rdfs:label "software detailed design";
+  n4sch:FACET_OF test:Q385378 .
+
+test:Q30295815 a owl:Class;
+  rdfs:label "functionality" .
+
+test:d-design a owl:Class;
+  rdfs:label "d-design";
+  rdfs:subClassOf test:Q857102 .
+
+test:i-design a owl:Class;
+  rdfs:label "i-design";
+  n4sch:PART_OF <http://test.test#software%20requirements%20process> .
+
+test:fp-design a owl:Class;
+  rdfs:label "fp-design";
+  rdfs:subClassOf test:Q108283301 .
+
+test:Q339062 a owl:Class;
+  rdfs:label "decomposition" .
+
+<http://test.test#software%20requirements%20process> a owl:Class;
+  rdfs:label "software requirements process";
+  n4sch:HAS_PART test:i-design .
+
+test:Q113416657 a owl:Class;
+  rdfs:label "software engineering management";
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q80993 .
+
+test:Q100171002 a owl:Class;
+  rdfs:label "hiding" .
+
+test:Q7063059 a owl:Class;
+  rdfs:label "notions";
+  rdfs:subClassOf test:Q151885 .
+
+test:Q730920 a owl:Class;
+  rdfs:label "problem solving";
+  rdfs:subClassOf test:Q621184, test:Q82604 .
+
+test:Q17176533 a owl:Class;
+  rdfs:label "software component" .
+
+test:Q2891260 a owl:Class;
+  rdfs:label "wicked problem";
+  rdfs:subClassOf <http://test.test#problem%20with%20no%20definitive%20solution> .
+
+<http://test.test#problem%20solving%20techniques%20in%20the%20computing%20foundations%20ka>
+  a owl:Class;
+  rdfs:label "problem solving techniques in the computing foundations ka";
+  rdfs:subClassOf test:Q65066292 .
+
+test:Q638608 a owl:Class;
+  rdfs:label "software development";
+  n4sch:PART_OF test:Q513359 .
+
+test:Q513359 a owl:Class;
+  rdfs:label "life cycle";
+  n4sch:HAS_PART test:Q638608 .
+
+test:Q188522 a owl:Class;
+  rdfs:label "software testing";
+  n4sch:PART_OF test:Q857102 .
+
+test:Q12271 a owl:Class;
+  rdfs:label "architecture" .
+
+test:Q3922674 a owl:Class;
+  rdfs:label "architectural design";
+  rdfs:subClassOf test:Q857102;
+  n4sch:HAS_PART test:Q26361505 .
+
+test:Q26361505 a owl:Class;
+  rdfs:label "detailed design";
+  n4sch:PART_OF test:Q3922674;
+  n4sch:FACET_OF test:Q7682878 .
+
+test:Q2720909 a owl:Class;
+  rdfs:label "artifacts";
+  rdfs:subClassOf test:Q3234845 .
+
+test:Q739122 a owl:Class;
+  rdfs:label "designing" .
+
+<http://test.test#software%20design%20principles> a owl:Class;
+  rdfs:label "software design principles";
+  n4sch:PART_OF <http://test.test#software%20design%20strategies%20and%20methods>;
+  n4sch:FACET_OF test:Q857102 .
+
+test:Q2465506 a owl:Class;
+  rdfs:label "separation of concerns";
+  n4sch:FACET_OF test:Q60520451 .
+
+test:Q317623 a owl:Class;
+  rdfs:label "specification";
+  n4sch:PART_OF test:Q857102 .
+
+<http://test.test#topic%204,%20user%20interface%20design> a owl:Class;
+  rdfs:label "topic 4, user interface design";
+  n4sch:FACET_OF test:Q135707 .
+
+test:Q926331 a owl:Class;
+  rdfs:label "denial of access";
+  rdfs:subClassOf test:Q68797751 .
+
+<http://test.test#computing%20foundations%20ka> a owl:Class;
+  rdfs:label "computing foundations ka";
+  rdfs:subClassOf test:Q162150 .
+
+test:Q9159523 a owl:Class;
+  rdfs:label "named parameters";
+  rdfs:subClassOf test:Q36992151 .
+
+<http://test.test#procedural%20abstraction> a owl:Class;
+  rdfs:label "procedural abstraction";
+  rdfs:subClassOf <http://test.test#abstraction%20by%20specification> .
+
+test:Q624546 a owl:Class;
+  rdfs:label "entity-relationship diagram";
+  rdfs:subClassOf test:Q2623243 .
+
+test:Q5215396 a owl:Class;
+  rdfs:label "functional decomposition";
+  rdfs:subClassOf test:Q30295815 .
+
+test:Q8777 a owl:Class;
+  rdfs:label "http";
+  n4sch:INSTANCE_OF test:Q21161338 .
+
+test:Q57550288 a owl:Class;
+  rdfs:label "crosscutting issues";
+  rdfs:subClassOf <http://test.test#key,%20crosscutting%20issues> .
+
+test:Q40056 a owl:Class;
+  rdfs:label "computer program";
+  n4sch:HAS_PART test:Q2271846 .
+
+test:Q1305241 a owl:Class;
+  rdfs:label "encapsulation";
+  rdfs:subClassOf test:Q100171002 .
+
+test:Q15184295 a owl:Class;
+  rdfs:label "module";
+  n4sch:HAS_PART test:Q172891 .
+
+<http://test.test#semiformal%20static> a owl:Class;
+  rdfs:label "semiformal static";
+  rdfs:subClassOf test:Q1329550 .
+
+test:Q162150 a owl:Class;
+  rdfs:label "abstraction";
+  rdfs:subClassOf test:Q17176533;
+  n4sch:PART_OF test:Q857102;
+  n4sch:DIFFERENT_FROM <http://test.test#abstraction%20inaccessible%20to%20external%20entities> .
+
+<http://test.test#abstraction%20inaccessible%20to%20external%20entities> a owl:Class;
+  rdfs:label "abstraction inaccessible to external entities";
+  n4sch:DIFFERENT_FROM test:Q162150 .
+
+test:Q7257924 a owl:Class;
+  rdfs:label "public interface";
+  n4sch:USE test:Q1305241 .
+
+test:Q96723971 a owl:Class;
+  rdfs:label "patterns";
+  n4sch:PART_OF test:Q82604 .
+
+test:Q85574465 a owl:Class;
+  rdfs:label "programs" .
+
+test:Q206361 a owl:Class;
+  rdfs:label "concern";
+  rdfs:subClassOf <http://test.test#area%20of%20interest> .
+
+test:Q220659 a owl:Class;
+  rdfs:label "artifact" .
+
+test:Q5289798 a owl:Class;
+  rdfs:label "application domain";
+  n4sch:DIFFERENT_FROM test:Q7397 .
+
+test:Q66476405 a owl:Class;
+  rdfs:label "design concern";
+  n4sch:FACET_OF test:Q82604, test:Q7848174 .
+
+test:Q200726 a owl:Class;
+  rdfs:label "distribution" .
+
+test:Q68797751 a owl:Class;
+  rdfs:label "unauthorized disclosure" .
+
+test:Q14212253 a owl:Class;
+  rdfs:label "concerns";
+  n4sch:PART_OF test:Q12271;
+  n4sch:DIFFERENT_FROM test:Q19687629 .
+
+<http://test.test#software%20design%20strategies%20and%20methods> a owl:Class;
+  rdfs:label "software design strategies and methods";
+  rdfs:subClassOf test:Q57621340;
+  n4sch:HAS_PART <http://test.test#software%20design%20principles> .
+
+test:Q1995545 a owl:Class;
+  rdfs:label "package";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q279749 a owl:Class;
+  rdfs:label "form";
+  n4sch:HAS_PART test:Q16869936 .
+
+test:Q1412119 a owl:Class;
+  rdfs:label "threads";
+  n4sch:PART_OF test:Q27726347 .
+
+test:Q92279208 a owl:Class;
+  rdfs:label "call-backs";
+  rdfs:subClassOf test:Q424361 .
+
+test:Q7682878 a owl:Class;
+  rdfs:label "components";
+  n4sch:PART_OF test:Q200726, test:Q114605257 .
+
+test:Q3966 a owl:Class;
+  rdfs:label "hardware";
+  n4sch:PART_OF test:Q3966;
+  n4sch:HAS_PART test:Q3966;
+  n4sch:USED_BY test:Q7397 .
+
+test:Q1546066 a owl:Class;
+  rdfs:label "network hardware";
+  rdfs:subClassOf test:Q3966 .
+
+test:Q621184 a owl:Class;
+  rdfs:label "problem" .
+
+test:Q146768 a owl:Class;
+  rdfs:label "middleware";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q486902 a owl:Class;
+  rdfs:label "mathematical model" .
+
+<http://test.test#heterogeneous%20software> a owl:Class;
+  rdfs:label "heterogeneous software";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q1063550 a owl:Class;
+  rdfs:label "creational pattern" .
+
+test:Q183225 a owl:Class;
+  rdfs:label "tolerance";
+  n4sch:HAS_CAUSE test:Q29485 .
+
+<http://test.test#exceptional%20conditions> a owl:Class;
+  rdfs:label "exceptional conditions";
+  rdfs:subClassOf test:Q3732599 .
+
+test:Q52948 a owl:Class;
+  rdfs:label "interaction";
+  n4sch:HAS_EFFECT test:Q464980 .
+
+test:Q32880 a owl:Class;
+  rdfs:label "architectural style";
+  rdfs:subClassOf test:Q3922674 .
+
+test:Q464980 a owl:Class;
+  rdfs:label "presentation";
+  n4sch:PART_OF test:Q135707;
+  n4sch:HAS_CAUSE test:Q52948 .
+
+test:Q3511030 a owl:Class;
+  rdfs:label "separation of presentation";
+  n4sch:FACET_OF test:Q464980 .
+
+<http://test.test#security%20design%20for%20security> a owl:Class;
+  rdfs:label "security design for security";
+  n4sch:FACET_OF test:Q169489 .
+
+test:Q192581 a owl:Class;
+  rdfs:label "activity" .
+
+test:Q169489 a owl:Class;
+  rdfs:label "security";
+  n4sch:STUDIED_BY test:Q8789 .
+
+test:Q8789 a owl:Class;
+  rdfs:label "cryptology";
+  n4sch:STUDIES test:Q169489 .
+
+test:Q83043389 a owl:Class;
+  rdfs:label "design decisions" .
+
+<http://test.test#software%20element> a owl:Class;
+  rdfs:label "software element";
+  n4sch:PART_OF test:Q1 .
+
+test:Q1 a owl:Class;
+  rdfs:label "system";
+  n4sch:HAS_PART <http://test.test#software%20element> .
+
+<http://test.test#software%20structures%20and%20architectures> a owl:Class;
+  rdfs:label "software structures and architectures";
+  n4sch:STUDIED_BY test:Q846636 .
+
+<http://test.test#design%20families%20of%20programs> a owl:Class;
+  rdfs:label "design families of programs" .
+
+test:Q5287678 a owl:Class;
+  rdfs:label "documented";
+  n4sch:FACET_OF test:Q857102 .
+
+test:Q16388 a owl:Class;
+  rdfs:label "functional requirements";
+  rdfs:subClassOf test:Q857102 .
+
+test:Q36161 a owl:Class;
+  rdfs:label "set";
+  n4sch:PART_OF test:Q395 .
+
+test:Q61045385 a owl:Class;
+  rdfs:label "process view";
+  rdfs:subClassOf test:Q857102 .
+
+<http://test.test#development%20view> a owl:Class;
+  rdfs:label "development view";
+  rdfs:subClassOf test:Q857102 .
+
+test:Q846566 a owl:Class;
+  rdfs:label "behavioral";
+  n4sch:INSTANCE_OF test:Q33331986 .
+
+test:Q2623243 a owl:Class;
+  rdfs:label "conceptual model";
+  rdfs:subClassOf test:Q18534 .
+
+test:Q216530 a owl:Class;
+  rdfs:label "trash can";
+  n4sch:INSTANCE_OF test:Q18534 .
+
+test:Q579600 a owl:Class;
+  rdfs:label "functional";
+  n4sch:INSTANCE_OF test:Q33331986 .
+
+test:Q274533 a owl:Class;
+  rdfs:label "recovery" .
+
+test:Q936724 a owl:Class;
+  rdfs:label "structural";
+  n4sch:INSTANCE_OF test:Q33331986 .
+
+test:Q39093737 a owl:Class;
+  rdfs:label "orthogonal views";
+  rdfs:subClassOf test:Q220659 .
+
+test:Q9687 a owl:Class;
+  rdfs:label "mvc";
+  n4sch:INSTANCE_OF test:Q44860 .
+
+test:Q10874 a owl:Class;
+  rdfs:label "blind" .
+
+<http://test.test#relation%20type> a owl:Class;
+  rdfs:label "relation type";
+  n4sch:HAS_PART test:Q11344 .
+
+test:Q51575776 a owl:Class;
+  rdfs:label "high-level organization";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q160117 a owl:Class;
+  rdfs:label "broker";
+  n4sch:FACET_OF test:Q3962217 .
+
+<http://test.test#user%20interact%20with%20the%20software> a owl:Class;
+  rdfs:label "user interact with the software" .
+
+test:Q811122 a owl:Class;
+  rdfs:label "builder";
+  rdfs:subClassOf test:Q1063550 .
+
+<http://test.test#user%20interaction%20styles> a owl:Class;
+  rdfs:label "user interaction styles" .
+
+test:Q207977 a owl:Class;
+  rdfs:label "prototype";
+  rdfs:subClassOf test:Q7397, test:Q1063550 .
+
+test:Q4758591 a owl:Class;
+  rdfs:label "singleton";
+  rdfs:subClassOf test:Q1063550 .
+
+test:Q5290 a owl:Class;
+  rdfs:label "computer screen" .
+
+test:Q1331926 a owl:Class;
+  rdfs:label "decision-making";
+  n4sch:OPPOSITE_OF test:Q192581 .
+
+n4sch:OPPOSITE_OF a owl:ObjectProperty .
+
+test:Q2111823 a owl:Class;
+  rdfs:label "software product line";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q85574465 .
+
+test:Q184824 a owl:Class;
+  rdfs:label "pointing device" .
+
+<http://test.test#software%20product%20families> a owl:Class;
+  rdfs:label "software product families";
+  rdfs:subClassOf <http://test.test#design%20families%20of%20programs> .
+
+test:Q135707 a owl:Class;
+  rdfs:label "user interface design";
+  n4sch:PART_OF test:Q857102;
+  n4sch:FACET_OF test:Q52948, <http://test.test#user%20interact%20with%20the%20software>;
+  n4sch:STUDIES <http://test.test#software%20user%20interface> .
+
+test:Q47146 a owl:Class;
+  rdfs:label "user interface";
+  n4sch:PART_OF test:Q7397 .
+
+test:Q22855 a owl:Class;
+  rdfs:label "user";
+  n4sch:USES test:Q7397, test:Q23808 .
+
+test:Q23808 a owl:Class;
+  rdfs:label "interface";
+  n4sch:PART_OF test:Q7397;
+  n4sch:USED_BY test:Q22855 .
+
+<http://test.test#initiate%20action> a owl:Class;
+  rdfs:label "initiate action" .
+
+test:Q5163218 a owl:Class;
+  rdfs:label "consistent";
+  rdfs:subClassOf test:Q23808 .
+
+test:Q278368 a owl:Class;
+  rdfs:label "users";
+  n4sch:USES test:Q7397 .
+
+test:Q315 a owl:Class;
+  rdfs:label "language" .
+
+test:Q108689801 a owl:Class;
+  rdfs:label "restating";
+  rdfs:subClassOf test:Q183635 .
+
+test:Q5148529 a owl:Class;
+  rdfs:label "color-coding";
+  n4sch:USED_BY <http://test.test#user’s%20task>;
+  n4sch:USE test:Q5163218 .
+
+test:Q59584425 a owl:Class;
+  rdfs:label "recoverability";
+  rdfs:subClassOf test:Q274533 .
+
+test:Q2249676 a owl:Class;
+  rdfs:label "environment" .
+
+test:Q3732599 a owl:Class;
+  rdfs:label "errors";
+  n4sch:FACET_OF test:Q23808 .
+
+test:Q33742 a owl:Class;
+  rdfs:label "natural language" .
+
+test:Q183635 a owl:Class;
+  rdfs:label "feedback";
+  n4sch:PART_OF test:Q23808 .
+
+test:Q18921192 a owl:Class;
+  rdfs:label "user interaction";
+  n4sch:FACET_OF test:Q135707 .
+
+test:Q5149027 a owl:Class;
+  rdfs:label "colorblind";
+  rdfs:subClassOf test:Q10874 .
+
+<http://test.test#question-answer%20exchange> a owl:Class;
+  rdfs:label "question-answer exchange";
+  rdfs:subClassOf test:Q52948 .
+
+<http://test.test#menu%20list> a owl:Class;
+  rdfs:label "menu list";
+  n4sch:HAS_PART test:Q108515977 .
+
+<http://test.test#interact%20with%20objects> a owl:Class;
+  rdfs:label "interact with objects";
+  n4sch:FACET_OF test:Q5290 .
+
+test:Q20140 a owl:Class;
+  rdfs:label "trackball";
+  rdfs:subClassOf test:Q184824 .
+
+test:Q27067613 a owl:Class;
+  rdfs:label "control structure";
+  rdfs:subClassOf test:Q175263 .
+
+test:Q16869936 a owl:Class;
+  rdfs:label "fields";
+  n4sch:PART_OF test:Q279749 .
+
+test:Q44860 a owl:Class;
+  rdfs:label "model-view-controller" .
+
+test:Q11028 a owl:Class;
+  rdfs:label "information" .
+
+test:Q16974203 a owl:Class;
+  rdfs:label "action button";
+  n4sch:USE <http://test.test#initiate%20action> .
+
+test:Q5152113 a owl:Class;
+  rdfs:label "command language";
+  n4sch:INSTANCE_OF test:Q315 .
+
+test:Q2008856 a owl:Class;
+  rdfs:label "command";
+  n4sch:PART_OF test:Q33742;
+  n4sch:HAS_PART test:Q7135216 .
+
+test:Q7135216 a owl:Class;
+  rdfs:label "parameters";
+  n4sch:PART_OF test:Q2008856 .
+
+test:Q747691 a owl:Class;
+  rdfs:label "natural";
+  rdfs:subClassOf test:Q2249676 .
+
+test:Q70507976 a owl:Class;
+  rdfs:label "front end";
+  n4sch:FACET_OF test:Q5152113 .
+
+test:Q1630279 a owl:Class;
+  rdfs:label "guidelines" .
+
+test:Q782543 a owl:Class;
+  rdfs:label "graphical";
+  rdfs:subClassOf test:Q1662484, test:Q2001982 .
+
+<http://test.test#software%20status> a owl:Class;
+  rdfs:label "software status" .
+
+test:Q133696 a owl:Class;
+  rdfs:label "color blindness" .
+
+test:Q1662484 a owl:Class;
+  rdfs:label "information presentation";
+  n4sch:DIFFERENT_FROM <http://test.test#information%20itself> .
+
+<http://test.test#information%20itself> a owl:Class;
+  rdfs:label "information itself";
+  n4sch:DIFFERENT_FROM test:Q1662484 .
+
+test:Q3141064 a owl:Class;
+  rdfs:label "internationalization" .
+
+test:Q47574 a owl:Class;
+  rdfs:label "measurement unit" .
+
+test:Q578372 a owl:Class;
+  rdfs:label "response time";
+  n4sch:FACET_OF test:Q1920566 .
+
+test:Q107433168 a owl:Class;
+  rdfs:label "abstract visualization";
+  rdfs:subClassOf test:Q11028 .
+
+test:Q1379672 a owl:Class;
+  rdfs:label "evaluation" .
+
+test:Q1075 a owl:Class;
+  rdfs:label "color";
+  n4sch:PART_OF test:Q23808, test:Q1630279 .
+
+test:Q56736165 a owl:Class;
+  rdfs:label "color change";
+  n4sch:FACET_OF <http://test.test#software%20status> .
+
+test:Q1412670 a owl:Class;
+  rdfs:label "software quality" .
+
+test:Q216378 a owl:Class;
+  rdfs:label "usability" .
+
+<http://test.test#user’s%20task> a owl:Class;
+  rdfs:label "user’s task";
+  n4sch:USES test:Q5148529 .
+
+<http://test.test#software%20user%20interface> a owl:Class;
+  rdfs:label "software user interface";
+  n4sch:STUDIED_BY test:Q135707 .
+
+test:Q5322166 a owl:Class;
+  rdfs:label "designer";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q7397 .
+
+test:Q111897013 a owl:Class;
+  rdfs:label "analyzing and evaluating" .
+
+test:Q166142 a owl:Class;
+  rdfs:label "software application";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q114259514 a owl:Class;
+  rdfs:label "vulnerability analysis" .
+
+test:Q756903 a owl:Class;
+  rdfs:label "internationalized";
+  rdfs:subClassOf test:Q130543 .
+
+test:Q8142 a owl:Class;
+  rdfs:label "currency";
+  rdfs:subClassOf test:Q47574 .
+
+test:Q62045152 a owl:Class;
+  rdfs:label "designing a user interface";
+  n4sch:PRACTICED_BY test:Q1709010 .
+
+<http://test.test#software%20design%20quality%20analysis> a owl:Class;
+  rdfs:label "software design quality analysis";
+  rdfs:subClassOf test:Q1379672 .
+
+test:Q22065849 a owl:Class;
+  rdfs:label "quality analysis";
+  rdfs:subClassOf test:Q1379672 .
+
+test:Q72045198 a owl:Class;
+  rdfs:label "design error" .
+
+test:Q37517 a owl:Class;
+  rdfs:label "class" .
+
+<http://test.test#software%20quality%20ka> a owl:Class;
+  rdfs:label "software quality ka";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q61924330 a owl:Class;
+  rdfs:label "simulation and prototyping" .
+
+test:Q12894677 a owl:Class;
+  rdfs:label "approach" .
+
+test:Q403605 a owl:Class;
+  rdfs:label "robustness";
+  n4sch:FACET_OF test:Q857102 .
+
+test:Q40140037 a owl:Class;
+  rdfs:label "modifiability";
+  n4sch:FACET_OF test:Q216378 .
+
+<http://test.test#software%20design%20quality> a owl:Class;
+  rdfs:label "software design quality";
+  rdfs:subClassOf test:Q111897013 .
+
+test:Q395 a owl:Class;
+  rdfs:label "mathematics";
+  n4sch:HAS_PART test:Q36161, test:Q8078, test:Q133250 .
+
+<http://test.test#requirements%20tracing> a owl:Class;
+  rdfs:label "requirements tracing";
+  rdfs:subClassOf <http://test.test#software%20design%20review> .
+
+<http://test.test#hierarchical%20diagram> a owl:Class;
+  rdfs:label "hierarchical diagram" .
+
+<http://test.test#help%20files> a owl:Class;
+  rdfs:label "help files";
+  n4sch:PART_OF test:Q18615364 .
+
+test:Q179080 a owl:Class;
+  rdfs:label "predicate";
+  rdfs:subClassOf test:Q486902 .
+
+<http://test.test#models%20and%20methods%20ka> a owl:Class;
+  rdfs:label "models and methods ka";
+  n4sch:PART_OF test:Q80993 .
+
+test:Q1140419 a owl:Class;
+  rdfs:label "imprecision";
+  rdfs:subClassOf test:Q72045198 .
+
+<http://test.test#feasibility%20prototype> a owl:Class;
+  rdfs:label "feasibility prototype";
+  rdfs:subClassOf test:Q61924330 .
+
+test:Q7075021 a owl:Class;
+  rdfs:label "object-oriented design";
+  rdfs:subClassOf test:Q82604 .
+
+test:Q7625091 a owl:Class;
+  rdfs:label "structure chart";
+  rdfs:subClassOf <http://test.test#hierarchical%20diagram> .
+
+test:Q1200667 a owl:Class;
+  rdfs:label "design structure" .
+
+test:Q664166 a owl:Class;
+  rdfs:label "class diagram";
+  rdfs:subClassOf test:Q1200667 .
+
+test:Q106356012 a owl:Class;
+  rdfs:label "properties";
+  n4sch:PART_OF test:Q37517 .
+
+<http://test.test#design%20artifacts> a owl:Class;
+  rdfs:label "design artifacts";
+  n4sch:FACET_OF test:Q7397 .
+
+test:Q82604 a owl:Class;
+  rdfs:label "design";
+  n4sch:HAS_PART <http://test.test#software%20behavior> .
+
+<http://test.test#software%20behavior> a owl:Class;
+  rdfs:label "software behavior";
+  n4sch:PART_OF test:Q82604 .
+
+test:Q2001982 a owl:Class;
+  rdfs:label "notation";
+  n4sch:USE test:Q857102 .
+
+test:Q1545589 a owl:Class;
+  rdfs:label "deployment diagram";
+  n4sch:FACET_OF test:Q7397 .
+
+<http://test.test#collaborating%20component> a owl:Class;
+  rdfs:label "collaborating component";
+  rdfs:subClassOf test:Q7682878 .
+
+test:Q57621340 a owl:Class;
+  rdfs:label "design methods" .
+
+test:Q114605257 a owl:Class;
+  rdfs:label "software systems";
+  n4sch:HAS_PART test:Q7682878 .
+
+test:Q868299 a owl:Class;
+  rdfs:label "control flow" .
+
+test:Q85717432 a owl:Class;
+  rdfs:label "security requirements";
+  rdfs:subClassOf test:Q83043389 .
+
+test:Q128392 a owl:Class;
+  rdfs:label "concurrent" .
+
+test:Q423262 a owl:Class;
+  rdfs:label "activity diagram";
+  n4sch:DEPICTS test:Q868299 .
+
+n4sch:DEPICTS a owl:ObjectProperty .
+
+test:Q608910 a owl:Class;
+  rdfs:label "links";
+  n4sch:PART_OF test:Q950859 .
+
+test:Q950859 a owl:Class;
+  rdfs:label "communication diagram" .
+
+test:Q747385 a owl:Class;
+  rdfs:label "data flow diagram";
+  n4sch:STUDIED_BY test:Q119727;
+  n4sch:USE test:Q14911545;
+  n4sch:DEPICTS test:Q205446, test:Q114953842 .
+
+test:Q205446 a owl:Class;
+  rdfs:label "data flow" .
+
+test:Q1301371 a owl:Class;
+  rdfs:label "network";
+  n4sch:HAS_PART <http://test.test#operational%20element> .
+
+test:Q14911545 a owl:Class;
+  rdfs:label "security analysis" .
+
+<http://test.test#operational%20element> a owl:Class;
+  rdfs:label "operational element";
+  n4sch:PART_OF test:Q1301371 .
+
+test:Q114953842 a owl:Class;
+  rdfs:label "data flows" .
+
+test:Q105698583 a owl:Class;
+  rdfs:label "diagrams";
+  n4sch:HAS_PART test:Q747762 .
+
+test:Q747762 a owl:Class;
+  rdfs:label "decision table" .
+
+test:Q1391624 a owl:Class;
+  rdfs:label "sequence diagram" .
+
+test:Q185092 a owl:Class;
+  rdfs:label "flowchart";
+  n4sch:DEPICTS test:Q868299 .
+
+test:Q4650721 a owl:Class;
+  rdfs:label "interactions";
+  rdfs:subClassOf test:Q1391624 .
+
+test:Q176452 a owl:Class;
+  rdfs:label "state machine";
+  n4sch:HAS_PART test:Q7275 .
+
+test:Q7275 a owl:Class;
+  rdfs:label "state";
+  n4sch:PART_OF test:Q176452 .
+
+test:Q8078 a owl:Class;
+  rdfs:label "logic";
+  n4sch:PART_OF test:Q395 .
+
+test:Q133250 a owl:Class;
+  rdfs:label "sequence";
+  n4sch:PART_OF test:Q395 .
+
+test:Q190686 a owl:Class;
+  rdfs:label "procedure" .
+
+test:Q2695280 a owl:Class;
+  rdfs:label "method";
+  rdfs:subClassOf test:Q190686 .
+
+test:Q51242127 a owl:Class;
+  rdfs:label "general strategies";
+  n4sch:FACET_OF test:Q105102283;
+  n4sch:OPPOSITE_OF test:Q71536040 .
+
+test:Q71536040 a owl:Class;
+  rdfs:label "specific";
+  n4sch:OPPOSITE_OF test:Q51242127 .
+
+test:Q105102283 a owl:Class;
+  rdfs:label "design process" .
+
+test:Q28406404 a owl:Class;
+  rdfs:label "teams" .
+
+test:Q2866772 a owl:Class;
+  rdfs:label "iterative";
+  n4sch:HAS_PART test:Q107381120;
+  n4sch:OPPOSITE_OF test:Q506922 .
+
+test:Q107381120 a owl:Class;
+  rdfs:label "incremental";
+  n4sch:PART_OF test:Q2866772 .
+
+test:Q201413 a owl:Class;
+  rdfs:label "heuristic" .
+
+test:Q119727 a owl:Class;
+  rdfs:label "structured analysis";
+  n4sch:STUDIES test:Q747385 .
+
+<http://test.test#fan-in/fan-out> a owl:Class;
+  rdfs:label "fan-in/fan-out";
+  n4sch:INSTANCE_OF test:Q201413 .
+
+<http://test.test#methods%20based%20on%20objects> a owl:Class;
+  rdfs:label "methods based on objects";
+  rdfs:subClassOf test:Q857102 .
+
+test:Q200303 a owl:Class;
+  rdfs:label "inheritance";
+  n4sch:PART_OF test:Q79872 .
+
+test:Q7315980 a owl:Class;
+  rdfs:label "responsibility-driven design";
+  rdfs:subClassOf <http://test.test#oo%20design> .
+
+test:Q175263 a owl:Class;
+  rdfs:label "data structure";
+  n4sch:PART_OF test:Q170584 .
+
+test:Q170584 a owl:Class;
+  rdfs:label "program";
+  n4sch:HAS_PART test:Q175263 .
+
+test:Q18614556 a owl:Class;
+  rdfs:label "dependencies";
+  rdfs:subClassOf test:Q15709451 .
+
+test:Q56837082 a owl:Class;
+  rdfs:label "component-based design";
+  rdfs:subClassOf test:Q846574 .
+
+test:Q89750797 a owl:Class;
+  rdfs:label "off-the-shelf";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q506922 a owl:Class;
+  rdfs:label "adaptive";
+  n4sch:OPPOSITE_OF test:Q2866772 .
+
+test:Q79872 a owl:Class;
+  rdfs:label "object-oriented" .
+
+test:Q193424 a owl:Class;
+  rdfs:label "web service";
+  rdfs:subClassOf test:Q59114612 .
+
+test:Q44484 a owl:Class;
+  rdfs:label "https";
+  n4sch:INSTANCE_OF test:Q21161338 .
+
+test:Q23739 a owl:Class;
+  rdfs:label "soap";
+  n4sch:INSTANCE_OF test:Q21161338 .
+
+<http://test.test#software%20design%20artifacts> a owl:Class;
+  rdfs:label "software design artifacts";
+  n4sch:PART_OF test:Q2904257 .
+
+test:Q4610556 a owl:Class;
+  rdfs:label "model" .
+
+<http://test.test#oo%20design> a owl:Class;
+  rdfs:label "oo design" .
+
+test:Q69702733 a owl:Class;
+  rdfs:label "alternative solutions" .
+
+test:Q953429 a owl:Class;
+  rdfs:label "verification" .
+
+test:Q108283301 a owl:Class;
+  rdfs:label "pattern design" .
+
+test:Q846574 a owl:Class;
+  rdfs:label "reuse" .
+
+<http://test.test#knowledge%20area> a owl:Class;
+  rdfs:label "knowledge area" .
+
+test:Q7848174 a owl:Class;
+  rdfs:label "trust management" .
+
+test:Q151885 a owl:Class;
+  rdfs:label "concepts" .
+
+test:Q59114612 a owl:Class;
+  rdfs:label "distributed software" .
+
+test:Q21161338 a owl:Class;
+  rdfs:label "protocols" .
+
+<http://test.test#problem%20with%20no%20definitive%20solution> a owl:Class;
+  rdfs:label "problem with no definitive solution" .
+
+test:Q65066292 a owl:Class;
+  rdfs:label "solutions" .
+
+test:Q3234845 a owl:Class;
+  rdfs:label "models" .
+
+test:Q111640771 a owl:Class;
+  rdfs:label "functional components" .

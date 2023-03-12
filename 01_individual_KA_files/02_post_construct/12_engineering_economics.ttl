@@ -1,0 +1,1738 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix test: <http://test.test#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+<http://test.test#wrong%20choice> a owl:Class;
+  rdfs:label "wrong choice";
+  n4sch:STUDIED_BY test:Q5249226 .
+
+n4sch:STUDIED_BY a owl:ObjectProperty .
+
+test:Q7406919 a owl:Class;
+  rdfs:label "service";
+  n4sch:DIFFERENT_FROM test:Q2111823, test:Q2424752;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q15290 .
+
+n4sch:DIFFERENT_FROM a owl:ObjectProperty .
+
+n4sch:SAID_TO_BE_THE_SAME_AS a owl:ObjectProperty .
+
+<http://test.test#software%20engineering%20economics> a owl:Class;
+  rdfs:label "software engineering economics";
+  n4sch:FACET_OF test:Q80993;
+  n4sch:STUDIES test:Q7397, test:Q110569879, test:Q30285366, test:Q2297847, <http://test.test#software%20product%20life%20cycle>,
+    test:Q7554272, test:Q37813;
+  n4sch:INSTANCE_OF <http://test.test#knowledge%20area> .
+
+n4sch:FACET_OF a owl:ObjectProperty .
+
+n4sch:STUDIES a owl:ObjectProperty .
+
+n4sch:INSTANCE_OF a owl:ObjectProperty .
+
+test:Q2704616 a owl:Class;
+  rdfs:label "win-win";
+  rdfs:subClassOf <http://test.test#resolve%20conflicts> .
+
+test:Q1553864 a owl:Class;
+  rdfs:label "governance";
+  n4sch:PART_OF test:Q189447 .
+
+n4sch:PART_OF a owl:ObjectProperty .
+
+<http://test.test#laplace%20rule> a owl:Class;
+  rdfs:label "laplace rule";
+  rdfs:subClassOf <http://test.test#maximin%20rule> .
+
+<http://test.test#unit%20of%20choice> a owl:Class;
+  rdfs:label "unit of choice";
+  n4sch:HAS_PART <http://test.test#choose%20to%20carry%20out%20each%20proposal>, test:Q5104763 .
+
+n4sch:HAS_PART a owl:ObjectProperty .
+
+<http://test.test#goals%20in%20software%20engineering%20economics> a owl:Class;
+  rdfs:label "goals in software engineering economics";
+  rdfs:subClassOf test:Q58345895 .
+
+test:Q2111823 a owl:Class;
+  rdfs:label "software product";
+  n4sch:HAS_PART test:Q114080183;
+  n4sch:DIFFERENT_FROM test:Q7406919 .
+
+test:Q15809678 a owl:Class;
+  rdfs:label "financial product";
+  n4sch:HAS_PART test:Q1368 .
+
+<http://test.test#cash%20flow%20streams> a owl:Class;
+  rdfs:label "cash flow streams";
+  rdfs:subClassOf <http://test.test#cash%20flow%20instance> .
+
+test:Q52326948 a owl:Class;
+  rdfs:label "multiple estimation";
+  rdfs:subClassOf test:Q62084502 .
+
+test:Q7604374 a owl:Class;
+  rdfs:label "statistical methods";
+  rdfs:subClassOf test:Q62084502 .
+
+test:Q45342565 a owl:Class;
+  rdfs:label "input";
+  rdfs:subClassOf test:Q1554231 .
+
+test:Q31095316 a owl:Class;
+  rdfs:label "controlling cost";
+  rdfs:subClassOf test:Q29017603 .
+
+test:Q939134 a owl:Class;
+  rdfs:label "return on investment";
+  n4sch:FACET_OF test:Q59635278;
+  n4sch:STUDIED_BY test:Q8134;
+  n4sch:INSTANCE_OF test:Q79360258 .
+
+test:Q513359 a owl:Class;
+  rdfs:label "life cycle";
+  n4sch:FACET_OF test:Q2111823 .
+
+test:Q189447 a owl:Class;
+  rdfs:label "risk management";
+  rdfs:subClassOf test:Q1331926 .
+
+test:Q66979694 a owl:Class;
+  rdfs:label "proposal b";
+  n4sch:OPPOSITE_OF test:Q95629318 .
+
+n4sch:OPPOSITE_OF a owl:ObjectProperty .
+
+test:Q11023 a owl:Class;
+  rdfs:label "engineering";
+  n4sch:PRACTICED_BY test:Q81096;
+  n4sch:STUDIES test:Q638608 .
+
+n4sch:PRACTICED_BY a owl:ObjectProperty .
+
+test:Q163740 a owl:Class;
+  rdfs:label "not-for-profit";
+  n4sch:DIFFERENT_FROM test:Q21980538;
+  n4sch:OPPOSITE_OF test:Q21980538 .
+
+<http://test.test#not%20accounting%20for%20taxation> a owl:Class;
+  rdfs:label "not accounting for taxation";
+  n4sch:FACET_OF test:Q28944460 .
+
+test:Q104493 a owl:Class;
+  rdfs:label "risk";
+  rdfs:subClassOf test:Q4290;
+  n4sch:DIFFERENT_FROM test:Q26911;
+  n4sch:STUDIED_BY test:Q85811899 .
+
+test:Q4503831 a owl:Class;
+  rdfs:label "goals";
+  rdfs:subClassOf test:Q644065;
+  n4sch:DIFFERENT_FROM test:Q87524600 .
+
+<http://test.test#product%20x> a owl:Class;
+  rdfs:label "product x";
+  n4sch:INSTANCE_OF test:Q844746 .
+
+test:Q638608 a owl:Class;
+  rdfs:label "software development";
+  n4sch:HAS_PART test:Q1043452, test:Q170584;
+  n4sch:DIFFERENT_FROM <http://test.test#software%20product%20life%20cycle> .
+
+test:Q5249226 a owl:Class;
+  rdfs:label "decision analysis";
+  n4sch:STUDIES <http://test.test#wrong%20choice> .
+
+<http://test.test#agile%20product%20development> a owl:Class;
+  rdfs:label "agile product development";
+  n4sch:PART_OF <http://test.test#software%20product%20life%20cycle> .
+
+test:Q10677 a owl:Class;
+  rdfs:label "ps";
+  n4sch:PART_OF test:Q193959 .
+
+test:Q7663784 a owl:Class;
+  rdfs:label "systematic process";
+  n4sch:PART_OF test:Q59175566 .
+
+test:Q26911 a owl:Class;
+  rdfs:label "profitability";
+  n4sch:DIFFERENT_FROM test:Q104493;
+  n4sch:STUDIED_BY test:Q4116214 .
+
+<http://test.test#maximax%20rule> a owl:Class;
+  rdfs:label "maximax rule";
+  rdfs:subClassOf <http://test.test#maximin%20rule> .
+
+<http://test.test#hurwicz%20rule> a owl:Class;
+  rdfs:label "hurwicz rule";
+  rdfs:subClassOf <http://test.test#maximin%20rule> .
+
+<http://test.test#proposal%20x> a owl:Class;
+  rdfs:label "proposal x";
+  n4sch:FOLLOWED_BY <http://test.test#proposal%20y> .
+
+n4sch:FOLLOWED_BY a owl:ObjectProperty .
+
+test:Q1043452 a owl:Class;
+  rdfs:label "maintenance";
+  n4sch:PART_OF test:Q638608, test:Q9135 .
+
+<http://test.test#proposal%20y> a owl:Class;
+  rdfs:label "proposal y";
+  n4sch:FOLLOWS <http://test.test#proposal%20x> .
+
+n4sch:FOLLOWS a owl:ObjectProperty .
+
+test:Q50349184 a owl:Class;
+  rdfs:label "factors";
+  n4sch:PART_OF test:Q87524600 .
+
+<http://test.test#multiple%20attribute%20decision%20techniques> a owl:Class;
+  rdfs:label "multiple attribute decision techniques";
+  n4sch:USE test:Q59255659 .
+
+n4sch:USE a owl:ObjectProperty .
+
+test:sub-portfolio a owl:Class;
+  rdfs:label "sub-portfolio";
+  rdfs:subClassOf test:Q93241073 .
+
+test:Q8134 a owl:Class;
+  rdfs:label "economics";
+  n4sch:HAS_PART test:Q80993, test:Q43015;
+  n4sch:STUDIES test:Q194112, test:Q1554231, test:Q16513426, test:Q160151, test:Q1331926 .
+
+test:Q87524600 a owl:Class;
+  rdfs:label "estimates";
+  n4sch:HAS_PART test:Q50349184;
+  n4sch:DIFFERENT_FROM test:Q4503831 .
+
+test:Q194112 a owl:Class;
+  rdfs:label "value";
+  n4sch:DIFFERENT_FROM test:Q1368;
+  n4sch:STUDIED_BY test:Q8134;
+  n4sch:OPPOSITE_OF test:Q958242 .
+
+test:Q57064172 a owl:Class;
+  rdfs:label "expert judgment";
+  rdfs:subClassOf test:Q62084502 .
+
+test:Q15745527 a owl:Class;
+  rdfs:label "constraints";
+  n4sch:FACET_OF test:Q170584 .
+
+test:Q1554231 a owl:Class;
+  rdfs:label "resources";
+  n4sch:STUDIED_BY test:Q8134 .
+
+test:Q80993 a owl:Class;
+  rdfs:label "software engineering";
+  n4sch:PART_OF test:Q43229;
+  n4sch:USES test:Q9143;
+  n4sch:STUDIES test:Q7397, test:Q1395034, test:Q542929 .
+
+n4sch:USES a owl:ObjectProperty .
+
+<http://test.test#money%20comes%20in> a owl:Class;
+  rdfs:label "money comes in";
+  n4sch:FACET_OF test:Q1368 .
+
+test:Q95629318 a owl:Class;
+  rdfs:label "proposal a";
+  n4sch:OPPOSITE_OF test:Q66979694 .
+
+test:Q7397 a owl:Class;
+  rdfs:label "software";
+  n4sch:HAS_PART test:Q17176533;
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics>, test:Q80993;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q73324365 .
+
+test:Q110569879 a owl:Class;
+  rdfs:label "software processes";
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics> .
+
+<http://test.test#initially%20goals> a owl:Class;
+  rdfs:label "initially goals";
+  rdfs:subClassOf test:Q4503831 .
+
+test:Q113424170 a owl:Class;
+  rdfs:label "software organization";
+  n4sch:PART_OF test:Q4830453 .
+
+test:Q4830453 a owl:Class;
+  rdfs:label "business";
+  n4sch:HAS_PART test:Q113424170, test:Q5156287 .
+
+test:Q966793 a owl:Class;
+  rdfs:label "relevant";
+  rdfs:subClassOf test:Q11348540 .
+
+test:Q30285366 a owl:Class;
+  rdfs:label "technical software";
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics> .
+
+test:Q35771884 a owl:Class;
+  rdfs:label "parametric methods";
+  rdfs:subClassOf test:Q62084502 .
+
+test:Q22721 a owl:Class;
+  rdfs:label "governmental";
+  n4sch:DIFFERENT_FROM test:Q163740 .
+
+test:Q2424752 a owl:Class;
+  rdfs:label "product";
+  n4sch:PART_OF test:Q170584;
+  n4sch:DIFFERENT_FROM test:Q7406919 .
+
+test:Q21980538 a owl:Class;
+  rdfs:label "for-profit";
+  rdfs:subClassOf test:Q43229;
+  n4sch:DIFFERENT_FROM test:Q163740 .
+
+test:Q2321565 a owl:Class;
+  rdfs:label "iterative process";
+  n4sch:USES test:Q39012405 .
+
+test:Q114614079 a owl:Class;
+  rdfs:label "technical perspective";
+  n4sch:STUDIES test:Q63437139 .
+
+test:Q63437139 a owl:Class;
+  rdfs:label "software project";
+  n4sch:STUDIED_BY test:Q114614079 .
+
+test:Q39012405 a owl:Class;
+  rdfs:label "initial estimate";
+  n4sch:USED_BY test:Q2321565 .
+
+n4sch:USED_BY a owl:ObjectProperty .
+
+test:Q81096 a owl:Class;
+  rdfs:label "engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q11023 .
+
+n4sch:FIELD_OF_THIS_OCCUPATION a owl:ObjectProperty .
+
+test:Q1709010 a owl:Class;
+  rdfs:label "software engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q73897352 .
+
+test:Q748250 a owl:Class;
+  rdfs:label "forecast";
+  rdfs:subClassOf test:Q30984322 .
+
+test:Q73897352 a owl:Class;
+  rdfs:label "technical considerations";
+  n4sch:PRACTICED_BY test:Q1709010 .
+
+test:Q105886822 a owl:Class;
+  rdfs:label "make versus buy";
+  rdfs:subClassOf test:Q114509025 .
+
+test:Q85811899 a owl:Class;
+  rdfs:label "uncertainty management";
+  n4sch:STUDIES test:Q104493 .
+
+test:Q111212978 a owl:Class;
+  rdfs:label "practical considerations";
+  rdfs:subClassOf <http://test.test#knowledge%20area> .
+
+test:Q43015 a owl:Class;
+  rdfs:label "finance";
+  n4sch:PART_OF test:Q8134;
+  n4sch:HAS_PART test:Q4116214;
+  n4sch:STUDIES test:Q1368, test:Q85363587 .
+
+test:Q185816 a owl:Class;
+  rdfs:label "analogy";
+  rdfs:subClassOf test:Q62084502 .
+
+test:Q1368 a owl:Class;
+  rdfs:label "money";
+  n4sch:PART_OF test:Q493615;
+  n4sch:DIFFERENT_FROM test:Q194112;
+  n4sch:STUDIED_BY test:Q43015;
+  n4sch:INSTANCE_OF test:Q194112, test:Q30605927 .
+
+test:Q4985046 a owl:Class;
+  rdfs:label "budgeted";
+  n4sch:PART_OF test:Q43015 .
+
+test:Q1134763 a owl:Class;
+  rdfs:label "corporate finance";
+  n4sch:FACET_OF test:Q43229 .
+
+<http://test.test#estimation%20by%20parts> a owl:Class;
+  rdfs:label "estimation by parts";
+  rdfs:subClassOf test:Q62084502 .
+
+test:Q103890016 a owl:Class;
+  rdfs:label "finances";
+  n4sch:FACET_OF test:Q163740 .
+
+test:Q4116214 a owl:Class;
+  rdfs:label "accounting";
+  n4sch:PART_OF test:Q43015;
+  n4sch:STUDIES test:Q37472820 .
+
+test:Q3360276 a owl:Class;
+  rdfs:label "shareholders";
+  rdfs:subClassOf test:Q108798676 .
+
+test:Q12511 a owl:Class;
+  rdfs:label "steps";
+  n4sch:DIFFERENT_FROM test:Q108433817 .
+
+test:Q108433817 a owl:Class;
+  rdfs:label "curtailed";
+  n4sch:DIFFERENT_FROM test:Q12511 .
+
+test:Q2659904 a owl:Class;
+  rdfs:label "governmental organization";
+  n4sch:DIFFERENT_FROM test:Q163740 .
+
+test:Q1671788 a owl:Class;
+  rdfs:label "investors";
+  rdfs:subClassOf test:Q108798676;
+  n4sch:HAS_PART <http://test.test#outside%20the%20organization>, test:Q22019785 .
+
+test:Q192907 a owl:Class;
+  rdfs:label "financial statement";
+  rdfs:subClassOf test:Q11024 .
+
+<http://test.test#four-year%20life%20span> a owl:Class;
+  rdfs:label "four-year life span";
+  n4sch:OPPOSITE_OF <http://test.test#six-year%20life%20span> .
+
+<http://test.test#figure%2012.2> a owl:Class;
+  rdfs:label "figure 12.2";
+  n4sch:DEPICTS test:Q5048683 .
+
+n4sch:DEPICTS a owl:ObjectProperty .
+
+<http://test.test#legacy%20software%20product%20from%20the%20ground%20up> a owl:Class;
+  rdfs:label "legacy software product from the ground up";
+  n4sch:DIFFERENT_FROM <http://test.test#legacy%20software%20product> .
+
+test:Q17655531 a owl:Class;
+  rdfs:label "technical problem";
+  rdfs:subClassOf test:Q730920 .
+
+test:Q92615993 a owl:Class;
+  rdfs:label "historical data";
+  n4sch:USE test:Q29542197 .
+
+test:Q5001864 a owl:Class;
+  rdfs:label "business decision";
+  n4sch:STUDIED_BY test:Q24908243 .
+
+test:Q94315724 a owl:Class;
+  rdfs:label "objectives";
+  n4sch:PART_OF test:Q1296024, test:Q4006;
+  n4sch:HAS_PART <http://test.test#defined%20objectives> .
+
+test:Q17176533 a owl:Class;
+  rdfs:label "software component";
+  n4sch:PART_OF test:Q7397 .
+
+test:Q24908243 a owl:Class;
+  rdfs:label "business perspective";
+  n4sch:STUDIES test:Q5001864 .
+
+test:Q207621 a owl:Class;
+  rdfs:label "software license";
+  rdfs:subClassOf test:Q1148747 .
+
+<http://test.test#sales%20income> a owl:Class;
+  rdfs:label "sales income";
+  rdfs:subClassOf test:Q1047513 .
+
+test:Q1047513 a owl:Class;
+  rdfs:label "cash flow";
+  n4sch:PART_OF test:Q186081;
+  n4sch:SAID_TO_BE_THE_SAME_AS <http://test.test#cash%20flow%20stream> .
+
+test:Q2304385 a owl:Class;
+  rdfs:label "minimum acceptable rate of return";
+  rdfs:subClassOf test:Q185715, test:Q507477;
+  n4sch:FACET_OF test:Q4290 .
+
+<http://test.test#cash%20flow%20stream> a owl:Class;
+  rdfs:label "cash flow stream";
+  n4sch:STUDIED_BY test:Q22687;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1047513 .
+
+<http://test.test#maximin%20rule> a owl:Class;
+  rdfs:label "maximin rule";
+  n4sch:HAS_PART <http://test.test#laplace%20rule>, <http://test.test#maximax%20rule>,
+    <http://test.test#hurwicz%20rule>, <http://test.test#minimax%20regret%20rule> .
+
+test:Q170584 a owl:Class;
+  rdfs:label "project";
+  n4sch:PART_OF test:Q638608, test:Q43229 .
+
+test:Q22687 a owl:Class;
+  rdfs:label "financial";
+  n4sch:STUDIES <http://test.test#cash%20flow%20stream> .
+
+test:Q281894 a owl:Class;
+  rdfs:label "converge";
+  rdfs:subClassOf test:Q47870784 .
+
+test:Q831366 a owl:Class;
+  rdfs:label "decision tree";
+  n4sch:USE test:Q1331926 .
+
+<http://test.test#money%20goes%20out> a owl:Class;
+  rdfs:label "money goes out";
+  n4sch:FACET_OF test:Q1368 .
+
+test:Q493615 a owl:Class;
+  rdfs:label "flow";
+  n4sch:HAS_PART test:Q1368 .
+
+test:Q59583017 a owl:Class;
+  rdfs:label "investment decision-making";
+  n4sch:HAS_PART test:Q45342565 .
+
+test:Q2002539 a owl:Class;
+  rdfs:label "currency exchange";
+  rdfs:subClassOf test:Q92615993 .
+
+test:Q2851421 a owl:Class;
+  rdfs:label "costs";
+  rdfs:subClassOf test:Q911493;
+  n4sch:DIFFERENT_FROM test:Q1308177;
+  n4sch:OPPOSITE_OF test:Q850210 .
+
+test:Q1308177 a owl:Class;
+  rdfs:label "incomes";
+  n4sch:DIFFERENT_FROM test:Q2851421 .
+
+test:Q89750797 a owl:Class;
+  rdfs:label "off-the-shelf";
+  rdfs:subClassOf test:Q854995 .
+
+test:Q2445479 a owl:Class;
+  rdfs:label "total cost of ownership";
+  rdfs:subClassOf test:Q939134;
+  n4sch:FACET_OF test:Q2111823 .
+
+<http://test.test#defect%20correction> a owl:Class;
+  rdfs:label "defect correction";
+  rdfs:subClassOf test:Q57762672;
+  n4sch:INSTANCE_OF test:Q57762672 .
+
+<http://test.test#minimax%20regret%20rule> a owl:Class;
+  rdfs:label "minimax regret rule";
+  rdfs:subClassOf <http://test.test#maximin%20rule> .
+
+test:Q653345 a owl:Class;
+  rdfs:label "justification";
+  n4sch:FACET_OF test:Q3026325 .
+
+test:Q57090414 a owl:Class;
+  rdfs:label "nondimensional scaling";
+  rdfs:subClassOf <http://test.test#compensatory%20techniques> .
+
+<http://test.test#governance%20criteria> a owl:Class;
+  rdfs:label "governance criteria";
+  n4sch:FACET_OF test:Q43229 .
+
+test:Q1755687 a owl:Class;
+  rdfs:label "return on capital employed";
+  n4sch:INSTANCE_OF test:Q79360258 .
+
+test:Q59175566 a owl:Class;
+  rdfs:label "figure 12";
+  n4sch:HAS_PART test:Q7663784 .
+
+test:Q64585105 a owl:Class;
+  rdfs:label "stepwise";
+  rdfs:subClassOf test:Q7663784 .
+
+test:Q41298 a owl:Class;
+  rdfs:label "serial";
+  rdfs:subClassOf test:Q7663784 .
+
+test:Q43229 a owl:Class;
+  rdfs:label "organization";
+  n4sch:HAS_PART test:Q3918409 .
+
+<http://test.test#real%20process> a owl:Class;
+  rdfs:label "real process";
+  rdfs:subClassOf test:Q102205 .
+
+test:Q146591 a owl:Class;
+  rdfs:label "parallel";
+  rdfs:subClassOf test:Q36602 .
+
+test:Q175263 a owl:Class;
+  rdfs:label "data structure";
+  n4sch:PART_OF test:Q8366 .
+
+test:Q942582 a owl:Class;
+  rdfs:label "cost-benefit";
+  rdfs:subClassOf <http://test.test#decision%20techniques>;
+  n4sch:PART_OF <http://test.test#evaluating%20individual%20proposals>;
+  n4sch:HAS_PART test:Q1754768, test:Q678774 .
+
+<http://test.test#financially%20significant> a owl:Class;
+  rdfs:label "financially significant";
+  n4sch:DIFFERENT_FROM <http://test.test#effort%20should%20be%20invested%20in%20making%20the%20decision> .
+
+<http://test.test#effort%20should%20be%20invested%20in%20making%20the%20decision>
+  a owl:Class;
+  rdfs:label "effort should be invested in making the decision";
+  n4sch:DIFFERENT_FROM <http://test.test#financially%20significant> .
+
+test:Q1754768 a owl:Class;
+  rdfs:label "cost-effectiveness analysis";
+  rdfs:subClassOf <http://test.test#decision%20techniques> .
+
+test:Q8366 a owl:Class;
+  rdfs:label "algorithm";
+  n4sch:USE test:Q1331926 .
+
+<http://test.test#project-level%20decision> a owl:Class;
+  rdfs:label "project-level decision";
+  n4sch:FACET_OF <http://test.test#financially%20significant> .
+
+test:Q3918409 a owl:Class;
+  rdfs:label "proposal";
+  rdfs:subClassOf test:Q5001864;
+  n4sch:PART_OF test:Q43229 .
+
+test:Q784749 a owl:Class;
+  rdfs:label "10%";
+  n4sch:INSTANCE_OF test:Q385494 .
+
+test:Q64186984 a owl:Class;
+  rdfs:label "proposal p";
+  n4sch:DIFFERENT_FROM test:Q72687994 .
+
+test:Q72687994 a owl:Class;
+  rdfs:label "proposal q";
+  n4sch:DIFFERENT_FROM test:Q64186984 .
+
+<http://test.test#emotional%20hurdles> a owl:Class;
+  rdfs:label "emotional hurdles";
+  n4sch:PART_OF <http://test.test#abstract%20decisions> .
+
+<http://test.test#mutually%20exclusive%20paths> a owl:Class;
+  rdfs:label "mutually exclusive paths";
+  n4sch:HAS_PART test:Q577, test:Q8799, test:Q623 .
+
+test:Q577 a owl:Class;
+  rdfs:label "a";
+  n4sch:PART_OF <http://test.test#mutually%20exclusive%20paths> .
+
+test:Q8799 a owl:Class;
+  rdfs:label "b";
+  n4sch:PART_OF <http://test.test#mutually%20exclusive%20paths> .
+
+test:Q11442 a owl:Class;
+  rdfs:label "cycle";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q864928 .
+
+test:Q75396792 a owl:Class;
+  rdfs:label "variants";
+  rdfs:subClassOf <http://test.test#software%20product%20or%20service> .
+
+test:Q623 a owl:Class;
+  rdfs:label "c";
+  n4sch:PART_OF <http://test.test#mutually%20exclusive%20paths> .
+
+test:Q7317264 a owl:Class;
+  rdfs:label "rate of return";
+  n4sch:PART_OF test:Q192581;
+  n4sch:DIFFERENT_FROM <http://test.test#rate%20of%20least%20that%20rate%20of%20return> .
+
+<http://test.test#mutually%20exclusive%20alternatives> a owl:Class;
+  rdfs:label "mutually exclusive alternatives";
+  rdfs:subClassOf test:Q73564125 .
+
+test:Q215382 a owl:Class;
+  rdfs:label "mutually exclusive";
+  rdfs:subClassOf test:Q2840411, test:Q4736605 .
+
+test:Q58750259 a owl:Class;
+  rdfs:label "right things";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1296024 .
+
+test:Q4290 a owl:Class;
+  rdfs:label "investment";
+  rdfs:subClassOf test:Q1368, test:Q192581 .
+
+test:Q103980975 a owl:Class;
+  rdfs:label "financial decision-making";
+  rdfs:subClassOf test:Q1331926 .
+
+test:Q2840411 a owl:Class;
+  rdfs:label "alternative";
+  n4sch:OPPOSITE_OF test:Q7828152 .
+
+test:Q7828152 a owl:Class;
+  rdfs:label "total value";
+  n4sch:OPPOSITE_OF test:Q2840411 .
+
+<http://test.test#rate%20of%20least%20that%20rate%20of%20return> a owl:Class;
+  rdfs:label "rate of least that rate of return";
+  n4sch:DIFFERENT_FROM test:Q7317264 .
+
+<http://test.test#financial%20basis%20for%20value-based%20comparison> a owl:Class;
+  rdfs:label "financial basis for value-based comparison";
+  n4sch:FACET_OF test:Q77511931 .
+
+test:Q261232 a owl:Class;
+  rdfs:label "business unit";
+  n4sch:PART_OF test:Q2609670, test:Q783794 .
+
+test:Q5281744 a owl:Class;
+  rdfs:label "discounted payback period";
+  rdfs:subClassOf test:Q507477 .
+
+test:Q187142 a owl:Class;
+  rdfs:label "time value of money";
+  n4sch:FACET_OF test:Q43297 .
+
+test:Q133500 a owl:Class;
+  rdfs:label "acquisition";
+  rdfs:subClassOf test:Q4290 .
+
+test:Q186081 a owl:Class;
+  rdfs:label "time frame";
+  n4sch:HAS_PART test:Q1047513 .
+
+test:Q168678 a owl:Class;
+  rdfs:label "brand name";
+  n4sch:HAS_EFFECT test:Q77542427 .
+
+n4sch:HAS_EFFECT a owl:ObjectProperty .
+
+test:Q46737 a owl:Class;
+  rdfs:label "assets";
+  n4sch:OPPOSITE_OF test:Q62122990 .
+
+<http://test.test#relevant%20values> a owl:Class;
+  rdfs:label "relevant values";
+  n4sch:STUDIED_BY test:Q27955475 .
+
+test:Q27955475 a owl:Class;
+  rdfs:label "objectively";
+  n4sch:STUDIES <http://test.test#relevant%20values> .
+
+test:Q35865 a owl:Class;
+  rdfs:label "inflation";
+  rdfs:subClassOf test:Q160151;
+  n4sch:HAS_EFFECT test:Q240673 .
+
+test:Q2098385 a owl:Class;
+  rdfs:label "planning horizon";
+  n4sch:FACET_OF test:Q5001864;
+  n4sch:INSTANCE_OF test:Q186081 .
+
+test:Q66100 a owl:Class;
+  rdfs:label "exchange rate";
+  n4sch:HAS_CAUSE test:Q35865 .
+
+n4sch:HAS_CAUSE a owl:ObjectProperty .
+
+test:Q62122990 a owl:Class;
+  rdfs:label "liabilities";
+  n4sch:OPPOSITE_OF test:Q46737 .
+
+test:Q111824280 a owl:Class;
+  rdfs:label "tangible asset";
+  n4sch:DIFFERENT_FROM <http://test.test#capitalized%20asset> .
+
+<http://test.test#capitalized%20asset> a owl:Class;
+  rdfs:label "capitalized asset";
+  n4sch:DIFFERENT_FROM test:Q111824280 .
+
+test:Q193893 a owl:Class;
+  rdfs:label "capital";
+  n4sch:INSTANCE_OF test:Q385494 .
+
+test:Q28877 a owl:Class;
+  rdfs:label "economic good";
+  n4sch:HAS_PART <http://test.test#product%20factors> .
+
+test:Q65066292 a owl:Class;
+  rdfs:label "solutions";
+  n4sch:HAS_PART test:Q50808462 .
+
+<http://test.test#after-tax%20cash%20flow> a owl:Class;
+  rdfs:label "after-tax cash flow";
+  n4sch:FACET_OF <http://test.test#profit%20and%20taxes> .
+
+<http://test.test#evaluating%20individual%20proposals> a owl:Class;
+  rdfs:label "evaluating individual proposals";
+  n4sch:HAS_PART test:Q942582 .
+
+test:Q60101851 a owl:Class;
+  rdfs:label "depreciated";
+  rdfs:subClassOf test:Q2112073;
+  n4sch:OPPOSITE_OF test:Q10898344 .
+
+test:Q678774 a owl:Class;
+  rdfs:label "benefit";
+  n4sch:PART_OF test:Q942582;
+  n4sch:DIFFERENT_FROM test:Q240673 .
+
+<http://test.test#capitalized%20cost> a owl:Class;
+  rdfs:label "capitalized cost";
+  rdfs:subClassOf test:Q113055130 .
+
+test:Q179222 a owl:Class;
+  rdfs:label "income tax";
+  n4sch:FACET_OF test:Q167037 .
+
+test:Q8161 a owl:Class;
+  rdfs:label "taxes";
+  n4sch:FACET_OF test:Q5589383 .
+
+<http://test.test#pretax%20profit> a owl:Class;
+  rdfs:label "pretax profit";
+  n4sch:DIFFERENT_FROM test:posttax .
+
+test:Q186885 a owl:Class;
+  rdfs:label "time-value";
+  n4sch:FACET_OF test:Q200325 .
+
+test:posttax a owl:Class;
+  rdfs:label "posttax";
+  n4sch:DIFFERENT_FROM <http://test.test#pretax%20profit> .
+
+test:Q85363587 a owl:Class;
+  rdfs:label "business decisions";
+  n4sch:STUDIED_BY test:Q43015 .
+
+test:already-consumed a owl:Class;
+  rdfs:label "already-consumed";
+  n4sch:HAS_EFFECT test:Q2995644 .
+
+test:Q192472 a owl:Class;
+  rdfs:label "net present value";
+  rdfs:subClassOf test:Q194112 .
+
+<http://test.test#fixedbenefit%20analysis> a owl:Class;
+  rdfs:label "fixedbenefit analysis";
+  rdfs:subClassOf test:Q1754768 .
+
+test:Q6501319 a owl:Class;
+  rdfs:label "business proposal";
+  rdfs:subClassOf test:Q16983770 .
+
+test:Q1315524 a owl:Class;
+  rdfs:label "cross-border";
+  rdfs:subClassOf test:Q15752801 .
+
+<http://test.test#economic%20efficiency%20of%20a%20process,%20activity,%20or%20task>
+  a owl:Class;
+  rdfs:label "economic efficiency of a process, activity, or task";
+  n4sch:FACET_OF test:Q10843872 .
+
+test:Q1034411 a owl:Class;
+  rdfs:label "efficiency";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q80338442, test:Q1296024 .
+
+test:Q80338442 a owl:Class;
+  rdfs:label "doing things right";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1034411 .
+
+test:Q33187180 a owl:Class;
+  rdfs:label "effective behavior";
+  n4sch:OPPOSITE_OF test:Q27339447 .
+
+test:Q9143 a owl:Class;
+  rdfs:label "programming language";
+  n4sch:USED_BY test:Q80993 .
+
+test:Q112294009 a owl:Class;
+  rdfs:label "potential value";
+  n4sch:FACET_OF test:Q59583017 .
+
+test:Q1296024 a owl:Class;
+  rdfs:label "effectiveness";
+  n4sch:HAS_PART test:Q94315724;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q58750259, test:Q1034411, test:Q4115667 .
+
+test:profit-loss a owl:Class;
+  rdfs:label "profit-loss";
+  n4sch:DIFFERENT_FROM test:Q987767 .
+
+test:Q987767 a owl:Class;
+  rdfs:label "case";
+  n4sch:DIFFERENT_FROM test:profit-loss .
+
+test:Q4115667 a owl:Class;
+  rdfs:label "impact";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1296024 .
+
+<http://test.test#defined%20objectives> a owl:Class;
+  rdfs:label "defined objectives";
+  n4sch:PART_OF test:Q94315724 .
+
+test:Q21170479 a owl:Class;
+  rdfs:label "feasibility";
+  n4sch:FACET_OF test:Q939134 .
+
+test:Q592095 a owl:Class;
+  rdfs:label "technical feasibility";
+  rdfs:subClassOf test:Q30605927 .
+
+test:Q1150771 a owl:Class;
+  rdfs:label "output";
+  n4sch:OPPOSITE_OF test:Q45342565 .
+
+<http://test.test#product%20factors> a owl:Class;
+  rdfs:label "product factors";
+  n4sch:PART_OF test:Q28877 .
+
+test:single-dimensioned a owl:Class;
+  rdfs:label "single-dimensioned";
+  rdfs:subClassOf test:Q5156272 .
+
+test:Q2297847 a owl:Class;
+  rdfs:label "deliverable";
+  rdfs:subClassOf test:Q194112;
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics> .
+
+test:Q50808462 a owl:Class;
+  rdfs:label "systems";
+  n4sch:PART_OF test:Q65066292 .
+
+test:Q3676605 a owl:Class;
+  rdfs:label "figure of merit";
+  rdfs:subClassOf test:Q4818719 .
+
+test:Q5156272 a owl:Class;
+  rdfs:label "compensatory";
+  rdfs:subClassOf test:Q187947 .
+
+test:Q1395034 a owl:Class;
+  rdfs:label "product development";
+  n4sch:STUDIED_BY test:Q80993;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q5447288 .
+
+n4sch:PRODUCT_OR_MATERIAL_PRODUCED a owl:ObjectProperty .
+
+test:subprograms a owl:Class;
+  rdfs:label "subprograms";
+  n4sch:PART_OF test:Q170584 .
+
+test:Q330284 a owl:Class;
+  rdfs:label "market";
+  n4sch:HAS_PART test:Q852835;
+  n4sch:OPPOSITE_OF test:Q476300, test:Q838446;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q330284 .
+
+test:Q3882534 a owl:Class;
+  rdfs:label "one off";
+  n4sch:OPPOSITE_OF test:Q1070149 .
+
+test:Q279739 a owl:Class;
+  rdfs:label "business line";
+  n4sch:PART_OF test:Q43229 .
+
+test:Q1070149 a owl:Class;
+  rdfs:label "against";
+  n4sch:OPPOSITE_OF test:Q3882534 .
+
+test:Q287260 a owl:Class;
+  rdfs:label "resource allocation";
+  rdfs:subClassOf test:Q114509025 .
+
+test:Q864928 a owl:Class;
+  rdfs:label "life";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q11442 .
+
+<http://test.test#software%20product%20life%20cycle> a owl:Class;
+  rdfs:label "software product life cycle";
+  n4sch:FACET_OF test:Q7397;
+  n4sch:HAS_PART <http://test.test#agile%20product%20development>, <http://test.test#software%20project%20life%20cycle>,
+    test:operate-maintain-retire;
+  n4sch:DIFFERENT_FROM test:Q638608;
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics> .
+
+test:Q114080183 a owl:Class;
+  rdfs:label "services";
+  n4sch:PART_OF test:Q2111823 .
+
+test:Q4180161 a owl:Class;
+  rdfs:label "project life cycle";
+  n4sch:HAS_PART test:Q309100, test:Q107382067, test:Q26326936, test:Q5135520 .
+
+<http://test.test#additive%20weighting> a owl:Class;
+  rdfs:label "additive weighting";
+  rdfs:subClassOf <http://test.test#compensatory%20techniques> .
+
+<http://test.test#separate%20entity> a owl:Class;
+  rdfs:label "separate entity";
+  n4sch:FACET_OF test:Q112852209 .
+
+test:Q309100 a owl:Class;
+  rdfs:label "planning";
+  n4sch:PART_OF test:Q4180161;
+  n4sch:FACET_OF test:Q85363587 .
+
+test:Q464133 a owl:Class;
+  rdfs:label "nondimensional";
+  n4sch:DIFFERENT_FROM <http://test.test#fully%20dimensioned> .
+
+<http://test.test#fully%20dimensioned> a owl:Class;
+  rdfs:label "fully dimensioned";
+  n4sch:DIFFERENT_FROM test:Q464133 .
+
+test:Q107382067 a owl:Class;
+  rdfs:label "executing";
+  n4sch:PART_OF test:Q4180161 .
+
+test:Q26326936 a owl:Class;
+  rdfs:label "monitoring and controlling";
+  n4sch:PART_OF test:Q4180161 .
+
+test:Q5135520 a owl:Class;
+  rdfs:label "closing";
+  n4sch:PART_OF test:Q4180161 .
+
+test:Q16513426 a owl:Class;
+  rdfs:label "decision";
+  n4sch:STUDIED_BY test:Q8134 .
+
+test:Q1502167 a owl:Class;
+  rdfs:label "iterated";
+  n4sch:PART_OF test:Q63437139 .
+
+test:Q106149205 a owl:Class;
+  rdfs:label "tradeoffs";
+  rdfs:subClassOf test:Q4818719 .
+
+<http://test.test#software%20project%20life%20cycle> a owl:Class;
+  rdfs:label "software project life cycle";
+  n4sch:PART_OF <http://test.test#software%20product%20life%20cycle> .
+
+<http://test.test#choose%20to%20carry%20out%20each%20proposal> a owl:Class;
+  rdfs:label "choose to carry out each proposal";
+  rdfs:subClassOf <http://test.test#unit%20of%20choice> .
+
+test:Q111687350 a owl:Class;
+  rdfs:label "business decision-making";
+  n4sch:FACET_OF <http://test.test#business%20circumstances> .
+
+test:Q5104763 a owl:Class;
+  rdfs:label "choose not to";
+  rdfs:subClassOf <http://test.test#unit%20of%20choice> .
+
+test:Q6060850 a owl:Class;
+  rdfs:label "investment decisions";
+  n4sch:FACET_OF test:Q1671788 .
+
+<http://test.test#outside%20the%20organization> a owl:Class;
+  rdfs:label "outside the organization";
+  n4sch:PART_OF test:Q1671788 .
+
+test:Q22019785 a owl:Class;
+  rdfs:label "inside";
+  n4sch:PART_OF test:Q1671788 .
+
+test:Q4818719 a owl:Class;
+  rdfs:label "attributes";
+  n4sch:USE test:Q16513426 .
+
+test:Q157499 a owl:Class;
+  rdfs:label "goodwill";
+  n4sch:INSTANCE_OF test:Q83649864 .
+
+test:Q11042 a owl:Class;
+  rdfs:label "culture";
+  n4sch:INSTANCE_OF test:Q83649864 .
+
+test:Q107616295 a owl:Class;
+  rdfs:label "frozen assets";
+  rdfs:subClassOf test:Q1368 .
+
+test:Q177414 a owl:Class;
+  rdfs:label "high";
+  n4sch:OPPOSITE_OF test:Q40754 .
+
+test:Q40754 a owl:Class;
+  rdfs:label "decrease";
+  n4sch:OPPOSITE_OF test:Q177414 .
+
+test:Q9135 a owl:Class;
+  rdfs:label "operating";
+  n4sch:HAS_PART test:Q1043452;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q2424752 .
+
+<http://test.test#operating%20and%20maintenance%20costs> a owl:Class;
+  rdfs:label "operating and maintenance costs";
+  n4sch:OPPOSITE_OF <http://test.test#frozen%20asset%20costs> .
+
+<http://test.test#frozen%20asset%20costs> a owl:Class;
+  rdfs:label "frozen asset costs";
+  n4sch:OPPOSITE_OF <http://test.test#operating%20and%20maintenance%20costs> .
+
+test:Q1777902 a owl:Class;
+  rdfs:label "satisficing";
+  n4sch:PART_OF test:Q184524 .
+
+<http://test.test#six-year%20life%20span> a owl:Class;
+  rdfs:label "six-year life span";
+  n4sch:OPPOSITE_OF <http://test.test#four-year%20life%20span> .
+
+test:Q1036748 a owl:Class;
+  rdfs:label "cost function";
+  n4sch:USE test:Q51569119 .
+
+<http://test.test#software%20lifetime> a owl:Class;
+  rdfs:label "software lifetime";
+  n4sch:INSTANCE_OF test:Q926230 .
+
+<http://test.test#classic%20space-time%20tradeoff> a owl:Class;
+  rdfs:label "classic space-time tradeoff";
+  n4sch:INSTANCE_OF test:Q141495 .
+
+test:Q15290 a owl:Class;
+  rdfs:label "good";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q7406919, test:Q179100 .
+
+test:Q193959 a owl:Class;
+  rdfs:label "marketing mix";
+  n4sch:HAS_PART test:Q10677 .
+
+test:Q288510 a owl:Class;
+  rdfs:label "runtime";
+  n4sch:DIFFERENT_FROM test:Q492 .
+
+test:Q39809 a owl:Class;
+  rdfs:label "promotion";
+  n4sch:PART_OF test:Q43015;
+  n4sch:FACET_OF test:Q2424752, test:Q194189 .
+
+test:Q492 a owl:Class;
+  rdfs:label "memory";
+  n4sch:DIFFERENT_FROM test:Q288510 .
+
+test:Q850210 a owl:Class;
+  rdfs:label "revenue";
+  n4sch:HAS_PART test:Q26362955;
+  n4sch:DIFFERENT_FROM test:Q240673;
+  n4sch:OPPOSITE_OF test:Q2851421 .
+
+<http://test.test#delaying%20a%20decision> a owl:Class;
+  rdfs:label "delaying a decision";
+  rdfs:subClassOf test:Q66028035 .
+
+test:Q2516951 a owl:Class;
+  rdfs:label "pricing";
+  n4sch:PART_OF test:Q39809, <http://test.test#“go”%20decision-making>;
+  n4sch:FACET_OF test:Q2424752 .
+
+test:Q272035 a owl:Class;
+  rdfs:label "precision";
+  rdfs:subClassOf test:Q622821 .
+
+test:Q476300 a owl:Class;
+  rdfs:label "competition";
+  n4sch:HAS_CAUSE test:Q37947140;
+  n4sch:OPPOSITE_OF test:Q330284 .
+
+test:Q445235 a owl:Class;
+  rdfs:label "time to market";
+  n4sch:FACET_OF test:Q1207505 .
+
+test:Q542929 a owl:Class;
+  rdfs:label "products";
+  n4sch:STUDIED_BY test:Q80993 .
+
+test:Q37947140 a owl:Class;
+  rdfs:label "market condition";
+  n4sch:HAS_EFFECT test:Q476300 .
+
+test:Q160151 a owl:Class;
+  rdfs:label "price";
+  n4sch:STUDIED_BY test:Q8134 .
+
+<http://test.test#“go”%20decision-making> a owl:Class;
+  rdfs:label "“go” decision-making";
+  n4sch:HAS_PART test:Q2516951 .
+
+test:Q4402708 a owl:Class;
+  rdfs:label "demand";
+  n4sch:HAS_PART test:Q37208103 .
+
+<http://test.test#abstract%20decisions> a owl:Class;
+  rdfs:label "abstract decisions";
+  n4sch:HAS_PART <http://test.test#emotional%20hurdles> .
+
+test:Q1331926 a owl:Class;
+  rdfs:label "decision-making";
+  n4sch:STUDIED_BY test:Q8134 .
+
+test:Q1761598 a owl:Class;
+  rdfs:label "requirements";
+  n4sch:FACET_OF test:Q7397 .
+
+test:Q185715 a owl:Class;
+  rdfs:label "opportunity cost";
+  rdfs:subClassOf test:Q240673 .
+
+test:Q1780667 a owl:Class;
+  rdfs:label "product management";
+  n4sch:PART_OF test:Q43015 .
+
+test:Q240673 a owl:Class;
+  rdfs:label "cost";
+  n4sch:HAS_PART test:Q30609542;
+  n4sch:DIFFERENT_FROM test:Q678774, test:Q850210;
+  n4sch:STUDIED_BY test:Q1077518 .
+
+test:Q59710240 a owl:Class;
+  rdfs:label "late delivery";
+  n4sch:HAS_CAUSE <http://test.test#too-high%20cost> .
+
+<http://test.test#too-high%20cost> a owl:Class;
+  rdfs:label "too-high cost";
+  n4sch:HAS_EFFECT test:Q59710240 .
+
+test:Q30609542 a owl:Class;
+  rdfs:label "expenses";
+  n4sch:PART_OF test:Q240673 .
+
+test:Q1077518 a owl:Class;
+  rdfs:label "costing";
+  n4sch:STUDIES test:Q240673 .
+
+test:Q1537454 a owl:Class;
+  rdfs:label "“good enough” principle";
+  n4sch:HAS_PART <http://test.test#“good%20enough”%20to%20be%20delivered>;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q106246565 .
+
+test:Q92873226 a owl:Class;
+  rdfs:label "cost of ownership";
+  rdfs:subClassOf test:Q1077518 .
+
+test:Q659256 a owl:Class;
+  rdfs:label "indirect costs";
+  rdfs:subClassOf test:Q92873226 .
+
+test:Q37472820 a owl:Class;
+  rdfs:label "economic decisions";
+  n4sch:STUDIED_BY test:Q4116214 .
+
+test:Q1771949 a owl:Class;
+  rdfs:label "performance measurement";
+  n4sch:FACET_OF test:Q43229;
+  n4sch:USE <http://test.test#evaluate%20whether%20performance%20objectives%20are%20actually%20achieved> .
+
+test:Q1277565 a owl:Class;
+  rdfs:label "earned value management";
+  rdfs:subClassOf test:Q179012;
+  n4sch:FACET_OF test:Q47292426;
+  n4sch:OPPOSITE_OF <http://test.test#cost%20and%20schedule%20tracking> .
+
+test:Q41263 a owl:Class;
+  rdfs:label "budget";
+  n4sch:HAS_PART test:Q240673;
+  n4sch:DIFFERENT_FROM test:Q352858 .
+
+test:Q352858 a owl:Class;
+  rdfs:label "schedule";
+  n4sch:FACET_OF <http://test.test#project%20goals>;
+  n4sch:DIFFERENT_FROM test:Q41263 .
+
+test:Q2995644 a owl:Class;
+  rdfs:label "results";
+  n4sch:HAS_CAUSE test:already-consumed .
+
+<http://test.test#cost%20and%20schedule%20tracking> a owl:Class;
+  rdfs:label "cost and schedule tracking";
+  n4sch:OPPOSITE_OF test:Q1277565 .
+
+test:Q8424307 a owl:Class;
+  rdfs:label "terminating";
+  n4sch:OPPOSITE_OF test:Q104603903 .
+
+test:Q958242 a owl:Class;
+  rdfs:label "sunk costs";
+  rdfs:subClassOf <http://test.test#business%20decision%20process>;
+  n4sch:OPPOSITE_OF test:Q194112 .
+
+<http://test.test#“good%20enough”%20to%20be%20delivered> a owl:Class;
+  rdfs:label "“good enough” to be delivered";
+  n4sch:PART_OF test:Q1537454 .
+
+<http://test.test#legacy%20software%20product> a owl:Class;
+  rdfs:label "legacy software product";
+  n4sch:DIFFERENT_FROM <http://test.test#legacy%20software%20product%20from%20the%20ground%20up> .
+
+test:Q3966 a owl:Class;
+  rdfs:label "hardware";
+  n4sch:PART_OF test:Q68;
+  n4sch:USED_BY test:Q7397 .
+
+test:Q68 a owl:Class;
+  rdfs:label "computer";
+  n4sch:HAS_PART test:Q3966 .
+
+<http://test.test#lock-in%20factor> a owl:Class;
+  rdfs:label "lock-in factor";
+  n4sch:FACET_OF test:Q77104417 .
+
+test:Q58345895 a owl:Class;
+  rdfs:label "business goal";
+  n4sch:FACET_OF test:Q112795385 .
+
+test:Q79360258 a owl:Class;
+  rdfs:label "business objectives";
+  n4sch:HAS_PART test:Q11888847 .
+
+test:Q47576808 a owl:Class;
+  rdfs:label "strategic level";
+  rdfs:subClassOf test:Q7097788 .
+
+test:Q43297 a owl:Class;
+  rdfs:label "time";
+  rdfs:subClassOf test:Q1554231 .
+
+test:Q41814180 a owl:Class;
+  rdfs:label "internally generated";
+  rdfs:subClassOf test:Q37113960 .
+
+test:Q11888847 a owl:Class;
+  rdfs:label "prioritization";
+  n4sch:PART_OF test:Q79360258 .
+
+test:Q62896627 a owl:Class;
+  rdfs:label "overly optimistic";
+  rdfs:subClassOf test:Q37113960 .
+
+<http://test.test#reduce%20accidents%20and%20control%20essence> a owl:Class;
+  rdfs:label "reduce accidents and control essence";
+  n4sch:INSTANCE_OF <http://test.test#rule%20towards%20good%20enough%20software> .
+
+test:Q64300271 a owl:Class;
+  rdfs:label "periodic activity";
+  rdfs:subClassOf test:Q791801 .
+
+test:Q3391704 a owl:Class;
+  rdfs:label "gold-plating";
+  rdfs:subClassOf test:Q466764 .
+
+test:Q2979031 a owl:Class;
+  rdfs:label "customers";
+  n4sch:HAS_PART test:Q1156811;
+  n4sch:OPPOSITE_OF test:Q4230880 .
+
+test:Q180980 a owl:Class;
+  rdfs:label "milestones";
+  n4sch:PART_OF test:Q4503831 .
+
+test:Q528166 a owl:Class;
+  rdfs:label "client";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q7397 .
+
+test:Q107382457 a owl:Class;
+  rdfs:label "uncertainties";
+  rdfs:subClassOf test:Q97546105 .
+
+test:Q1156811 a owl:Class;
+  rdfs:label "pay for";
+  n4sch:PART_OF test:Q2979031 .
+
+test:Q179100 a owl:Class;
+  rdfs:label "enough";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q15290 .
+
+test:Q1207505 a owl:Class;
+  rdfs:label "quality";
+  n4sch:DIFFERENT_FROM test:Q309314 .
+
+<http://test.test#> a owl:Class;
+  rdfs:label "";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1537454 .
+
+test:Q309314 a owl:Class;
+  rdfs:label "quantity";
+  n4sch:DIFFERENT_FROM test:Q1207505 .
+
+test:Q30336404 a owl:Class;
+  rdfs:label "incremental planning";
+  n4sch:PART_OF test:Q106246565 .
+
+test:Q106246565 a owl:Class;
+  rdfs:label "agile methods";
+  n4sch:HAS_PART test:Q30336404 .
+
+<http://test.test#cost%20of%20delivery> a owl:Class;
+  rdfs:label "cost of delivery";
+  n4sch:HAS_PART test:Q847073 .
+
+<http://test.test#high-friction%20market> a owl:Class;
+  rdfs:label "high-friction market";
+  n4sch:HAS_PART test:Q1762621 .
+
+test:Q200325 a owl:Class;
+  rdfs:label "human history" .
+
+test:Q57762672 a owl:Class;
+  rdfs:label "life cycle costs" .
+
+test:Q1762621 a owl:Class;
+  rdfs:label "suppliers";
+  n4sch:PART_OF <http://test.test#high-friction%20market> .
+
+test:Q77542427 a owl:Class;
+  rdfs:label "perceived value" .
+
+test:Q852835 a owl:Class;
+  rdfs:label "customer" .
+
+test:Q315732 a owl:Class;
+  rdfs:label "producers";
+  n4sch:OPPOSITE_OF test:Q102402450 .
+
+test:Q36602 a owl:Class;
+  rdfs:label "order" .
+
+test:Q5156287 a owl:Class;
+  rdfs:label "compete";
+  n4sch:PART_OF test:Q4830453 .
+
+test:Q5048683 a owl:Class;
+  rdfs:label "cash flow diagram" .
+
+test:Q5589383 a owl:Class;
+  rdfs:label "governments" .
+
+test:Q113055130 a owl:Class;
+  rdfs:label "depreciation expense" .
+
+test:Q73564125 a owl:Class;
+  rdfs:label "interrelationships" .
+
+test:Q102205 a owl:Class;
+  rdfs:label "fluid" .
+
+test:Q108798676 a owl:Class;
+  rdfs:label "stakeholders" .
+
+<http://test.test#friction-free%20market> a owl:Class;
+  rdfs:label "friction-free market";
+  rdfs:subClassOf test:Q330284 .
+
+test:Q4230880 a owl:Class;
+  rdfs:label "competitors";
+  n4sch:OPPOSITE_OF test:Q2979031 .
+
+test:Q844746 a owl:Class;
+  rdfs:label "develop" .
+
+test:Q1148747 a owl:Class;
+  rdfs:label "payment" .
+
+<http://test.test#new%20companies> a owl:Class;
+  rdfs:label "new companies";
+  n4sch:OPPOSITE_OF <http://test.test#established%20companies> .
+
+test:Q838446 a owl:Class;
+  rdfs:label "predictable";
+  n4sch:OPPOSITE_OF test:Q330284 .
+
+test:Q73324365 a owl:Class;
+  rdfs:label "friction-free";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q7397 .
+
+<http://test.test#established%20companies> a owl:Class;
+  rdfs:label "established companies";
+  n4sch:OPPOSITE_OF <http://test.test#new%20companies> .
+
+test:Q7554272 a owl:Class;
+  rdfs:label "software business";
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics> .
+
+<http://test.test#competition%20among%20software%20app%20developers> a owl:Class;
+  rdfs:label "competition among software app developers";
+  rdfs:subClassOf <http://test.test#competition%20among%20software> .
+
+test:Q102402450 a owl:Class;
+  rdfs:label "consumers";
+  n4sch:OPPOSITE_OF test:Q315732 .
+
+test:Q166142 a owl:Class;
+  rdfs:label "application";
+  n4sch:PART_OF test:Q2297609 .
+
+test:Q869880 a owl:Class;
+  rdfs:label "permanent";
+  rdfs:subClassOf test:Q37813 .
+
+test:Q4895105 a owl:Class;
+  rdfs:label "temporary";
+  rdfs:subClassOf test:Q37813 .
+
+test:Q37813 a owl:Class;
+  rdfs:label "ecosystem";
+  n4sch:STUDIED_BY <http://test.test#software%20engineering%20economics> .
+
+test:Q6881511 a owl:Class;
+  rdfs:label "enterprise";
+  rdfs:subClassOf test:Q4830453, test:Q61515 .
+
+<http://test.test#low-cost%20countries> a owl:Class;
+  rdfs:label "low-cost countries";
+  rdfs:subClassOf test:Q9051832 .
+
+test:Q9051832 a owl:Class;
+  rdfs:label "offshoring";
+  n4sch:DIFFERENT_FROM test:Q61515 .
+
+test:Q61515 a owl:Class;
+  rdfs:label "outsourcing";
+  rdfs:subClassOf test:result-oriented;
+  n4sch:DIFFERENT_FROM test:Q9051832 .
+
+<http://test.test#captive%20offshoring> a owl:Class;
+  rdfs:label "captive offshoring";
+  rdfs:subClassOf test:Q9051832, test:Q61515 .
+
+test:result-independent a owl:Class;
+  rdfs:label "result-independent";
+  rdfs:subClassOf test:Q61515 .
+
+test:Q123705 a owl:Class;
+  rdfs:label "neighborhood";
+  n4sch:PART_OF test:Q6881511 .
+
+<http://test.test#sourcing%20mechanisms> a owl:Class;
+  rdfs:label "sourcing mechanisms";
+  rdfs:subClassOf test:Q80993 .
+
+<http://test.test#knowledge%20area> a owl:Class;
+  rdfs:label "knowledge area" .
+
+test:Q114509025 a owl:Class;
+  rdfs:label "decisions" .
+
+test:Q59635278 a owl:Class;
+  rdfs:label "financial performance" .
+
+test:Q11024 a owl:Class;
+  rdfs:label "communication" .
+
+test:Q11348540 a owl:Class;
+  rdfs:label "reliable" .
+
+test:Q29542197 a owl:Class;
+  rdfs:label "estimating" .
+
+test:Q4006 a owl:Class;
+  rdfs:label "plan" .
+
+test:Q29017603 a owl:Class;
+  rdfs:label "controlling" .
+
+<http://test.test#cash%20flow%20instance> a owl:Class;
+  rdfs:label "cash flow instance" .
+
+test:Q730920 a owl:Class;
+  rdfs:label "solution" .
+
+test:Q854995 a owl:Class;
+  rdfs:label "commercial" .
+
+test:Q3026325 a owl:Class;
+  rdfs:label "transparency" .
+
+test:Q4736605 a owl:Class;
+  rdfs:label "alternatives" .
+
+test:Q77511931 a owl:Class;
+  rdfs:label "cash flows" .
+
+test:Q507477 a owl:Class;
+  rdfs:label "internal rate of return" .
+
+<http://test.test#profit%20and%20taxes> a owl:Class;
+  rdfs:label "profit and taxes" .
+
+test:Q10898344 a owl:Class;
+  rdfs:label "capitalized" .
+
+test:Q2112073 a owl:Class;
+  rdfs:label "profits" .
+
+test:Q167037 a owl:Class;
+  rdfs:label "corporation" .
+
+test:Q28944460 a owl:Class;
+  rdfs:label "profitable" .
+
+test:Q15752801 a owl:Class;
+  rdfs:label "developments" .
+
+test:Q10843872 a owl:Class;
+  rdfs:label "process" .
+
+test:Q27339447 a owl:Class;
+  rdfs:label "efficient behavior" .
+
+test:Q93241073 a owl:Class;
+  rdfs:label "projects" .
+
+test:operate-maintain-retire a owl:Class;
+  rdfs:label "operate-maintain-retire" .
+
+test:Q30605927 a owl:Class;
+  rdfs:label "decision criterion" .
+
+test:Q5447288 a owl:Class;
+  rdfs:label "product lifetime" .
+
+test:Q911493 a owl:Class;
+  rdfs:label "sum" .
+
+<http://test.test#software%20product%20or%20service> a owl:Class;
+  rdfs:label "software product or service" .
+
+<http://test.test#business%20circumstances> a owl:Class;
+  rdfs:label "business circumstances" .
+
+test:Q83649864 a owl:Class;
+  rdfs:label "intangible" .
+
+test:Q926230 a owl:Class;
+  rdfs:label "effects" .
+
+test:Q194189 a owl:Class;
+  rdfs:label "sales" .
+
+test:Q26362955 a owl:Class;
+  rdfs:label "estimated costs" .
+
+test:Q37208103 a owl:Class;
+  rdfs:label "needs" .
+
+<http://test.test#evaluate%20whether%20performance%20objectives%20are%20actually%20achieved>
+  a owl:Class;
+  rdfs:label "evaluate whether performance objectives are actually achieved" .
+
+test:Q179012 a owl:Class;
+  rdfs:label "project management" .
+
+test:Q47292426 a owl:Class;
+  rdfs:label "performance problems" .
+
+<http://test.test#project%20goals> a owl:Class;
+  rdfs:label "project goals" .
+
+test:Q104603903 a owl:Class;
+  rdfs:label "continuing" .
+
+<http://test.test#business%20decision%20process> a owl:Class;
+  rdfs:label "business decision process" .
+
+test:Q77104417 a owl:Class;
+  rdfs:label "retirement decision" .
+
+test:Q112795385 a owl:Class;
+  rdfs:label "business needs" .
+
+test:Q7097788 a owl:Class;
+  rdfs:label "operational planning" .
+
+test:Q37113960 a owl:Class;
+  rdfs:label "estimate" .
+
+test:Q791801 a owl:Class;
+  rdfs:label "estimation" .
+
+test:Q644065 a owl:Class;
+  rdfs:label "commitments" .
+
+test:Q97546105 a owl:Class;
+  rdfs:label "inaccuracies" .
+
+<http://test.test#resolve%20conflicts> a owl:Class;
+  rdfs:label "resolve conflicts" .
+
+test:Q30984322 a owl:Class;
+  rdfs:label "estimations" .
+
+test:Q62084502 a owl:Class;
+  rdfs:label "estimation techniques" .
+
+test:Q47870784 a owl:Class;
+  rdfs:label "reestimating" .
+
+<http://test.test#decision%20techniques> a owl:Class;
+  rdfs:label "decision techniques" .
+
+test:Q385494 a owl:Class;
+  rdfs:label "return" .
+
+test:Q192581 a owl:Class;
+  rdfs:label "activity" .
+
+test:Q2609670 a owl:Class;
+  rdfs:label "companies" .
+
+test:Q783794 a owl:Class;
+  rdfs:label "company" .
+
+test:Q16983770 a owl:Class;
+  rdfs:label "proposals" .
+
+test:Q59255659 a owl:Class;
+  rdfs:label "multiple attribute decision" .
+
+test:Q187947 a owl:Class;
+  rdfs:label "score" .
+
+<http://test.test#compensatory%20techniques> a owl:Class;
+  rdfs:label "compensatory techniques" .
+
+test:Q112852209 a owl:Class;
+  rdfs:label "decision process" .
+
+test:Q184524 a owl:Class;
+  rdfs:label "lexicography" .
+
+test:Q51569119 a owl:Class;
+  rdfs:label "optimization analysis" .
+
+test:Q141495 a owl:Class;
+  rdfs:label "optimization" .
+
+test:Q66028035 a owl:Class;
+  rdfs:label "project choices" .
+
+test:Q622821 a owl:Class;
+  rdfs:label "compute" .
+
+<http://test.test#rule%20towards%20good%20enough%20software> a owl:Class;
+  rdfs:label "rule towards good enough software" .
+
+test:Q466764 a owl:Class;
+  rdfs:label "overheads" .
+
+test:Q847073 a owl:Class;
+  rdfs:label "distance" .
+
+<http://test.test#competition%20among%20software> a owl:Class;
+  rdfs:label "competition among software" .
+
+test:Q2297609 a owl:Class;
+  rdfs:label "software ecosystem" .
+
+test:result-oriented a owl:Class;
+  rdfs:label "result-oriented" .

@@ -1,0 +1,1380 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix test: <http://test.test#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+test:Q96334216 a owl:Class;
+  rdfs:label "technical review";
+  rdfs:subClassOf test:Q190686;
+  n4sch:PART_OF test:Q11023 .
+
+n4sch:PART_OF a owl:ObjectProperty .
+
+test:Q36180 a owl:Class;
+  rdfs:label "authors";
+  n4sch:PART_OF test:Q43229 .
+
+test:Q691114 a owl:Class;
+  rdfs:label "overloaded";
+  rdfs:subClassOf test:Q59195365;
+  n4sch:FACET_OF test:Q1412670 .
+
+n4sch:FACET_OF a owl:ObjectProperty .
+
+test:Q7604374 a owl:Class;
+  rdfs:label "statistical methods";
+  n4sch:STUDIES <http://test.test#measuring%20defect%20occurrences> .
+
+n4sch:STUDIES a owl:ObjectProperty .
+
+test:Q77586931 a owl:Class;
+  rdfs:label "software products";
+  n4sch:STUDIED_BY test:Q80993 .
+
+n4sch:STUDIED_BY a owl:ObjectProperty .
+
+test:Q37156 a owl:Class;
+  rdfs:label "ibm" .
+
+test:Q183635 a owl:Class;
+  rdfs:label "feedback";
+  n4sch:PARTICIPANT test:Q36180 .
+
+n4sch:PARTICIPANT a owl:ObjectProperty .
+
+<http://test.test#software%20works> a owl:Class;
+  rdfs:label "software works";
+  n4sch:DIFFERENT_FROM test:Q7397 .
+
+n4sch:DIFFERENT_FROM a owl:ObjectProperty .
+
+test:Q1412670 a owl:Class;
+  rdfs:label "software quality";
+  rdfs:subClassOf test:Q1207505;
+  n4sch:FACET_OF test:Q7397, test:Q2111823;
+  n4sch:DIFFERENT_FROM test:Q60432668;
+  n4sch:STUDIED_BY test:Q20491296;
+  n4sch:PRACTICED_BY test:Q1709010 .
+
+n4sch:PRACTICED_BY a owl:ObjectProperty .
+
+test:Q6593860 a owl:Class;
+  rdfs:label "benefits";
+  n4sch:OPPOSITE_OF test:Q113185630 .
+
+n4sch:OPPOSITE_OF a owl:ObjectProperty .
+
+<http://test.test#system/subsystem> a owl:Class;
+  rdfs:label "system/subsystem";
+  n4sch:PART_OF test:Q1 .
+
+test:Q28923 a owl:Class;
+  rdfs:label "charts";
+  rdfs:subClassOf test:Q40199612 .
+
+test:Q627335 a owl:Class;
+  rdfs:label "workflow";
+  rdfs:subClassOf test:Q66223402 .
+
+<http://test.test#review%20methods> a owl:Class;
+  rdfs:label "review methods";
+  n4sch:USED_BY test:Q20481199 .
+
+n4sch:USED_BY a owl:ObjectProperty .
+
+test:Q113185630 a owl:Class;
+  rdfs:label "development costs";
+  n4sch:OPPOSITE_OF test:Q6593860 .
+
+test:Q1207505 a owl:Class;
+  rdfs:label "quality";
+  n4sch:FACET_OF test:Q7397 .
+
+test:Q15401930 a owl:Class;
+  rdfs:label "work-product";
+  n4sch:MANUFACTURER test:Q43229 .
+
+n4sch:MANUFACTURER a owl:ObjectProperty .
+
+test:reinspect a owl:Class;
+  rdfs:label "reinspect";
+  rdfs:subClassOf <http://test.test#inspection%20exit%20decision> .
+
+test:Q4503831 a owl:Class;
+  rdfs:label "goal";
+  n4sch:FACET_OF test:Q66156269 .
+
+test:Q43229 a owl:Class;
+  rdfs:label "organizations";
+  n4sch:HAS_PART test:Q36180 .
+
+n4sch:HAS_PART a owl:ObjectProperty .
+
+<http://test.test#cost%20of%20software%20quality%20methods> a owl:Class;
+  rdfs:label "cost of software quality methods";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q97093151 a owl:Class;
+  rdfs:label "schedules";
+  n4sch:PART_OF test:Q1371819 .
+
+test:Q106149205 a owl:Class;
+  rdfs:label "tradeoffs";
+  rdfs:subClassOf test:Q42724194 .
+
+<http://test.test#application%20quality%20management> a owl:Class;
+  rdfs:label "application quality management";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q1318104 a owl:Class;
+  rdfs:label "plan-do-check-act";
+  n4sch:PART_OF test:Q988813 .
+
+test:Q187851 a owl:Class;
+  rdfs:label "recorder";
+  rdfs:subClassOf test:Q1553123 .
+
+test:Q179012 a owl:Class;
+  rdfs:label "project management";
+  n4sch:PART_OF test:Q730573 .
+
+test:Q105723266 a owl:Class;
+  rdfs:label "criteria";
+  rdfs:subClassOf test:Q1151067 .
+
+<http://test.test#many%20taxonomies> a owl:Class;
+  rdfs:label "many taxonomies";
+  n4sch:IS_A_LIST_OF test:Q80406165 .
+
+n4sch:IS_A_LIST_OF a owl:ObjectProperty .
+
+<http://test.test#software%20performance%20requirements> a owl:Class;
+  rdfs:label "software performance requirements";
+  n4sch:PART_OF test:Q16388 .
+
+test:Q36546120 a owl:Class;
+  rdfs:label "software problems";
+  n4sch:FACET_OF test:Q7397 .
+
+<http://test.test#engineered%20products> a owl:Class;
+  rdfs:label "engineered products" .
+
+test:Q58309137 a owl:Class;
+  rdfs:label "stakeholder value" .
+
+test:Q10870555 a owl:Class;
+  rdfs:label "reports";
+  n4sch:PART_OF test:Q2920921;
+  n4sch:HAS_CAUSE test:Q181487 .
+
+n4sch:HAS_CAUSE a owl:ObjectProperty .
+
+test:Q11826103 a owl:Class;
+  rdfs:label "security level";
+  n4sch:FACET_OF test:Q104493 .
+
+test:Q1153495 a owl:Class;
+  rdfs:label "configuration management";
+  n4sch:PART_OF test:Q105700574 .
+
+test:Q2642425 a owl:Class;
+  rdfs:label "tables";
+  rdfs:subClassOf test:Q40199612 .
+
+test:Q93241073 a owl:Class;
+  rdfs:label "projects" .
+
+test:Q207961 a owl:Class;
+  rdfs:label "figure";
+  n4sch:DIFFERENT_FROM test:Q8171 .
+
+test:Q1761598 a owl:Class;
+  rdfs:label "requirements";
+  rdfs:subClassOf test:Q7397, test:Q16388, <http://test.test#stated%20and%20implied%20needs>,
+    <http://test.test#interface%20specifications>;
+  n4sch:PART_OF test:Q853614, test:Q1437778;
+  n4sch:FACET_OF test:Q1207505, test:Q58309137, test:Q7397, test:Q192581;
+  n4sch:USED_BY test:Q4115189 .
+
+test:Q1161707 a owl:Class;
+  rdfs:label "benchmark";
+  n4sch:USES <http://test.test#defect%20count> .
+
+n4sch:USES a owl:ObjectProperty .
+
+test:Q92848 a owl:Class;
+  rdfs:label "watts humphrey";
+  n4sch:INSTANCE_OF test:Q1412670 .
+
+n4sch:INSTANCE_OF a owl:ObjectProperty .
+
+test:Q4480274 a owl:Class;
+  rdfs:label "automate";
+  rdfs:subClassOf test:Q11175 .
+
+test:Q6665312 a owl:Class;
+  rdfs:label "containment";
+  rdfs:subClassOf <http://test.test#well%20detection> .
+
+test:Q6770673 a owl:Class;
+  rdfs:label "market-driven quality";
+  n4sch:DISCOVERER_OR_INVENTOR test:Q37156 .
+
+n4sch:DISCOVERER_OR_INVENTOR a owl:ObjectProperty .
+
+<http://test.test#conformance%20to%20requirements> a owl:Class;
+  rdfs:label "conformance to requirements";
+  n4sch:INSTANCE_OF test:Q321703 .
+
+test:Q73831102 a owl:Class;
+  rdfs:label "product evaluation";
+  rdfs:subClassOf test:Q10843872 .
+
+test:Q73503160 a owl:Class;
+  rdfs:label "improvement program";
+  rdfs:subClassOf test:Q113649142 .
+
+test:Q70781625 a owl:Class;
+  rdfs:label "dependability";
+  rdfs:subClassOf test:Q70781625;
+  n4sch:HAS_CAUSE test:Q19977811 .
+
+test:Q60432668 a owl:Class;
+  rdfs:label "software quality requirements";
+  rdfs:subClassOf test:Q16388;
+  n4sch:DIFFERENT_FROM test:Q1412670 .
+
+test:Q5289798 a owl:Class;
+  rdfs:label "application domain";
+  rdfs:subClassOf test:Q33986818 .
+
+test:Q132364 a owl:Class;
+  rdfs:label "communication protocol";
+  rdfs:subClassOf test:Q7397 .
+
+<http://test.test#conformance%20to%20all%20requirements> a owl:Class;
+  rdfs:label "conformance to all requirements";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q10843872 a owl:Class;
+  rdfs:label "process";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q2111823;
+  n4sch:HAS_EFFECT test:Q2424752 .
+
+n4sch:PRODUCT_OR_MATERIAL_PRODUCED a owl:ObjectProperty .
+
+n4sch:HAS_EFFECT a owl:ObjectProperty .
+
+test:Q80993 a owl:Class;
+  rdfs:label "software engineering";
+  n4sch:HAS_PART test:Q7554352;
+  n4sch:PRACTICED_BY test:Q81096;
+  n4sch:STUDIES test:Q77586931, test:Q1412670, test:Q7397, test:Q2111823, test:Q638608 .
+
+test:Q1389268 a owl:Class;
+  rdfs:label "failure mode and effects analysis";
+  rdfs:subClassOf test:Q3614972 .
+
+test:Q114727690 a owl:Class;
+  rdfs:label "fitness for use";
+  rdfs:subClassOf <http://test.test#engineered%20products> .
+
+test:Q1709010 a owl:Class;
+  rdfs:label "software engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q1412670, test:Q1207505, test:Q7397, test:Q45316438,
+    <http://test.test#static%20technique> .
+
+n4sch:FIELD_OF_THIS_OCCUPATION a owl:ObjectProperty .
+
+test:Q20491296 a owl:Class;
+  rdfs:label "appraising";
+  n4sch:STUDIES test:Q1412670 .
+
+<http://test.test#defect%20count> a owl:Class;
+  rdfs:label "defect count";
+  n4sch:USED_BY test:Q1161707 .
+
+test:Q7397 a owl:Class;
+  rdfs:label "software";
+  n4sch:PART_OF test:Q1, test:Q50808462;
+  n4sch:HAS_PART test:Q853614, test:work-products;
+  n4sch:DIFFERENT_FROM <http://test.test#software%20works>;
+  n4sch:PRACTICED_BY test:Q1709010;
+  n4sch:USE <http://test.test#detect%20and%20identify>, test:Q114521648 .
+
+n4sch:USE a owl:ObjectProperty .
+
+test:Q4462275 a owl:Class;
+  rdfs:label "software requirements";
+  n4sch:FACET_OF test:Q7397 .
+
+<http://test.test#software%20engineering%20process%20knowledge%20areas> a owl:Class;
+  rdfs:label "software engineering process knowledge areas";
+  n4sch:PART_OF test:Q113416657 .
+
+test:Q11023 a owl:Class;
+  rdfs:label "engineering";
+  n4sch:HAS_PART test:Q96334216;
+  n4sch:STUDIES test:Q2424752 .
+
+test:Q2424752 a owl:Class;
+  rdfs:label "product";
+  n4sch:HAS_PART test:Q3181348;
+  n4sch:STUDIED_BY test:Q11023, test:Q4751159;
+  n4sch:HAS_CAUSE test:Q10843872 .
+
+test:Q7449042 a owl:Class;
+  rdfs:label "semantic analysis";
+  rdfs:subClassOf test:Q194152 .
+
+test:Q81096 a owl:Class;
+  rdfs:label "engineer";
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q80993 .
+
+test:Q2264133 a owl:Class;
+  rdfs:label "code of ethics";
+  n4sch:FACET_OF test:Q67150677 .
+
+<http://test.test#cost%20of%20software%20quality> a owl:Class;
+  rdfs:label "cost of software quality";
+  n4sch:FACET_OF test:Q1412670 .
+
+<http://test.test#development%20and%20maintenance%20processes> a owl:Class;
+  rdfs:label "development and maintenance processes";
+  n4sch:FACET_OF test:Q1412670 .
+
+<http://test.test#internal%20failure> a owl:Class;
+  rdfs:label "internal failure";
+  rdfs:subClassOf test:Q81280052 .
+
+test:Q44284141 a owl:Class;
+  rdfs:label "reviews";
+  n4sch:PART_OF test:Q28517813 .
+
+test:Q81714085 a owl:Class;
+  rdfs:label "audits";
+  rdfs:subClassOf test:Q28517813;
+  n4sch:FACET_OF test:Q7268779, <http://test.test#product%20assurance>, <http://test.test#process%20assurance> .
+
+test:Q45316438 a owl:Class;
+  rdfs:label "defects";
+  n4sch:PART_OF test:Q513359;
+  n4sch:FACET_OF test:Q1207505, test:Q7397, test:Q170584;
+  n4sch:STUDIED_BY test:Q80993, test:Q1003030, test:Q7554352, test:Q7554350, test:Q59068419;
+  n4sch:PRACTICED_BY test:Q1709010 .
+
+test:Q1003030 a owl:Class;
+  rdfs:label "testing";
+  n4sch:PART_OF test:Q638608, test:Q1074523;
+  n4sch:FACET_OF test:Q1412670;
+  n4sch:DIFFERENT_FROM test:Q613918;
+  n4sch:USES test:Q212108;
+  n4sch:STUDIES test:Q45316438;
+  n4sch:HAS_EFFECT test:Q1121708 .
+
+<http://test.test#safety%20hazard%20analysis> a owl:Class;
+  rdfs:label "safety hazard analysis";
+  rdfs:subClassOf test:Q7397 .
+
+test:Q50745440 a owl:Class;
+  rdfs:label "hierarchical levels";
+  n4sch:PART_OF test:Q8269924 .
+
+test:Q114566600 a owl:Class;
+  rdfs:label "product quality";
+  rdfs:subClassOf test:Q1207505;
+  n4sch:DIFFERENT_FROM test:Q44923866 .
+
+test:Q2111823 a owl:Class;
+  rdfs:label "software product";
+  n4sch:STUDIED_BY test:Q80993;
+  n4sch:PRACTICED_BY test:Q36180;
+  n4sch:FOLLOWS <http://test.test#intermediate%20deliverables> .
+
+n4sch:FOLLOWS a owl:ObjectProperty .
+
+<http://test.test#software%20quality%20planning> a owl:Class;
+  rdfs:label "software quality planning";
+  n4sch:PART_OF test:Q7554352;
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q613918 a owl:Class;
+  rdfs:label "software quality assurance";
+  rdfs:subClassOf <http://test.test#product%20assurance>, <http://test.test#process%20assurance>;
+  n4sch:PART_OF test:Q7554352;
+  n4sch:FACET_OF test:Q7397, test:Q1196809;
+  n4sch:HAS_PART <http://test.test#product%20assurance>, <http://test.test#process%20assurance>;
+  n4sch:DIFFERENT_FROM test:Q1003030 .
+
+test:Q591990 a owl:Class;
+  rdfs:label "standards";
+  n4sch:FACET_OF test:Q1412670;
+  n4sch:DIFFERENT_FROM test:Q20819677, test:Q11042 .
+
+test:Q113416657 a owl:Class;
+  rdfs:label "software engineering management";
+  n4sch:PART_OF test:Q7554199;
+  n4sch:FACET_OF test:Q113424170;
+  n4sch:HAS_PART <http://test.test#software%20engineering%20process%20knowledge%20areas>,
+    test:Q7554352 .
+
+test:Q44923866 a owl:Class;
+  rdfs:label "process quality";
+  n4sch:DIFFERENT_FROM test:Q114566600 .
+
+test:Q184759 a owl:Class;
+  rdfs:label "coding";
+  n4sch:PART_OF test:Q7397;
+  n4sch:FACET_OF test:Q128751 .
+
+test:Q40648540 a owl:Class;
+  rdfs:label "safety-critical software";
+  rdfs:subClassOf test:Q64184577, test:Q166142;
+  n4sch:USE test:Q178512 .
+
+test:Q953429 a owl:Class;
+  rdfs:label "verification";
+  rdfs:subClassOf test:Q1003030 .
+
+test:Q5205827 a owl:Class;
+  rdfs:label "do-178c";
+  n4sch:INSTANCE_OF test:Q2680559 .
+
+test:Q37851141 a owl:Class;
+  rdfs:label "quality requirements";
+  rdfs:subClassOf test:Q16388 .
+
+test:Q1 a owl:Class;
+  rdfs:label "system";
+  n4sch:HAS_PART <http://test.test#system/subsystem>, test:Q7397, <http://test.test#system%20component> .
+
+test:Q10566551 a owl:Class;
+  rdfs:label "safety";
+  n4sch:FACET_OF test:Q2526135 .
+
+test:Q1137655 a owl:Class;
+  rdfs:label "inspection";
+  n4sch:DIFFERENT_FROM test:Q2761147 .
+
+test:Q2904257 a owl:Class;
+  rdfs:label "software life cycle";
+  n4sch:FACET_OF test:Q77586931 .
+
+test:Q988813 a owl:Class;
+  rdfs:label "deming";
+  n4sch:HAS_PART test:Q1318104, <http://test.test#evolutionary%20delivery>, test:Q376444,
+    test:Q763591 .
+
+<http://test.test#evolutionary%20delivery> a owl:Class;
+  rdfs:label "evolutionary delivery";
+  n4sch:PART_OF test:Q988813 .
+
+test:Q376444 a owl:Class;
+  rdfs:label "kaizen";
+  n4sch:PART_OF test:Q988813 .
+
+test:Q7268779 a owl:Class;
+  rdfs:label "quality infrastructure" .
+
+test:Q763591 a owl:Class;
+  rdfs:label "quality function deployment";
+  n4sch:PART_OF test:Q988813 .
+
+test:Q321703 a owl:Class;
+  rdfs:label "premise" .
+
+test:Q50808462 a owl:Class;
+  rdfs:label "systems";
+  n4sch:HAS_PART test:Q7397 .
+
+test:Q840396 a owl:Class;
+  rdfs:label "ideal";
+  n4sch:FACET_OF test:Q80993 .
+
+test:Q115103011 a owl:Class;
+  rdfs:label "functionality analysis";
+  n4sch:STUDIES test:Q1172284 .
+
+test:Q1172284 a owl:Class;
+  rdfs:label "data set";
+  n4sch:STUDIED_BY test:Q115103011 .
+
+<http://test.test#swe-bok%20guide> a owl:Class;
+  rdfs:label "swe-bok guide";
+  n4sch:MAIN_SUBJECT test:Q757012 .
+
+n4sch:MAIN_SUBJECT a owl:ObjectProperty .
+
+test:Q1996307 a owl:Class;
+  rdfs:label "safety-critical system";
+  rdfs:subClassOf test:Q19977811 .
+
+test:Q10346136 a owl:Class;
+  rdfs:label "sponsorship";
+  rdfs:subClassOf test:Q11024 .
+
+test:Q1130839 a owl:Class;
+  rdfs:label "corrective action";
+  rdfs:subClassOf test:Q188473;
+  n4sch:PART_OF test:Q27711940 .
+
+test:Q111925214 a owl:Class;
+  rdfs:label "software reliability";
+  n4sch:FACET_OF test:Q7397 .
+
+test:Q1187369 a owl:Class;
+  rdfs:label "direct";
+  rdfs:subClassOf <http://test.test#-critical%20software> .
+
+test:Q15304518 a owl:Class;
+  rdfs:label "indirect";
+  rdfs:subClassOf <http://test.test#-critical%20software> .
+
+<http://test.test#flight%20control%20computer> a owl:Class;
+  rdfs:label "flight control computer";
+  n4sch:PART_OF test:Q11436 .
+
+<http://test.test#software%20test%20environment> a owl:Class;
+  rdfs:label "software test environment";
+  rdfs:subClassOf test:Q10366493;
+  n4sch:PART_OF test:Q80993 .
+
+test:Q67150677 a owl:Class;
+  rdfs:label "professional practice" .
+
+test:Q33815482 a owl:Class;
+  rdfs:label "detection and removal";
+  rdfs:subClassOf test:Q210978 .
+
+<http://test.test#development%20organization> a owl:Class;
+  rdfs:label "development organization" .
+
+test:Q16388 a owl:Class;
+  rdfs:label "functional requirements";
+  n4sch:HAS_PART <http://test.test#software%20performance%20requirements> .
+
+test:Q42724194 a owl:Class;
+  rdfs:label "quality characteristics" .
+
+test:Q28517813 a owl:Class;
+  rdfs:label "inspections";
+  n4sch:PART_OF test:Q46665400;
+  n4sch:HAS_PART test:Q44284141;
+  n4sch:DIFFERENT_FROM test:Q15915142 .
+
+test:Q853614 a owl:Class;
+  rdfs:label "code";
+  rdfs:subClassOf test:Q9344;
+  n4sch:PART_OF test:Q7397, test:Q9344;
+  n4sch:HAS_PART test:Q1761598 .
+
+test:Q84146510 a owl:Class;
+  rdfs:label "assurance case";
+  rdfs:subClassOf test:Q220659;
+  n4sch:FACET_OF test:Q56235186 .
+
+test:Q59393599 a owl:Class;
+  rdfs:label "software process improvement";
+  rdfs:subClassOf test:Q93241073;
+  n4sch:FACET_OF test:Q2292472 .
+
+test:Q176763 a owl:Class;
+  rdfs:label "evidence";
+  n4sch:PART_OF test:Q890084 .
+
+test:Q7554352 a owl:Class;
+  rdfs:label "software quality management";
+  rdfs:subClassOf test:Q2920921;
+  n4sch:PART_OF test:Q80993, test:Q113416657, test:Q880371;
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q7554350 a owl:Class;
+  rdfs:label "software quality control";
+  n4sch:PART_OF test:Q7554352;
+  n4sch:STUDIES test:Q45316438, <http://test.test#project%20artifacts> .
+
+<http://test.test#stated%20and%20implied%20needs> a owl:Class;
+  rdfs:label "stated and implied needs" .
+
+<http://test.test#project%20artifacts> a owl:Class;
+  rdfs:label "project artifacts";
+  n4sch:STUDIED_BY test:Q7554350 .
+
+test:Q74242208 a owl:Class;
+  rdfs:label "intermediate products";
+  n4sch:FOLLOWED_BY test:Q40679841 .
+
+n4sch:FOLLOWED_BY a owl:ObjectProperty .
+
+test:Q81280052 a owl:Class;
+  rdfs:label "external failure" .
+
+test:Q880371 a owl:Class;
+  rdfs:label "software industry";
+  n4sch:HAS_PART test:Q7554352, <http://test.test#software%20quality%20improvement> .
+
+test:Q40679841 a owl:Class;
+  rdfs:label "final products";
+  n4sch:FOLLOWS test:Q74242208 .
+
+<http://test.test#software%20quality%20improvement> a owl:Class;
+  rdfs:label "software quality improvement";
+  n4sch:PART_OF test:Q880371 .
+
+test:Q8269924 a owl:Class;
+  rdfs:label "taxonomy" .
+
+test:Q189447 a owl:Class;
+  rdfs:label "risk management";
+  n4sch:FACET_OF test:Q17042796;
+  n4sch:HAS_PART test:Q1058438 .
+
+test:Q11679892 a owl:Class;
+  rdfs:label "risk analysis";
+  rdfs:subClassOf test:Q72223982 .
+
+test:Q60123134 a owl:Class;
+  rdfs:label "defect density";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q206330 a owl:Class;
+  rdfs:label "objectivity";
+  n4sch:FACET_OF test:Q613918 .
+
+test:Q569612 a owl:Class;
+  rdfs:label "technical";
+  n4sch:DIFFERENT_FROM test:Q2990807 .
+
+test:Q2990807 a owl:Class;
+  rdfs:label "managerial";
+  n4sch:DIFFERENT_FROM test:Q569612 .
+
+<http://test.test#inspection%20meeting> a owl:Class;
+  rdfs:label "inspection meeting";
+  n4sch:PRACTICED_BY test:Q466714 .
+
+test:Q7458208 a owl:Class;
+  rdfs:label "intermediate";
+  n4sch:DIFFERENT_FROM test:Q1340858 .
+
+<http://test.test#product%20assurance> a owl:Class;
+  rdfs:label "product assurance";
+  rdfs:subClassOf test:Q613918 .
+
+test:Q113424170 a owl:Class;
+  rdfs:label "software organization" .
+
+<http://test.test#process%20assurance> a owl:Class;
+  rdfs:label "process assurance";
+  rdfs:subClassOf test:Q613918, test:Q836575 .
+
+<http://test.test#software%20quality%20plan> a owl:Class;
+  rdfs:label "software quality plan";
+  n4sch:FACET_OF test:Q7397, test:Q43330953 .
+
+test:Q265158 a owl:Class;
+  rdfs:label "review";
+  n4sch:DIFFERENT_FROM test:Q2761147 .
+
+test:Q757012 a owl:Class;
+  rdfs:label "quality management" .
+
+test:Q638608 a owl:Class;
+  rdfs:label "software development";
+  n4sch:STUDIED_BY test:Q80993 .
+
+test:Q1667967 a owl:Class;
+  rdfs:label "software configuration management plan";
+  rdfs:subClassOf <http://test.test#software%20quality%20plan> .
+
+test:Q92986448 a owl:Class;
+  rdfs:label "conventions";
+  rdfs:subClassOf test:Q9344 .
+
+test:Q113649142 a owl:Class;
+  rdfs:label "actions" .
+
+test:Q59584020 a owl:Class;
+  rdfs:label "statistical techniques";
+  n4sch:USE test:Q613918 .
+
+test:Q66156269 a owl:Class;
+  rdfs:label "management support" .
+
+test:Q84209843 a owl:Class;
+  rdfs:label "acceptance criteria";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q513359 a owl:Class;
+  rdfs:label "life cycle";
+  n4sch:PART_OF <http://test.test#development%20organization>;
+  n4sch:HAS_PART test:Q45316438, test:Q542929 .
+
+test:Q11024 a owl:Class;
+  rdfs:label "communication" .
+
+test:Q542929 a owl:Class;
+  rdfs:label "products";
+  n4sch:PART_OF test:Q513359 .
+
+test:Q108737882 a owl:Class;
+  rdfs:label "testable";
+  rdfs:subClassOf test:Q64648150 .
+
+test:Q64184577 a owl:Class;
+  rdfs:label "applications" .
+
+<http://test.test#output%20products> a owl:Class;
+  rdfs:label "output products";
+  n4sch:PART_OF test:Q192581 .
+
+test:Q192581 a owl:Class;
+  rdfs:label "activity";
+  n4sch:HAS_PART <http://test.test#output%20products> .
+
+test:Q4986666 a owl:Class;
+  rdfs:label "built";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q2424752 .
+
+<http://test.test#verification%20process> a owl:Class;
+  rdfs:label "verification process";
+  n4sch:FOLLOWED_BY test:Q36340665 .
+
+test:Q36340665 a owl:Class;
+  rdfs:label "validation process";
+  n4sch:FOLLOWS <http://test.test#verification%20process> .
+
+test:Q178512 a owl:Class;
+  rdfs:label "mass transit" .
+
+test:Q214339 a owl:Class;
+  rdfs:label "role";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1274115 .
+
+n4sch:SAID_TO_BE_THE_SAME_AS a owl:ObjectProperty .
+
+test:Q1274115 a owl:Class;
+  rdfs:label "responsibility";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q214339 .
+
+test:Q2680559 a owl:Class;
+  rdfs:label "industry standard" .
+
+test:Q20481199 a owl:Class;
+  rdfs:label "coordinator";
+  n4sch:USES <http://test.test#review%20methods> .
+
+test:Q15143 a owl:Class;
+  rdfs:label "uml";
+  n4sch:INSTANCE_OF test:Q97611631 .
+
+test:Q212108 a owl:Class;
+  rdfs:label "validation";
+  rdfs:subClassOf test:Q1003030, test:Q953429 .
+
+<http://test.test#-critical%20software> a owl:Class;
+  rdfs:label "-critical software" .
+
+test:Q56350853 a owl:Class;
+  rdfs:label "purposes";
+  n4sch:DIFFERENT_FROM <http://test.test#purposes's%20purposes> .
+
+test:Q11436 a owl:Class;
+  rdfs:label "aircraft" .
+
+<http://test.test#purposes's%20purposes> a owl:Class;
+  rdfs:label "purposes's purposes";
+  n4sch:DIFFERENT_FROM test:Q56350853 .
+
+<http://test.test#different%20types%20of%20reviews%20and%20audits> a owl:Class;
+  rdfs:label "different types of reviews and audits";
+  rdfs:subClassOf <http://test.test#reviews%20and%20audits> .
+
+test:Q2720909 a owl:Class;
+  rdfs:label "artifacts";
+  n4sch:FACET_OF test:Q80993 .
+
+test:Q4006 a owl:Class;
+  rdfs:label "plan";
+  n4sch:FACET_OF test:Q170584 .
+
+test:Q170584 a owl:Class;
+  rdfs:label "project";
+  n4sch:HAS_PART test:Q472160 .
+
+test:walkthroughs a owl:Class;
+  rdfs:label "walkthroughs";
+  rdfs:subClassOf test:Q28517813 .
+
+test:Q1043452 a owl:Class;
+  rdfs:label "maintenance";
+  rdfs:subClassOf test:Q170584;
+  n4sch:PART_OF test:Q638608, test:Q1074523 .
+
+test:Q2526135 a owl:Class;
+  rdfs:label "security";
+  n4sch:HAS_PART test:Q10566551 .
+
+test:Q472160 a owl:Class;
+  rdfs:label "scope";
+  n4sch:PART_OF test:Q170584 .
+
+test:Q10366493 a owl:Class;
+  rdfs:label "software engineering environment" .
+
+test:Q210978 a owl:Class;
+  rdfs:label "avoidance" .
+
+test:Q1058438 a owl:Class;
+  rdfs:label "risk assessment";
+  n4sch:PART_OF test:Q189447 .
+
+test:Q20819677 a owl:Class;
+  rdfs:label "specifications";
+  n4sch:DIFFERENT_FROM test:Q591990 .
+
+test:Q59345592 a owl:Class;
+  rdfs:label "technical status";
+  n4sch:FACET_OF test:Q170584 .
+
+test:Q857102 a owl:Class;
+  rdfs:label "software design";
+  n4sch:PART_OF test:Q80993 .
+
+test:Q30015853 a owl:Class;
+  rdfs:label "roles";
+  n4sch:DIFFERENT_FROM test:Q61788060, test:Q3736042 .
+
+test:Q61788060 a owl:Class;
+  rdfs:label "activities";
+  n4sch:DIFFERENT_FROM test:Q30015853 .
+
+test:Q46665400 a owl:Class;
+  rdfs:label "quality assurance and control" .
+
+test:Q215028 a owl:Class;
+  rdfs:label "pair review";
+  n4sch:DIFFERENT_FROM test:Q78753509, test:Q27711940 .
+
+test:Q56235186 a owl:Class;
+  rdfs:label "software risk" .
+
+test:Q220659 a owl:Class;
+  rdfs:label "artifact" .
+
+test:Q78753509 a owl:Class;
+  rdfs:label "desk check";
+  n4sch:DIFFERENT_FROM test:Q215028 .
+
+<http://test.test#review%20leader> a owl:Class;
+  rdfs:label "review leader";
+  rdfs:subClassOf test:Q114250619 .
+
+test:Q890084 a owl:Class;
+  rdfs:label "body of evidence" .
+
+test:Q1196809 a owl:Class;
+  rdfs:label "software process" .
+
+test:Q2761147 a owl:Class;
+  rdfs:label "meeting";
+  n4sch:DIFFERENT_FROM test:Q1137655, test:Q265158 .
+
+test:Q4539 a owl:Class;
+  rdfs:label "cooperative";
+  rdfs:subClassOf test:Q2761147 .
+
+test:Q105700574 a owl:Class;
+  rdfs:label "software management" .
+
+test:Q23726476 a owl:Class;
+  rdfs:label "project management plan";
+  n4sch:FACET_OF test:Q170584 .
+
+test:Q898314 a owl:Class;
+  rdfs:label "coding standard";
+  n4sch:FACET_OF test:Q128751 .
+
+test:Q17042796 a owl:Class;
+  rdfs:label "quality software" .
+
+test:Q72223982 a owl:Class;
+  rdfs:label "management techniques" .
+
+test:Q1151067 a owl:Class;
+  rdfs:label "rules";
+  n4sch:PART_OF test:Q96334216 .
+
+test:Q128751 a owl:Class;
+  rdfs:label "source code";
+  n4sch:PART_OF test:workproduct .
+
+test:Q8171 a owl:Class;
+  rdfs:label "word";
+  n4sch:DIFFERENT_FROM test:Q207961 .
+
+test:Q43330953 a owl:Class;
+  rdfs:label "quality targets" .
+
+test:Q2920921 a owl:Class;
+  rdfs:label "management";
+  rdfs:subClassOf test:Q108798676;
+  n4sch:FACET_OF test:Q43229, test:Q1137655;
+  n4sch:HAS_PART test:Q309100 .
+
+test:Q9344 a owl:Class;
+  rdfs:label "documents" .
+
+test:Q27711940 a owl:Class;
+  rdfs:label "management review";
+  n4sch:DIFFERENT_FROM test:Q215028 .
+
+test:Q466714 a owl:Class;
+  rdfs:label "moderator";
+  n4sch:FACET_OF test:Q2761147;
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q1137655, <http://test.test#inspection%20meeting> .
+
+test:Q1340858 a owl:Class;
+  rdfs:label "final product";
+  n4sch:DIFFERENT_FROM test:Q7458208 .
+
+test:Q35064350 a owl:Class;
+  rdfs:label "domain expertise";
+  rdfs:subClassOf test:Q644238 .
+
+<http://test.test#software%20design%20method%20expertise> a owl:Class;
+  rdfs:label "software design method expertise";
+  rdfs:subClassOf test:Q644238 .
+
+test:Q64648150 a owl:Class;
+  rdfs:label "objective assessment" .
+
+test:Q114250619 a owl:Class;
+  rdfs:label "decision maker" .
+
+<http://test.test#programming%20language%20expertise> a owl:Class;
+  rdfs:label "programming language expertise";
+  rdfs:subClassOf test:Q644238 .
+
+<http://test.test#reviews%20and%20audits> a owl:Class;
+  rdfs:label "reviews and audits" .
+
+test:Q836575 a owl:Class;
+  rdfs:label "quality assurance" .
+
+test:Q3181348 a owl:Class;
+  rdfs:label "section";
+  n4sch:PART_OF test:Q2424752 .
+
+test:Q4751159 a owl:Class;
+  rdfs:label "analytical technique";
+  n4sch:STUDIES test:Q2424752 .
+
+<http://test.test#inspection%20recorder> a owl:Class;
+  rdfs:label "inspection recorder";
+  n4sch:HAS_EFFECT test:Q83315741 .
+
+test:Q1390 a owl:Class;
+  rdfs:label "bug";
+  n4sch:INSTANCE_OF test:Q38419899 .
+
+test:Q83315741 a owl:Class;
+  rdfs:label "anomalies found";
+  n4sch:HAS_CAUSE <http://test.test#inspection%20recorder> .
+
+test:Q730573 a owl:Class;
+  rdfs:label "organizational" .
+
+test:Q15915142 a owl:Class;
+  rdfs:label "walkthrough";
+  n4sch:DIFFERENT_FROM test:Q28517813 .
+
+test:Q7554259 a owl:Class;
+  rdfs:label "software audit";
+  n4sch:FACET_OF test:Q7397 .
+
+test:Q181487 a owl:Class;
+  rdfs:label "audit";
+  n4sch:HAS_EFFECT test:Q10870555 .
+
+test:Q6508395 a owl:Class;
+  rdfs:label "lead auditor";
+  rdfs:subClassOf test:Q10949665 .
+
+test:Q309100 a owl:Class;
+  rdfs:label "planning";
+  n4sch:PART_OF test:Q2920921 .
+
+test:Q968946 a owl:Class;
+  rdfs:label "mission-critical";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q60099885, test:Q114941547 .
+
+test:Q60099885 a owl:Class;
+  rdfs:label "safety-critical";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q968946 .
+
+test:Q1371819 a owl:Class;
+  rdfs:label "plans" .
+
+test:Q114941547 a owl:Class;
+  rdfs:label "security-critical";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q968946 .
+
+test:Q19977811 a owl:Class;
+  rdfs:label "system failure";
+  n4sch:HAS_EFFECT test:Q70781625 .
+
+test:Q50845805 a owl:Class;
+  rdfs:label "unsafe";
+  rdfs:subClassOf test:Q22979588 .
+
+<http://test.test#intermediate%20deliverables> a owl:Class;
+  rdfs:label "intermediate deliverables";
+  n4sch:FOLLOWED_BY test:Q2111823 .
+
+test:Q47089 a owl:Class;
+  rdfs:label "fault";
+  rdfs:subClassOf test:Q7397, test:Q1138598;
+  n4sch:HAS_EFFECT test:Q1121708 .
+
+<http://test.test#defining%20integrity%20levels> a owl:Class;
+  rdfs:label "defining integrity levels";
+  n4sch:FACET_OF test:Q189447 .
+
+test:Q1724915 a owl:Class;
+  rdfs:label "use";
+  n4sch:HAS_PART test:Q166142 .
+
+test:Q166142 a owl:Class;
+  rdfs:label "application";
+  n4sch:PART_OF test:Q1724915 .
+
+test:Q190686 a owl:Class;
+  rdfs:label "procedure" .
+
+test:Q5482740 a owl:Class;
+  rdfs:label "developer";
+  n4sch:HAS_PART test:Q58245288;
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q2424752 .
+
+test:Q97611631 a owl:Class;
+  rdfs:label "design model" .
+
+<http://test.test#software%20integrity%20level%20scheme> a owl:Class;
+  rdfs:label "software integrity level scheme";
+  n4sch:FACET_OF <http://test.test#software%20integrity%20levels> .
+
+<http://test.test#detect%20and%20identify> a owl:Class;
+  rdfs:label "detect and identify" .
+
+test:Q17376347 a owl:Class;
+  rdfs:label "faults";
+  n4sch:STUDIED_BY test:Q59068419 .
+
+test:Q116024808 a owl:Class;
+  rdfs:label "design methods";
+  n4sch:PART_OF test:Q34770 .
+
+test:workproduct a owl:Class;
+  rdfs:label "workproduct" .
+
+test:Q5962346 a owl:Class;
+  rdfs:label "classification";
+  rdfs:subClassOf test:Q11028 .
+
+test:Q1553123 a owl:Class;
+  rdfs:label "reader" .
+
+test:Q787045 a owl:Class;
+  rdfs:label "trends";
+  rdfs:subClassOf test:Q130740 .
+
+test:Q644238 a owl:Class;
+  rdfs:label "expertise" .
+
+test:Q11042 a owl:Class;
+  rdfs:label "culture";
+  n4sch:DIFFERENT_FROM test:Q591990 .
+
+<http://test.test#inspection%20exit%20decision> a owl:Class;
+  rdfs:label "inspection exit decision" .
+
+<http://test.test#incorrect%20result> a owl:Class;
+  rdfs:label "incorrect result";
+  rdfs:subClassOf test:Q2995644 .
+
+test:Q114521648 a owl:Class;
+  rdfs:label "evaluate" .
+
+test:Q1437778 a owl:Class;
+  rdfs:label "project plan" .
+
+test:Q14833626 a owl:Class;
+  rdfs:label "slip";
+  rdfs:subClassOf test:Q29485 .
+
+test:Q5937752 a owl:Class;
+  rdfs:label "human error";
+  rdfs:subClassOf test:Q29485 .
+
+test:Q40056 a owl:Class;
+  rdfs:label "computer program";
+  n4sch:PART_OF test:Q10843872 .
+
+test:Q29485 a owl:Class;
+  rdfs:label "error";
+  n4sch:HAS_EFFECT test:Q1138598 .
+
+<http://test.test#system%20component> a owl:Class;
+  rdfs:label "system component";
+  n4sch:PART_OF test:Q1 .
+
+<http://test.test#fault%20density> a owl:Class;
+  rdfs:label "fault density";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q10949665 a owl:Class;
+  rdfs:label "auditor" .
+
+<http://test.test#failure%20intensity> a owl:Class;
+  rdfs:label "failure intensity";
+  n4sch:FACET_OF test:Q1412670 .
+
+test:Q188522 a owl:Class;
+  rdfs:label "software testing";
+  n4sch:FACET_OF test:Q7397, <http://test.test#software%20in%20service>;
+  n4sch:STUDIES test:Q36546120;
+  n4sch:INSTANCE_OF <http://test.test#knowledge%20area> .
+
+test:Q1401207 a owl:Class;
+  rdfs:label "root cause analysis";
+  rdfs:subClassOf <http://test.test#eliminate%20the%20causes>;
+  n4sch:STUDIES test:Q48741221 .
+
+test:Q188473 a owl:Class;
+  rdfs:label "action" .
+
+test:Q22979588 a owl:Class;
+  rdfs:label "unreliable" .
+
+test:Q48741221 a owl:Class;
+  rdfs:label "root cause";
+  n4sch:STUDIED_BY test:Q1401207 .
+
+test:Q46437383 a owl:Class;
+  rdfs:label "automated tools";
+  n4sch:HAS_EFFECT <http://test.test#defect%20information> .
+
+test:Q104493 a owl:Class;
+  rdfs:label "risk" .
+
+<http://test.test#defect%20information> a owl:Class;
+  rdfs:label "defect information";
+  n4sch:HAS_CAUSE test:Q46437383 .
+
+test:Q1940914 a owl:Class;
+  rdfs:label "static";
+  rdfs:subClassOf test:Q7554350, test:Q7754 .
+
+test:Q1268978 a owl:Class;
+  rdfs:label "dynamic";
+  rdfs:subClassOf test:Q7554350, test:Q7754 .
+
+test:Q38389385 a owl:Class;
+  rdfs:label "dynamic techniques";
+  rdfs:subClassOf test:Q5140046;
+  n4sch:OPPOSITE_OF <http://test.test#static%20techniques> .
+
+<http://test.test#static%20techniques> a owl:Class;
+  rdfs:label "static techniques";
+  n4sch:OPPOSITE_OF test:Q38389385 .
+
+test:work-products a owl:Class;
+  rdfs:label "work-products";
+  n4sch:PART_OF test:Q7397 .
+
+<http://test.test#source%20code%20control%20flow> a owl:Class;
+  rdfs:label "source code control flow";
+  rdfs:subClassOf test:Q1329550 .
+
+test:Q1074523 a owl:Class;
+  rdfs:label "development";
+  n4sch:PRODUCT_OR_MATERIAL_PRODUCED test:Q7397 .
+
+test:Q45045 a owl:Class;
+  rdfs:label "simulation";
+  rdfs:subClassOf test:Q105944376 .
+
+<http://test.test#static%20technique> a owl:Class;
+  rdfs:label "static technique";
+  n4sch:PRACTICED_BY test:Q1709010 .
+
+test:Q3736042 a owl:Class;
+  rdfs:label "experiences";
+  n4sch:DIFFERENT_FROM test:Q30015853 .
+
+test:Q58245288 a owl:Class;
+  rdfs:label "acquirer" .
+
+test:Q4072285 a owl:Class;
+  rdfs:label "conformance test";
+  rdfs:subClassOf test:Q2919644 .
+
+test:Q357813 a owl:Class;
+  rdfs:label "accredited";
+  rdfs:subClassOf <http://test.test#body%20of%20authority> .
+
+test:Q4115189 a owl:Class;
+  rdfs:label "test";
+  n4sch:PART_OF test:Q12483;
+  n4sch:USES test:Q1761598 .
+
+<http://test.test#software%20quality%20measurement> a owl:Class;
+  rdfs:label "software quality measurement";
+  n4sch:FACET_OF test:Q1331926 .
+
+<http://test.test#cost%20of%20software%20quality%20management%20processes> a owl:Class;
+  rdfs:label "cost of software quality management processes";
+  n4sch:FACET_OF test:Q7554352 .
+
+<http://test.test#software%20integrity%20levels> a owl:Class;
+  rdfs:label "software integrity levels" .
+
+<http://test.test#generic%20models%20of%20cost> a owl:Class;
+  rdfs:label "generic models of cost";
+  n4sch:FACET_OF test:Q1138598 .
+
+test:Q8366 a owl:Class;
+  rdfs:label "mathematical";
+  n4sch:HAS_PART test:Q782543 .
+
+test:Q782543 a owl:Class;
+  rdfs:label "graphical";
+  n4sch:PART_OF test:Q8366 .
+
+test:Q59068419 a owl:Class;
+  rdfs:label "software quality evaluation" .
+
+test:Q7838279 a owl:Class;
+  rdfs:label "trend analysis";
+  rdfs:subClassOf test:Q210832 .
+
+test:Q108798676 a owl:Class;
+  rdfs:label "stakeholders" .
+
+test:Q141488 a owl:Class;
+  rdfs:label "graphs";
+  rdfs:subClassOf test:Q451553, test:Q40199612 .
+
+test:Q80406165 a owl:Class;
+  rdfs:label "taxonomies" .
+
+test:Q34770 a owl:Class;
+  rdfs:label "languages" .
+
+test:Q1121708 a owl:Class;
+  rdfs:label "failure";
+  n4sch:HAS_CAUSE test:Q1003030 .
+
+test:Q7554199 a owl:Class;
+  rdfs:label "software engineering process";
+  n4sch:HAS_PART test:Q113416657 .
+
+test:Q42573062 a owl:Class;
+  rdfs:label "testing measurement";
+  rdfs:subClassOf test:Q12453 .
+
+test:Q11028 a owl:Class;
+  rdfs:label "information" .
+
+test:Q130740 a owl:Class;
+  rdfs:label "problems" .
+
+test:Q59195365 a owl:Class;
+  rdfs:label "anomalies" .
+
+test:Q1138598 a owl:Class;
+  rdfs:label "defect" .
+
+test:Q2995644 a owl:Class;
+  rdfs:label "result" .
+
+<http://test.test#software%20in%20service> a owl:Class;
+  rdfs:label "software in service" .
+
+test:Q38419899 a owl:Class;
+  rdfs:label "formal name" .
+
+<http://test.test#eliminate%20the%20causes> a owl:Class;
+  rdfs:label "eliminate the causes" .
+
+<http://test.test#interface%20specifications> a owl:Class;
+  rdfs:label "interface specifications" .
+
+test:Q1329550 a owl:Class;
+  rdfs:label "static analysis" .
+
+test:Q12453 a owl:Class;
+  rdfs:label "measurement" .
+
+test:Q105944376 a owl:Class;
+  rdfs:label "testing techniques" .
+
+test:Q5140046 a owl:Class;
+  rdfs:label "code reading" .
+
+<http://test.test#knowledge%20area> a owl:Class;
+  rdfs:label "knowledge area" .
+
+test:Q1331926 a owl:Class;
+  rdfs:label "decision-making" .
+
+test:Q2919644 a owl:Class;
+  rdfs:label "verification and validation" .
+
+<http://test.test#body%20of%20authority> a owl:Class;
+  rdfs:label "body of authority" .
+
+test:Q210832 a owl:Class;
+  rdfs:label "statistical test" .
+
+test:Q12483 a owl:Class;
+  rdfs:label "statistics" .
+
+test:Q451553 a owl:Class;
+  rdfs:label "visualization" .
+
+<http://test.test#measuring%20defect%20occurrences> a owl:Class;
+  rdfs:label "measuring defect occurrences" .
+
+test:Q2292472 a owl:Class;
+  rdfs:label "recurrence" .
+
+<http://test.test#well%20detection> a owl:Class;
+  rdfs:label "well detection" .
+
+test:Q33986818 a owl:Class;
+  rdfs:label "defect profile" .
+
+test:Q7754 a owl:Class;
+  rdfs:label "analysis" .
+
+test:Q194152 a owl:Class;
+  rdfs:label "syntactical" .
+
+test:Q11175 a owl:Class;
+  rdfs:label "control" .
+
+test:Q3614972 a owl:Class;
+  rdfs:label "hazard analysis" .
+
+test:Q66223402 a owl:Class;
+  rdfs:label "problem resolution" .
+
+test:Q40199612 a owl:Class;
+  rdfs:label "visual displays" .

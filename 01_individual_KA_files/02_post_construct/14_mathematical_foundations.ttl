@@ -1,0 +1,1729 @@
+@prefix n4sch: <neo4j://graph.schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix test: <http://test.test#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+test:Q3240280 a owl:Class;
+  rdfs:label "direct proof";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q11538 .
+
+n4sch:SAID_TO_BE_THE_SAME_AS a owl:ObjectProperty .
+
+test:Q58442086 a owl:Class;
+  rdfs:label "simple language";
+  n4sch:USE test:Q40056 .
+
+n4sch:USE a owl:ObjectProperty .
+
+test:Q114846971 a owl:Class;
+  rdfs:label "software professionals";
+  n4sch:FIELD_OF_THIS_OCCUPATION test:Q85574465 .
+
+n4sch:FIELD_OF_THIS_OCCUPATION a owl:ObjectProperty .
+
+test:Q1197248 a owl:Class;
+  rdfs:label "state sh";
+  n4sch:FOLLOWS <http://test.test#state%20sk> .
+
+n4sch:FOLLOWS a owl:ObjectProperty .
+
+test:Q285783 a owl:Class;
+  rdfs:label "intersection";
+  rdfs:subClassOf test:Q36161;
+  n4sch:PART_OF test:Q36161 .
+
+n4sch:PART_OF a owl:ObjectProperty .
+
+<http://test.test#production%20rules> a owl:Class;
+  rdfs:label "production rules";
+  rdfs:subClassOf test:Q373045 .
+
+test:Q26401 a owl:Class;
+  rdfs:label "vertex";
+  n4sch:PART_OF test:Q3115587, test:Q1137726 .
+
+test:Q176452 a owl:Class;
+  rdfs:label "finite state machine";
+  rdfs:subClassOf test:Q56093541, test:Q7834418;
+  n4sch:HAS_PART test:Q11573;
+  n4sch:INSTANCE_OF <http://test.test#state%20table> .
+
+n4sch:HAS_PART a owl:ObjectProperty .
+
+n4sch:INSTANCE_OF a owl:ObjectProperty .
+
+test:Q85574465 a owl:Class;
+  rdfs:label "programs";
+  n4sch:PRACTICED_BY test:Q114846971 .
+
+n4sch:PRACTICED_BY a owl:ObjectProperty .
+
+<http://test.test#shaded%20region> a owl:Class;
+  rdfs:label "shaded region";
+  n4sch:PART_OF test:Q190763 .
+
+test:Q7497908 a owl:Class;
+  rdfs:label "complement";
+  n4sch:HAS_PART test:Q4862272 .
+
+test:Q58475291 a owl:Class;
+  rdfs:label "phrase-structure";
+  rdfs:subClassOf test:Q8091 .
+
+<http://test.test#types%20of%20grammars> a owl:Class;
+  rdfs:label "types of grammars";
+  rdfs:subClassOf test:Q8091 .
+
+test:Q467440 a owl:Class;
+  rdfs:label "sample space";
+  n4sch:PART_OF test:Q110508921 .
+
+test:Q178790 a owl:Class;
+  rdfs:label "union";
+  rdfs:subClassOf test:Q36161;
+  n4sch:APPLIES_TO_JURISDICTION test:Q7275 .
+
+n4sch:APPLIES_TO_JURISDICTION a owl:ObjectProperty .
+
+test:Q177646 a owl:Class;
+  rdfs:label "subset";
+  rdfs:subClassOf test:Q36161;
+  n4sch:PART_OF test:Q467440, test:Q36161 .
+
+test:Q7111916 a owl:Class;
+  rdfs:label "outcomes";
+  n4sch:PART_OF test:Q467440, test:Q107530716 .
+
+test:Q33666798 a owl:Class;
+  rdfs:label "edge set";
+  n4sch:PART_OF test:Q3115587 .
+
+<http://test.test#bound%20law> a owl:Class;
+  rdfs:label "bound law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q1709010 a owl:Class;
+  rdfs:label "software engineer";
+  n4sch:INSTANCE_OF <http://test.test#knowledge%20area> .
+
+<http://test.test#set%20of%20all%20elements> a owl:Class;
+  rdfs:label "set of all elements";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1378301 .
+
+test:Q32043 a owl:Class;
+  rdfs:label "addition";
+  n4sch:HAS_PART test:Q36484 .
+
+test:Q11344 a owl:Class;
+  rdfs:label "element";
+  n4sch:PART_OF test:Q36161, test:Q11348 .
+
+<http://test.test#output%20symbol> a owl:Class;
+  rdfs:label "output symbol";
+  n4sch:OPPOSITE_OF test:Q87580996 .
+
+n4sch:OPPOSITE_OF a owl:ObjectProperty .
+
+test:Q172891 a owl:Class;
+  rdfs:label "elements";
+  n4sch:PART_OF test:Q36161 .
+
+test:Q507546 a owl:Class;
+  rdfs:label "nodes";
+  n4sch:PART_OF test:Q17514, test:Q10884, test:Q380172, test:Q98468872 .
+
+test:Q7949 a owl:Class;
+  rdfs:label "truth";
+  rdfs:subClassOf test:Q2684591 .
+
+test:Q133346 a owl:Class;
+  rdfs:label "edge";
+  n4sch:PART_OF test:Q1723971, test:Q128822 .
+
+test:Q1757074 a owl:Class;
+  rdfs:label "root node";
+  rdfs:subClassOf test:Q128822;
+  n4sch:PART_OF test:Q10884, test:Q380172;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q114772033 .
+
+test:Q1108649 a owl:Class;
+  rdfs:label "well-behaved";
+  rdfs:subClassOf test:Q203066 .
+
+test:Q1378301 a owl:Class;
+  rdfs:label "universal set";
+  rdfs:subClassOf test:Q36161;
+  n4sch:INSTANCE_OF test:Q1;
+  n4sch:SAID_TO_BE_THE_SAME_AS <http://test.test#set%20of%20all%20elements> .
+
+test:Q315 a owl:Class;
+  rdfs:label "language";
+  n4sch:STUDIED_BY test:Q373045 .
+
+n4sch:STUDIED_BY a owl:ObjectProperty .
+
+<http://test.test#types%20of%20productions> a owl:Class;
+  rdfs:label "types of productions";
+  rdfs:subClassOf test:Q96329089 .
+
+<http://test.test#exclusive%20or,,> a owl:Class;
+  rdfs:label "exclusive or,,";
+  n4sch:INSTANCE_OF test:Q211790 .
+
+<http://test.test#node%20x> a owl:Class;
+  rdfs:label "node x";
+  n4sch:PART_OF test:Q7631151 .
+
+test:Q18511800 a owl:Class;
+  rdfs:label "disjunction";
+  n4sch:INSTANCE_OF test:Q211790 .
+
+test:Q1550180 a owl:Class;
+  rdfs:label "nonterminals";
+  rdfs:subClassOf test:Q8171;
+  n4sch:OPPOSITE_OF test:Q849706 .
+
+test:Q30484 a owl:Class;
+  rdfs:label "264";
+  n4sch:INSTANCE_OF test:Q29654355 .
+
+test:Q120976 a owl:Class;
+  rdfs:label "n!";
+  n4sch:PART_OF <http://test.test#npr%20ways> .
+
+test:Q395 a owl:Class;
+  rdfs:label "mathematics";
+  n4sch:HAS_PART test:Q12479, test:Q408386, test:Q247643, test:Q21198 .
+
+test:Q33742 a owl:Class;
+  rdfs:label "natural language";
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q8171 .
+
+n4sch:HAS_PARTS_OF_THE_CLASS a owl:ObjectProperty .
+
+test:Q12479 a owl:Class;
+  rdfs:label "arithmetic";
+  n4sch:PART_OF test:Q395;
+  n4sch:OPPOSITE_OF test:Q110593469 .
+
+test:Q184754 a owl:Class;
+  rdfs:label "string";
+  rdfs:subClassOf test:Q8171 .
+
+<http://test.test#state%20table> a owl:Class;
+  rdfs:label "state table";
+  n4sch:DEPICTS test:Q2303083 .
+
+n4sch:DEPICTS a owl:ObjectProperty .
+
+test:Q8078 a owl:Class;
+  rdfs:label "logic";
+  n4sch:HAS_PART test:Q1156402, test:Q200694;
+  n4sch:STUDIES test:Q40056 .
+
+n4sch:STUDIES a owl:ObjectProperty .
+
+test:Q1156402 a owl:Class;
+  rdfs:label "reasoning";
+  n4sch:PART_OF test:Q8078 .
+
+<http://test.test#complement%20law> a owl:Class;
+  rdfs:label "complement law";
+  rdfs:subClassOf test:Q177251 .
+
+<http://test.test#idempotent%20law> a owl:Class;
+  rdfs:label "idempotent law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q649732 a owl:Class;
+  rdfs:label "formal system";
+  n4sch:STUDIED_BY test:Q395 .
+
+test:Q72886890 a owl:Class;
+  rdfs:label "preciseness";
+  n4sch:OPPOSITE_OF test:Q100919075 .
+
+test:Q87580996 a owl:Class;
+  rdfs:label "input symbol";
+  n4sch:OPPOSITE_OF <http://test.test#output%20symbol> .
+
+<http://test.test#> a owl:Class;
+  rdfs:label "";
+  n4sch:STUDIES test:Q151885 .
+
+test:Q80071 a owl:Class;
+  rdfs:label "symbol";
+  rdfs:subClassOf test:Q151885;
+  n4sch:PART_OF test:Q1090674 .
+
+test:Q190763 a owl:Class;
+  rdfs:label "venn diagram";
+  rdfs:subClassOf test:Q3427422 .
+
+test:Q1085860 a owl:Class;
+  rdfs:label "numeric equation";
+  n4sch:HAS_PART test:Q11563 .
+
+test:Q8366 a owl:Class;
+  rdfs:label "algorithm";
+  n4sch:PART_OF test:Q8366, test:Q11216 .
+
+test:Q5289798 a owl:Class;
+  rdfs:label "application domain";
+  rdfs:subClassOf test:Q162150 .
+
+<http://test.test#absolute%20certainty> a owl:Class;
+  rdfs:label "absolute certainty";
+  n4sch:FACET_OF test:Q1 .
+
+n4sch:FACET_OF a owl:ObjectProperty .
+
+test:Q1151067 a owl:Class;
+  rdfs:label "rules";
+  n4sch:PART_OF test:Q1156402 .
+
+test:Q8171 a owl:Class;
+  rdfs:label "word";
+  n4sch:PART_OF test:Q33742 .
+
+test:Q54932753 a owl:Class;
+  rdfs:label "mathematical foundations";
+  n4sch:INSTANCE_OF <http://test.test#knowledge%20area> .
+
+<http://test.test#methods%20of%20logic> a owl:Class;
+  rdfs:label "methods of logic";
+  n4sch:STUDIES test:Q11538 .
+
+test:Q37437 a owl:Class;
+  rdfs:label "syntax";
+  n4sch:PART_OF test:Q33742, test:Q8091, test:Q9143 .
+
+test:Q11538 a owl:Class;
+  rdfs:label "mathematical proof";
+  rdfs:subClassOf test:Q65943, test:Q186619;
+  n4sch:STUDIED_BY <http://test.test#methods%20of%20logic>;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q3240280 .
+
+test:Q110593469 a owl:Class;
+  rdfs:label "basic concepts";
+  n4sch:OPPOSITE_OF test:Q12479 .
+
+test:Q8091 a owl:Class;
+  rdfs:label "grammar";
+  n4sch:HAS_PART test:Q37437 .
+
+<http://test.test#elements%20of%20a%20set> a owl:Class;
+  rdfs:label "elements of a set";
+  rdfs:subClassOf test:Q208165 .
+
+test:Q109742 a owl:Class;
+  rdfs:label "braces";
+  n4sch:USE test:Q115867709 .
+
+test:Q36161 a owl:Class;
+  rdfs:label "set";
+  n4sch:HAS_PART test:Q11344;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q172891 .
+
+test:Q1478451 a owl:Class;
+  rdfs:label "negation";
+  n4sch:HAS_PART test:Q11344;
+  n4sch:INSTANCE_OF test:Q211790 .
+
+test:Q190539 a owl:Class;
+  rdfs:label "discourse";
+  rdfs:subClassOf test:Q108163;
+  n4sch:PART_OF test:Q1 .
+
+test:Q1090674 a owl:Class;
+  rdfs:label "strings";
+  rdfs:subClassOf test:Q8171;
+  n4sch:HAS_PART test:Q80071 .
+
+test:Q272404 a owl:Class;
+  rdfs:label "finite set";
+  rdfs:subClassOf test:Q36161 .
+
+test:Q205140 a owl:Class;
+  rdfs:label "infinite set";
+  rdfs:subClassOf test:Q36161 .
+
+<http://test.test#set%20of%20all%20natural%20numbers> a owl:Class;
+  rdfs:label "set of all natural numbers";
+  n4sch:INSTANCE_OF test:Q205140 .
+
+test:Q1047000 a owl:Class;
+  rdfs:label "valid";
+  rdfs:subClassOf test:Q315 .
+
+test:Q842346 a owl:Class;
+  rdfs:label "equal";
+  n4sch:FACET_OF test:Q1813450 .
+
+test:Q59489332 a owl:Class;
+  rdfs:label "proper subset";
+  rdfs:subClassOf test:Q177646 .
+
+test:Q204 a owl:Class;
+  rdfs:label "null";
+  rdfs:subClassOf test:Q226183, test:Q105243151;
+  n4sch:INSTANCE_OF <http://test.test#group%20of%20numbers> .
+
+test:Q37212896 a owl:Class;
+  rdfs:label "two relations";
+  rdfs:subClassOf test:Q23905861 .
+
+test:Q17514 a owl:Class;
+  rdfs:label "graph";
+  n4sch:PART_OF test:Q203066, test:Q14748;
+  n4sch:OPPOSITE_OF test:Q10884;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q1304193, test:Q50315594 .
+
+test:Q226183 a owl:Class;
+  rdfs:label "empty set";
+  rdfs:subClassOf test:Q36161 .
+
+<http://test.test#void%20set> a owl:Class;
+  rdfs:label "void set";
+  rdfs:subClassOf test:Q226183 .
+
+test:Q42261747 a owl:Class;
+  rdfs:label "subsets";
+  n4sch:PART_OF test:Q36161 .
+
+<http://test.test#parent%20node> a owl:Class;
+  rdfs:label "parent node";
+  n4sch:PART_OF test:Q10884, test:Q128822 .
+
+test:Q515 a owl:Class;
+  rdfs:label "city";
+  n4sch:HAS_PART <http://test.test#city's%20phone%20numbers> .
+
+<http://test.test#repeated%20experiments> a owl:Class;
+  rdfs:label "repeated experiments";
+  n4sch:HAS_PART test:Q64111559 .
+
+<http://test.test#city's%20phone%20numbers> a owl:Class;
+  rdfs:label "city's phone numbers";
+  n4sch:PART_OF test:Q515 .
+
+test:Q59275806 a owl:Class;
+  rdfs:label "figure 14";
+  n4sch:INSTANCE_OF test:Q190763;
+  n4sch:LENGTH test:Q38582 .
+
+n4sch:LENGTH a owl:ObjectProperty .
+
+test:Q5156415 a owl:Class;
+  rdfs:label "complement set";
+  rdfs:subClassOf test:Q1813450 .
+
+<http://test.test#common%20portion%20of%20two%20sets%20x%20and%20y> a owl:Class;
+  rdfs:label "common portion of two sets x and y";
+  rdfs:subClassOf test:Q285783 .
+
+test:Q114528223 a owl:Class;
+  rdfs:label "connects";
+  rdfs:subClassOf test:Q1304193 .
+
+test:Q132 a owl:Class;
+  rdfs:label "x";
+  n4sch:INSTANCE_OF test:Q98912;
+  n4sch:OPPOSITE_OF test:Q943 .
+
+test:Q943 a owl:Class;
+  rdfs:label "y";
+  n4sch:OPPOSITE_OF test:Q132 .
+
+<http://test.test#x%20×%20y> a owl:Class;
+  rdfs:label "x × y";
+  n4sch:INSTANCE_OF test:Q173740 .
+
+<http://test.test#properties%20and%20laws%20of%20sets> a owl:Class;
+  rdfs:label "properties and laws of sets";
+  n4sch:FACET_OF test:Q1813450 .
+
+test:Q1032739 a owl:Class;
+  rdfs:label "rhs";
+  n4sch:OPPOSITE_OF test:Q6480866 .
+
+test:Q85759981 a owl:Class;
+  rdfs:label "commutative law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q373045 a owl:Class;
+  rdfs:label "formal grammar";
+  n4sch:STUDIES test:Q315 .
+
+test:Q186290 a owl:Class;
+  rdfs:label "association";
+  rdfs:subClassOf test:Q11028 .
+
+test:Q5283215 a owl:Class;
+  rdfs:label "distributive law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q1084 a owl:Class;
+  rdfs:label "noun";
+  n4sch:INSTANCE_OF test:Q151885 .
+
+test:Q58810683 a owl:Class;
+  rdfs:label "start symbol";
+  rdfs:subClassOf test:Q1550180;
+  n4sch:PART_OF <http://test.test#production%20rules> .
+
+test:Q108580171 a owl:Class;
+  rdfs:label "identity law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q173300 a owl:Class;
+  rdfs:label "de morgan’s law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q1154428 a owl:Class;
+  rdfs:label "absorption law";
+  rdfs:subClassOf test:Q177251 .
+
+test:Q11579 a owl:Class;
+  rdfs:label "k";
+  n4sch:INSTANCE_OF test:Q28920044 .
+
+test:Q203066 a owl:Class;
+  rdfs:label "relation";
+  n4sch:HAS_PART test:Q17514, test:Q15767091;
+  n4sch:DIFFERENT_FROM test:Q11348 .
+
+n4sch:DIFFERENT_FROM a owl:ObjectProperty .
+
+test:Q15767091 a owl:Class;
+  rdfs:label "names";
+  n4sch:HAS_PART test:Q66498368 .
+
+test:Q66498368 a owl:Class;
+  rdfs:label "phone numbers";
+  n4sch:PART_OF test:Q15767091 .
+
+test:Q82799 a owl:Class;
+  rdfs:label "name";
+  n4sch:FOLLOWED_BY test:Q214995 .
+
+n4sch:FOLLOWED_BY a owl:ObjectProperty .
+
+test:Q214995 a owl:Class;
+  rdfs:label "phone number";
+  n4sch:FOLLOWS test:Q82799 .
+
+test:Q190913 a owl:Class;
+  rdfs:label "chomsky hierarchy";
+  n4sch:INSTANCE_OF test:Q5962346 .
+
+test:Q146481 a owl:Class;
+  rdfs:label "domain";
+  n4sch:PART_OF test:Q46831;
+  n4sch:OPPOSITE_OF test:Q46831 .
+
+test:Q29809513 a owl:Class;
+  rdfs:label "overflow";
+  n4sch:INSTANCE_OF test:Q80071 .
+
+test:Q46831 a owl:Class;
+  rdfs:label "range";
+  n4sch:HAS_PART test:Q146481;
+  n4sch:OPPOSITE_OF test:Q146481 .
+
+test:Q338047 a owl:Class;
+  rdfs:label "context-free grammar";
+  rdfs:subClassOf test:Q908674, test:Q96329089;
+  n4sch:FACET_OF test:Q338047 .
+
+test:Q11348 a owl:Class;
+  rdfs:label "function";
+  n4sch:PART_OF test:Q1322175;
+  n4sch:HAS_PART test:Q11344, test:Q191290;
+  n4sch:DIFFERENT_FROM test:Q203066 .
+
+<http://test.test#well-behaved%20relation> a owl:Class;
+  rdfs:label "well-behaved relation";
+  rdfs:subClassOf test:Q11348 .
+
+test:Q190686 a owl:Class;
+  rdfs:label "functions";
+  n4sch:DIFFERENT_FROM test:Q23905861 .
+
+test:Q36484 a owl:Class;
+  rdfs:label "conjunction";
+  n4sch:PART_OF test:Q32043, test:Q9289849;
+  n4sch:INSTANCE_OF test:Q211790 .
+
+test:Q23905861 a owl:Class;
+  rdfs:label "relations";
+  n4sch:DIFFERENT_FROM test:Q190686 .
+
+test:Q191290 a owl:Class;
+  rdfs:label "ordered pair";
+  n4sch:PART_OF test:Q11348 .
+
+test:Q14125950 a owl:Class;
+  rdfs:label "true";
+  rdfs:subClassOf test:Q108163, test:Q2684591, <http://test.test#boolean%20variable>;
+  n4sch:FACET_OF <http://test.test#declarative%20sentences>;
+  n4sch:DIFFERENT_FROM test:Q5432619 .
+
+test:Q908674 a owl:Class;
+  rdfs:label "context-sensitive grammar";
+  rdfs:subClassOf test:Q338047 .
+
+test:Q5432619 a owl:Class;
+  rdfs:label "false";
+  rdfs:subClassOf test:Q108163, <http://test.test#boolean%20variable>;
+  n4sch:FACET_OF <http://test.test#declarative%20sentences>;
+  n4sch:DIFFERENT_FROM test:Q14125950, test:Q65943 .
+
+test:Q200694 a owl:Class;
+  rdfs:label "propositional logic";
+  n4sch:PART_OF test:Q8078;
+  n4sch:USES test:Q2703316;
+  n4sch:STUDIES test:Q7250418, test:Q108163 .
+
+n4sch:USES a owl:ObjectProperty .
+
+test:Q1134367 a owl:Class;
+  rdfs:label "phrase-structure grammar";
+  rdfs:subClassOf test:Q8091 .
+
+test:Q59288516 a owl:Class;
+  rdfs:label "truth values";
+  n4sch:FACET_OF test:Q7250418 .
+
+test:Q7250418 a owl:Class;
+  rdfs:label "propositions";
+  n4sch:STUDIED_BY test:Q200694 .
+
+test:Q520777 a owl:Class;
+  rdfs:label "boolean";
+  rdfs:subClassOf test:Q23929619 .
+
+test:Q6480866 a owl:Class;
+  rdfs:label "lhs";
+  n4sch:OPPOSITE_OF test:Q1032739 .
+
+test:Q7881229 a owl:Class;
+  rdfs:label "implication";
+  n4sch:INSTANCE_OF test:Q211790 .
+
+test:Q211790 a owl:Class;
+  rdfs:label "logical operator";
+  n4sch:USE <http://test.test#compound%20proposition> .
+
+test:Q631 a owl:Class;
+  rdfs:label "i’m";
+  n4sch:PART_OF test:Q380172 .
+
+test:Q209555 a owl:Class;
+  rdfs:label "tautology";
+  rdfs:subClassOf test:Q108163 .
+
+test:Q483372 a owl:Class;
+  rdfs:label "contradiction";
+  rdfs:subClassOf test:Q7881229, <http://test.test#compound%20proposition> .
+
+test:Q1359069 a owl:Class;
+  rdfs:label "contingency";
+  rdfs:subClassOf <http://test.test#compound%20proposition> .
+
+test:Q1304193 a owl:Class;
+  rdfs:label "vertices";
+  n4sch:PART_OF test:Q17514, test:Q3115587, test:Q2642629, test:Q5004679, test:Q10884,
+    test:Q223642;
+  n4sch:OPPOSITE_OF test:Q50315594 .
+
+test:Q50315594 a owl:Class;
+  rdfs:label "edges";
+  n4sch:PART_OF test:Q17514;
+  n4sch:OPPOSITE_OF test:Q1304193;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q865260 .
+
+test:Q220433 a owl:Class;
+  rdfs:label "logically equivalent";
+  rdfs:subClassOf <http://test.test#compound%20proposition>;
+  n4sch:STUDIED_BY test:Q200694 .
+
+test:Q9143 a owl:Class;
+  rdfs:label "programming language";
+  n4sch:HAS_PART test:Q37437 .
+
+<http://test.test#domination%20law> a owl:Class;
+  rdfs:label "domination law";
+  rdfs:subClassOf <http://test.test#idempotent%20law> .
+
+test:Q11266439 a owl:Class;
+  rdfs:label "template";
+  rdfs:subClassOf test:Q10976085 .
+
+test:Q179976 a owl:Class;
+  rdfs:label "recursive";
+  rdfs:subClassOf test:Q8366, <http://test.test#tree%20traversals> .
+
+test:Q849706 a owl:Class;
+  rdfs:label "terminal";
+  n4sch:OPPOSITE_OF test:Q1550180 .
+
+<http://test.test#collections%20of%20objects> a owl:Class;
+  rdfs:label "collections of objects";
+  n4sch:DIFFERENT_FROM test:Q17012252 .
+
+test:Q17012252 a owl:Class;
+  rdfs:label "enumerate";
+  n4sch:DIFFERENT_FROM <http://test.test#collections%20of%20objects> .
+
+<http://test.test#∀x> a owl:Class;
+  rdfs:label "∀x";
+  n4sch:INSTANCE_OF test:Q14737094 .
+
+<http://test.test#left%20linear%20grammar> a owl:Class;
+  rdfs:label "left linear grammar";
+  rdfs:subClassOf test:Q8091 .
+
+test:Q773483 a owl:Class;
+  rdfs:label "existential quantifier";
+  n4sch:HAS_PART <http://test.test#∃x>;
+  n4sch:OPPOSITE_OF test:Q126695 .
+
+<http://test.test#type-3%20grammar> a owl:Class;
+  rdfs:label "type-3 grammar";
+  rdfs:subClassOf test:Q2566598 .
+
+<http://test.test#∃x> a owl:Class;
+  rdfs:label "∃x";
+  n4sch:INSTANCE_OF test:Q773483 .
+
+test:Q126695 a owl:Class;
+  rdfs:label "universal quantification";
+  n4sch:OPPOSITE_OF test:Q773483 .
+
+test:Q752532 a owl:Class;
+  rdfs:label "regular language";
+  rdfs:subClassOf test:Q315 .
+
+test:Q592911 a owl:Class;
+  rdfs:label "quantifier";
+  n4sch:PART_OF test:Q2627911, test:Q28923023 .
+
+test:Q2532538 a owl:Class;
+  rdfs:label "free variable";
+  n4sch:OPPOSITE_OF test:Q592911 .
+
+test:Q185612 a owl:Class;
+  rdfs:label "regular expression";
+  n4sch:HAS_PART test:Q184754 .
+
+test:Q2703316 a owl:Class;
+  rdfs:label "sentences";
+  n4sch:USED_BY test:Q200694 .
+
+n4sch:USED_BY a owl:ObjectProperty .
+
+test:Q408386 a owl:Class;
+  rdfs:label "infer";
+  n4sch:PART_OF test:Q395 .
+
+test:Q108163 a owl:Class;
+  rdfs:label "proposition";
+  n4sch:DIFFERENT_FROM test:Q65943;
+  n4sch:STUDIED_BY test:Q200694 .
+
+test:Q4055684 a owl:Class;
+  rdfs:label "predicate logic";
+  rdfs:subClassOf test:Q8078 .
+
+test:Q110568202 a owl:Class;
+  rdfs:label "terms";
+  n4sch:PART_OF test:Q200694 .
+
+test:Q1322175 a owl:Class;
+  rdfs:label "product structure";
+  n4sch:HAS_PART test:Q11348 .
+
+test:Q179080 a owl:Class;
+  rdfs:label "predicates";
+  n4sch:PART_OF test:Q200694 .
+
+test:Q56446440 a owl:Class;
+  rdfs:label "discrete structures";
+  rdfs:subClassOf test:Q11538 .
+
+test:Q126002 a owl:Class;
+  rdfs:label "concatenation";
+  n4sch:HAS_PART test:Q37136 .
+
+test:Q9492 a owl:Class;
+  rdfs:label "probability";
+  rdfs:subClassOf <http://test.test#lower-case%20counterpart>;
+  n4sch:PART_OF <http://test.test#random%20phenomenon>;
+  n4sch:HAS_PART test:Q7111916;
+  n4sch:STUDIED_BY test:Q98641911;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q176640 .
+
+test:Q8799 a owl:Class;
+  rdfs:label "b";
+  n4sch:OPPOSITE_OF test:Q577 .
+
+test:Q50808388 a owl:Class;
+  rdfs:label "axioms";
+  n4sch:HAS_PART test:Q1309317 .
+
+test:Q37136 a owl:Class;
+  rdfs:label "xi";
+  n4sch:PART_OF test:Q126002 .
+
+test:Q1309317 a owl:Class;
+  rdfs:label "postulates";
+  n4sch:PART_OF test:Q50808388 .
+
+test:Q1225052 a owl:Class;
+  rdfs:label "digital computer";
+  n4sch:USES test:Q22349746 .
+
+test:Q2684591 a owl:Class;
+  rdfs:label "statement";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q14125950 .
+
+test:Q115861429 a owl:Class;
+  rdfs:label "proved";
+  n4sch:HAS_CAUSE test:Q65943 .
+
+n4sch:HAS_CAUSE a owl:ObjectProperty .
+
+test:Q65943 a owl:Class;
+  rdfs:label "theorem";
+  rdfs:subClassOf test:Q11538;
+  n4sch:DIFFERENT_FROM test:Q5432619, test:Q108163;
+  n4sch:HAS_EFFECT test:Q115861429 .
+
+n4sch:HAS_EFFECT a owl:ObjectProperty .
+
+<http://test.test#p%20→%20q> a owl:Class;
+  rdfs:label "p → q";
+  n4sch:INSTANCE_OF test:Q7881229 .
+
+test:Q178377 a owl:Class;
+  rdfs:label "induction";
+  rdfs:subClassOf test:Q178377;
+  n4sch:USES test:Q1068763;
+  n4sch:INSTANCE_OF test:Q105530558, test:Q35102 .
+
+<http://test.test#conclusion%20statement> a owl:Class;
+  rdfs:label "conclusion statement";
+  rdfs:subClassOf test:Q408386 .
+
+test:Q9289849 a owl:Class;
+  rdfs:label "simplification";
+  n4sch:HAS_PART test:Q36484 .
+
+<http://test.test#infinite%20amount%20of%20time> a owl:Class;
+  rdfs:label "infinite amount of time";
+  rdfs:subClassOf test:Q1045168 .
+
+test:Q199 a owl:Class;
+  rdfs:label "1";
+  rdfs:subClassOf test:Q9492;
+  n4sch:INSTANCE_OF test:Q28920044, <http://test.test#group%20of%20numbers> .
+
+test:Q22349746 a owl:Class;
+  rdfs:label "finite number";
+  n4sch:USED_BY test:Q1225052 .
+
+test:Q1244890 a owl:Class;
+  rdfs:label "rational number";
+  rdfs:subClassOf test:Q11563;
+  n4sch:INSTANCE_OF test:Q80071;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q12503, test:Q12916, test:Q21199, test:Q1497375 .
+
+<http://test.test#proof%20by%20mathematical%20induction> a owl:Class;
+  rdfs:label "proof by mathematical induction";
+  rdfs:subClassOf test:Q11538 .
+
+test:Q2096440 a owl:Class;
+  rdfs:label "sum rule";
+  n4sch:HAS_PART <http://test.test#n1%20ways>, <http://test.test#n2%20ways> .
+
+<http://test.test#n1%20ways> a owl:Class;
+  rdfs:label "n1 ways";
+  n4sch:PART_OF test:Q2096440;
+  n4sch:FOLLOWED_BY <http://test.test#n2%20ways> .
+
+<http://test.test#n2%20ways> a owl:Class;
+  rdfs:label "n2 ways";
+  n4sch:PART_OF test:Q2096440;
+  n4sch:FOLLOWS <http://test.test#n1%20ways> .
+
+test:Q849335 a owl:Class;
+  rdfs:label "inclusion-exclusion";
+  n4sch:INSTANCE_OF test:Q211364 .
+
+<http://test.test#number%20of%20ways%20to%20do%20the%20two%20tasks> a owl:Class;
+  rdfs:label "number of ways to do the two tasks";
+  rdfs:subClassOf <http://test.test#total%20number%20of%20ways%20the%20two%20tasks%20can%20be%20done> .
+
+<http://test.test#binary%20digits> a owl:Class;
+  rdfs:label "binary digits";
+  n4sch:HAS_PART test:Q798439 .
+
+test:Q28661579 a owl:Class;
+  rdfs:label "recursive algorithm";
+  rdfs:subClassOf test:Q11348 .
+
+test:Q798439 a owl:Class;
+  rdfs:label "bits";
+  n4sch:PART_OF <http://test.test#binary%20digits> .
+
+<http://test.test#k%20bit%20word> a owl:Class;
+  rdfs:label "k bit word";
+  n4sch:HAS_PART test:Q659 .
+
+test:Q659 a owl:Class;
+  rdfs:label "n";
+  n4sch:HAS_PART test:Q14920387 .
+
+test:Q14920387 a owl:Class;
+  rdfs:label "0";
+  rdfs:subClassOf test:Q9492;
+  n4sch:PART_OF test:Q659;
+  n4sch:INSTANCE_OF test:Q21199 .
+
+<http://test.test#32%20bit%20arithmetic> a owl:Class;
+  rdfs:label "32 bit arithmetic";
+  n4sch:OPPOSITE_OF test:Q252132 .
+
+test:Q252132 a owl:Class;
+  rdfs:label "64 bits";
+  n4sch:OPPOSITE_OF <http://test.test#32%20bit%20arithmetic> .
+
+<http://test.test#probability%20of%20any%20outcome> a owl:Class;
+  rdfs:label "probability of any outcome";
+  n4sch:FACET_OF <http://test.test#random%20phenomenon> .
+
+test:Q215382 a owl:Class;
+  rdfs:label "disjoint";
+  n4sch:OPPOSITE_OF <http://test.test#outcomes%20in%20common> .
+
+test:Q649900 a owl:Class;
+  rdfs:label "fixed-point arithmetic";
+  n4sch:USES test:Q1441305, test:Q12503, <http://test.test#distribute%20n’> .
+
+<http://test.test#outcomes%20in%20common> a owl:Class;
+  rdfs:label "outcomes in common";
+  n4sch:OPPOSITE_OF test:Q215382 .
+
+test:Q577 a owl:Class;
+  rdfs:label "a";
+  n4sch:OPPOSITE_OF test:Q8799 .
+
+test:Q1441305 a owl:Class;
+  rdfs:label "sign";
+  n4sch:USED_BY test:Q649900 .
+
+test:Q12503 a owl:Class;
+  rdfs:label "integer";
+  rdfs:subClassOf test:Q12503, test:Q11563, test:Q50707;
+  n4sch:DIFFERENT_FROM test:Q747691;
+  n4sch:STUDIED_BY test:Q12479;
+  n4sch:USED_BY test:Q649900;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q47005650 .
+
+<http://test.test#addition%20rule> a owl:Class;
+  rdfs:label "addition rule";
+  rdfs:subClassOf <http://test.test#disjoint%20events> .
+
+test:Q36602 a owl:Class;
+  rdfs:label "order";
+  rdfs:subClassOf test:Q6671777;
+  n4sch:HAS_PART test:Q36983700 .
+
+<http://test.test#npr%20ways> a owl:Class;
+  rdfs:label "npr ways";
+  n4sch:HAS_PART test:Q120976, test:Q659 .
+
+test:Q10578722 a owl:Class;
+  rdfs:label "largest";
+  n4sch:OPPOSITE_OF test:Q200227 .
+
+test:Q1274479 a owl:Class;
+  rdfs:label "repetition";
+  n4sch:OPPOSITE_OF test:Q36602 .
+
+test:Q200227 a owl:Class;
+  rdfs:label "negative number";
+  n4sch:OPPOSITE_OF test:Q10578722 .
+
+test:Q161519 a owl:Class;
+  rdfs:label "permutation";
+  n4sch:DIFFERENT_FROM test:Q202805 .
+
+test:Q36983700 a owl:Class;
+  rdfs:label "members";
+  n4sch:PART_OF test:Q36602 .
+
+test:Q865260 a owl:Class;
+  rdfs:label "arcs";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q50315594 .
+
+test:Q15838309 a owl:Class;
+  rdfs:label "simple graph";
+  n4sch:OPPOSITE_OF test:Q3115587 .
+
+test:Q3115587 a owl:Class;
+  rdfs:label "undirected";
+  rdfs:subClassOf test:Q17514;
+  n4sch:HAS_PART test:Q33666798;
+  n4sch:OPPOSITE_OF test:Q15838309;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q1304193 .
+
+test:Q2036718 a owl:Class;
+  rdfs:label "bottleneck";
+  rdfs:subClassOf test:Q116847687 .
+
+test:Q58897692 a owl:Class;
+  rdfs:label "fractional";
+  rdfs:subClassOf test:Q11563 .
+
+test:Q2642629 a owl:Class;
+  rdfs:label "multigraph";
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q1304193 .
+
+test:Q272035 a owl:Class;
+  rdfs:label "accuracy";
+  n4sch:STUDIED_BY test:Q11216;
+  n4sch:OPPOSITE_OF test:Q272035 .
+
+test:Q11563 a owl:Class;
+  rdfs:label "number";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q101076817 .
+
+test:Q146591 a owl:Class;
+  rdfs:label "parallel";
+  rdfs:subClassOf test:Q6934937 .
+
+<http://test.test#edges%20connecting%20a%20node%20to%20a%20node> a owl:Class;
+  rdfs:label "edges connecting a node to a node";
+  n4sch:PART_OF test:Q2642629 .
+
+test:Q100786914 a owl:Class;
+  rdfs:label "loops";
+  rdfs:subClassOf test:Q50315594;
+  n4sch:PART_OF test:Q1137726 .
+
+test:Q32365 a owl:Class;
+  rdfs:label "last one";
+  n4sch:INSTANCE_OF test:Q831691 .
+
+test:Q1723971 a owl:Class;
+  rdfs:label "weighted graph";
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q133346 .
+
+test:Q101076817 a owl:Class;
+  rdfs:label "exact value";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q11563 .
+
+test:Q1190554 a owl:Class;
+  rdfs:label "incident";
+  rdfs:subClassOf test:Q1304193 .
+
+<http://test.test#incident%20edge> a owl:Class;
+  rdfs:label "incident edge";
+  n4sch:FACET_OF test:Q3115587 .
+
+<http://test.test#terminal%20vertex> a owl:Class;
+  rdfs:label "terminal vertex";
+  n4sch:FOLLOWS <http://test.test#initial%20vertex> .
+
+<http://test.test#initial%20vertex> a owl:Class;
+  rdfs:label "initial vertex";
+  n4sch:FOLLOWED_BY <http://test.test#terminal%20vertex> .
+
+test:Q5004679 a owl:Class;
+  rdfs:label "path";
+  n4sch:PART_OF test:Q196672;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q1304193 .
+
+test:Q101843 a owl:Class;
+  rdfs:label "row";
+  n4sch:PART_OF test:Q14748 .
+
+test:Q508291 a owl:Class;
+  rdfs:label "simple";
+  rdfs:subClassOf test:Q5004679 .
+
+<http://test.test#vnumber%20theory> a owl:Class;
+  rdfs:label "vnumber theory";
+  n4sch:PART_OF test:Q837863 .
+
+<http://test.test#terminal%20nodes> a owl:Class;
+  rdfs:label "terminal nodes";
+  n4sch:PART_OF test:Q1137726 .
+
+test:Q1137726 a owl:Class;
+  rdfs:label "directed graph";
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q26401, <http://test.test#terminal%20nodes> .
+
+test:Q264398 a owl:Class;
+  rdfs:label "adjacency list";
+  n4sch:HAS_PART test:Q727035 .
+
+test:Q197536 a owl:Class;
+  rdfs:label "hierarchical";
+  rdfs:subClassOf test:Q175263 .
+
+test:Q10884 a owl:Class;
+  rdfs:label "tree";
+  n4sch:HAS_PART test:Q111029;
+  n4sch:OPPOSITE_OF test:Q17514;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q507546, test:Q1757074, <http://test.test#parent%20node>,
+    test:Q1304193, test:Q50315594, <http://test.test#child%20node>, test:Q128822, test:Q33971,
+    <http://test.test#leaf%20nodes> .
+
+test:Q7631151 a owl:Class;
+  rdfs:label "subgraph";
+  n4sch:HAS_PARTS_OF_THE_CLASS <http://test.test#node%20x> .
+
+<http://test.test#child%20node> a owl:Class;
+  rdfs:label "child node";
+  n4sch:PART_OF test:Q10884 .
+
+test:Q54021143 a owl:Class;
+  rdfs:label "connected";
+  rdfs:subClassOf test:Q3115587 .
+
+test:Q12916 a owl:Class;
+  rdfs:label "real number";
+  n4sch:FACET_OF test:Q3968;
+  n4sch:OPPOSITE_OF test:Q9165172;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q12503 .
+
+test:Q684 a owl:Class;
+  rdfs:label "e";
+  n4sch:INSTANCE_OF test:Q33666798 .
+
+test:Q21199 a owl:Class;
+  rdfs:label "natural number";
+  rdfs:subClassOf test:Q36161, test:Q43099;
+  n4sch:HAS_PART test:Q199, test:Q185813;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q1244890, test:Q12503, test:Q12916, test:Q11567 .
+
+test:Q128822 a owl:Class;
+  rdfs:label "node";
+  n4sch:PART_OF test:Q10884, test:Q380172, test:Q112850189, <http://test.test#left%20subtree>;
+  n4sch:HAS_PART test:Q133346, <http://test.test#parent%20node> .
+
+test:Q11567 a owl:Class;
+  rdfs:label "complex number";
+  n4sch:HAS_PART test:Q623;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q1244890, test:Q12916, test:Q21199 .
+
+test:Q17132761 a owl:Class;
+  rdfs:label "internal";
+  rdfs:subClassOf test:Q128822 .
+
+test:Q114772033 a owl:Class;
+  rdfs:label "level 0";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q1757074 .
+
+test:Q200 a owl:Class;
+  rdfs:label "2";
+  n4sch:INSTANCE_OF <http://test.test#group%20of%20numbers> .
+
+test:Q111029 a owl:Class;
+  rdfs:label "root";
+  rdfs:subClassOf test:Q507546;
+  n4sch:PART_OF test:Q10884 .
+
+test:Q201 a owl:Class;
+  rdfs:label "3";
+  n4sch:INSTANCE_OF <http://test.test#group%20of%20numbers> .
+
+test:Q33971 a owl:Class;
+  rdfs:label "leaf";
+  rdfs:subClassOf test:Q128822;
+  n4sch:PART_OF test:Q10884 .
+
+test:Q202 a owl:Class;
+  rdfs:label "4";
+  n4sch:INSTANCE_OF <http://test.test#group%20of%20numbers> .
+
+test:Q28390 a owl:Class;
+  rdfs:label "degree";
+  n4sch:FACET_OF <http://test.test#leaf%20node> .
+
+test:Q203 a owl:Class;
+  rdfs:label "5";
+  n4sch:INSTANCE_OF <http://test.test#group%20of%20numbers> .
+
+test:Q55634158 a owl:Class;
+  rdfs:label "successors";
+  n4sch:FOLLOWS test:Q402152 .
+
+test:Q60210990 a owl:Class;
+  rdfs:label "fractional number";
+  n4sch:OPPOSITE_OF test:Q595597 .
+
+test:Q28777634 a owl:Class;
+  rdfs:label "whole numbers";
+  n4sch:HAS_PART test:Q16955529;
+  n4sch:INSTANCE_OF test:Q80071 .
+
+test:Q402152 a owl:Class;
+  rdfs:label "ancestor";
+  n4sch:FOLLOWED_BY test:Q55634158 .
+
+test:Q31184 a owl:Class;
+  rdfs:label "sibling";
+  rdfs:subClassOf test:Q507546;
+  n4sch:PART_OF <http://test.test#unordered%20tree> .
+
+test:Q60691706 a owl:Class;
+  rdfs:label "subtrees";
+  n4sch:PART_OF test:Q380172 .
+
+test:Q380172 a owl:Class;
+  rdfs:label "binary tree";
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q507546, test:Q1757074, test:Q128822, test:Q60691706,
+    test:Q112850189, <http://test.test#left%20subtree>, test:Q43 .
+
+<http://test.test#leaf%20nodes> a owl:Class;
+  rdfs:label "leaf nodes";
+  n4sch:PART_OF test:Q10884 .
+
+test:Q112850189 a owl:Class;
+  rdfs:label "subtree";
+  n4sch:PART_OF test:Q380172;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q128822, <http://test.test#left%20subtree> .
+
+test:Q747691 a owl:Class;
+  rdfs:label "natural";
+  n4sch:DIFFERENT_FROM test:Q12503 .
+
+<http://test.test#left%20subtree> a owl:Class;
+  rdfs:label "left subtree";
+  n4sch:PART_OF test:Q380172;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q128822, test:Q112850189 .
+
+test:Q574 a owl:Class;
+  rdfs:label "tl";
+  n4sch:PART_OF test:Q380172 .
+
+<http://test.test#right%20subtree> a owl:Class;
+  rdfs:label "right subtree";
+  n4sch:PART_OF test:Q380172 .
+
+<http://test.test#set%20theoreticians> a owl:Class;
+  rdfs:label "set theoreticians";
+  n4sch:PART_OF test:Q107564129 .
+
+test:Q107564129 a owl:Class;
+  rdfs:label "mathematicians";
+  n4sch:HAS_PART <http://test.test#set%20theoreticians> .
+
+test:Q43 a owl:Class;
+  rdfs:label "tr";
+  n4sch:PART_OF test:Q380172 .
+
+test:Q65068903 a owl:Class;
+  rdfs:label "commas";
+  rdfs:subClassOf test:delimiters .
+
+test:Q16955529 a owl:Class;
+  rdfs:label "negatives";
+  n4sch:PART_OF test:Q28777634 .
+
+test:Q176640 a owl:Class;
+  rdfs:label "randomness";
+  rdfs:subClassOf test:Q9492;
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q9492 .
+
+test:Q29012041 a owl:Class;
+  rdfs:label "discrete probability";
+  n4sch:FACET_OF test:Q200726 .
+
+<http://test.test#random%20phenomenon> a owl:Class;
+  rdfs:label "random phenomenon";
+  n4sch:HAS_PART test:Q9492 .
+
+test:Q216200 a owl:Class;
+  rdfs:label "rule";
+  rdfs:subClassOf test:Q11348 .
+
+test:Q2995644 a owl:Class;
+  rdfs:label "outcome";
+  n4sch:FACET_OF test:Q101965 .
+
+test:Q72221057 a owl:Class;
+  rdfs:label "discrete";
+  n4sch:DIFFERENT_FROM test:Q2195 .
+
+test:Q2195 a owl:Class;
+  rdfs:label "continuous";
+  n4sch:DIFFERENT_FROM test:Q72221057 .
+
+test:Q112577919 a owl:Class;
+  rdfs:label "continuous random variable";
+  n4sch:USE <http://test.test#measure%20an%20uncountable%20number%20of%20values> .
+
+test:Q1045168 a owl:Class;
+  rdfs:label "discrete random variable";
+  rdfs:subClassOf test:Q200726 .
+
+test:Q98641911 a owl:Class;
+  rdfs:label "probability distribution model";
+  n4sch:STUDIES test:Q9492 .
+
+test:Q2796622 a owl:Class;
+  rdfs:label "average value";
+  n4sch:FACET_OF <http://test.test#repeated%20experiments> .
+
+test:Q47005650 a owl:Class;
+  rdfs:label "rational numbers";
+  n4sch:SAID_TO_BE_THE_SAME_AS test:Q12503 .
+
+test:Q200125 a owl:Class;
+  rdfs:label "expected value";
+  n4sch:FACET_OF test:Q9492 .
+
+test:Q64111559 a owl:Class;
+  rdfs:label "number of experiments";
+  n4sch:PART_OF <http://test.test#repeated%20experiments> .
+
+test:Q27286380 a owl:Class;
+  rdfs:label "abstracted";
+  n4sch:STUDIES test:Q13407144 .
+
+test:Q13407144 a owl:Class;
+  rdfs:label "computer system";
+  n4sch:STUDIED_BY test:Q27286380 .
+
+<http://test.test#transitions%20between%20those%20states> a owl:Class;
+  rdfs:label "transitions between those states";
+  rdfs:subClassOf test:Q104539563 .
+
+test:Q38701 a owl:Class;
+  rdfs:label "15";
+  n4sch:FOLLOWED_BY test:Q199 .
+
+test:Q7366593 a owl:Class;
+  rdfs:label "flow graph";
+  rdfs:subClassOf test:Q105698583 .
+
+test:Q56093541 a owl:Class;
+  rdfs:label "information capacity";
+  n4sch:PART_OF test:Q11019 .
+
+test:Q107399627 a owl:Class;
+  rdfs:label "internal memory";
+  n4sch:PART_OF test:Q11019 .
+
+test:Q607728 a owl:Class;
+  rdfs:label "irrational numbers";
+  rdfs:subClassOf test:Q43099;
+  n4sch:OPPOSITE_OF test:Q67372736 .
+
+test:Q105464113 a owl:Class;
+  rdfs:label "start state";
+  rdfs:subClassOf test:Q7275 .
+
+test:Q2083958 a owl:Class;
+  rdfs:label "pattern";
+  rdfs:subClassOf test:Q81365 .
+
+test:Q7275 a owl:Class;
+  rdfs:label "state";
+  n4sch:FACET_OF <http://test.test#flow%20of%20operation> .
+
+<http://test.test#real%20numbers.> a owl:Class;
+  rdfs:label "real numbers.";
+  n4sch:INSTANCE_OF test:Q43099 .
+
+test:Q67372736 a owl:Class;
+  rdfs:label "rational";
+  n4sch:OPPOSITE_OF test:Q607728 .
+
+test:Q11573 a owl:Class;
+  rdfs:label "m";
+  n4sch:PART_OF test:Q176452 .
+
+<http://test.test#state%20transition%20function> a owl:Class;
+  rdfs:label "state transition function";
+  n4sch:FACET_OF test:Q7275 .
+
+<http://test.test#state%20sk> a owl:Class;
+  rdfs:label "state sk";
+  n4sch:FOLLOWED_BY test:Q1197248 .
+
+test:Q3968 a owl:Class;
+  rdfs:label "algebra";
+  n4sch:STUDIES test:Q12916 .
+
+test:Q310395 a owl:Class;
+  rdfs:label "−1";
+  n4sch:INSTANCE_OF test:Q134237 .
+
+test:Q9165172 a owl:Class;
+  rdfs:label "imaginary number";
+  n4sch:OPPOSITE_OF test:Q12916 .
+
+test:Q43099 a owl:Class;
+  rdfs:label "numbers";
+  n4sch:PART_OF test:Q1497375 .
+
+test:Q1497375 a owl:Class;
+  rdfs:label "complex";
+  n4sch:HAS_PART test:Q43099 .
+
+test:Q9751 a owl:Class;
+  rdfs:label "z";
+  n4sch:INSTANCE_OF test:Q9165172 .
+
+test:Q623 a owl:Class;
+  rdfs:label "c";
+  n4sch:PART_OF test:Q11567 .
+
+<http://test.test#factor%20of%20z> a owl:Class;
+  rdfs:label "factor of z";
+  n4sch:SAID_TO_BE_THE_SAME_AS <http://test.test#divisor%20of%20z> .
+
+<http://test.test#divisor%20of%20z> a owl:Class;
+  rdfs:label "divisor of z";
+  n4sch:SAID_TO_BE_THE_SAME_AS <http://test.test#factor%20of%20z> .
+
+test:Q6671777 a owl:Class;
+  rdfs:label "arrangement" .
+
+<http://test.test#compound%20proposition> a owl:Class;
+  rdfs:label "compound proposition" .
+
+test:Q49008 a owl:Class;
+  rdfs:label "prime";
+  rdfs:subClassOf test:Q12503 .
+
+test:Q1068763 a owl:Class;
+  rdfs:label "rule of inference" .
+
+test:Q223642 a owl:Class;
+  rdfs:label "relationship" .
+
+test:Q207348 a owl:Class;
+  rdfs:label "semigroup";
+  n4sch:OPPOSITE_OF test:Q208237, test:Q6869278 .
+
+test:Q2627911 a owl:Class;
+  rdfs:label "logical expression" .
+
+test:Q173496 a owl:Class;
+  rdfs:label "prime p";
+  rdfs:subClassOf test:Q50349184 .
+
+<http://test.test#declarative%20sentences> a owl:Class;
+  rdfs:label "declarative sentences" .
+
+test:Q110508921 a owl:Class;
+  rdfs:label "probability model" .
+
+test:Q211364 a owl:Class;
+  rdfs:label "principle" .
+
+test:Q28923023 a owl:Class;
+  rdfs:label "block-structured programming language" .
+
+test:Q14737094 a owl:Class;
+  rdfs:label "universal quantifier" .
+
+test:Q1 a owl:Class;
+  rdfs:label "system" .
+
+test:Q50707 a owl:Class;
+  rdfs:label "composite number";
+  rdfs:subClassOf test:Q12503 .
+
+test:Q201339 a owl:Class;
+  rdfs:label "public-key cryptography";
+  n4sch:USES test:Q1054766 .
+
+test:Q11028 a owl:Class;
+  rdfs:label "information" .
+
+test:Q177251 a owl:Class;
+  rdfs:label "associative law" .
+
+test:Q12731 a owl:Class;
+  rdfs:label "closed";
+  rdfs:subClassOf test:Q3884033, test:Q164307 .
+
+test:Q1054766 a owl:Class;
+  rdfs:label "public key";
+  n4sch:USED_BY test:Q201339 .
+
+test:Q4048186 a owl:Class;
+  rdfs:label "representations";
+  n4sch:PART_OF test:Q60088264 .
+
+test:Q190109 a owl:Class;
+  rdfs:label "commutative";
+  rdfs:subClassOf test:Q46847, test:Q164307 .
+
+test:Q215380 a owl:Class;
+  rdfs:label "group";
+  n4sch:DIFFERENT_FROM test:Q208237;
+  n4sch:STUDIED_BY test:Q874429;
+  n4sch:OPPOSITE_OF test:Q208237;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q21199 .
+
+<http://test.test#third%20rule> a owl:Class;
+  rdfs:label "third rule";
+  n4sch:FACET_OF test:Q600236 .
+
+test:Q208237 a owl:Class;
+  rdfs:label "monoid";
+  n4sch:DIFFERENT_FROM test:Q215380;
+  n4sch:OPPOSITE_OF test:Q207348, test:Q215380;
+  n4sch:HAS_PARTS_OF_THE_CLASS test:Q11344 .
+
+test:Q19934355 a owl:Class;
+  rdfs:label "commutative monoid";
+  n4sch:HAS_PART test:Q185813 .
+
+test:Q185813 a owl:Class;
+  rdfs:label "identity element";
+  rdfs:subClassOf test:Q11344;
+  n4sch:PART_OF test:Q21199, test:Q207348, test:Q19934355, test:Q46847 .
+
+test:Q466109 a owl:Class;
+  rdfs:label "subgroup";
+  rdfs:subClassOf test:Q215380;
+  n4sch:PART_OF <http://test.test#bigger%20one> .
+
+<http://test.test#bigger%20one> a owl:Class;
+  rdfs:label "bigger one";
+  n4sch:HAS_PART test:Q466109 .
+
+test:Q874429 a owl:Class;
+  rdfs:label "group theory";
+  n4sch:STUDIES test:Q215380 .
+
+test:Q11232778 a owl:Class;
+  rdfs:label "second operation";
+  n4sch:PART_OF test:Q181296 .
+
+test:Q6869278 a owl:Class;
+  rdfs:label "distributive";
+  n4sch:OPPOSITE_OF test:Q207348 .
+
+test:Q181296 a owl:Class;
+  rdfs:label "abelian group";
+  rdfs:subClassOf test:Q46847, test:Q3539534 .
+
+test:Q46847 a owl:Class;
+  rdfs:label "ring";
+  n4sch:HAS_PART test:Q185813 .
+
+test:Q247643 a owl:Class;
+  rdfs:label "elementary";
+  n4sch:PART_OF test:Q395 .
+
+test:Q40056 a owl:Class;
+  rdfs:label "program" .
+
+<http://test.test#knowledge%20area> a owl:Class;
+  rdfs:label "knowledge area" .
+
+test:Q100919075 a owl:Class;
+  rdfs:label "ambiguous" .
+
+test:Q151885 a owl:Class;
+  rdfs:label "concept" .
+
+test:Q162150 a owl:Class;
+  rdfs:label "abstraction" .
+
+test:Q208165 a owl:Class;
+  rdfs:label "collection" .
+
+test:Q115867709 a owl:Class;
+  rdfs:label "represented" .
+
+test:Q1813450 a owl:Class;
+  rdfs:label "sets" .
+
+test:Q3427422 a owl:Class;
+  rdfs:label "graphic representation" .
+
+test:Q4862272 a owl:Class;
+  rdfs:label "set x" .
+
+test:Q173740 a owl:Class;
+  rdfs:label "cartesian product" .
+
+<http://test.test#boolean%20variable> a owl:Class;
+  rdfs:label "boolean variable" .
+
+test:Q23929619 a owl:Class;
+  rdfs:label "variables" .
+
+test:Q10976085 a owl:Class;
+  rdfs:label "verb phrase" .
+
+test:Q21198 a owl:Class;
+  rdfs:label "computer science" .
+
+test:Q186619 a owl:Class;
+  rdfs:label "argument" .
+
+test:Q28920044 a owl:Class;
+  rdfs:label "positive integer" .
+
+test:Q105530558 a owl:Class;
+  rdfs:label "proof technique" .
+
+test:Q35102 a owl:Class;
+  rdfs:label "prove" .
+
+<http://test.test#total%20number%20of%20ways%20the%20two%20tasks%20can%20be%20done>
+  a owl:Class;
+  rdfs:label "total number of ways the two tasks can be done" .
+
+<http://test.test#disjoint%20events> a owl:Class;
+  rdfs:label "disjoint events" .
+
+test:Q107530716 a owl:Class;
+  rdfs:label "events" .
+
+test:Q202805 a owl:Class;
+  rdfs:label "combination" .
+
+test:Q38582 a owl:Class;
+  rdfs:label "14" .
+
+test:Q6934937 a owl:Class;
+  rdfs:label "multiple edge" .
+
+test:Q196672 a owl:Class;
+  rdfs:label "circuit" .
+
+test:Q727035 a owl:Class;
+  rdfs:label "adjacency matrix" .
+
+test:Q81365 a owl:Class;
+  rdfs:label "decimal" .
+
+test:Q101965 a owl:Class;
+  rdfs:label "experiment" .
+
+<http://test.test#unordered%20tree> a owl:Class;
+  rdfs:label "unordered tree" .
+
+test:Q14748 a owl:Class;
+  rdfs:label "table" .
+
+test:Q175263 a owl:Class;
+  rdfs:label "data structure" .
+
+<http://test.test#leaf%20node> a owl:Class;
+  rdfs:label "leaf node" .
+
+test:Q831691 a owl:Class;
+  rdfs:label "levels" .
+
+<http://test.test#group%20of%20numbers> a owl:Class;
+  rdfs:label "group of numbers" .
+
+<http://test.test#tree%20traversals> a owl:Class;
+  rdfs:label "tree traversals" .
+
+test:Q105243151 a owl:Class;
+  rdfs:label "preorder traversal" .
+
+test:delimiters a owl:Class;
+  rdfs:label "delimiters" .
+
+test:Q200726 a owl:Class;
+  rdfs:label "probability distribution" .
+
+test:Q105698583 a owl:Class;
+  rdfs:label "diagrams" .
+
+<http://test.test#measure%20an%20uncountable%20number%20of%20values> a owl:Class;
+  rdfs:label "measure an uncountable number of values" .
+
+test:Q98912 a owl:Class;
+  rdfs:label "upper-case letter" .
+
+<http://test.test#lower-case%20counterpart> a owl:Class;
+  rdfs:label "lower-case counterpart" .
+
+test:Q7834418 a owl:Class;
+  rdfs:label "transition function" .
+
+test:Q104539563 a owl:Class;
+  rdfs:label "states" .
+
+test:Q11019 a owl:Class;
+  rdfs:label "machine" .
+
+<http://test.test#flow%20of%20operation> a owl:Class;
+  rdfs:label "flow of operation" .
+
+test:Q96329089 a owl:Class;
+  rdfs:label "grammars" .
+
+test:Q98468872 a owl:Class;
+  rdfs:label "state transition graph" .
+
+test:Q2303083 a owl:Class;
+  rdfs:label "state transition" .
+
+test:Q5962346 a owl:Class;
+  rdfs:label "classification scheme" .
+
+test:Q2566598 a owl:Class;
+  rdfs:label "regular" .
+
+test:Q11216 a owl:Class;
+  rdfs:label "numerical analysis" .
+
+test:Q29654355 a owl:Class;
+  rdfs:label "real line" .
+
+<http://test.test#distribute%20n’> a owl:Class;
+  rdfs:label "distribute n’" .
+
+test:Q116847687 a owl:Class;
+  rdfs:label "processing speed" .
+
+test:Q837863 a owl:Class;
+  rdfs:label "pure mathematics" .
+
+test:Q595597 a owl:Class;
+  rdfs:label "negative" .
+
+test:Q134237 a owl:Class;
+  rdfs:label "square root" .
+
+test:Q50349184 a owl:Class;
+  rdfs:label "factors" .
+
+test:Q60088264 a owl:Class;
+  rdfs:label "higher algebra" .
+
+test:Q3884033 a owl:Class;
+  rdfs:label "operations" .
+
+test:Q164307 a owl:Class;
+  rdfs:label "binary operation" .
+
+test:Q600236 a owl:Class;
+  rdfs:label "operation" .
+
+test:Q3539534 a owl:Class;
+  rdfs:label "triple" .
