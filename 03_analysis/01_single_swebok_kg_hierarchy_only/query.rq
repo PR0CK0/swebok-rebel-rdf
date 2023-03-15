@@ -1,0 +1,31 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX n4sch: <neo4j://graph.schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX test: <http://test.test#>
+
+CONSTRUCT { 
+  ?newIRI a owl:Class ;
+          rdfs:label ?text ;
+          rdfs:subClassOf ?superNewIRI ;
+          ?neo4jProperty ?otherEntityNewIRI .
+    
+  ?neo4jProperty a owl:ObjectProperty .
+}
+WHERE {
+  ?Entity a n4sch:Entity ;
+          n4sch:id ?id ;
+          n4sch:text ?text ;
+  		  n4sch:SUBCLASS_OF ?super .
+  ?super n4sch:id ?superID .
+
+  OPTIONAL {
+    ?Entity ?neo4jProperty ?otherEntity .
+    ?otherEntity n4sch:id ?otherID .
+    FILTER (?neo4jProperty != n4sch:SUBCLASS_OF)
+  }
+    
+  BIND (URI(CONCAT("http://test.test#", ?id)) AS ?newIRI)
+  BIND (URI(CONCAT("http://test.test#", ?superID)) AS ?superNewIRI)
+  BIND (URI(CONCAT("http://test.test#", ?otherID)) AS ?otherEntityNewIRI)
+}
